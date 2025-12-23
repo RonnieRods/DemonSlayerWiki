@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/styles copy.css" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="characters.html" class="nav-item">Characters</a>
+        <a href="#" class="nav-item">World</a>
+    </div>
+    <div class="main-ino-container">
+        <div class="left-side-ino-text">
+
+        </div>
+    </div>
+    <footer>Wiki inspired by the <a class="link" href="https://kimetsu-no-yaiba.fandom.com/" target="_blank">Kimetsu No Yaiba Wiki</a></footer>
+</body>
+</html>

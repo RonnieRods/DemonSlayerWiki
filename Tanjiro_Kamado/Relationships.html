@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/styles copy.css" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="/images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="characters.html" class="nav-item">Characters</a>
+        <a href="#" class="nav-item">World</a>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 12</div>
+                <img src="/images/Nezuko_protecting_Tanjiro_from_the_Swamp_Demon.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 12</div>
+                <img src="/images/Tanjiro_with_his_family_in_his_dream.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 12</div>
+                <img src="/images/Giyu_protecting_Nezuko_from_Shinobu.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 12</div>
+                <img src="/images/Tanjiro_bumps_into_Zenitsu_EP11.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 12</div>
+                <img src="/images/Inosuke_eating_Tanjiros_food.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 12</div>
+                <img src="/images/Tanjiro_asks_Shinobu_if_shes_angry.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 12</div>
+                <img src="/images/Tanjiro_telling_Kanao_to_follow_her_heart.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 12</div>
+                <img src="/images/Tanjiro_stopping_Genya_from_manhandling_Kanata.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 12</div>
+                <img src="/images/Tanjiro_defends_Genya.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 12</div>
+                <img src="/images/Kyojuros_encouragement_anime.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">11 / 12</div>
+                <img src="/images/Tanjiro_in_disbelief_to_learn_he_can_proceed.webp" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">12 / 12</div>
+                <img src="/images/Tanjiro_stops_Daki_and_Gyutaro.webp" style="width:100%;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="scroll-container">
+                <div class="column" id="Pic1">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Nezuko_protecting_Tanjiro_from_the_Swamp_Demon.webp" 
+                    onclick="currentSlide(1)" 
+                    alt="Tanjiro and Nezuko's bond"
+                    >
+                </div>
+                <div class="column" id="Pic2">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Tanjiro_with_his_family_in_his_dream.webp" 
+                    onclick="currentSlide(2)" 
+                    alt="Tanjiro with his family"
+                    >
+                </div>
+                <div class="column" id="Pic3">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Giyu_protecting_Nezuko_from_Shinobu.webp" 
+                    onclick="currentSlide(3)" 
+                    alt="Giyu protecting Nezuko from Shinobu"
+                    >
+                </div>
+                <div class="column" id="Pic4">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Tanjiro_bumps_into_Zenitsu_EP11.webp" 
+                    onclick="currentSlide(4)" 
+                    alt="Tanjiro and Zenitsu"
+                    >
+                </div>
+                <div class="column" id="Pic5">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Inosuke_eating_Tanjiros_food.webp" 
+                    onclick="currentSlide(5)" 
+                    alt="Inosuke eating Tanjiro's food"
+                    >
+                </div>
+                <div class="column" id="Pic6">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Tanjiro_asks_Shinobu_if_shes_angry.webp" 
+                    onclick="currentSlide(6)" 
+                    alt="Tanjiro and Shinobu hold a conversation"
+                    >
+                </div>
+                <div class="column" id="Pic7">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Tanjiro_telling_Kanao_to_follow_her_heart.webp" 
+                    onclick="currentSlide(7)" 
+                    alt="Tanjiro telling Kanao to follow her heart"
+                    >
+                </div>
+                <div class="column" id="Pic8">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Tanjiro_stopping_Genya_from_manhandling_Kanata.webp" 
+                    onclick="currentSlide(8)" 
+                    alt="Tanjiro stopping Genya from harassing Kanata"
+                    >
+                </div>
+                <div class="column" id="Pic9">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Tanjiro_defends_Genya.webp" 
+                    onclick="currentSlide(9)" 
+                    alt="Tanjiro defending Genya from Sanemi"
+                    >
+                </div>
+                <div class="column" id="Pic10">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Kyojuros_encouragement_anime.webp" 
+                    onclick="currentSlide(10)" 
+                    alt="Kyojuro encourages Tanjiro"
+                    >
+                </div>
+                <div class="column" id="Pic11">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Tanjiro_in_disbelief_to_learn_he_can_proceed.webp" 
+                    onclick="currentSlide(11)" 
+                    alt="Muichiro compliments Tanjiro during their training session"
+                    >
+                </div>
+                <div class="column" id="Pic12">
+                    <img 
+                    class="demo cursor" 
+                    src="/images/Tanjiro_stops_Daki_and_Gyutaro.webp" 
+                    onclick="currentSlide(12)" 
+                    alt="Tanjiro intervenes in Daki and Gyutaro's argument"
+                    >
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main-ino-container">
+        <div class="left-side-ino-text">
+            <div class="link-tabs">
+                <div class="link-space">
+                    <a href="/tanjiro.html" class="link">Info</a>
+                </div>
+                <div class="link-space">
+                    <a href="/Tanjiro_Kamado/Synopsis.html" class="link">Synopsis</a>
+                </div>
+                <div class="link-space current-page">
+                    <a href="/Tanjiro_Kamado/Relationships.html" class="link">Relationships</a>
+                </div>
+                <div class="link-space">
+                    <a href="" class="link">Image Gallery</a>
+                </div>
+            </div>
+            <h1>Tanjiro Kamado/Relationships</h1>
+            <p><<a href="/tanjiro.html" class="link">Tanjiro Kamado</a></p>
+            <br>
+            <div class="relationshipGuideContainer">
+                <div class="relationshipHeader" id="contentHeader">
+                    <h2>Contents</h2>
+                    <span>
+                        <label>[<a href="#" class="link" id="contentBtn">hide</a>]</label>
+                    </span>
+                </div>
+                <ol class="relationshipBody" id="contentList">
+                    <li class="fixlist3">
+                        <a href="#Relationships">
+                            <span>1.</span>
+                            <span>Relationships</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Nezuko">
+                            <span>1.1.</span>
+                            <span>Nezuko Kamado</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Brothers">
+                            <span>1.2.</span>
+                            <span>Takeo Kamado, Hanako Kamado, Shigero Kamado, and Rokuta Kamado</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Parents">
+                            <span>1.3.</span>
+                            <span>Tanjuro Kamado and Kie Kamado</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Giyu">
+                            <span>1.4.</span>
+                            <span>Giyu Tomioka</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Zenitsu">
+                            <span>1.5.</span>
+                            <span>Zenitsu Agatsuma</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Inosuke">
+                            <span>1.6.</span>
+                            <span>Inosuke Hashibira</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Sakonji">
+                            <span>1.7.</span>
+                            <span>Sakonji Urokodaki</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Shinobu">
+                            <span>1.8.</span>
+                            <span>Shinobu Kocho</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Kanao">
+                            <span>1.9.</span>
+                            <span>Kanao Tsuyuri</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Genya">
+                            <span>1.10.</span>
+                            <span>Genya Shinazugawa</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Kyojuro">
+                            <span>1.11.</span>
+                            <span>Kyojuro Rengoku</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Tengen">
+                            <span>1.12.</span>
+                            <span>Tengen Uzui</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Muichiro">
+                            <span>1.13.</span>
+                            <span>Muichiro Tokito</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Tamayo">
+                            <span>1.14.</span>
+                            <span>Tamayo</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Yushiro">
+                            <span>1.15.</span>
+                            <span>Yushiro</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Gyomei">
+                            <span>1.16.</span>
+                            <span>Gyomei Himejima</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Mitsuri">
+                            <span>1.17.</span>
+                            <span>Mitsuri Kanroji</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Sanemi">
+                            <span>1.18.</span>
+                            <span>Sanemi Shinazugawa</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Muzan">
+                            <span>1.19.</span>
+                            <span>Muzan Kibutsuji</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Akaza">
+                            <span>1.20.</span>
+                            <span>Akaza</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Hantengu">
+                            <span>1.21.</span>
+                            <span>Hantengu</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Daki">
+                            <span>1.22.
+                            <span>Daki</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#References">
+                            <span>2.</span>
+                            <span>References</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Navigation">
+                            <span>3.</span>
+                            <span>Navigation</span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+            <br>
+            <section class="tan-quick-answers-box2">
+                <div>
+                    <div>
+                        <h3>Quick Answers</h3>
+                    </div>
+                </div>
+                <div>
+                    <details class="tan-quick-answers-box-size2">
+                        <summary>
+                            <b>Who is the only surviving family member of Tanjiro Kamado?</b>
+                        </summary>
+                        <div>
+                            <div class="tan-answer-margin2">
+                                In the events of the story, Tanjiro has only one surviving family member, his younger sister Nezuko. In
+                                the modern times, his living descendants are Sumihiko and Kanata Kamado.
+                            </div>
+                        </div>
+                    </details>
+                    <details class="tan-quick-answers-box-size2">
+                        <summary>
+                            <b>Does Tanjiro have any relationship with the Hashira?</b>
+                        </summary>
+                        <div>
+                            <div class="tan-answer-margin2">
+                                Throughout most of the story, Tanjiro is involved in battles against demons while with the Hashira, and he
+                                comes to gain a personal relationship with them. While most of these relationships are positive, such as
+                                Giyu Tomioka's and Mitsuri Kanroji's close friendship with him, and gaining Gyomei Himejima's respect
+                                through his honest character, two Hashira remain resentful and distrustful of him, the two being
+                                Sanemi Shinazugawa and Obanai Iguro.
+                            </div>
+                        </div>
+                    </details>
+                    <details class="tan-quick-answers-box-size2">
+                        <summary>
+                            <b>How does Tanjiro treat demons?</b>
+                        </summary>
+                        <div>
+                            <div class="tan-answer-margin2">
+                                While he understands that demons are inherently tragic creatures who were once human, he acknowledges that
+                                their actions cannot be forgiven and they must be killed to atone for them. Early on, he shows respect
+                                towards certain demons who show signs of pain and personal suffering, such as Kyogai, Rui, and Akaza, but
+                                at other times, he comes to realize that some demons truly cannot be redeemed and remain true to their
+                                monstrous selves even as humans, such as the Swamp Demon, Hantengu, and Muzan Kibutsuji.
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </section>
+            <br>
+            <h2>
+                <span class="anchor" id="Relationships">Relationships</span>
+            </h2>
+            <hr>
+            <h3>
+                <span class="anchor" id="Nezuko">
+                    <a href="/nezuko.html" class="link">Nezuko Kamado</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="right-side-anime-pic">
+                    <a class="contain-img" href="#Pic1">
+                        <img src="/images/Nezuko_protecting_Tanjiro_from_the_Swamp_Demon.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(1)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Tanjiro and Nezuko's bond</p>
+                    </figcaption>
+                </figure>
+                Nezuko is the younger sister of Tanjiro and his only remaining family member alive after his family was killed while 
+                he was away selling charcoal. As such, Tanjiro, who is usually calm and polite, will become enraged and attack 
+                anybody who harms Nezuko.
+                <span class="tooltip-anchor" id="Ref1">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 45 (Page 17).
+                        </span>
+                        <a href="#RefList1" class="link anchor" id="Ref">[1]</a>
+                    </sup>
+                </span>
+                He is extremely protective of her, though he doesn't stop her from helping him 
+                during battles that he cannot handle alone.
+                <span class="tooltip-anchor" id="Ref2">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 12 (Page 5).
+                        </span>
+                        <a href="#RefList2" class="link anchor" id="Ref">[2]</a>
+                    </sup>
+                </span>
+                Being the sole surviving members of a poor family, the siblings 
+                have a very close bond, trusting and loving of one another. Tanjiro is likely the only one capable of actively 
+                calming Nezuko down by calling her name or singing to their <a href="kie.html" class="link">mother</a>'s lullaby.
+            </p>
+            <br>
+            <p>
+                Even after Tanjiro is turned into a demon by Muzan and goes into a destructive rampage, Nezuko still approaches 
+                her brother and tries to hold him back despite the high possibility of herself being killed by him. Moreover, 
+                Tanjiro does not attack her even after tasting her blood, showing their love and familial bond still prevailed 
+                over his transformation and Muzan's desires for him to kill the Demon Slayers.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Brothers">
+                    <a href="takeo.html" class="link">Takeo Kamado</a>,
+                    <a href="hanako.html" class="link">Hanako Kamado</a>,
+                    <a href="shigeru.html" class="link">Shigeru Kamado</a>, and
+                    <a href="rokuta.html" class="link">Rokuta Kamado</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="right-side-anime-pic">
+                    <a class="contain-img" href="#Pic2">
+                        <img src="/images/Tanjiro_with_his_family_in_his_dream.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(2)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Tanjiro with his family.</p>
+                    </figcaption>
+                </figure>
+                Tanjiro was incredibly close to his other siblings. He would also often help them with their house chores and would 
+                cheer them up whenever they were upset. Even after their deaths, Tanjiro would hold them closely and dear to his 
+                heart; he even struggled to leave them behind in his dreams whilst he was under Enmu's Blood Demon Art. The 
+                deaths of his family would constantly remind Tanjiro of his single goal to defeat Muzan Kibutsuji, Tanjiro also 
+                used his family's death as a guiding light to destroy the demon too.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Parents">
+                    <a href="tanjuro.html" class="link">Tanjuro Kamado</a> and
+                    <a href="kie.html" class="link">Kie Kamado</a>
+                </span>
+            </h3>
+            <p>
+                Tanjuro and Kie are Tanjiro's parents, and just like Tanjiro's relationship with his other younger siblings, he had
+                a close family bond with his parents. As a result, after both of his parents died, he used them as a guiding light
+                to destroy Muzan Kibutsuji by using his father's Hinokami Kagura to fight Muzan and the other demons, as well as
+                using his mother's flashback memory.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Giyu">
+                    <a href="giyu.html" class="link">Giyu Tomioka</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="left-side-anime-pic">
+                    <a class="contain-img" href="#Pic3">
+                        <img src="/images/Giyu_protecting_Nezuko_from_Shinobu.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(3)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Giyu protecting Nezuko from Shinobu.</p>
+                    </figcaption>
+                </figure>
+                Tanjiro first meets Giyu after he tries to kill Nezuko, who had just been turned into a Demon.
+                <span class="tooltip-anchor" id="Ref3">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 1 (Page 25).
+                        </span>
+                        <a href="#RefList3" class="link" id="Ref">[3]</a>
+                    </sup>
+                </span>
+                After seeing his determination, Giyu instructs Tanjiro to go find the cultivator 
+                <a href="sakonji.html" class="link">Sakonji Urokodaki</a>,
+                leading him onto the path of becoming a Demon 
+                Slayer.
+                <span class="tooltip-anchor" id="Ref4">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 3 (Page 3).
+                        </span>
+                        <a href="#RefList4" class="link" id="Ref">[4]</a>
+                    </sup>
+                </span>
+            </p>
+            <br>
+            <p>
+                While distrustful of him at first, Tanjiro comes to highly respect Giyu later on, especially considering how 
+                both were students of Sakonji and users of the Water Breathing Style. Giyu himself grows to care enough for 
+                Tanjiro and Nezuko that he promises to commit seppuku (ritual suicide) alongside their master should Nezuko 
+                resort to eating humans. Tanjiro is the one who allows Giyu to open up and realize he needs to step up to as 
+                the inheritor of the Water Hashira and to not let his past losses and feeling of inadequacy prevent him from 
+                realizing this. In some ways, Tanjiro is his closest friend (aside from his late friend
+                <a href="sabito.html" class="link">Sabito</a> and, to some extent, fellow Hashira
+                <a href="shinobu.html" class="link">Shinobu Kocho</a>.)
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Zenitsu">
+                    <a href="/zenitzu.html" class="link">Zenitsu Agatsuma</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="right-side-anime-pic">
+                    <a class="contain-img" href="#Pic4">
+                        <img src="/images/Tanjiro_bumps_into_Zenitsu_EP11.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(4)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Tanjiro and Zenitsu.</p>
+                    </figcaption>
+                </figure>
+                At first, Tanjiro is annoyed with Zenitsu as their first encounter involved Zenitsu pestering a girl to marry him 
+                when she was clearly against it, forcing Tanjiro to remedy the situation by pulling Zenitsu away from the girl. 
+                Zenitsu was in denial that the girl didn't like him and immediately blamed Tanjiro for his failed proposal, 
+                causing Tanjiro to look at him in disgust. Despite this, Tanjiro understood that Zenitsu must have been strong 
+                enough to pass the Final Selection and that the two can rely on each other during battles against powerful Demons.
+            </p>
+            <br>
+            <p>
+                Tanjiro has also been shown to have taken up Zenitsu's fighting style. As can be seen when he recalled Zenitsu's 
+                words about Thunder Breathing, which allowed him to develop the sub-technique, <b>Hinokami Kagura: Dancing Flash</b>,
+                to catch up to a fleeing Hantengu.
+            </p>
+            <br>
+            <p>
+                Though Tanjiro can be annoyed by Zenitsu's tantrums and womanizing behavior, he cares for Zenitsu as a close friend 
+                and is very patient with him. Zenitsu tends to be the one to inform Tanjiro of the city life and occasionally 
+                explain things due to Tanjiro's naivety. He cares for Tanjiro as a close friend and admires his strength and 
+                kindness. Zenitsu also attempts to get Tanjiro to acknowledge the prospect of being a future brother-in-law, 
+                considering Zenitsu's crush on Nezuko.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Inosuke">
+                    <a href="/inosuke copy.html" class="link">Inosuke Hashibira</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="left-side-anime-pic">
+                    <a class="contain-img" href="#Pic5">
+                        <img src="/images/Inosuke_eating_Tanjiros_food.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(5)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Inosuke eating Tanjiro's food.</p>
+                    </figcaption>
+                </figure>
+                Initially, despite both being Demon Slayers and being in a tight situation to kill a Demon, Inosuke is instead amazed 
+                by Tanjiro's strength and tries to fight him, not caring about the bigger picture. Even after the Demon is 
+                defeated, Inosuke would not let up. Tanjiro is occasionally annoyed with his insistence on a fight but is 
+                extremely patient with him. Ironically, Tanjiro's naivety and kindness allow him to unwittingly manipulate 
+                Inosuke or even annoy him. Despite this, Tanjiro manages to be a positive influence on Inosuke as he convinces 
+                Inosuke to start using his head and think during battle. The two tend to also both be naive about city life. 
+                Ultimately, they get along as good friends and close allies.
+            </p>
+            <br>
+            <p>
+                Later on as the series progressed, Inosuke and Tanjiro's friendship was shown to have become incredibly strong 
+                and close to the point that the both of them admitted that they now both see and consider each other as brothers 
+                and both made a promised that if anyone of them began to stray from the right path, the other would do their best 
+                to correct and help them.
+            </p>
+            <br>
+            <p>
+                Upon Tanjiro's transformation into a Demon, Inosuke was one of the first demon slayers to try and kill him before 
+                he could eat someone and prevent him from going a dark path. However as Inosuke was about to cut him, he 
+                remembered all of Tanjiro's kindness and how he sees him as a brother, causing him to then break down in tears 
+                and stop his attack during the battle due to not being able to bring himself to kill him.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Sakonji">
+                    <a href="sakonji.html" class="link">Sakonji Urokodaki</a>
+                </span>
+            </h3>
+            <p>
+                When they first met, Sakonji initially hesitated in training Tanjiro after noting his inability and reluctance to 
+                kill. He eventually relented and taught Tanjiro for over a year in Water Breathing. After his past 13 students 
+                were killed in Final Selection, Sakonji would only allow him to enter if he managed to cut through a very large 
+                boulder, as a way to protect him. Eventually, Tanjiro succeeded in slicing it, entered and survived Final 
+                Selection, even managing to defeat an old foe of Sakonji. Seeing his latest student survive after so many 
+                failures haunting him, Sakonji tearfully hugged Tanjiro and congratulated him on coming home.
+            </p>
+            <br>
+            <p>
+                Tanjiro was shocked to learn that both Sakonji and Giyu had taken an oath to kill themselves if Nezuko had ever
+                harmed a person.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Shinobu">
+                    <a href="shinobu.html" class="link">Shinobu Kocho</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="right-side-anime-pic">
+                    <a href="#Pic6" class="contain-img" >
+                        <img src="/images/Tanjiro_asks_Shinobu_if_shes_angry.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(6)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Tanjiro and Shinobu hold a conversation.</p>
+                    </figcaption>
+                </figure>
+                Shinobu helps train Tanjiro during his rehabilitation period, and, while she initially does not understand his 
+                drive to protect his Demon sister, she does grow to care for him. Though she trained Tanjiro, Zenitsu, and 
+                Inosuke, she seems to be the closest (or, is at least the least irritated) with Tanjiro because unlike Zenitsu 
+                and Inosuke, he took his training seriously from the start. Shinobu also recommends Tanjiro to Oyakata-Sama for 
+                the Infinity Train mission, stating that Tanjiro "has a pure soul and is capable of striving hard on a daily 
+                basis". During a conversation with him, she even divulges her past where her <a href="kanae.html" class="link">sister</a>
+                was killed by a <a href="doma.html" class="link">powerful Upper Rank</a>.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Kanao">
+                    <a href="kanao.html" class="link">Kanao Tsuyuri</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="left-side-anime-pic">
+                    <a href="#Pic7" class="contain-img">
+                        <img src="/images/Tanjiro_telling_Kanao_to_follow_her_heart.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(7)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Tanjiro telling Kanao to follow her heart.</p>
+                    </figcaption>
+                </figure>
+                When Kanao first saw Tanjiro at the Final Selection, they did not have any sort of interaction as she remained 
+                aloof and quiet at the end of the ceremony. Later on in the series, when they meet again on Mount Natagumo, 
+                Kanao gets into a physical altercation with Tanjiro as he tries to protect his sister from getting killed and as 
+                result gets knocked out cold by Kanao.
+                <span class="tooltip-anchor" id="Ref5">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 44 (Pages 10-12).
+                        </span>
+                        <a href="#RefList5" class="link" id="Ref">[5]</a>
+                    </sup>
+                </span>
+            </p>
+            <br>
+            <p>
+                Tanjiro is brought to the Butterfly Mansion to recover and sees her in the garden, he immediately recognizes her 
+                as one of the survivors from the Final Selection but fails to recognize her as his assailant. Later on when they
+                begin to train, Tanjiro struggles to beat Kanao in all of the tasks due to her advanced abilities but he is able 
+                to adapt and beat her. During one of the games, the task is to splash the opponent with a strong smelling tea 
+                however instead of dumping it on Kanao, Tanjiro instead places the cup on her head to avoid splashing her.
+                <span class="tooltip-anchor" id="Ref6">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 50 (Pages 20-21).
+                        </span>
+                        <a href="#RefList6" class="link" id="Ref">[6]</a>
+                    </sup>
+                </span>
+                Tanjiro gets curious as to why Kanao needs to flip a coin to make decisions. He decides to flip her coin to 
+                encourage her to be optimistic and for her to open her heart. As he flashes her a smile as he bids her farewell.
+                <span class="tooltip-anchor" id="Ref7">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 53 (Pages 14-20).
+                        </span>
+                        <a href="#RefList7" class="link" id="Ref">[7]</a>
+                    </sup>
+                </span>
+            </p>
+            <br>
+            <p>
+                As the story progresses, Kanao starts showing more emotion and decisiveness, especially when Tanjiro is brought 
+                back to recover at the Butterfly Mansion following the battles in the Entertainment District. Upon discovering 
+                that he had awaken, she drops the flower vase on the floor and tears up while telling him she's glad he had awoken.
+                <span class="tooltip-anchor" id="Ref8">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 99 (Pages 20-21).
+                        </span>
+                        <a href="#RefList8" class="link" id="Ref">[8]</a>
+                    </sup>
+                </span>
+                When the other inhabitants of the Mansion begin to bicker while visiting Tanjiro, she tries to get 
+                everyone to quiet down but ultimately ends up yelling at everyone after he falls asleep again.
+                <span class="tooltip-anchor" id="Ref9">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 100 (Page 10).
+                        </span>
+                        <a href="#RefList9" class="link" id="Ref">[9]</a>
+                    </sup>
+                </span>
+            </p>
+            <br>
+            <p>
+                During the battle against <a href="muzan.html" class="link">Muzan Kibutsuji</a>, Kanao is left as the only conscious 
+                Demon Slayer left and tries to will herself to continue fighting. As Muzan is about to deliver the final blow, 
+                Tanjiro momentarily immobilizes Muzan and manages to carry Kanao to safety. Realizing that he has awaken, Kanao 
+                sheds tears as she repeatedly calls out his name and he responds to her by apologizing for being late.
+                <span class="tooltip-anchor" id="Ref10">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 191 (Pages 17-19).
+                        </span>
+                        <a href="#RefList10" class="link" id="Ref">[10]</a>
+                    </sup>
+                </span>
+            </p>
+            <br>
+            <p>
+                After Tanjiro turns into a Demon, Kanao cries when seeing Nezuko trying to calm her brother. Her sympathy for the 
+                siblings leads to her once again using <b>Flower Breathing Final Form: Equinoctial Vermillion Eye</b> and create an 
+                opening to inject the Demon-to-human cure into Tanjiro, putting her own safety at risk and showing how much she 
+                cares for them.
+            </p>
+            <br>
+            <p>
+                After Tanjiro successfully returns to his human form, she cries of happiness and is visibly relieved to see him safely
+                back as a human, the two exchanging tearful smiles as they lie across from each other.
+            </p>
+            <br>
+            <p>
+                Tanjiro and Kanao would eventually marry and start a family, having two great-grandchildren by the names of
+                <a href="kanata.html" class="link">Kanata Kamado</a> and <a href="sumihiko.html" class="link">Sumihiko Kamado</a>
+                between them.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Genya">
+                    <a href="/genya.html" class="link">Genya Shinazugawa</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="right-side-anime-pic">
+                    <a href="#Pic8" class="contain-img">
+                        <img src="/images/Tanjiro_stopping_Genya_from_manhandling_Kanata.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(8)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Tanjiro stopping Genya from harassing Kanata.</p>
+                    </figcaption>
+                </figure>
+                When they first interacted, Tanjiro in a warning gesture gripped Genya's arm to the point where it could have broken 
+                as punishment for roughly handling <a href="kanata.html" class="link">Kanata Ubuyashiki</a> right after the final 
+                selection. They reunited again in the butterfly mansion right after Tanjiro had recovered his injuries during his 
+                battle with <a href="rui.html" class="link">Lower Rank 5</a> but when Tanjiro attempted to greet him, Genya coldly
+                ignored him.
+            </p>
+            <br>
+            <p>
+                They crossed paths again in the Swordsmith Village when Tanjiro spotted Genya in the hot springs, and tried interacting 
+                with him, to make an effort to get along with him. Unfortunately, Genya was getting annoyed and creeped out by 
+                Tanjiro. However, they soon formed a deep bond when they first fought together. Not too long after, Genya came to 
+                warm up to Tanjiro and they became close friends.
+            </p>
+            <br>
+            <p>
+                <figure class="left-side-anime-pic">
+                    <a href="#Pic9" class="contain-img">
+                        <img src="/images/Tanjiro_defends_Genya.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(9)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Tanjiro defending Genya from Sanemi.</p>
+                    </figcaption>
+                </figure>
+                Tanjiro also tried to help mend Genya's relationship with Sanemi, and was quick to defend him when Sanemi nearly gouged 
+                his eyes out. Genya is very touched at Tanjiro's defense of him, even admitting that Hantengu couldn't have been 
+                defeated without him. Genya later taught Tanjiro how to do repetitive actions during Gyomei's Hashira Training, 
+                and Tanjiro reveals to Sanemi that he doesn't sense any malice from his older brother, saying that Sanemi still 
+                dearly loves him. Later Tanjiro cries when he hears of Genya's passing.
+            </p>
+            <br>
+            <p>
+                They soon formed some sort of a bond when they first fought together. Not too long after, Genya came to warm up to 
+                Tanjiro and they became close friends. Genya even told Tanjiro about Repetitive Action, and how to perform it. 
+                After Genya's death at the end of the battle against <a href="kokushibo.html" class="link">Upper Rank One</a>, Tanjiro
+                was deeply saddened and cried tears for his fallen friend, vowing to end Muzan once and for all.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Rengoku">
+                    <a href="rengoku.html" class="link">Kyojuro Rengoku</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="right-side-anime-pic">
+                    <a href="#Pic10" class="contain-img">
+                        <img src="/images/Kyojuros_encouragement_anime.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(10)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Kyojuro encourages Tanjiro.</p>
+                    </figcaption>
+                </figure>
+                At first, Kyojuro greatly disapproved of Tanjiro for traveling with Nezuko, a Demon.
+                <span class="tooltip-anchor" id="Ref11">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 45 (Page 4).
+                        </span>
+                        <a href="#RefList11" class="link" id="Ref">[11]</a>
+                    </sup>
+                </span>
+                However, during their joint mission
+                to defeat <a href="enmu.html" class="link">Enmu</a>, they formed a bond and became close despite only spending a few
+                hours together. This bond even promoted Kyojuro to offer taking Tanjiro as a Tsuguko.
+                <span class="tooltip-anchor" id="Ref12">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 54 (Page 7).
+                        </span>
+                        <a href="#RefList12" class="link" id="Ref">[12]</a>
+                    </sup>
+                </span>
+            </p>
+            <br>
+            <p>
+                Kyojuro shared his final moments with Tanjiro and deeply inspired him with his words of encouragement, entrusting the 
+                boy to pass on his final words to his <a href="senjuro.html" class="link">younger brother</a> and
+                <a href="shinjuro.html" class="link">father</a> and expressing his acceptance of Nezuko as a true member of the Corps.
+                <span class="tooltip-anchor" id="Ref13">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 66 (Pages 3-4).
+                        </span>
+                        <a href="#RefList13" class="link" id="Ref">[13]</a>
+                    </sup>
+                </span>
+                After the <a href="kyojuro.html" class="link">Flame Hashira</a>'s passing, Tanjiro continued to hold his deep respect 
+                and admiration for him, becoming infuriated whenever others would speak ill about him.
+                <span class="tooltip-anchor" id="Ref14">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 148 (Pages 16-17).
+                        </span>
+                        <a href="#RefList14" class="link" id="Ref">[14]</a>
+                    </sup>
+                </span>
+                During his fight against
+                <a href="daki.html" class="link">Daki</a>, Tanjiro remembers Kyojuro's words which motivate him throughout his battle.
+                <span class="tooltip-anchor" id="Ref15">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 77 (Page 14).
+                        </span>
+                        <a href="#RefList15" class="link" id="Ref">[15]</a>
+                    </sup>
+                </span>
+            </p>
+            <br>
+            <p>
+                During the Final Battle Arc, Tanjiro uses Kyojuro's handguard for his sword in battle. Tanjiro also recalls Kyojuro's 
+                words often during the arc, once when he was trying to turn his blade bright red, and once before overwhelming 
+                Muzan with the Thirteenth Form of Sun Breathing.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Tengen">
+                    <a href="tengen.html" class="link">Tengen Uzui</a>
+                </span>
+            </h3>
+            <p>
+                Tanjiro first met Tengen at his trial alongside the other Hashira. Upon hearing that he had been travelling with a 
+                Demon, Tengen initially vouched to kill him for disobeying the rules and rejected Kagaya's blessing to allow 
+                Nezuko and Tanjiro to travel together. When it was revealed that Tanjiro came face-to-face with Muzan Kibutsuji, 
+                Tengen, along with the others, were shocked as no Hashira had ever done so before. Tengen then began questioning 
+                him about Muzan's appearance, abilities, and whereabouts.
+            </p>
+            <br>
+            <p>
+                The two met again at the Butterfly Mansion, where Tengen attempted to kidnap <a href="aoi.html" class="link">Aoi</a>
+                and <a href="naho.html" class="link">Naho</a> for a mission. Tanjiro became infuriated at his actions, and stated 
+                that he does not acknowledge Tengen's superior position as a Hashira. Tengen in response, exploded at him for 
+                his disrespectful attitude. Their exchange eventually cools down when Tanjiro, along with Inosuke and Zenitsu, 
+                offer to accompany Tengen on his mission in place of the girls.
+            </p>
+            <br>
+            <p>
+                As they formally began their mission, Tanjiro's naïvety pleases Tengen, seemingly melting away any tension between 
+                them. Several days after infiltrating the Entertainment District, Tengen met up with both Tanjiro and Inosuke, 
+                suggesting that they leave the mission for their own benefit due to their lower rankings. Claiming that he felt 
+                bad for putting them through with it since their possible encounter with an <a href="daki.html" class="link">Upper</a>
+                <a href="gyutaro.html" class="link">Rank</a> could lead to their deaths.
+            </p>
+            <br>
+            <p>
+                When Tengen arrived to the battle against Daki, he scolded Tanjiro for his lack of control over Nezuko even after 
+                receiving a blessing from the Master. Yet rather than attacking her himself, he suggested Tanjiro put her to 
+                sleep with a lullaby. With Inosuke and Zenitsu's arrival to the fight, along with Gyutaro's appearance, Tengen 
+                openly claimed to the Demon Siblings that all 3 of the boys were his brilliant Tsuguko, all with relentless grit, 
+                and that they would all together defeat the Demons. Tengen's speech moved Tanjiro, and reminded him of
+                <a href="kyojuro.html" class="link">Kyojuro Rengoku</a>.
+            </p>
+            <br>
+            <p>
+                When Gyutaro attempted to kill <a href="hinatsuru.html" class="link">Hinatsuru</a>, who had been providing support 
+                from the side by firing Kunai, Tanjiro quickly came to her rescue through a combined Water Breathing and Hinokami 
+                Kagura technique. Tengen then arrived and gave Tanjiro his gratitude before fighting off Gyutaro. As the two 
+                worked together to take down Gyutaro, Tanjiro became increasingly concerned over Tengen's deteriorating health 
+                due to the poison and constantly tried to protect him from oncoming attacks. Even during situations when Tanjiro 
+                is risking his life, Tengen consistently managed to throw Tanjiro out of the way, or protect him before he can be 
+                seriously wounded.
+            </p>
+            <br>
+            <p>
+                In the final stretch, Tengen, despite having lost one hand and heavily poisoned, came to Tanjiro's aid to deflect a 
+                fatal strike from Gyutaro. Tengen held Gyutaro off, losing his left eye in the process, much to Tanjiro's shock. 
+                Yet his actions provided Tanjiro with an opportunity to behead the demon, which Tengen alerted him to act upon 
+                quickly. At the end of the battle, Tengen turned around to warn Tanjiro of Gyutaro's oncoming attack instead of 
+                fleeing, showing his concern for him.
+            </p>
+            <br>
+            <p>
+                Following the completion of their mission, Tengen finally acknowledges Tanjiro's abilities by telling
+                <a href="obanai.html" class="link">Obanai</a> that he "has grown to become strong enough" to fill his vacancy as he retired.
+            </p>
+            <br>
+            <p>
+                After the final battle against <a href="muzan.html" class="link">Muzan</a>, Tengen and his wives came to visit Tanjiro
+                in the medical ward.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Muichiro">
+                    <a href="muichiro.html" class="link">Muichiro Tokito</a>
+                </span>
+            </h3>
+            <p>
+                During their first few encounters, Tanjiro and Muichiro held a strained relationship. Muichiro reprimanded Tanjiro
+                by flicking a stone at his head after the latter interrupted <a href="kagaya.html" class="link">Kagaya Ubuyashiki</a>'s
+                speech, and Tanjiro was bewildered by Muichiro's rude treatment towards <a href="kotetsu.html" class="link">Kotetsu</a>
+                at the Swordsmith Village. However, after hearing Tanjiro's advice about helping others, Muichiro was influenced enough
+                to alter his mindset, saving Kotetsu and <a href="kozo.html" class="link">Kozo Kanamori</a> during 
+                <a href="gyokko.html" class="link">Gyokko</a>'s attack on the village. Tanjiro's advice, along with his appearance,
+                reminded Muichiro of his late father, which further allowed him to regain the memories of his early life. Muichiro
+                thanked Tanjiro for such, despite the former being oblivious to his influence.
+            </p>
+            <br>
+            <p>
+                <figure class="left-side-anime-pic">
+                    <a href="#Pic11" class="contain-img">
+                        <img src="/images/Tanjiro_in_disbelief_to_learn_he_can_proceed.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(11)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Muichiro compliments Tanjiro during their training session.</p>
+                    </figcaption>
+                </figure>
+                During the battle against <a href="hantengu.html" class="link">Hantengu</a>, Muichiro called out to Tanjiro from afar,
+                and threw him his unfinished sword from <a href="haganezuka.html" class="link">Haganezuka</a>, telling him to use it
+                and finish off the Demon. Tanjiro later thanked him for giving him the weapon.
+            </p>
+            <br>
+            <p>
+                After subsequently regaining his memories, Muichiro and Tanjiro became good friends, with Muichiro showing heavy 
+                bias towards Tanjiro when they trained together during the Hashira training session. After hearing about Muichiro's
+                death at the hands of <a href="kokushibo.html" class="link">Kokushibo</a>, Tanjiro shed tears over the loss of his
+                friend and vowed to himself he would continue fighting hard.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Tamayo">
+                    <a href="tamayo.html" class="link">Tamayo</a>
+                </span>
+            </h3>
+            <p>
+                Tanjiro meets Tamayo in the first mission in Asakusa Arc, and Tamayo has helped him to know more about Muzan and even 
+                suggests ways to turn Nezuko into a human. Throughout Tanjiro's journey, Tamayo investigates and tries hard to 
+                produce medicines in order to make demons human again. Tanjiro also shows respect to Tamayo and collects the 
+                Twelve Kizuki's blood to speed up her progress.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Yushiro">
+                    <a href="yushiro.html" class="link">Yushiro</a>
+                </span>
+            </h3>
+            <p>
+                Tanjiro meets Yushiro in the first mission in Asakusa Arc, and it seems like Yushiro doesn't like Tanjiro because he 
+                doesn't like that another person is squeezing into his life with Tamayo. Despite this, while in the Infinity 
+                Castle, Yushiro keeps on supporting and wishes for Tanjiro to stay alive. And when the battle's over, Yushiro 
+                visits Tanjiro and praises him.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Gyomei">
+                    <a href="gyomei.html" class="link">Gyomei Himejima</a>
+                </span>
+            </h3>
+            <p>
+               At the first Hashira Meeting, Gyomei judges that Tanjiro must be killed as he is a Demon Slayer traveling alongside a 
+               Demon. Later, during the Hashira Training Arc, Tanjiro shows Gyomei his determination, integrity, and hard work, 
+               which leads to him being accepted by the Stone Hashira. 
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Mitsuri">
+                    <a href="mitsuri.html" class="link">Mitsuri Kanroji</a>
+                </span>
+            </h3>
+            <p>
+                Ever since the Hashira meeting with both the Kamado siblings, Mitsuri has expressed empathy and kindness towards 
+                Tanjiro and his sister. The two first interact during the Swordsmith Village Arc, where Mitsuri ran down from the 
+                hotsprings to meet him. As she ran, her breasts began pouring out of her yukata, and Tanjiro warned her before 
+                quickly fixing it as she tackled him. Mitsuri then cried to Tanjiro, telling him that
+                <a href="/genya.html" class="link">someone</a> at the hot spring ignored her when she said hello. As she cried, Tanjiro 
+                notified her that dinner would be ready soon, and it was matsutake rice. Hearing this made Mitsuri excited.
+            </p>
+            <br>
+            <p>
+                Later, Tanjiro talked with Mitsuri over a big meal. Tanjiro complimented how much she was able to eat, to which 
+                she replied that she really only "nibbled". Tanjiro then told her that the guy who ignored her was Genya 
+                Shinazugawa, to which Mitsuri was confused, as she tells him the Wind Hashira, 
+                <a href="sanemi.html" class="link">Sanemi Shinazugawa</a> claimed to have no siblings. Seeing how Genya still hadn't 
+                joined them for dinner, they decide to take a walk to deliver rice balls to him. As they walk together, Mitsuri 
+                confesses her motive for joining the Demon Slayer Corps, much to her embarrassment. Mitsuri then compliments how 
+                Tanjiro had managed to become far stronger than he was following his defeat of <a href="gyutaro.html" class="link">an upper rank</a>.
+            </p>
+            <br>
+            <p>
+                Tanjiro then gave a statement of motivation that he will work even harder for the sake of defeating Muzan Kibutsuji, 
+                charming Mitsuri and a nearby Kakushi. Hearing this, the Love Hashira informed Tanjiro of a secret weapon that 
+                she hopes will help Tanjiro become stronger before parting ways with the Kamado siblings. During the battle with
+                <a href="hantengu.html" class="link">Hantengu</a> alongside his clones, Misturi saved Tanjiro from being crushed
+                by <a href="zohakuten.html" class="link">Zohakuten</a>'s wooden dragon.
+            </p>
+            <br>
+            <p>
+                Before Mitsuri could decapitate Zohakuten, Tanjiro informed her that her attack would not work due to him being a 
+                clone, much to her shock. This inadventently caused her to get hit by Zohakuten's deafening sound attack, 
+                temporarily stunning her. Tanjiro, Genya, and Nezuko all rushed over to save her from Zohakuten, before 
+                attempting to carry her to safety. Tanjiro ordered them to protect Mitsuri, saying she has the most potential 
+                out of all of them, and therefore she is their one ray of hope.
+            </p>
+            <br>
+            <p>
+                Moved by his words, Mitsuri quickly regained her strength and used her sword to slash through a group of incoming 
+                lighning attacks from Zohakuten, amazing Tanjiro and Nezuko. Mitsuri cried, thanking them for saving her, while 
+                apologizing for messing up as a Hashira, stating that she would never let any of her friends die. Getting back on 
+                her feet, Mitsuri told them to leave Zohakuten to her, and go after Hantengu's main body. Following Hantengu's 
+                defeat, Mitsuri ran to the group and gave Tanjiro and Nezuko a hug.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Sanemi">
+                    <a href="sanemi.html" class="link">Sanemi Shinazugawa</a>
+                </span>
+            </h3>
+            <p>
+                Tanjiro has had a disdain for the Wind Hashira ever since he brutally stabbed Nezuko multiple times in an attempt to 
+                goad her into attacking. Despite this, Tanjiro shows emotional restraint when heading to Hashira Training, 
+                expressing his excitement even though he proclaims that he doesn't respect Sanemi to his face. After the final battle
+                against Muzan, Tanjiro's dislike for Sanemi seems to have faded away, as he is eager to go see him and greet him
+                while conversing with 
+                Kanao.
+                <span class="tooltip-anchor" id="Ref16">
+                    <sup class="tooltip">
+                        <span class="tooltiptext">
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 204 (Page 19).
+                        </span>
+                        <a href="#RefList16" class="link" id="Ref">[16]</a>
+                    </sup>
+                </span>
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Muzan">
+                    <a href="muzan.html" class="link">Muzan Kibutsuji</a>
+                </span>
+            </h3>
+            <p>
+                Tanjiro harbors a deep hatred for Muzan as he recognizes him as not only the leader and creator of the Demons but 
+                also as the perpetrator behind the slaughter of his family using his scent. He yells at the Demon as he casually 
+                escapes that he will follow him to the ends of the Earth and that Muzan will die by his blade.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Akaza">
+                    <a href="akaza.html" class="link">Akaza</a>
+                </span>
+            </h3>
+            <p>
+                When the two first met, Akaza immediately attempted to kill Tanjiro upon seeing him on the ground, quickly rejecting 
+                him as weak and focusing his attention on Kyojuro. After Kyojuro is fatally wounded, Akaza is force to flee from 
+                the breaking sun but was confronted and speared from the back by Tanjiro, who angrily called him a coward for 
+                fleeing the battle. Akaza became infuriated and this hatred only grew stronger when Muzan expressed his 
+                disappointment in his inability to kill Tanjiro.
+            </p>
+            <br>
+            <p>
+                In the Infinity Castle, Akaza tracked Tanjiro down and engaged in a fierce battle with the Demon Slayer and Giyu. 
+                During this fight Akaza praised Tanjiro for his newfound strength and apologizes for dismissing him as a weakling 
+                during his fight with Kyojuro. He ends up claiming that he was glad that Kyojuro died because of his foolish 
+                mindset and his unlikeliness to get stronger, causing Tanjiro to be enraged at the comment. When Akaza claimed 
+                that he was actually praising Kyojuro, Tanjiro retorted that he instead was degrading him, like he did everyone.
+            </p>
+            <br>
+            <p>
+                Akaza responds that he in fact only hated weaklings, and began to explain his Social Darwinist philosophy. Tanjiro 
+                revoked his claims by stating that strong had to protect the weak, and uses caring for infants as an example, 
+                before vowing to kill the demon so he couldn't get away with doing what he wanted any longer. This reminded Akaza 
+                of his <a href="keizo.html" class="link">old mentor</a>, confusing and angering him even more. After some more 
+                fighting, Tanjiro awakened both the Transparent World and the Selfless State, and after calling Akaza out by name, 
+                he swiftly decapitated him.
+            </p>
+            <br>
+            <p>
+                However, Akaza, filled with a will to not die, kept on moving and began to regenerate his head, much to Tanjiro's 
+                shock. However, after remembering his painful human past, Akaza came to realize he truly wanted to kill himself. 
+                He smiled slightly and was noticed by Tanjiro, who also detected a scent of gratitude from his body. In the 
+                aftermath of attacking himself, he accepted that the Demon Slayer had defeated him in a fair battle, and Tanjiro 
+                eventually witnesses Akaza's body finally crumble to ash. Although confused, Tanjiro likely smelled Akaza's 
+                regret and emotional turmoil, and let out an understanding "ah..".
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Hantengu">
+                    <a href="hantengu.html" class="link">Hantengu</a>
+                </span>
+            </h3>
+            <p>
+                Tanjiro shows Hantengu no mercy, knowing that Hantengu was a mass murderer who completely refused to own up to his 
+                actions and was evil long before becoming a demon, much to the ire of both the manifestations of his hatred 
+                (Zohakuten) and resentment (Urami).
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="Daki">
+                    <a href="daki.html" class="link">Daki</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="right-side-anime-pic">
+                    <a href="#Pic12" class="contain-img">
+                        <img src="/images/Tanjiro_stops_Daki_and_Gyutaro.webp" class="figure-img zoom contain-img cursor" onclick="openModal();currentSlide(12)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>Tanjiro intervenes in Daki and Gyutaro's argument</p>
+                    </figcaption>
+                </figure>
+                As the main threat in Yoshiwara and one of the Demon Slayers sent to kill her, Daki and Tanjiro were natural enemies 
+                from the start. Daki's act of kidnapping <a href="koinatsu.html" class="link">Koinatsu</a> and her attempts to kill 
+                him only fuelled their animosity, peaking when Tanjiro became enraged by Daki destroying an entire street of the 
+                Entertainment District and killing numerous innocent people in scorn. However, Tanjiro comforted Daki and her 
+                brother in their deaths and told them that all the two siblings have is each other, inspiring Daki to make up 
+                with Gyutaro before their ultimate fates.
+            </p>
+            <br>
+            <br>
+            <h2>
+                <span class="anchor" id="References">
+                    References
+                </span>
+            </h2>
+            <hr>
+            <div class="ref-table">
+                <div class="ref-list">
+                    <ol>
+                        <li id="RefList1">
+                            <a href="#Ref1" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 45 (Page 17)
+                        </li>
+                        <li id="RefList2">
+                            <a href="#Ref2" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 12 (Page 5)
+                        </li>
+                        <li id="RefList3">
+                            <a href="#Ref3" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 1 (Page 25)
+                        </li>
+                        <li id="RefList4">
+                            <a href="#Ref4" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 3 (Page 3)
+                        </li>
+                        <li id="RefList5">
+                            <a href="#Ref5" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 44 (Pages 10-12)
+                        </li>
+                        <li id="RefList6">
+                            <a href="#Ref6" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 50 (Pages 20-21)
+                        </li>
+                        <li id="RefList7">
+                            <a href="#Ref7" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 53 (Pages 14-20)
+                        </li>
+                        <li id="RefList8">
+                            <a href="#Ref8" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 99 (Pages 20-21)
+                        </li>
+                        <li id="RefList9">
+                            <a href="#Ref9" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 100 (Page 10)
+                        </li>
+                        <li id="RefList10">
+                            <a href="#Ref10" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 191 (Pages 17-19)
+                        </li>
+                        <li id="RefList11">
+                            <a href="#Ref11" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 45 (Page 4)
+                        </li>
+                        <li id="RefList12">
+                            <a href="#Ref12" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 54 (Page 7)
+                        </li>
+                        <li id="RefList13">
+                            <a href="#Ref13" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 66 (Pages 3-4)
+                        </li>
+                        <li id="RefList14">
+                            <a href="#Ref14" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 148 (Pages 16-17)
+                        </li>
+                        <li id="RefList15">
+                            <a href="#Ref15" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 77 (Page 14)
+                        </li>
+                        <li id="RefList16">
+                            <a href="#Ref16" class="link arrow">↑</a>
+                            <i>Kimetsu no Yaiba</i> Manga: Chapter 204 (Page 19)
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <br>
+            <h2>
+                <span class="anchor" id="Navigation">
+                    Navigation
+                </span>
+            </h2>
+            <hr>
+            <table class="nav-table-container">
+                <tbody>
+                    <tr>
+                        <th class="nav-table-header">
+                            <aside>[<a href="#" class="link" id="nav-table-btn">show</a>]</aside>
+                            <div class="nav-table-char">
+                                <a href="/characters.html">Characters</a>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr id="showNavTable" style="display: none;">
+                        <td>
+                            <table class="nav-table-section">
+                                <tbody>
+                                    <tr>
+                                        <th class="nav-table-section-header1" colspan="2"> 
+                                            <p>Demon Slayer Corps</p>
+                                        </th>
+                                    </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Ubuyashiki Family:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="kagaya.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
+                                                <a href="amane.html" class="link">Amane Ubuyashiki</a>&nbsp;·
+                                                <a href="hinaki.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
+                                                <a href="nichika.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
+                                                <a href="kiriya.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
+                                                <a href="kuina.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
+                                                <a href="kanata.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
+                                                <a href="senri.html" class="link">Senri Ubuyashiki</a>&nbsp;·
+                                                <a href="akito.html" class="link">Akito Ubuyashiki</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Hashira:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="giyu.html" class="link">Giyu Tomioka</a>&nbsp;·
+                                                <a href="mitsuri.html" class="link">Mitsuri Kanroji</a>&nbsp;·
+                                                <a href="obanai.html" class="link">Obanai Iguro</a>&nbsp;·
+                                                <a href="sanemi.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
+                                                <a href="gyomei.html" class="link">Gyomei Himejima</a>&nbsp;·
+                                                <a href="kyojuro.html" class="link">Kyojuro Rengoku</a>&nbsp;·
+                                                <a href="tengen.html" class="link">Tengen Uzui</a>&nbsp;·
+                                                <a href="muichiro.html" class="link">Muichiro Tokito</a>&nbsp;·
+                                                <a href="shinobu.html" class="link">Shinobu Kocho</a>
+                                                <a href="kanae.html" class="link">Kanae Kocho</a>
+                                                <a href="sakonji.html" class="link">Sakonji Urokodaki</a>
+                                                <a href="jigoro.html" class="link">Jigoro Kuwajima</a>
+                                                <a href="shinjuro.html" class="link">Shinjuro Rengoku</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Demon Slayers:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <span class="nav-table-current">Tanjiro Kamado</span>&nbsp;·
+                                                <a href="/zenitzu.html" class="link">Zenitsu Agatsuma</a>&nbsp;·
+                                                <a href="/inosuke copy.html" class="link">Inosuke Hashibira</a>&nbsp;·
+                                                <a href="/genya.html" class="link">Genya Shinazugawa</a>&nbsp;·
+                                                <a href="/kanao.html" class="link">Kanao Tsuyuri</a>&nbsp;·
+                                                <a href="murata.html" class="link">Murata</a>&nbsp;·
+                                                <a href="ozaki.html" class="link">Ozaki</a>&nbsp;·
+                                                <a href="masachika.html" class="link">Masachika Kumeno</a>&nbsp;·
+                                                <a href="yoriichi.html" class="link">Yoriichi Tsugikuni</a>&nbsp;·
+                                                <a href="takeuchi.html" class="link">Takeuchi</a>&nbsp;·
+                                                <a href="nagakura.html" class="link">Nagakura</a>&nbsp;·
+                                                <a href="noguchi.html" class="link">Noguchi</a>&nbsp;·
+                                                <a href="yoshioka.html" class="link">Yoshioka</a>&nbsp;·
+                                                <a href="shimamoto.html" class="link">Shimamoto</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Butterfly Mansion:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="aoi.html" class="link">Aoi Kanzaki</a>&nbsp;·                                            
+                                                <a href="sumi.html" class="link">Sumi Nakahara</a>&nbsp;·                                            
+                                                <a href="kiyo.html" class="link">Kiyo Terauchi</a>&nbsp;·                                            
+                                                <a href="naho.html" class="link">Naho Takada</a>&nbsp;·                                            
+                                                <a href="goto.html" class="link">Goto</a>                                       
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Swordsmith Village:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="tecchin.html" class="link">Tecchin Tecchikawahara</a>&nbsp;·                          
+                                                <a href="hotaru.html" class="link">Hotaru Haganezuka</a>&nbsp;·                          
+                                                <a href="kozo.html" class="link">Kozo Kanamori</a>&nbsp;·                          
+                                                <a href="kotetsu.html" class="link">Kotetsu</a>&nbsp;·                          
+                                                <a href="tetsumotonaka.html" class="link">Tetsumotonaka</a>&nbsp;·                          
+                                                <a href="tetsudoji.html" class="link">Tetsudoji</a>&nbsp;·                          
+                                                <a href="tetsutani.html" class="link">Tetsutani</a>&nbsp;·                          
+                                                <a href="tetsuido.html" class="link">Tetsuido</a>&nbsp;·                          
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Other/Associates:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="sabito.html" class="link">Sabito</a>&nbsp;·
+                                                <a href="makomo.html" class="link">Makomo</a>&nbsp;·
+                                                <a href="suma.html" class="link">Suma</a>&nbsp;·
+                                                <a href="makio.html" class="link">Makio</a>&nbsp;·
+                                                <a href="hinatsuru.html" class="link">Hinatsuru</a>&nbsp;·
+                                                <a href="masao.html" class="link">Masao Maeda</a>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                        <th class="nav-table-section-header2" colspan="2"> 
+                                            <p>Demons</p>
+                                        </th>
+                                    </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Demons:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="muzan.html" class="link">Muzan Kibutsuji</a>&nbsp;·
+                                                <a href="/nezuko.html" class="link">Nezuko Kamado</a>&nbsp;·
+                                                <a href="temple_demon.html" class="link">Temple Demon</a>&nbsp;·
+                                                <a href="hand_demon.html" class="link">Hand Demon</a>&nbsp;·
+                                                <a href="swamp_demon.html" class="link">Swamp Demon</a>&nbsp;·
+                                                <a href="asakusa_demon.html" class="link">Asakusa Demon</a>&nbsp;·
+                                                <a href="tamayo.html" class="link">Tamayo</a>&nbsp;·
+                                                <a href="yushiro.html" class="link">Yushiro</a>&nbsp;·
+                                                <a href="susamaru.html" class="link">Susamaru</a>&nbsp;·
+                                                <a href="yahaba.html" class="link">Yahaba</a>&nbsp;·
+                                                <a href="tongue_demon.html" class="link">Tongue Demon</a>&nbsp;·
+                                                <a href="horned_demon.html" class="link">Horned Demon</a>&nbsp;·
+                                                <a href="spider_demon_father.html" class="link">Spider Demon (Father)</a>&nbsp;·
+                                                <a href="spider_demon_mother.html" class="link">Spider Demon (Mother)</a>&nbsp;·
+                                                <a href="spider_demon_son.html" class="link">Spider Demon (Son)</a>&nbsp;·
+                                                <a href="spider_demon_daughter.html" class="link">Spider Demon (Daughter)</a>&nbsp;·
+                                                <a href="shizu.html" class="link">Shizu Shinazugawa</a>&nbsp;·
+                                                <a href="woodland_demon.html" class="link">Woodland Demon</a>&nbsp;·
+                                                <a href="serpant_demon.html" class="link">Serpant Demon</a>&nbsp;·
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Twelve Kizuki:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="kokushibo.html" class="link">Kokushibo</a>&nbsp;·
+                                                <a href="doma.html" class="link">Doma</a>&nbsp;·
+                                                <a href="akaza.html" class="link">Akaza</a>&nbsp;·
+                                                <a href="nakime.html" class="link">Nakime</a>&nbsp;·
+                                                <a href="hantengu.html" class="link">Hantengu</a>&nbsp;·
+                                                <a href="gyokko.html" class="link">Gyokko</a>&nbsp;·
+                                                <a href="gyutaro.html" class="link">Gyutaro</a>&nbsp;·
+                                                <a href="daki.html" class="link">Daki</a>&nbsp;·
+                                                <a href="kaigaku.html" class="link">Kaigaku</a>&nbsp;·
+                                                <a href="enmu.html" class="link">Enmu</a>&nbsp;·
+                                                <a href="rokuro.html" class="link">Rokuro</a>&nbsp;·
+                                                <a href="wakuraba.html" class="link">Wakuraba</a>&nbsp;·
+                                                <a href="mukago.html" class="link">Mukago</a>&nbsp;·
+                                                <a href="rui.html" class="link">Rui</a>&nbsp;·
+                                                <a href="kamanue.html" class="link">Kamanue</a>&nbsp;·
+                                                <a href="kyogai.html" class="link">Kyogai</a>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                        <th class="nav-table-section-header1" colspan="2"> 
+                                            <p>Civilians/Other</p>
+                                        </th>
+                                    </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Kamado Family:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="tanjuro.html" class="link">Tanjuro Kamado</a>&nbsp;·
+                                                <a href="kie.html" class="link">Kie Kamado</a>&nbsp;·
+                                                <a href="takeo.html" class="link">Takeo Kamado</a>&nbsp;·
+                                                <a href="hanako.html" class="link">Kanako Kamado</a>&nbsp;·
+                                                <a href="shigeru.html" class="link">Shigeru Kamado</a>&nbsp;·
+                                                <a href="rokuta.html" class="link">Rokuta Kamado</a>&nbsp;·
+                                                <a href="sumiyoshi.html" class="link">Sumiyoshi Kamado</a>&nbsp;·
+                                                <a href="suyako.html" class="link">Suyako Kamado</a>&nbsp;·
+                                                <a href="sumire.html" class="link">Sumire Kamado</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Shinazugawa Family:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="kyogo.html" class="link">Kyogo Shinazugawa</a>&nbsp;·
+                                                <a href="sumi.html" class="link">Sumi Shinazugawa</a>&nbsp;·
+                                                <a href="teiko.html" class="link">Teiko Shinazugawa</a>&nbsp;·
+                                                <a href="hiroshi.html" class="link">Hiroshi Shinazugawa</a>&nbsp;·
+                                                <a href="koto.html" class="link">Koto Shinazugawa</a>&nbsp;·
+                                                <a href="shuya.html" class="link">Shuya Shinazugawa</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Northwest Town:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="kazumi.html" class="link">Kazumi</a>&nbsp;·
+                                                <a href="satoko.html" class="link">Satoko</a>&nbsp;·
+                                                <a href="tokie.html" class="link">Tokie</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Tsuzumi Mansion:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="teruko.html" class="link">Teruko</a>&nbsp;·
+                                                <a href="shoichi.html" class="link">Shoichi</a>&nbsp;·
+                                                <a href="kiyoshi.html" class="link">Kiyoshi</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Entertainment District:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="koinatsu.html" class="link">Koinatsu</a>&nbsp;·
+                                                <a href="omitsu.html" class="link">Omitsu</a>&nbsp;·
+                                                <a href="toyo.html" class="link">Toyo</a>&nbsp;·
+                                                <a href="rei.html" class="link">Rei</a>&nbsp;·
+                                                <a href="yatsu.html" class="link">Yatsu</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Other:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="saburo.html" class="link">Saburo</a>&nbsp;·
+                                                <a href="hisa.html" class="link">Hisa</a>&nbsp;·
+                                                <a href="senjuro.html" class="link">Senjuro Rengoku</a>&nbsp;·
+                                                <a href="ruka.html" class="link">Ruka Rengoku</a>&nbsp;·
+                                                <a href="yuichiro.html" class="link">Yuichiro Tokito</a>&nbsp;·
+                                                <a href="tsutako.html" class="link">Tsutako Tomioka</a>&nbsp;·
+                                                <a href="sayo.html" class="link">Sayo</a>&nbsp;·
+                                                <a href="keizo.html" class="link">Keizo</a>&nbsp;·
+                                                <a href="koyuki.html" class="link">Koyuki</a>&nbsp;·
+                                                <a href="kotoha.html" class="link">Kotoha Hashibira</a>&nbsp;·
+                                                <a href="akeno.html" class="link">Akeno Tsugikuni</a>&nbsp;·
+                                                <a href="uta.html" class="link">Uta</a>&nbsp;·
+                                                <a href="takaharu.html" class="link">Takaharu</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Animals:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="chachamaru.html" class="link">Chachamaru</a>&nbsp;·
+                                                <a href="kaburamaru.html" class="link">Kaburamaru</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Species/Groups:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="kasugai_crows.html" class="link">Kasugai Crows</a>&nbsp;·
+                                                <a href="ninju.html" class="link">Ninju</a>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                        <th class="nav-table-section-header3" colspan="2"> 
+                                            <p>Descendants/Reincarnations</p>
+                                        </th>
+                                    </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Kamado Family:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="kanata.html" class="link">Kanata Kamado</a>&nbsp;·
+                                                <a href="sumihiko.html" class="link">Sumihiko Kamado</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Agatsuma Family:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="toko.html" class="link">Toko Agatsuma</a>&nbsp;·
+                                                <a href="yoshiteru.html" class="link">Yoshiteru Agatsuma</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="nav-table-section-left">
+                                                <b>Other:</b>
+                                            </td>
+                                            <td class="nav-table-section-right">
+                                                <a href="aoba.html" class="link">Aoba Hashibira</a>&nbsp;·
+                                                <a href="tojuro.html" class="link">Tojuro Rengoku</a>
+                                                <a href="tenma.html" class="link">Tenma Uzui</a>
+                                                <a href="giichi.html" class="link">Giichi Tomioka</a>
+                                                <a href="sanehiro.html" class="link">Sanehiro Shinazugawa</a>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>Wiki inspired by the <a class="link" href="https://kimetsu-no-yaiba.fandom.com/" target="_blank">Kimetsu No Yaiba Wiki</a></footer>
+    <script src="/javascripts/lightbox_modal.js"></script>
+    <script src="/javascripts/character_navigation.js"></script>
+</body>
+</html>
