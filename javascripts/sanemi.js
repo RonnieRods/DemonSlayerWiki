@@ -8,7 +8,7 @@ const spoiler = document.querySelector('#spoiler');
 const showSpoiler = document.querySelector('#showSpoiler');
 
 type.addEventListener('click', () => {
-    curImg.src = "/images/Sanemi_anime_right_face.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Sanemi_anime_right_face.webp";
     curImg.title = `Sanemi's anime appearance`
     type.style.color = "rgba(255, 217, 0, 0.493)";
     secType.style.color = "white";
@@ -21,7 +21,7 @@ type.addEventListener('click', () => {
 })
 
 secType.addEventListener('click', () => {
-    curImg.src = "/images/Sanemi_colored_body.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Sanemi_colored_body.webp";
     curImg.title = `Sanemi's manga appearance`
     secType.style.color = "rgba(255, 217, 0, 0.493)";
     type.style.color = "white";

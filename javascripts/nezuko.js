@@ -20,14 +20,14 @@ const mangaPic = document.getElementById('manga-pic');
 const gameGifs = document.getElementById('game-gifs');
 
 type.onclick = function () {
-    curImg.src = "images/nezuko.webp";
+    curImg.src = "/../DemonSlayerWiki/images/nezuko.webp";
     type.style.color = "rgba(255, 217, 0, 0.493)";
     secType.style.color = "white";
     expImg.href = "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/4d/Nezuko_anime.png/revision/latest?cb=20211119014953";
 };
 
 secType.onclick = function () {
-    curImg.src = "images/nezuko manga.webp";
+    curImg.src = "/../DemonSlayerWiki/images/nezuko manga.webp";
     secType.style.color = "rgba(255, 217, 0, 0.493)";
     type.style.color = "white";
     expImg.href = "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/2c/Nezuko_colored_body.png/revision/latest?cb=20190721094528"
