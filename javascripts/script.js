@@ -6,7 +6,6 @@ const op1 = document.querySelector('#op1');
 const op2 = document.querySelector('#op2');
 
 animeBtn.onclick = function(e) {
-    e.preventDefault();
     op1.style.borderBottom = '2px solid gold';
     op2.style.borderBottom = '0px solid gold';
     animeContent.style.display = 'block';
@@ -14,7 +13,6 @@ animeBtn.onclick = function(e) {
 }
 
 mangaBtn.onclick = function(e) {
-    e.preventDefault();
     op1.style.borderBottom = '0px solid gold';
     op2.style.borderBottom = '2px solid gold';
     animeContent.style.display = 'none';

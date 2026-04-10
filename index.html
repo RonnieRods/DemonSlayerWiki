@@ -4,19 +4,1739 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Demon Slayer Wiki: Home Page</title>
-    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="/../DemonSlayerWiki/stylesheets/styles copy.css" />
 </head>
 <body>
     <div class="navbar">
-        <a href="index.html"><img src="images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="characters.html" class="nav-item">Characters</a>
+        <a href="/../DemonSlayerWiki/index.html"><img src="/../DemonSlayerWiki/images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
+        <a href="/../DemonSlayerWiki/index.html" class="nav-item">Home</a>
+        <a href="/../DemonSlayerWiki/characters.html" class="nav-item">Characters</a>
         <a href="#" class="nav-item">World</a>
+        <div class="nav-item">
+            <form id="search-form" role="search">
+                <label for="search-input">Search Wiki:</label>
+                <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Enter keywords..." 
+                aria-label="Search through project content"
+                autocomplete="off">
+                <button id="search-button">Search</button>
+            </form>
+            <div id="search-results"></div>
+        </div>
+        
     </div>
-    <h1>Welcome to the Demon Slayer Wiki!</h1>
-    <p>Please be aware that this Wiki will contain spoliers, with that in mind please proceed with caution!</p>
-    <p>This will be a wiki about Demon Slayer otherwise also known as <em>Kimetsu no Yaiba</em>.</p>
-    
-<script src="javascripts/script.js"></script>
+
+    <div class="main-ino-container">
+        <div class="left-side-ino-text">
+            <button onclick="topFunction()" id="myBtn" title="Go to top" class="topBtn">↑</button>
+            <br>
+            <h1>Home</h1>
+            <br>
+            <div class="split-container">
+                <div class="left-home">
+                    <table class="infinitymoviecontainer">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <h2 class="movieheader">
+                                        <span class="movieheadertext">
+                                            ◇ ◦ • ◦ • ◦ • Infinity Castle movie now in theaters! • ◦ • ◦ • ◦ ◇
+                                        </span>
+                                    </h2>
+                                    <table class="movieimagecontainer">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 0px;">
+                                                    <a href="">
+                                                        <img src="/../DemonSlayerWiki/images/Announcement.webp" 
+                                                        alt="Announcement"
+                                                        class="IM-thumbnail"
+                                                        decoding="async"
+                                                        loading="lazy">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="homeguide">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <h2 class="homeguideheader">
+                                        <span class="homeguideheadertext">
+                                            WELCOME TO THE KIMETSU NO YAIBA WIKI!
+                                        </span>
+                                    </h2>
+                                    <div class="homeguidecenter">
+                                        <div class="homeguidespoilers">
+                                            <p>
+                                                <span style="color: red;">Heavy spoilers</span>
+                                                ahead, please read with caution!
+                                            </p>
+                                        </div>
+                                        <div class="slideshow-container">
+                                            <div class="slideshow fade">
+                                                <div class="slideshow-numbertext">1 / 4</div>
+                                                <img src="/../DemonSlayerWiki/images/Manga_Slide.webp" style="width: 100%;">
+                                                <div class="slideshow-captiontext">
+                                                    <h3>Manga</h3>
+                                                    <p>
+                                                        Stay updated on the latest chapters
+                                                        & volumes!!
+                                                    </p>
+                                                    <p>
+                                                        <a href="" class="link">
+                                                        Read more ></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slideshow fade">
+                                                <div class="slideshow-numbertext">2 / 4</div>
+                                                <img src="/../DemonSlayerWiki/images/Anime_Slide.webp" style="width: 100%;">
+                                                <div class="slideshow-captiontext">
+                                                    <h3>Anime</h3>
+                                                    <p>
+                                                        Read more about the adaptation of the
+                                                        series!!
+                                                    </p>
+                                                    <p>
+                                                        <a href="" class="link">
+                                                        Read more ></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slideshow fade">
+                                                <div class="slideshow-numbertext">3 / 4</div>
+                                                <img src="/../DemonSlayerWiki/images/Character_Slide.webp" style="width: 100%;">
+                                                <div class="slideshow-captiontext">
+                                                    <h3>Characters</h3>
+                                                    <p>
+                                                        Learn more about your favorite 
+                                                        characters!!
+                                                    </p>
+                                                    <p>
+                                                        <a href="/../DemonSlayerWiki/characters.html" class="link">
+                                                        Read more ></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slideshow fade">
+                                                <div class="slideshow-numbertext">4 / 4</div>
+                                                <img src="/../DemonSlayerWiki/images/Movie_Slide.webp" style="width: 100%;">
+                                                <div class="slideshow-captiontext">
+                                                    <h3>The Movie - Infinity Castle</h3>
+                                                    <p>
+                                                        See more about the new Kimetsu no Yaiba 
+                                                        movie!!
+                                                    </p>
+                                                    <p>
+                                                        <a href="" class="link">
+                                                        Read more ></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slideshow-text">
+                                                <div class="slideshow-lefttext">
+
+                                                </div>
+                                                <div class="slideshow-righttext">
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <a class="slideshow-prev" onclick="plusSlides(-1)">❮</a>
+                                            <a class="slideshow-next" onclick="plusSlides(1)">❯</a>
+                                        </div>
+                                        <div style="text-align: center">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <div class="homeguidelinks">
+                                            <b>
+                                                <a href="" class="link">MANGA GUIDE</a>
+                                                 ■ 
+                                                <a href="/../DemonSlayerWiki/characters.html" 
+                                                class="link">CHARACTERS</a>
+                                                 ■ 
+                                                <a href="" class="link">STORY LINE</a>
+                                                 ■ 
+                                                <a href="" class="link">BEGINNER'S GUIDE</a>
+                                            </b>
+                                        </div>
+                                        <hr class="split">
+                                        <div class="homeguidetext">
+                                            <div>
+                                                This is a wiki abouta
+                                                <a href="" class="link"><i>
+                                                    Kimetsu no Yaiba
+                                                </i></a>
+                                                that was created by the fans, for the fans, and
+                                                is dedicated to housing a useful and informative
+                                                database for all subject matter related to
+                                                <a href="" class="link">
+                                                    Koyoharu Gotoge</a>'s
+                                                series
+                                                <a href="" class="link"><i>
+                                                    Kimetsu no Yaiba</i></a>.
+                                            </div>
+                                            <div>
+                                                <a href="" class="link">
+                                                    <img src="/../DemonSlayerWiki/images/Kimetsu_no_yaiba_Logo.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="180"
+                                                    height="147">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="homeguidefooter">
+                                            <b>
+                                                Warning: This Wiki Contains Spoilers! Please
+                                                Read At Your Own Risk.
+                                            </b>
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="storycontainer">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <h2 class="storyheader">
+                                        <span style="color: #d6b479;">
+                                            STORY
+                                        </span>
+                                    </h2>
+                                    <a class="storyleft" 
+                                    href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html" class="link"
+                                    title="Nezuko Kamado">
+                                        <img src="/../DemonSlayerWiki/images/Nezuko_colored_body.webp"
+                                        decoding="async"
+                                        loading="lazy"
+                                        width="165"
+                                        height="255">
+                                    </a>
+                                    <a class="storyright" 
+                                    href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link"
+                                    title="Tanjiro Kamado">
+                                        <img src="/../DemonSlayerWiki/images/Tanjiro_colored_body_2.webp"
+                                        decoding="async"
+                                        loading="lazy"
+                                        width="165"
+                                        height="255">
+                                    </a>
+                                    <p class="storytext">
+                                        In Taisho-era Japan,
+                                        <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link">
+                                            Tanjiro Kamado</a>
+                                        is a kindhearted boy who makes a living selling charcoal.
+                                        However, his peaceful life is shattered when a
+                                        <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html" class="link"
+                                        title="Muzan Kibutsuji">
+                                            Demon</a>
+                                        slaughters his entire family. His little sister
+                                        <a href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html" class="link">
+                                            Nezuko</a>
+                                        is the only survivor, but she has been transformed into 
+                                        a Demon herself! Tanjiro sets out on a dangerous
+                                        journey to find a way to return his sister to normal 
+                                        and destroy the Demon who ruined his life.
+                                    </p>
+                                    <hr class="split">
+                                    <div class="storylink">
+                                        <a href="" class="link">
+                                            Read More ▸
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="charactercontainer">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <h2 class="characterheader">
+                                        CHARACTERS
+                                    </h2>
+                                    <div class="char-tabs">
+                                        <ul style="display: flex; flex-direction: row; list-style-type: none; gap: 20px;">
+                                            <li>
+                                                <div id="op1" style="border-bottom: 2px solid gold;">
+                                                    <a href="#Anime" class="link" id="anime-char-tab">Anime</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="op2">
+                                                    <a href="#Manga" class="link" id="manga-char-tab">Manga</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <div class="animetab" id="anime-characters">
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html"
+                                                title="Tanjiro Kamado">
+                                                    <img src="/../DemonSlayerWiki/images/Tanjiro_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html"
+                                                title="Tanjiro Kamado">
+                                                    Tanjiro
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html"
+                                                title="Nezuko Kamado">
+                                                    <img src="/../DemonSlayerWiki/images/Nezuko_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html"
+                                                title="Nezuko Kamado">
+                                                    Nezuko
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html"
+                                                title="Zenitsu Agatsuma">
+                                                    <img src="/../DemonSlayerWiki/images/Zenitsu_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html"
+                                                title="Zenitsu Agatsuma">
+                                                    Zenitsu
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Inosuke_Hashibira/info.html"
+                                                title="Inosuke Hashibira">
+                                                    <img src="/../DemonSlayerWiki/images/Inosuke_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Inosuke_Hashibira/info.html"
+                                                title="Inosuke Hashibira">
+                                                    Inosuke
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Kanao_Tsuyuri/info.html"
+                                                title="Kanao Tsuyuri">
+                                                    <img src="/../DemonSlayerWiki/images/Kanao_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Kanao_Tsuyuri/info.html"
+                                                title="Kanao Tsuyuri">
+                                                    Kanao
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Genya_Shinazugawa/info.html"
+                                                title="Genya Shinazugawa">
+                                                    <img src="/../DemonSlayerWiki/images/Genya_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Genya_Shinazugawa/info.html"
+                                                title="Genya Shinazugawa">
+                                                    Genya
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html"
+                                                title="Giyu Tomioka">
+                                                    <img src="/../DemonSlayerWiki/images/Giyu_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html"
+                                                title="Giyu Tomioka">
+                                                    Giyu
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html"
+                                                title="Shinobu Kocho">
+                                                    <img src="/../DemonSlayerWiki/images/Shinobu_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html"
+                                                title="Shinobu Kocho">
+                                                    Shinobu
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html"
+                                                title="Muichiro Tokito">
+                                                    <img src="/../DemonSlayerWiki/images/Muichiro_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html"
+                                                title="Muichiro Tokito">
+                                                    Muichiro
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html"
+                                                title="Mitsuri Kanroji">
+                                                    <img src="/../DemonSlayerWiki/images/Mitsuri_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html"
+                                                title="Mitsuri Kanroji">
+                                                    Mitsuri
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html"
+                                                title="Obanai Iguro">
+                                                    <img src="/../DemonSlayerWiki/images/Obanai_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html"
+                                                title="Obanai Iguro">
+                                                    Obanai
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html"
+                                                title="Gyomei Himejima">
+                                                    <img src="/../DemonSlayerWiki/images/Gyomei_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html"
+                                                title="Gyomei Himejima">
+                                                    Gyomei
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html"
+                                                title="Sanemi Shinazugawa">
+                                                    <img src="/../DemonSlayerWiki/images/Sanemi_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html"
+                                                title="Sanemi Shinazugawa">
+                                                    Sanemi
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Tamayo/info.html"
+                                                title="Tamayo">
+                                                    <img src="/../DemonSlayerWiki/images/Tamayo_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Tamayo/info.html"
+                                                title="Tamayo">
+                                                    Tamayo
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Yushiro/info.html"
+                                                title="Yushiro">
+                                                    <img src="/../DemonSlayerWiki/images/Yushiro_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Yushiro/info.html"
+                                                title="Yushiro">
+                                                    Yushiro
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html"
+                                                title="Muzan Kibutsuji">
+                                                    <img src="/../DemonSlayerWiki/images/Muzan_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html"
+                                                title="Muzan Kibutsuji">
+                                                    Muzan
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Akaza/info.html"
+                                                title="Akaza">
+                                                    <img src="/../DemonSlayerWiki/images/Akaza_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Akaza/info.html"
+                                                title="Akaza">
+                                                    Akaza
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Doma/info.html"
+                                                title="Doma">
+                                                    <img src="/../DemonSlayerWiki/images/Doma_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Doma/info.html"
+                                                title="Doma">
+                                                    Doma
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Kokushibo/info.html"
+                                                title="Kokushibo">
+                                                    <img src="/../DemonSlayerWiki/images/Kokushibo_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Kokushibo/info.html"
+                                                title="Kokushibo">
+                                                    Kokushibo
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Nakime/info.html"
+                                                title="Nakime">
+                                                    <img src="/../DemonSlayerWiki/images/Nakime_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Nakime/info.html"
+                                                title="Nakime">
+                                                    Nakime
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Kaigaku/info.html"
+                                                title="Kaigaku">
+                                                    <img src="/../DemonSlayerWiki/images/Kaigaku_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Kaigaku/info.html"
+                                                title="Kaigaku">
+                                                    Kaigaku
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Murata/info.html"
+                                                title="Murata">
+                                                    <img src="/../DemonSlayerWiki/images/Murata_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Murata/info.html"
+                                                title="Murata">
+                                                    Murata
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/info.html"
+                                                title="Kiriya Ubuyashiki">
+                                                    <img src="/../DemonSlayerWiki/images/Kiriya_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/info.html"
+                                                title="Kiriya Ubuyashiki">
+                                                    Kiriya
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html"
+                                                title="Kuina Ubuyashiki">
+                                                    <img src="/../DemonSlayerWiki/images/Kuina_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html"
+                                                title="Kuina Ubuyashiki">
+                                                    Kuina
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html"
+                                                title="Kanata Ubuyashiki">
+                                                    <img src="/../DemonSlayerWiki/images/Kanata_Anime_Profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html"
+                                                title="Kanata Ubuyashiki">
+                                                    Kanata
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="mangatab" id="manga-content" style="display: none;">
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html"
+                                                title="Tanjiro Kamado">
+                                                    <img src="/../DemonSlayerWiki/images/Tanjiro_profile_2.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html"
+                                                title="Tanjiro Kamado">
+                                                    Tanjiro
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html"
+                                                title="Nezuko Kamado">
+                                                    <img src="/../DemonSlayerWiki/images/Nezuko_profile_29.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html"
+                                                title="Nezuko Kamado">
+                                                    Nezuko
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html"
+                                                title="Zenitsu Agatsuma">
+                                                    <img src="/../DemonSlayerWiki/images/Zenitsu_profile_2.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html"
+                                                title="Zenitsu Agatsuma">
+                                                    Zenitsu
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Inosuke_Hashibira/info.html"
+                                                title="Inosuke Hashibira">
+                                                    <img src="/../DemonSlayerWiki/images/Inosuke_profile_29_3.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Inosuke_Hashibira/info.html"
+                                                title="Inosuke Hashibira">
+                                                    Inosuke
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Kanao_Tsuyuri/info.html"
+                                                title="Kanao Tsuyuri">
+                                                    <img src="/../DemonSlayerWiki/images/Kanao_profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Kanao_Tsuyuri/info.html"
+                                                title="Kanao Tsuyuri">
+                                                    Kanao
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html"
+                                                title="Giyu Tomioka">
+                                                    <img src="/../DemonSlayerWiki/images/Giyu_manga_profile_29.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html"
+                                                title="Giyu Tomioka">
+                                                    Giyu
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html"
+                                                title="Mitsuri Kanroji">
+                                                    <img src="/../DemonSlayerWiki/images/Mitsuri_profile_2.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html"
+                                                title="Mitsuri Kanroji">
+                                                    Mitsuri
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html"
+                                                title="Obanai Iguro">
+                                                    <img src="/../DemonSlayerWiki/images/Obanai_profile_29.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html"
+                                                title="Obanai Iguro">
+                                                    Obanai
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html"
+                                                title="Sanemi Shinazugawa">
+                                                    <img src="/../DemonSlayerWiki/images/Sanemi_profile_29.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html"
+                                                title="Sanemi Shinazugawa">
+                                                    Sanemi
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html"
+                                                title="Gyomei Himejima">
+                                                    <img src="/../DemonSlayerWiki/images/Gyomei_profile_2.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html"
+                                                title="Gyomei Himejima">
+                                                    Gyomei
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html"
+                                                title="Muzan Kibutsuji">
+                                                    <img src="/../DemonSlayerWiki/images/Muzan_profile_29.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html"
+                                                title="Muzan Kibutsuji">
+                                                    Muzan
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Yoriichi_Tsugikuni/info.html"
+                                                title="Yoriichi Tsugikuni">
+                                                    <img src="/../DemonSlayerWiki/images/Yoriichi_profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Yoriichi_Tsugikuni/info.html"
+                                                title="Yoriichi Tsugikuni">
+                                                    Yoriichi
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Nakime/info.html"
+                                                title="Nakime">
+                                                    <img src="/../DemonSlayerWiki/images/Nakime_profile_2.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Nakime/info.html"
+                                                title="Nakime">
+                                                    Nakime
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Tamayo/info.html"
+                                                title="Tamayo">
+                                                    <img src="/../DemonSlayerWiki/images/Tamayo_profile_2.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Tamayo/info.html"
+                                                title="Tamayo">
+                                                    Tamayo
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Yushiro/info.html"
+                                                title="Yushiro">
+                                                    <img src="/../DemonSlayerWiki/images/Yushiro_profile_3.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Yushiro/info.html"
+                                                title="Yushiro">
+                                                    Yushiro
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Kanata_Kamado/info.html"
+                                                title="Kanata Kamado">
+                                                    <img src="/../DemonSlayerWiki/images/Kanata_Kamado_profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Kanata_Kamado/info.html"
+                                                title="Kanata Kamado">
+                                                    Kanata
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Sumihiko_Kamado/info.html"
+                                                title="Sumihiko Kamado">
+                                                    <img src="/../DemonSlayerWiki/images/Sumihiko_profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Sumihiko_Kamado/info.html"
+                                                title="Sumihiko Kamado">
+                                                    Sumihiko
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Toko_Agatsuma/info.html"
+                                                title="Toko Agatsuma">
+                                                    <img src="/../DemonSlayerWiki/images/Toko_profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Toko_Agatsuma/info.html"
+                                                title="Toko Agatsuma">
+                                                    Toko
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Yoshiteru_Agatsuma/info.html"
+                                                title="Yoshiteru Agatsuma">
+                                                    <img src="/../DemonSlayerWiki/images/Yoshiteru_profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Yoshiteru_Agatsuma/info.html"
+                                                title="Yoshiteru Agatsuma">
+                                                    Yoshiteru
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="characterboxborder">
+                                            <div class="characterboxsize">
+                                                <a href="/../DemonSlayerWiki/Characters/Aoba_Hashibira/info.html"
+                                                title="Aoba Hashibira">
+                                                    <img src="/../DemonSlayerWiki/images/Aoba_profile.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="98"
+                                                    height="98">
+                                                </a>
+                                            </div>
+                                            <span class="characterboxtitle">
+                                                <a href="/../DemonSlayerWiki/Characters/Aoba_Hashibira/info.html"
+                                                title="Aoba Hashibira">
+                                                    Aoba
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <hr class="split">
+                                    <p style="text-align: center;">
+                                        <i>
+                                            See
+                                            <a href="/../DemonSlayerWiki/characters.html" class="link">
+                                                Characters
+                                            </a>
+                                            for the full list of character articles.
+                                        </i>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="releasescontainer">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px">
+                                    <h2 class="releaseheader">
+                                        UPCOMING RELEASES
+                                    </h2>
+                                    <div class="release-tabs">
+                                        <ul style="display: flex; flex-direction: row; list-style-type: none; gap: 20px;">
+                                            <li>
+                                                <div id="release1" style="border-bottom: 2px solid gold;">
+                                                    <a href="#Anime" class="link" id="anime-release-tab">Anime</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="release2">
+                                                    <a href="#Manga" class="link" id="manga-release-tab">Manga</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="release3">
+                                                    <a href="#Games" class="link" id="game-release-tab">Games</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="animerelease" id="anime-release">
+                                        <div class="releasecontainer">
+                                            <div class="leftrelease">
+                                                <a href="" title="Demon Slayer: Kimetsu no Yaiba - Infinity Castle">
+                                                    <img src="/../DemonSlayerWiki/images/Infinity_Castle_Movie_Key_Visual_29.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="125"
+                                                    height="178">
+                                                </a>
+                                            </div>
+                                            <div class="rightrelease">
+                                                <span class="rightreleasetext">
+                                                    <b>
+                                                        <a href="" class="link">
+                                                            Demon Slayer: Kimetsu no Yaiba -
+                                                            Infinity Castle - Part 1: Akaza Returns
+                                                        </a>
+                                                    </b>
+                                                    has been released!
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="releasecontainer">
+                                            <div class="leftrelease">
+                                                <a href="" 
+                                                title="Blu-ray & DVD: Hashira Training Arc - Volume 4">
+                                                    <img src="/../DemonSlayerWiki/images/BRDVD_Hashira_Training_Arc_-_Volume_4.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="125"
+                                                    height="170">
+                                                </a>
+                                            </div>
+                                            <div class="rightrelease">
+                                                <span class="rightreleasetext">
+                                                    <b>
+                                                        <a href="" class="link">
+                                                            Hashira Training Arc: Volume 4
+                                                        </a>
+                                                    </b>
+                                                    of the
+                                                    <a href="" class="link">
+                                                        Blu-ray & DVD
+                                                    </a>
+                                                    has been released!
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mangarelease" id="manga-release" style="display: none;">
+                                        <div class="releasecontainer">
+                                            <div class="leftrelease">
+                                                <a href="" 
+                                                title="Blu-ray & DVD: Hashira Training Arc - Volume 4">
+                                                    <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_V23_EN.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="125"
+                                                    height="188">
+                                                </a>
+                                            </div>
+                                            <div class="rightrelease">
+                                                <span class="rightreleasetext">
+                                                    <a href="" class="link">
+                                                        Volume 23
+                                                    </a>
+                                                    in English has been released both physically
+                                                    and digitally!
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamesrelease" id="games-release" style="display: none;">
+                                        <div class="releasecontainer">
+                                            <div class="leftrelease">
+                                                <a href="" 
+                                                title="Blu-ray & DVD: Hashira Training Arc - Volume 4">
+                                                    <img src="/../DemonSlayerWiki/images/Demon_Slayer-_Kimetsu_no_Yaiba_-_The_Hinokami_Chronicles_2_29.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="125"
+                                                    height="139">
+                                                </a>
+                                            </div>
+                                            <div class="rightrelease">
+                                                <span class="rightreleasetext">
+                                                    <a href="" class="link">
+                                                        Demon Slayer: Kimetsu no Yaiba - The
+                                                        Hinokami Chronicles 2
+                                                    </a>
+                                                    has been released!
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                </div>
+                <div class="right-home">
+                    <table class="homeguide">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <h2 class="homeguideheader">
+                                        <span class="homeguideheadertext">
+                                            Latest Release
+                                        </span>
+                                    </h2>
+                                    <div class="release-tabs">
+                                        <ul style="display: flex; flex-direction: row; list-style-type: none; gap: 20px;">
+                                            <li>
+                                                <div id="latest-release1" style="border-bottom: 2px solid gold;">
+                                                    <a href="#Manga" class="link" id="latest-manga-release">Manga</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="latest-release2">
+                                                    <a href="#Anime" class="link" id="latest-anime-release">Anime</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--Manga Tabs-->
+                                    <div class="release-tabs" id="chapter_tabs">
+                                        <ul style="display: flex; flex-direction: row; list-style-type: none; gap: 20px;">
+                                            <li>
+                                                <div id="chapter-release" style="border-bottom: 2px solid gold;">
+                                                    <a href="#Chapter" class="link" id="chapter-release-tab">Chapter</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="volume-release">
+                                                    <a href="#Volume" class="link" id="volume-release-tab">Volume</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--Chapter Tab Content-->
+                                    <div id="chapter_section">
+                                        <div class="chapter-section-header">
+                                            <b>
+                                                FINAL CHAPTER
+                                            </b>
+                                        </div>
+                                        <div class="chapter-section-container">
+                                            <a href=""
+                                            title="Chapter 205">
+                                                <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_CH205.webp"
+                                                decoding="async"
+                                                loading="lazy"
+                                                width="220"
+                                                height="161"
+                                                class="chapter-section-img">
+                                            </a>
+                                        </div>
+                                        <div class="chapter-section-caption">
+                                            Chapter 205:
+                                            <a href="" class="link" title="Chapter 205">
+                                                Life Shining Across the Years</a>
+                                            <br>
+                                            <p>
+                                                Release Date: May 18, 2020
+                                            </p>
+                                        </div>
+                                        <hr class="split">
+                                        <div class="chapter-section-header">
+                                            <b>
+                                                SIDE STORY
+                                            </b>
+                                        </div>
+                                        <div class="chapter-section-container">
+                                            <a href=""
+                                            title="Chapter 205">
+                                                <img src="/../DemonSlayerWiki/images/Kyojuro_Rengokus_Story_Part_2.webp"
+                                                decoding="async"
+                                                loading="lazy"
+                                                width="220"
+                                                height="320"
+                                                class="chapter-section-img">
+                                            </a>
+                                        </div>
+                                        <div class="chapter-section-caption">
+                                            <a href="" class="link" title="Chapter 205">
+                                                Kyojuro Rengoku's Story: Part 2</a>
+                                            <br>
+                                            <p>
+                                                Release Date: October 17, 2020
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Volume Tab Content-->
+                                    <div class="release-tabs" id="volume_tabs" style="display: none;">
+                                        <ul style="display: flex; flex-direction: row; list-style-type: none; gap: 20px;">
+                                            <li>
+                                                <div id="japanese-release" style="border-bottom: 2px solid gold;">
+                                                    <a href="#Japanese" class="link" id="japanese-release-tab">Japanese</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="english-release">
+                                                    <a href="#English" class="link" id="english-release-tab">English</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="japanese_volume_section" style="display: none;">
+                                        <div id="volume-section">
+                                            <div class="chapter-section-container">
+                                                <a href=""
+                                                title="Chapter 205">
+                                                    <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_V23.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="200"
+                                                    height="314"
+                                                    class="chapter-section-img">
+                                                </a>
+                                            </div>
+                                            <div class="chapter-section-caption">
+                                                <a href="" class="link"><b>Volume 23</b></a>
+                                                <br>
+                                                <p>
+                                                    Release Date: December 4, 2020
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <hr class="split">
+                                        <div id="volume-section">
+                                            <div class="chapter-section-container">
+                                                <a href=""
+                                                title="Chapter 205">
+                                                    <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_Stories_of_Water_and_Flame.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="200"
+                                                    height="314"
+                                                    class="chapter-section-img">
+                                                </a>
+                                            </div>
+                                            <div class="chapter-section-caption">
+                                                <a href="" class="link"><b>Stories of Water and Flame</b></a>
+                                                <br>
+                                                <p>
+                                                    Release Date: December 4, 2020
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <hr class="split">
+                                        <div id="volume-section">
+                                            <div class="chapter-section-container">
+                                                <a href=""
+                                                title="Chapter 205">
+                                                    <img src="/../DemonSlayerWiki/images/Rengoku_Volume_0.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="200"
+                                                    height="300"
+                                                    class="chapter-section-img">
+                                                </a>
+                                            </div>
+                                            <div class="chapter-section-caption">
+                                                <a href="" class="link"><b>Rengoku Volume 0</b></a>
+                                                <br>
+                                                <p>
+                                                    Release Date: October 16, 2020
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="english_volume_section" style="display: none;">
+                                        <div id="volume-section">
+                                            <div class="chapter-section-container">
+                                                <a href=""
+                                                title="Chapter 205">
+                                                    <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_V23_EN.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="200"
+                                                    height="300"
+                                                    class="chapter-section-img">
+                                                </a>
+                                            </div>
+                                            <div class="chapter-section-caption">
+                                                <a href="" class="link"><b>Volume 23</b></a>
+                                                <br>
+                                                <p>
+                                                    Release Date: August 3, 2021
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <hr class="split">
+                                        <div id="volume-section">
+                                            <div class="chapter-section-container">
+                                                <a href=""
+                                                title="Chapter 205">
+                                                    <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_Stories_of_Water_and_Flame_EN.webp"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    width="200"
+                                                    height="314"
+                                                    class="chapter-section-img">
+                                                </a>
+                                            </div>
+                                            <div class="chapter-section-caption">
+                                                <a href="" class="link"><b>Stories of Water and Flame</b></a>
+                                                <br>
+                                                <p>
+                                                    Release Date: January 4, 2022
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Anime Section-->
+                                    <div id="anime_section" style="display: none;">
+                                        <!--Type of Release Tabs-->
+                                        <div class="release-tabs" id="episode_tabs">
+                                            <ul style="display: flex; flex-direction: row; list-style-type: none; gap: 20px;">
+                                                <li>
+                                                    <div id="latest_episode" style="border-bottom: 2px solid gold;">
+                                                        <a href="#Episode" class="link" id="episode_button">Episode</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div id="latest_home_release">
+                                                        <a href="#Home_Release" class="link" id="home_release_button">Home Release</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Episode Content-->
+                                        <div id="episode_content">
+                                            <div class="release-tabs" id="language_tabs">
+                                                <ul style="display: flex; flex-direction: row; list-style-type: none; gap: 20px;">
+                                                    <li>
+                                                        <div id="subbed" style="border-bottom: 2px solid gold;">
+                                                            <a href="#Subbed" class="link" id="subbed_button">Subbed</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div id="dubbed">
+                                                            <a href="#Dubbed" class="link" id="dubbed_button">Dubbed</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div id="subbed_section">
+                                                <div id="volume-section">
+                                                    <div class="chapter-section-container">
+                                                        <a href=""
+                                                        title="Episode 63">
+                                                            <img src="/../DemonSlayerWiki/images/Episode_63_Title_Card.webp"
+                                                            decoding="async"
+                                                            loading="lazy"
+                                                            width="250"
+                                                            height="141"
+                                                            class="chapter-section-img">
+                                                        </a>
+                                                    </div>
+                                                    <div class="chapter-section-caption">
+                                                        Episode 63:
+                                                        <a href="" class="link"
+                                                        title="Episode 63"><b>The Hashira Unite</b></a>
+                                                        <br>
+                                                        <p>
+                                                            Release Date: June 30, 2024
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="dubbed_section" style="display: none;">
+                                                <div id="volume-section">
+                                                    <div class="chapter-section-container">
+                                                        <a href=""
+                                                        title="Episode 63">
+                                                            <img src="/../DemonSlayerWiki/images/Episode_63_Title_Card.webp"
+                                                            decoding="async"
+                                                            loading="lazy"
+                                                            width="250"
+                                                            height="141"
+                                                            class="chapter-section-img">
+                                                        </a>
+                                                    </div>
+                                                    <div class="chapter-section-caption">
+                                                        Episode 63:
+                                                        <a href="" class="link"
+                                                        title="Episode 63"><b>The Hashira Unite</b></a>
+                                                        <br>
+                                                        <p>
+                                                            Release Date: August 18, 2024
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Home Release Content-->
+                                        <div id="home_release_section" style="display: none;">
+                                            <div id="volume-section">
+                                                <div class="chapter-section-container">
+                                                    <a href=""
+                                                    title="Blu-ray & DVD: Hashira Training Arc - Volume 4">
+                                                        <img src="/../DemonSlayerWiki/images/BDDVD_Hashira_Training_Arc_-_Volume_4.webp"
+                                                        decoding="async"
+                                                        loading="lazy"
+                                                        width="250"
+                                                        height="340"
+                                                        class="chapter-section-img">
+                                                    </a>
+                                                </div>
+                                                <div class="chapter-section-caption">
+                                                    Blu-ray & DVD:
+                                                    <a href="" class="link"
+                                                    title="Blu-ray & DVD: Hashira Training Arc - Volume 4"><b>
+                                                    Hashira Training Arc Volume 4</b></a>
+                                                    <br>
+                                                    <p>
+                                                        Release Date: October 2, 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="homeguide">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <h2 class="homeguideheader">
+                                        <span class="homeguideheadertext">
+                                            FEATURED VIDEO
+                                        </span>
+                                    </h2>
+                                    <iframe class="trailer-container" 
+                                    width="270" 
+                                    height="203" 
+                                    src="https://www.youtube.com/embed/pzM-GJjactA?si=QIbtSZqFn6UAEUR_" 
+                                    title="YouTube video player" 
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <p class="adjustText">
+                                        <b class="trailer-text">
+                                            Demon Slayer - Kimetsu no Yaiba Infinity Castle - VS 
+                                            VISUAL 2 TRAILER
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="homeguide">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <h2 class="homeguideheader">
+                                        <span class="homeguideheadertext">
+                                            TWITTER
+                                        </span>
+                                    </h2>
+                                    <ul>
+                                        <li class="fixlist">
+                                            <a href="https://twitter.com/kimetsu_off" 
+                                            class="link"
+                                            target="_blank"
+                                            >Official Twitter</a>
+                                        </li>
+                                        <li class="fixlist">
+                                            <a href="https://twitter.com/DemonSlayerUSA" 
+                                            class="link"
+                                            target="_blank"
+                                            >Official English Twitter</a>
+                                        </li>
+                                        <li class="fixlist">
+                                            <a href="https://twitter.com/kimetsu_csgame" 
+                                            class="link"
+                                            target="_blank"
+                                            >Offcial <i>The Hinokami Chronicles</i> Twitter</a>
+                                        </li>
+                                        <li class="fixlist">
+                                            <a href="https://twitter.com/kimetsu_stage" 
+                                            class="link"
+                                            target="_blank"
+                                            >Official Stage Play Twitter</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="homeguide">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <h2 class="homeguideheader">
+                                        <span class="homeguideheadertext">
+                                            FACEBOOK
+                                        </span>
+                                    </h2>
+                                    <iframe 
+                                    class="trailer-container"
+                                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDemonSlayer.anime%2F%3Fref%3Dembed_page%23&tabs=timeline&width=278&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                                    width="278" 
+                                    height="500" 
+                                    style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <table class="homeguide">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <h2 class="homeguideheader">
+                                        <span class="homeguideheadertext">
+                                            EXTERNAL LINKS
+                                        </span>
+                                    </h2>
+                                    <ul>
+                                        <li class="fixlist">
+                                            <a href="https://kimetsu.com/"
+                                            class="link"
+                                            target="_blank"
+                                            >Kimetsu no Yaiba Anime</a>
+                                            <small>(Japanese)</small>
+                                        </li>
+                                        <li class="fixlist">
+                                            <a href="https://demonslayer-anime.com/"
+                                            class="link"
+                                            target="_blank"
+                                            >Kimetsu no Yaiba Anime</a>
+                                            <small>(English)</small>
+                                        </li>
+                                        <li class="fixlist">
+                                            <a href="http://www.shonenjump.com/j/sp_kimetsu/"
+                                            class="link"
+                                            target="_blank"
+                                            >Kimetsu no Yaiba Manga</a>
+                                            <small>(Japanese)</small>
+                                        </li>
+                                        <li class="fixlist">
+                                            <a href="https://www.viz.com/demon-slayer-kimetsu-no-yaiba"
+                                            class="link"
+                                            target="_blank"
+                                            >Kimetsu no Yaiba Manga</a>
+                                            <small>(English)</small>
+                                        </li>
+                                        <li class="fixlist">
+                                            <a href="https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba"
+                                            class="link"
+                                            target="_blank"
+                                            >Demon Slayer: Kimetsu no Yaiba</a>
+                                            <small>(Wikipedia)</small>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>Wiki inspired by the <a class="link" href="https://kimetsu-no-yaiba.fandom.com/" target="_blank">Kimetsu No Yaiba Wiki</a></footer>
+    <script src="/../DemonSlayerWiki/javascripts/searchbar.js"></script>
+    <script src="/../DemonSlayerWiki/javascripts/slideshow.js"></script>
+    <script src="/../DemonSlayerWiki/javascripts/homepage.js"></script>
+    <script src="/../DemonSlayerWiki/javascripts/navigation.js"></script>
 </body>
 </html>
