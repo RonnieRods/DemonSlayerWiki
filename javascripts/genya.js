@@ -10,14 +10,14 @@ const spoiler = document.querySelector('#spoiler');
 const showSpoiler = document.querySelector('#showSpoiler');
 
 type.onclick = function() {
-    curImg.src = "images/Genya_Shinazugawa_Full_Body_29.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Genya_Shinazugawa_Full_Body_29.webp";
     type.style.color = "rgba(255, 217, 0, 0.493)";
     secType.style.color = "white";
     expImg.href = "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/cb/Genya_Shinazugawa_Full_Body_%28Anime%29.png/revision/latest?cb=20230618125148";
 }
 
 secType.onclick = function() {
-    curImg.src = "images/Genya_colored_body.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Genya_colored_body.webp";
     secType.style.color = "rgba(255, 217, 0, 0.493)";
     type.style.color = "white";
     expImg.href = "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c2/Genya_colored_body.png/revision/latest?cb=20191221220010";

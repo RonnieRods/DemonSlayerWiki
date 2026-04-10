@@ -8,7 +8,7 @@ const spoiler = document.querySelector('#spoiler');
 const showSpoiler = document.querySelector('#showSpoiler');
 
 type.addEventListener('click', () => {
-    curImg.src = "/images/Tengen_anime.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Tengen_anime.webp";
     curImg.title = `Tengen's anime appearance`
     type.style.color = "rgba(255, 217, 0, 0.493)";
     secType.style.color = "white";
@@ -21,7 +21,7 @@ type.addEventListener('click', () => {
 })
 
 secType.addEventListener('click', () => {
-    curImg.src = "/images/Tengen_colored_body.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Tengen_colored_body.webp";
     curImg.title = `Tengen's manga appearance`
     secType.style.color = "rgba(255, 217, 0, 0.493)";
     type.style.color = "white";

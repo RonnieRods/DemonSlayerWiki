@@ -8,7 +8,7 @@ const spoiler = document.querySelector('#spoiler');
 const showSpoiler = document.querySelector('#showSpoiler');
 
 type.addEventListener('click', () => {
-    curImg.src = "/images/Kanae_Kocho.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Kanae_Kocho.webp";
     curImg.title = `Kanae's anime appearance`;
     type.style.color = "rgba(255, 217, 0, 0.493)";
     secType.style.color = "white";
@@ -21,7 +21,7 @@ type.addEventListener('click', () => {
 })
 
 secType.addEventListener('click', () => {
-    curImg.src = "/images/Kanae_colored_profile.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Kanae_colored_profile.webp";
     curImg.title = `Kanae's manga appearance`;
     secType.style.color = "rgba(255, 217, 0, 0.493)";
     type.style.color = "white";

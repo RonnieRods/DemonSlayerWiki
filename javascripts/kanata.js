@@ -8,7 +8,7 @@ const spoiler = document.querySelector('#spoiler');
 const showSpoiler = document.querySelector('#showSpoiler');
 
 type.addEventListener('click', () => {
-    curImg.src = "/images/Kanata_anime.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Kanata_anime.webp";
     type.style.color = "rgba(255, 217, 0, 0.493)";
     secType.style.color = "white";
     expImg.href = "#Pic1";
@@ -21,7 +21,7 @@ type.addEventListener('click', () => {
 })
 
 secType.addEventListener('click', () => {
-    curImg.src = "/images/Kanata_Colored_Profile.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Kanata_Colored_Profile.webp";
     secType.style.color = "rgba(255, 217, 0, 0.493)";
     type.style.color = "white";
     expImg.href = "#Pic2";

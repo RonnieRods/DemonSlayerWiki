@@ -8,7 +8,7 @@ const spoiler = document.querySelector('#spoiler');
 const showSpoiler = document.querySelector('#showSpoiler');
 
 type.addEventListener('click', () => {
-    curImg.src = "/images/Muichiro_anime_right_face.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Muichiro_anime_right_face.webp";
     curImg.title = `Muichiro's anime appearance`
     type.style.color = "rgba(255, 217, 0, 0.493)";
     secType.style.color = "white";
@@ -21,7 +21,7 @@ type.addEventListener('click', () => {
 })
 
 secType.addEventListener('click', () => {
-    curImg.src = "/images/Muichiro_colored_body.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Muichiro_colored_body.webp";
     curImg.title = `Muichiro's manga appearance`
     secType.style.color = "rgba(255, 217, 0, 0.493)";
     type.style.color = "white";

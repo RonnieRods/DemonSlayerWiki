@@ -7,7 +7,7 @@ const spoiler = document.querySelector('#spoiler');
 const showSpoiler = document.querySelector('#showSpoiler');
 
 type.addEventListener('click', () => {
-    curImg.src = "/images/Kagaya_anime.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Kagaya_anime.webp";
     type.style.color = "rgba(255, 217, 0, 0.493)";
     secType.style.color = "white";
     expImg.href = "#Pic1";
@@ -19,7 +19,7 @@ type.addEventListener('click', () => {
 })
 
 secType.addEventListener('click', () => {
-    curImg.src = "/images/Kagaya_colored_body.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Kagaya_colored_body.webp";
     secType.style.color = "rgba(255, 217, 0, 0.493)";
     type.style.color = "white";
     expImg.href = "#Pic2";
