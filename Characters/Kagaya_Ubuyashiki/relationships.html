@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amane Ubuyashiki/Relationships | Demon Slayer Wiki</title>
-    <link rel="stylesheet" href="/../DemonSlayerWiki/stylesheets/styles copy.css" />
+    <title>Kagaya Ubuyashiki/Relationships | Demon Slayer Wiki</title>
+    <link rel="stylesheet" href="/../DemonSlayerWiki/../DemonSlayerWiki/stylesheets/styles copy.css" />
 </head>
 <body>
     <div class="navbar">
-        <a href="/../DemonSlayerWiki/index.html"><img src="/../DemonSlayerWiki/images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
-        <a href="/../DemonSlayerWiki/index.html" class="nav-item">Home</a>
+        <a href="/../DemonSlayerWiki/../DemonSlayerWiki/index.html"><img src="/../DemonSlayerWiki/../DemonSlayerWiki/images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
+        <a href="/../DemonSlayerWiki/../DemonSlayerWiki/index.html" class="nav-item">Home</a>
         <div class="dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">Characters</a>
+            <a href="/../DemonSlayerWiki/../DemonSlayerWiki/characters.html" class="nav-item">Characters</a>
             <div class="dropdown-content">
                 <div class="ds">
                     Demon Slayers
@@ -177,6 +177,19 @@
                 </div>
             </div>
         </div>
+        <div class="nav-item">
+            <form id="search-form" role="search">
+                <label for="search-input">Search Wiki:</label>
+                <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Enter keywords..." 
+                aria-label="Search through project content"
+                autocomplete="off">
+                <button id="search-button">Search</button>
+            </form>
+            <div id="search-results"></div>
+        </div>
     </div>
 
     <div id="myModal" class="modal">
@@ -184,28 +197,36 @@
         <div class="modal-content">
 
             <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Amane_Ubuyashiki_meets_with_Muichiro.webp" style="width:100%;">
+                <div class="numbertext">1 / 8</div>
+                <img src="/../DemonSlayerWiki/images/Gyomei_meets_a_young_Kagaya.webp">
             </div>
             <div class="mySlides">
-                <div class="numbertext">2 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Amane_stops_Nichika_from_interfering.webp" style="width:100%;">
+                <div class="numbertext">2 / 8</div>
+                <img src="/../DemonSlayerWiki/images/Kagaya_giving_Masachikas_letter_to_Sanemi_CH168.webp">
             </div>
             <div class="mySlides">
-                <div class="numbertext">3 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Amane_explains_the_Tokito_familys_ancestry.webp" style="width:100%;">
+                <div class="numbertext">3 / 8</div>
+                <img src="/../DemonSlayerWiki/images/Shinobu_and_Giyu_speaking_with_Kagaya.webp">
             </div>
             <div class="mySlides">
-                <div class="numbertext">4 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Amane_leads_the_emergency_meeting.webp" style="width:100%;">
+                <div class="numbertext">4 / 8</div>
+                <img src="/../DemonSlayerWiki/images/Mitsuri_listening_to_Kagayas_message.webp">
             </div>
             <div class="mySlides">
-                <div class="numbertext">5 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Kiriya_and_Kanata_confused_by_Mitsuri.webp" style="width:100%;">
+                <div class="numbertext">5 / 8</div>
+                <img src="/../DemonSlayerWiki/images/Tengen_and_his_wives_meeting_with_Kagaya.webp">
             </div>
             <div class="mySlides">
-                <div class="numbertext">6 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Muzan_confronts_Kagaya_and_Amane.webp" style="width:100%;">
+                <div class="numbertext">6 / 8</div>
+                <img src="/../DemonSlayerWiki/images/Muzan_dismisses_Kagayas_belief.webp">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="/../DemonSlayerWiki/images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="/../DemonSlayerWiki/images/Kagaya_asking_Kiriya_to_let_go_Nezuko_CH185.webp">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -219,49 +240,65 @@
                 <div class="column" id="Pic1">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_Ubuyashiki_meets_with_Muichiro.webp" 
+                    src="/../DemonSlayerWiki/images/Gyomei_meets_a_young_Kagaya.webp" 
                     onclick="currentSlide(1)" 
-                    alt="Amance Ubuyashiki meets with Muichiro"
+                    alt="Gyomei meets a young Kagaya"
                     >
                 </div>
                 <div class="column" id="Pic2">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_stops_Nichika_from_interfering.webp" 
+                    src="/../DemonSlayerWiki/images/Kagaya_giving_Masachikas_letter_to_Sanemi_CH168.webp" 
                     onclick="currentSlide(2)" 
-                    alt="Amane stops Nichika from interfering"
+                    alt="Kagaya giving Masachikas letter to Sanemi CH168"
                     >
                 </div>
                 <div class="column" id="Pic3">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_explains_the_Tokito_familys_ancestry.webp" 
+                    src="/../DemonSlayerWiki/images/Shinobu_and_Giyu_speaking_with_Kagaya.webp" 
                     onclick="currentSlide(3)" 
-                    alt="Amane explains the Tokito family's ancestry"
+                    alt="Shinobu and Giyu speaking with Kagaya"
                     >
                 </div>
                 <div class="column" id="Pic4">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_leads_the_emergency_meeting.webp" 
+                    src="/../DemonSlayerWiki/images/Mitsuri_listening_to_Kagayas_message.webp" 
                     onclick="currentSlide(4)" 
-                    alt="Amane leads the emergency meeting"
+                    alt="Mitsuri listening to Kagaya's message"
                     >
                 </div>
                 <div class="column" id="Pic5">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kiriya_and_Kanata_confused_by_Mitsuri.webp" 
+                    src="/../DemonSlayerWiki/images/Tengen_and_his_wives_meeting_with_Kagaya.webp" 
                     onclick="currentSlide(5)" 
-                    alt="Kiriya, Amane and Kanata confused by Mitsuri"
+                    alt="Tengen and his wives meeting with Kagaya"
                     >
                 </div>
                 <div class="column" id="Pic6">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Muzan_confronts_Kagaya_and_Amane.webp" 
+                    src="/../DemonSlayerWiki/images/Muzan_dismisses_Kagayas_belief.webp" 
                     onclick="currentSlide(6)" 
-                    alt="Muzan confronts Kagaya and Amane"
+                    alt="Muzan dismisses Kagaya's belief"
+                    >
+                </div>
+                <div class="column" id="Pic7">
+                    <img 
+                    class="demo cursor" 
+                    src="/../DemonSlayerWiki/images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp" 
+                    onclick="currentSlide(7)" 
+                    alt="Kagaya and Amane visiting fallen Demon Slayers"
+                    >
+                </div>
+                <div class="column" id="Pic8">
+                    <img 
+                    class="demo cursor" 
+                    src="/../DemonSlayerWiki/images/Kagaya_asking_Kiriya_to_let_go_Nezuko_CH185.webp" 
+                    onclick="currentSlide(8)" 
+                    alt="Kagaya asking Kiriya to let Nezuko go CH185"
                     >
                 </div>
             </div>
@@ -276,22 +313,19 @@
 
             <div class="link-tabs">
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Info</a>
+                    <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Info</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/synopsis.html" class="link">Synopsis</a>
+                    <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/synopsis.html" class="link">Synopsis</a>
                 </div>
                 <div class="link-space current-page">
-                    <a href="" class="link">Relationships</a>
-                </div>
-                <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/image_gallery.html" class="link">Image Gallery</a>
+                    <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/relationships.html" class="link">Relationships</a>
                 </div>
             </div>
 
-            <h1>Amane Ubuyashiki/Relationships</h1>
-            <p><<a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a></p>
-
+            <h1>Kagaya Ubuyashiki/Relationships</h1>
+            <p><<a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a></p>
+            
             <br>
             <div class="synopsisGuideContainer">
                 <div class="synopsisHeader" id="contentHeader">
@@ -308,154 +342,603 @@
                         </a>
                     </li>
                     <li class="fixlist3">
-                        <a href="#KagayaUbuyashiki">
+                        <a href="#GyomeiHimejima">
                             <span>1.1.</span>
-                            <span>Kagaya Ubuyashiki</span>
+                            <span>Gyomei Himejima</span>
                         </a>
                     </li>
                     <li class="fixlist3">
-                        <a href="#TheHashira">
+                        <a href="#SanemiShinazugawa">
                             <span>1.2.</span>
-                            <span>The Hashira</span>
+                            <span>Sanemi Shinazugawa</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#KanaeKocho">
+                            <span>1.3.</span>
+                            <span>Kanae Kocho</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#ShinobuKocho">
+                            <span>1.4.</span>
+                            <span>Shinobu Kocho</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#MitsuriKanroji">
+                            <span>1.5.</span>
+                            <span>Mitsuri Kanroji</span>
                         </a>
                     </li>
                     <li class="fixlist3">
                         <a href="#MuichiroTokito">
-                            <span>1.3.</span>
+                            <span>1.6.</span>
                             <span>Muichiro Tokito</span>
                         </a>
                     </li>
                     <li class="fixlist3">
+                        <a href="#GiyuTomioka">
+                            <span>1.7.</span>
+                            <span>GiyuTomioka</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#KyojuroRengoku">
+                            <span>1.8.</span>
+                            <span>Kyojuro Rengoku</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#TengenUzui">
+                            <span>1.9.</span>
+                            <span>Tengen Uzui</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#TanjiroKamado">
+                            <span>1.10.</span>
+                            <span>Tanjiro Kamado</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
                         <a href="#MuzanKibutsuji">
-                            <span>1.4.</span>
+                            <span>1.11.</span>
                             <span>Muzan Kibutsuji</span>
                         </a>
                     </li>
                     <li class="fixlist3">
-                        <a href="#Navigation">
+                        <a href="#AmaneUbuyashiki">
+                            <span>1.12.</span>
+                            <span>Amane Ubuyashiki</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#KiriyaUbuyashiki">
+                            <span>1.13.</span>
+                            <span>Kiriya Ubuyashiki</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#References">
                             <span>2.</span>
+                            <span>References</span>
+                        </a>
+                    </li>
+                    <li class="fixlist3">
+                        <a href="#Navigation">
+                            <span>3.</span>
                             <span>Navigation</span>
                         </a>
                     </li>
                 </ol>
             </div>
+
             <br>
+
             <h2>
                 <span class="anchor" id="Relationships">Relationships</span>
             </h2>
             <hr class="split">
             <h3>
-                <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">
-                    <span class="anchor" id="KagayaUbuyashiki">Kagaya Ubuyashiki</span>
-                </a>
+                <span class="anchor" id="GyomeiHimejima">
+                    <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">
+                        Gyomei Himejima
+                    </a>
+                </span>
             </h3>
             <p>
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic1">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp" 
+                        src="/../DemonSlayerWiki/images/Gyomei_meets_a_young_Kagaya.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(1)">
                     </a>
                     <figcaption class="caption">
-                        <p>Amane and Kagaya visiting the graves of fallen Demon Slayers.</p>
+                        <p>
+                            Kagaya meeting Gyomei Himejima for the first time.
+                        </p>
                     </figcaption>
                 </figure>
-                Amane first met Kagaya when he was thirteen, having already taken his late father's position as Oyakata 
-                of the Demon Slayer Corps. Amane was selected to be his caretaker when his condition would deteriorate, 
-                but Kagaya only agreed to marry her under the condition that she cared for him under her own free 
-                will. Amane was loyal to Kagaya without a fault, caring for his every need as his illness worsened, 
-                and eventually taking over his position to speak at meetings with the <a href="" class="link">Hashira</a>
-                when he was no longer able to do so. Later, when Kagaya decided to sacrifice himself to stall
-                Muzan, Amane chose to stay with him until the very end and die by his side.
+                When he was fourteen, Kagaya had heard of a monk who was imprisoned and sentenced
+                to death for the murder of several children under his care. Realizing it was
+                untrue and that a demon was the true culprit, he saved the man from his death
+                sentence. That man,
+                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link"
+                >Gyomei Himejima</a>, would later become the Stone Hashira, serving under his
+                command and acting as his confidante. Kagaya knew him for the longest among
+                the Hashira and was arguably the closest with Gyomei outside of his own family;
+                as such, he entrusted only Gyomei with his plan to sacrifice himself in order
+                to stall 
+                <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html" class="link"
+                >Muzan Kibutsuji</a> long enough for them to 
+                <a href="" class="link"
+                title="Demon Slayers cs Muzan Kibutsuji: Part 1">attack</a>, knowing the 
+                remaining Hashira would not agree to his plan. Despite his hesistation, Gyomei 
+                honored Kagaya's wishes and kept the plan secret until its activation.
             </p>
             <br>
             <h3>
-                <a href="" class="link">
-                    <span class="anchor" id="TheHashira">The Hashira</span>
-                </a>
-            </h3>
-            <p>
-                As with her husband, Amane was a highly respected figure to the <a href="" class="link">Hashira</a>.
-                During the emergency meeting in the wake of the <a href="" class="link">battle</a> in the Swordsmith
-                Village, Amane led the gathering in place of the bedridden Kagaya, informing them of the news while
-                bowing. The Hashira became somber at the news but did not question Amane's authority and
-                steadfastly supported her; <a href="" class="link">Gyomei Himejima</a> in particular offered her
-                a prayer to remain strong in the face of hardships, which she was thankful for. Comedically, upon
-                being asked to explain how she had awakened special marks in her battle, <a href="" class="link">Mitsuri Kanroji</a>
-                became momentarily distracted due to admiring Amane. Additionally, <a href="" class="link">Giyu Tomioka</a>,
-                who was struggling with a severe inferiority complex about his position as the Water Hashira,
-                opted to leave the meeting instead of discussing future plans with his peers, did not depart
-                until Amane had already left the meeting to let them discuss amongst themselves.
-            </p>
-            <br>
-            <h3>
-                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link">
-                    <span class="anchor" id="MuichiroTokito">Muichiro Tokito</span>
-                </a>
+                <span class="anchor" id="SanemiShinazugawa">
+                    <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">
+                        Sanemi Shinazugawa
+                    </a>
+                </span>
             </h3>
             <p>
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic2">
                         <img 
-                        src="/../DemonSlayerWiki/images/Amane_explains_the_Tokito_familys_ancestry.webp" 
+                        src="/../DemonSlayerWiki/images/Kagaya_giving_Masachikas_letter_to_Sanemi_CH168.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(2)">
                     </a>
                     <figcaption class="caption">
-                        <p>Amane meeting the Tokito twins, Yuichiro and Muichiro.</p>
+                        <p>
+                            Kagaya giving Sanemi Masachika's will.
+                        </p>
                     </figcaption>
                 </figure>
-                Amane was the one to recruit the Mist Hashira, <a href="" class="link">Muichiro Tokito</a>.
-                Initially, she visited him three years in the past and informed him and his twin brother
-                <a href="" class="link">Yuichiro</a> about the prospect of them becoming Demon Slayers. She also
-                explained that they were descendants of powerful swordsman. Despite Muichiro's excitement at the idea
-                of helping others, Yuichiro, who had become embittered by the deaths of their parents, rejected her
-                offer and demanded she leave their home. This also indirectly led to a falling out between the twins
-                as they clashed over their beliefs. Amane attempted to visit them several times afterwards but was
-                driven away by Yuichiro each time.
+                During
+                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link"
+                >Sanemi Shinazugawa</a>'s first meeting as a member of the Hashira, he harshly
+                criticized Kagaya for his calm demeanor in sending his fellow Demon Slayers to
+                their deaths, and mistakenly believed he had placed himself above them, much to
+                the ire of Gyomei and Tengen Uzui present. Kagaya apologized and explained that
+                he was unable to fight because of his condition, which surprised the angry
+                young man into silence, and he further explained that despite the respect people
+                show him, he does not believe himself to be above them. Sensing his grief,
+                Kagaya gave Sanemi his friend
+                <a href="/../DemonSlayerWiki/Characters/Masachika_Kumeno/info.html" class="link"
+                >Masachika Kumeno</a>'s will, prompting the Wind Hashira to tear up at the
+                remembering of his friend. Sanemi would later become an extremely loyal follower
+                of Kagaya.
             </p>
             <br>
             <p>
-                After an attack by a demon left Yuichiro dead and Muichiro severely wounded and close to dying himself,
-                Amane and her daughters, <a href="" class="link">Nichika</a> and <a href="" class="link">Hinaki</a>,
-                found them in their home. Though Yuichiro had already begun to rot, Amane held Muichiro and saw he
-                was still alive, praying for his survival as she ordered her daughters to give him immediate
-                medical attention. When he woke up in the Ubuyashiki Mansion, Muichiro, filled with intense rage
-                at the pain of his twin's death, began relentlessly training. Nichika was concerned and attempted
-                to stop him but was halted by Amane, who despite knowing the fragile state his body was in, knew
-                this was something he had to do.
+                Sanemi was deeply affected by his leader's death, demanding Muzan Kibutsuji for
+                answers upon seeing the demon and being unable to see Kagaya in the aftermath
+                of his suicidal plan. When he fell into the 
+                <a href="" class="link"
+                >Infinity Castle</a> and was attacked by numerous demons, Sanemi chose to sit
+                down and lament his inability to save Kagaya instead of caring about his own
+                wellbeing, before rapidly slaughtering the demons all around him in a fit of 
+                rage with tears pouring out of his eyes.
             </p>
             <br>
             <h3>
-                <a href="" class="link">
-                    <span class="anchor" id="MuzanKibutsuji">Muzan Kibutsuji</span>
-                </a>
+                <span class="anchor" id="KanaeKocho">
+                    <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link">
+                        Kanae Kocho
+                    </a>
+                </span>
+            </h3>
+            <p>
+                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link"
+                >Kanae Kocho</a> was one of the first Hashira to be under Kagaya's command. She
+                was present during Sanemi's first meeting and saw how the Wind Hashira became
+                angry seemingly at Kagaya's lack of care in sending his troops to their deaths.
+                Out of concern, Kanae attempted to speak up on his behalf, but Kagaya assuaged
+                the situation and insisted that he is willing to listen to his words,
+                putting Kanae at ease. Instead of being angry, Kanae told Sanemi that Kagaya
+                was not the person he believed him to be and told him that their leader had
+                memorized the names of every fallen Demon Slayer under his command as a show
+                of gratitude to their cause.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="ShinobuKocho">
+                    <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html" class="link">
+                        Shinobu Kocho
+                    </a>
+                </span>
             </h3>
             <p>
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic3">
                         <img 
-                        src="/../DemonSlayerWiki/images/Muzan_confronts_Kagaya_and_Amane.webp" 
+                        src="/../DemonSlayerWiki/images/Shinobu_and_Giyu_speaking_with_Kagaya.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(3)">
                     </a>
                     <figcaption class="caption">
-                        <p>Amane sat beside Kagaya unafraid as both are confronted by Muzan Kibutsuji.</p>
+                        <p>
+                            Shinobu and Giyu Tomioka awaiting Kagaya's instructions.
+                        </p>
                     </figcaption>
                 </figure>
-                Although not showing the same pure enmity as her husband, as the wife of the head of the Demon Slayer
-                Corps, Amane was dedicated to ending the life of Muzan Kibutsuji. When Muzan intruded onto their
-                mansion, Amane showed no fear and sat silently as her husband conversed with the progenitor of all
-                demons. Because he was blind, Kagaya also asked Amane to describe his physical appearance to him.
+                Like her older sister before taking her position as Hashira,
+                <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html" class="link"
+                >Shinobu Kocho</a> was extremely loyal to Kagaya. He entrusted her with
+                overseeing the mission to Mount Natagumo upon hearing a report of mass
+                casualties in the forests.
             </p>
-            <br><br><br><br>
+            <br>
+            <p>
+                During a meeting with the Hashira, Sanemi once spoke of his concern for
+                Kagaya's safety and believed that the Hashira should be guarding him. Gyomei 
+                explained that Kagaya had always believed them to be of greater importance and
+                forgone his own wellbeing, which was corroborated by Shinobu's mention that the 
+                Ubuyashiki family had never once been watched by bodyguards of any sort.
+            </p>
+            <br>
+            <p>
+                It was under Kagaya's orders that Shinobu worked with the demon
+                <a href="/../DemonSlayerWiki/Characters/Tamayo/info.html" class="link"
+                >Tamayo</a> to jointly create a drug that would be used to weaken Muzan
+                Kibutsuji.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="MitsuriKanroji">
+                    <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link">
+                        Mitsuri Kanroji
+                    </a>
+                </span>
+            </h3>
+            <p>
+                <figure class="left-side-anime-pic">
+                    <a class="contain-img" href="#Pic4">
+                        <img 
+                        src="/../DemonSlayerWiki/images/Mitsuri_listening_to_Kagayas_message.webp" 
+                        class="figure-img zoom contain-img cursor" 
+                        onclick="openModal();currentSlide(4)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>
+                            Mitsuri listens to Kagaya's message to her.
+                        </p>
+                    </figcaption>
+                </figure>
+                Kagaya met a young Demon Slayer named
+                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link"
+                >Mitsuri Kanroji</a>, who was troubled by her sense of identity over her
+                abnormal physical strength and unique physical features. In her first meeting
+                with him, he told her that she was a gift from the gods, and that anyone who 
+                spoke ill of her was simply jealous of her strength. Touched by the man's
+                acceptance of who she was, the girl bowed down and cried in relief that someone
+                could accept her for who she it. Mitsuri would go on to become the Love Hashira.
+            </p>
+            <br>
+            <p>
+                Mitsuri was extremely loyal to his cause; during the trial of
+                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link"
+                >Tanjiro Kamado</a> by the Hashira, only she spoke out about their hasty
+                treatment of the situation, believing it was important that Kagaya was present
+                during the trial to oversee and give his word. When Kagaya revealed that he had
+                sanctioned Tanjiro and his sister, Mitsuri was one of the first to instantly
+                agree with him. In her
+                <a href="" class="link"
+                title="Demon Slayers vs Hantengu">battle</a> against Upper Four
+                <a href="/../DemonSlayerWiki/Characters/Hantengu/info.html" class="link"
+                >Hantengu</a>'s most powerful manifestation Zohakuten, Mitsuri recalls Kagaya's
+                acceptance of her within the Demon Slayer Corps, allowing her to push past
+                mental blocks that held her back and attacking the Upper Rank demon with renewed
+                vigour. Likewise, she was horrified by the explosion rocking the mountainside 
+                that killed Kagaya in his attempt to stall Muzan Kibutsuji for her to attack.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="MuichiroTokito">
+                    <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link">
+                        Muichiro Tokito
+                    </a>
+                </span>
+            </h3>
+            <p>
+                Kagaya Ubuyashiki knew that
+                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link"
+                >Muichiro Tokito</a> and his older twin brother,
+                <a href="/../DemonSlayerWiki/Characters/Yuichiro_Tokito/info.html" class="link"
+                >Yuichiro</a>, were descended from the first Breathing Style users. Kagaya's 
+                wife, Amane, visited the twins, proposing them to become Demon Slayers, but was
+                rejected by Yuichiro. After Muichiro lost his brother along with his memories,
+                Amane brought him into the Demon Slayer Corps. Muichiro, despite his detached
+                and cold personality, was loyal and heavily respected Kagaya, even seeing him 
+                as a fatherly figure, when he supported him through his trauma and memory loss
+                when training to eventually become the Mist Hashira.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="GiyuTomioka">
+                    <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">
+                        Giyu Tomioka
+                    </a>
+                </span>
+            </h3>
+            <p>
+                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link"
+                >Giyu Tomioka</a> shares a quiet, and mutual respect with Kagaya. He validated
+                Giyu's self sacrifice during Hashira meeting. Kagaya also understood that 
+                Giyu's silence is due to his emotional turmoil and self-doubts, this, tasking
+                Tanjiro to make him open up more. Despite Giyu seeing himself as a "fake Hashira",
+                Kagaya never degrades him for that. After his sacrifice, Giyu was in shock, even
+                distraught. Giyu told Kiriya, son of the Oyakata, that his father would have been 
+                proud due to his leadership during the
+                <a href="" class="link"
+                title="Demon Slayers vs Muzan Kibutsuji: Part 2">Final Battle</a>
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="KyojuroRengoku">
+                    <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" class="link">
+                        Kyojuro Rengoku
+                    </a>
+                </span>
+            </h3>
+            <p>
+                Kyojuro was first summoned to a Hashira meeting as a Kinoe-ranked Demon Slayer,
+                after his 
+                <a href="/../DemonSlayerWiki/Characters/Shinjuro_Rengoku/info.html" class="link"
+                title="Shinjuro Rengoku">father</a> refused to attend. An altercation occurred
+                between him and Sanemi, who was offended that someone that wasn't a Hashira
+                was in their presence, but before the situation could escalate, Kagaya arrived
+                and chided the Wind Hashira, causing the angry Sanemi to quickly bow down and
+                apologize, surprising Kyojuro that the man could order and command such a
+                fierce and temperamental individual. Later on, after killing the Lower Rank Two,
+                <a href="/../DemonSlayerWiki/Characters/Hairo/info.html" class="link"
+                >Hairo</a>, Kyojuro was promoted as the new Flame Hashira under Kagaya's command.
+            </p>
+            <br>
+            <p>
+                As with the rest of the Hashira, Kyojuro was faultessly loyal to the Oyakata;
+                even during
+                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link"
+                >Tanjiro Kamado</a>'s trial for harbouring a demon, when Kyojuro had questioned
+                Kagaya's decision to sanction the siblings, he acknowledged Kagaya's argument of
+                his importance and accepted them. After his 
+                <a href="/../DemonSlayerWiki/Characters/Enmu/info.html" class="link"
+                title="Enmu">mission</a> assigned on the Mugen Train unexpectedly ended with his
+                <a href="" class="link"
+                title="Kyojuro Rengoku vs Akaza">death</a> at the hands of Upper Rank Three,
+                Kagaya acknowledged Kyojuro's heroic actions, calling him a "remarkable child"
+                for his act of not letting a single passenger of the 200 onboard from dying. He 
+                also was not saddened by the Hashira's demise, as he stated that he would join
+                him shortly afterwards.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="TengenUzui">
+                    <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html" class="link">
+                        Tengen Uzui
+                    </a>
+                </span>
+            </h3>
+            <p>
+                <figure class="right-side-anime-pic">
+                    <a class="contain-img" href="#Pic5">
+                        <img 
+                        src="/../DemonSlayerWiki/images/Tengen_and_his_wives_meeting_with_Kagaya.webp" 
+                        class="figure-img zoom contain-img cursor" 
+                        onclick="openModal();currentSlide(5)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>
+                            Kagaya meets with Tengen Uzui and his wives.
+                        </p>
+                    </figcaption>
+                </figure>
+                Kagaya learned that among his ranks was a former shinobi who decided to become
+                a Demon Slayer to escape his past. During a personal meeting with the young man,
+                <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html" class="link"
+                >Tengen Uzui</a> and his kunoichi wives, he told the shinobi that he pities him
+                for the difficult choice he had to make to leave everything he only knew behind
+                to make a new future, praising him for his new path. Tengen was touched by
+                Kagaya's sympathy and became a loyal subordinate under his command. It was 
+                during his
+                <a href="Demon Slayers vs Daki and Gyutaro" class="link"
+                title="Demon Slayers vs Daki and Gyutaro">battle</a> against the dual holder
+                of Upper Rank Six that Tengen reminisced on his meeting with Kagaya and recalled
+                his words of encouragement, giving him the drive to fight back against
+                <a href="/../DemonSlayerWiki/Characters/Daki/info.html" class="link"
+                >Daki</a> and
+                <a href="/../DemonSlayerWiki/Characters/Gyutaro/info.html" class="link"
+                >Gyutaro</a> together.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="TanjiroKamado">
+                    <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link">
+                        Tanjiro Kamado
+                    </a>
+                </span>
+            </h3>
+            <p>
+                Upon learning that a Demon Slayer amongst his command had harbored a demon,
+                Kagaya immediately chose to sanction the boy's actions. The Demon Slayer,
+                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link"
+                >Tanjiro Kamado</a>, and his demon sister
+                <a href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html" class="link"
+                >Nezuko</a>, was about to be executed by the Hashira until Kagaya gave them his
+                word about his status. Tanjiro himself was perplexed by the Oyakata's appearance,
+                wondering if he truly was the Demon Slayer Corps' leader, though whenever he
+                spoke, Tanjiro noted the floating, calming feeling in his voice. After seeing
+                evidence that Nezuko can be trusted with humans, Kagaya officially 
+                recognized the siblings as Demon Slayers. A gracious Tanjiro then vowed to kill
+                Muzan Kibutsuji on his behalf, though Kagaya calmly noted that he was still
+                ill-equipped.
+            </p>
+            <br>
+            <p>
+                Like the Hashira, Tanjiro grew to be very loyal to Kagaya and cared for his
+                wellbeing, as during Muzan's attack on the Oyakata, he detected the smell of
+                Kagaya's burning blood in the explosion and immediately became horrified by the
+                situation. His anger at Kagaya's demise, coupled with his own rage at Muzan,
+                drove Tanjiro to attack the immensely powerful demon head-on with the Hashira.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="MuzanKibutsuji">
+                    <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html" class="link"
+                    >Muzan Kibutsuji</a>
+                </span>
+            </h3>
+            <p>
+                Over a millennia ago, a member of the Ubuyashiki family was transformed in an
+                experimental treatment to cure his terminal illness. The man,
+                <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html" class="link"
+                >Muzan Kibutsuji</a>, would become the first demon to ever exist. Subsequently,
+                males of the Ubuyashiki family would be cursed with a terrible condition 
+                that would deteriorate their bodies and lead to an untimely death at a young
+                age. Since then, the Ubuyashiki's had submitted themselves with a single goal 
+                of leading the Demon Slayer Corps in the hopes of finally killing Muzan.
+            </p>
+            <br>
+            <p>
+                <figure class="right-side-anime-pic">
+                    <a class="contain-img" href="#Pic6">
+                        <img 
+                        src="/../DemonSlayerWiki/images/Muzan_dismisses_Kagayas_belief.webp" 
+                        class="figure-img zoom contain-img cursor" 
+                        onclick="openModal();currentSlide(6)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>
+                            Muzan rejects Kagaya's speech.
+                        </p>
+                    </figcaption>
+                </figure>
+                Kagaya met Muzan for the first time when the demon secretly entered his
+                household. Muzan insulted the man for his sickly appearance, comparing him 
+                to a corpse and laughing at the belief that all the murders he has committed 
+                have gone unpunished by the gods. Kagaya, who has since lost his vision, 
+                calmly spoke to the Demon King and asked for his desires, a question that 
+                surprised Muzan. Upon telling Kagaya that his dream is to be immortal and it can
+                be achieved by devouring Nezuko Kamado, Kagaya uncharacteristically taunted
+                the demon by claiming that his dream would never succeed, and that only human
+                feelings can exist forever. Insulted, Muzan dissuaded his taunts, but Kagaya then
+                spoke of Muzan's own continual prodding of the Demon Slayer Corps with 
+                numerous deaths, and the rage they all feel will kill him without fail. When
+                Muzan threatened to kill him, Kagaya calmly stated that his death was
+                meaningless in the grand scheme of the Demon Slayer Corps.
+            </p>
+            <br>
+            <p>
+                Kagaya then secretly triggered an explosion to destroy his entire house,
+                killing himself, his wife, and two of his daughters, in the hopes of stunning
+                Muzan for an attack by the Hashira. As he healed from the fireball, Muzan was
+                enraged by his inability to see the obvious rage Kagaya had felt towards him on
+                the inside, begrudgingly acknowledging his skill to hide his bloodlust with a 
+                smile until it was too late.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="AmaneUbuyashiki">
+                    <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link"
+                    >Amane Ubuyashiki</a>
+                </span>
+            </h3>
+            <p>
+                <figure class="left-side-anime-pic">
+                    <a class="contain-img" href="#Pic7">
+                        <img 
+                        src="/../DemonSlayerWiki/images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp" 
+                        class="figure-img zoom contain-img cursor" 
+                        onclick="openModal();currentSlide(7)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>
+                            Kagaya and Amane visiting the graves of fallen Demon Slayers.
+                        </p>
+                    </figcaption>
+                </figure>
+                Kagaya first met Amane when he was thirteen, having already taken his late
+                father's position as Oyakata of the Demon Slayer Corps. Amane was selected to
+                be his caretaker when his condition would deteriorate, but Kagaya only agreed 
+                to marry her under the condition that she cared for him under her own free will.
+                Amane was loyal to Kagaya without a fault, caring for his every need as his 
+                illness worsened, and eventually taking over his position to speak at meetings
+                with the Hashira when he was no longer able to do so. Later, when Kagaya decided
+                to sacrifice himself to stall Muzan, Amane chose to stay with him until the
+                very end and die by his side.
+            </p>
+            <br>
+            <h3>
+                <span class="anchor" id="KiriyaUbuyashiki">
+                    <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/info.html" class="link"
+                    >Kiriya Ubuyashiki</a>
+                </span>
+            </h3>
+            <p>
+                Kiriya was Kagaya's only son, thus making him his successor in the event of
+                his death. Like his father, Kiriya undertook important roles in the Demon
+                Slayer Corps, such as overseeing 
+                <a href="" class="link"
+                >Final Selection</a> and attending to his medical needs.
+            </p>
+            <br>
+            <p>
+                <figure class="right-side-anime-pic">
+                    <a class="contain-img" href="#Pic8">
+                        <img 
+                        src="/../DemonSlayerWiki/images/Kagaya_asking_Kiriya_to_let_go_Nezuko_CH185.webp" 
+                        class="figure-img zoom contain-img cursor kagaya-manga" 
+                        onclick="openModal();currentSlide(8)">
+                    </a>
+                    <figcaption class="caption">
+                        <p>
+                            Kagaya asks Kiriya to let Nezuko Kamado go.
+                        </p>
+                    </figcaption>
+                </figure>
+                In the aftermath of Kagaya's death, Kiriya immediately became the new
+                <a href="" class="link"
+                >Oyakata</a> and undertook the immense task of coordinating the limited
+                manpower of the Demon Slayers to combat specific Upper Ranks demons. Despite
+                several setbacks and decisions that have led to several deaths, Kiriya had 
+                realized that his father and ancestors have all faced the same stress and
+                pressure in the same position, valiantly continuing his mission.
+            </p>
+            <br>
+            <p>
+                When 
+                <a href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html" class="link"
+                >Nezuko Kamado</a>, who had been cared for as her human-conversion drug was
+                administered, suddenly left the Corps headquarters on her own volition, Kiriya
+                panicked and believed that Muzan has taken control of her. Before Kiriya could 
+                give an order, Kagaya's spirit touched him on the shoulder and told him to let
+                Nezuko do as she wants. His sisters were confused by his lack of action but 
+                Kiriya tearfully tells them that their father had spoken to him.
+            </p>
+            <br><br>
+            <h2>
+                <span class="anchor" id="References">References</span>
+            </h2>
+            <hr class="split">
+            <div class="ref-table">
+                <div class="ref-list">
+                    
+                </div>
+            </div>
+                
+            <br>
             <h2>
                 <span class="anchor" id="Navigation">
                     Navigation
                 </span>
             </h2>
-            <hr>
+            <hr class="split">
             <table class="nav-table-container">
                 <tbody>
                     <tr>
@@ -480,15 +963,15 @@
                                                 <b>Ubuyashiki Family:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
-                                                <span class="nav-table-current">Amane Ubuyashiki</span>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
+                                                <span class="nav-table-current">Kagaya Ubuyashiki</span>&nbsp;·
+                                                <a href="/../DemonSlayerWiki/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
+                                                <a href="/../DemonSlayerWiki/../DemonSlayerWiki/Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
+                                                <a href="/../DemonSlayerWiki/../DemonSlayerWiki/Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
+                                                <a href="/../DemonSlayerWiki/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
+                                                <a href="/../DemonSlayerWiki/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
+                                                <a href="/../DemonSlayerWiki/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
+                                                <a href="/../DemonSlayerWiki/../DemonSlayerWiki/Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
+                                                <a href="/../DemonSlayerWiki/../DemonSlayerWiki/Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -500,14 +983,14 @@
                                                 <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
                                                 <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a>&nbsp;·
                                                 <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·
+                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·                                                
                                                 <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>&nbsp;·
                                                 <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>&nbsp;·
                                                 <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a> ·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a> ·
-                                                <a href="sakonji.html" class="link">Sakonji Urokodaki</a>
-                                                <a href="jigoro.html" class="link">Jigoro Kuwajima</a>
+                                                <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a>&nbsp;·
+                                                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>·
+                                                <a href="sakonji.html" class="link">Sakonji Urokodaki</a>·
+                                                <a href="jigoro.html" class="link">Jigoro Kuwajima</a>·
                                                 <a href="shinjuro.html" class="link">Shinjuro Rengoku</a>
                                             </td>
                                         </tr>
@@ -556,7 +1039,7 @@
                                                 <a href="tetsumotonaka.html" class="link">Tetsumotonaka</a>&nbsp;·                          
                                                 <a href="tetsudoji.html" class="link">Tetsudoji</a>&nbsp;·                          
                                                 <a href="tetsutani.html" class="link">Tetsutani</a>&nbsp;·                          
-                                                <a href="tetsuido.html" class="link">Tetsuido</a>&nbsp;                          
+                                                <a href="tetsuido.html" class="link">Tetsuido</a>&nbsp;·                          
                                             </td>
                                         </tr>
                                         <tr>
@@ -600,7 +1083,7 @@
                                                 <a href="spider_demon_daughter.html" class="link">Spider Demon (Daughter)</a>&nbsp;·
                                                 <a href="shizu.html" class="link">Shizu Shinazugawa</a>&nbsp;·
                                                 <a href="woodland_demon.html" class="link">Woodland Demon</a>&nbsp;·
-                                                <a href="serpant_demon.html" class="link">Serpant Demon</a>&nbsp;
+                                                <a href="serpant_demon.html" class="link">Serpant Demon</a>&nbsp;·
                                             </td>
                                         </tr>
                                         <tr>
@@ -775,8 +1258,8 @@
     </div>
     <footer>Wiki inspired by the <a class="link" href="https://kimetsu-no-yaiba.fandom.com/" target="_blank">Kimetsu No Yaiba Wiki</a></footer>
     <script src="/../DemonSlayerWiki/javascripts/navigation.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/amane.js"></script>
     <script src="/../DemonSlayerWiki/javascripts/lightbox_modal.js"></script>
     <script src="/../DemonSlayerWiki/javascripts/character_navigation.js"></script>
+    <script src="/../DemonSlayerWiki/javascripts/searchbar.js"></script>
 </body>
 </html>

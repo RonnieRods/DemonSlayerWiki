@@ -951,6 +951,18 @@ span[id="type"] {
     height: 310px;
 }
 
+@media screen and (max-width: 500px) {
+    .left-side-anime-pic,
+    .right-side-anime-pic {
+        float: none;
+        justify-self: center;
+    }
+
+    .left-side-ino-text {
+        font-size: 12px;
+    }
+}
+
 .caption {
     margin-top: 5px;
     line-height: 20px;
@@ -1153,6 +1165,30 @@ span[id="type"] {
     .quick-answers-box .quick-answers-box-size .answer-margin {
         width: 95%;
     }
+}
+
+.image-gallery-header {
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    border: 1px solid black;
+    background: #5E111F;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-gallery-subheader {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.image-gallery-tabs {
+    padding: 6px 12px;
+}
+
+.current-gallery-tab {
+    border-bottom: 2px solid gold;
 }
 
 /* Global Image Settings Above */
@@ -2071,15 +2107,39 @@ span[id="type"] {
 
 /* Kanae Settings Above */
 
+/* Tengen Settings Below */
+
+.left-side-anime-pic .tengen-pic1,
+.right-side-anime-pic .tengen-pic1,
+.right-side-anime-pic .tengen-pic2 {
+    height: 400px;
+}
+
+.left-side-anime-pic .tengen-pic3 {
+    height: 100px;
+}
+
+/* Tengen Settings Above */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
     gap: 50px 50px;
     text-align: center;
-    align-items: center;
+    align-items: baseline;
     justify-items: center;
 }
+
+.gallery div a {
+    vertical-align: middle;
+}
+
+.gallery div small {
+    display: block;
+    width: 300px;
+}
+
 
 .fixlist {
     margin-left: 40px;
@@ -2181,6 +2241,8 @@ footer {
 
 .close {
     color: white;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 0 6px;
     position: absolute;
     right: 25px;
     font-size: 35px;
@@ -2277,10 +2339,23 @@ footer {
     height: 100px;
 }
 
+@media only screen and (max-width: 900px) {
+    .close {
+        z-index: 2;
+        right: 20px;
+    }
+
+    .modal {
+        top: 100;
+    }
+    /*.scroll-container .column img {
+        height: 15vh;
+    }*/
+}
+
 @media only screen and (max-width: 1320px) {
     .close {
         z-index: 2;
-        right: 40px;
     }
 
     .modal {
