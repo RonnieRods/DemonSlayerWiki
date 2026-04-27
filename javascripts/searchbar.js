@@ -20,6 +20,11 @@ const projects = [
         url: "/../DemonSlayerWiki/Characters/Akito_Ubuyashiki/info.html"
     },
     {
+        title: "Kagaya Ubuyashiki",
+        description: "Kagaya",
+        url: "/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html"
+    },
+    {
         title: "Amane Ubuyashiki",
         description: "Amane",
         url: "/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html"
