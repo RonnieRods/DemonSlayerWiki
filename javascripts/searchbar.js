@@ -109,6 +109,11 @@ const projects = [
         description: "Tengen",
         url: "/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html"
     },
+    {
+        title: "Sakonji Urokodaki",
+        description: "Sakonji",
+        url: "/../DemonSlayerWiki/Characters/Sakonji_Urokodaki/info.html"
+    },
 ];
 
 const searchInput = document.getElementById('search-input');

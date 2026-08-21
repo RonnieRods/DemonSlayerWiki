@@ -20,6 +20,17 @@ html {
 .link-space {
     padding: 8px 12px;
     border: 2px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+.link-space:hover {
+    background-color: #e70909d5;
+    color: white;
+}
+
+.link-space a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 .link-tabs a {
@@ -982,7 +993,6 @@ span[id="type"] {
 
 .zoom:hover {
     transform: scale(1.1);
-    transition: 0.3s ease-in-out;
 }
 
 .ref-table {
@@ -2121,6 +2131,14 @@ span[id="type"] {
 
 /* Tengen Settings Above */
 
+/* Sakonji Settings Below */
+
+.right-side-anime-pic .sakonji-pic1 {
+    height: 300px;
+}
+
+/* Sakonji Settings Above */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -2215,7 +2233,6 @@ footer {
 }
 
 .modal {
-    display: none;
     place-content: center;
     position: fixed;
     z-index: 4;
@@ -2259,7 +2276,14 @@ footer {
 
 .mySlides {
     display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     text-align: center;
+}
+
+.mySlides.active-slide {
+    display: block;
+    opacity: 1;
 }
 
 .mySlides img {
