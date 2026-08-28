@@ -7,7 +7,7 @@ const spoiler = document.querySelector('#spoiler');
 const showSpoiler = document.querySelector('#showSpoiler');
 
 type.addEventListener('click', () => {
-    curImg.src = "/images/Sakonji_visual_Hinokami_Chronicles.webp";
+    curImg.src = "/../DemonSlayerWiki/images/Sakonji_visual_Hinokami_Chronicles.webp";
     curImg.title = "Sakonji's anime appearance";
     type.style.color = "rgba(255, 217, 0, 0.493)";
     secType.style.color = "white";
@@ -20,7 +20,7 @@ type.addEventListener('click', () => {
 })
 
 secType.addEventListener('click', () => {
-    curImg.src = "/images/SakonjiP.webp";
+    curImg.src = "/../DemonSlayerWiki/images/SakonjiP.webp";
     curImg.title = "Saknoji's manga appearance";
     secType.style.color = "rgba(255, 217, 0, 0.493)";
     type.style.color = "white";
