@@ -1115,7 +1115,7 @@ span[id="type"] {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 3;
+    z-index: 1;
     font-size: 50px;
     border: none;
     outline: none;
@@ -2240,20 +2240,26 @@ footer {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.918);
 }
 
 .modal-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
     position: relative;
     margin: auto;
     padding: 0;
     width: 90%;
     max-width: 1000px;
+    overflow: hidden;
+}
+
+.slides-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .close {
@@ -2273,22 +2279,29 @@ footer {
     cursor: pointer;
 }
 
-
+/* Slides sit side-by-side, shrunk and dimemed by default */
 .mySlides {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    display: block;
+    flex: 0 0 60%;
+    opacity: 0.4;
+    transform: scale(0.85);
+    transition: transform 0.5s ease, opacity 0.5s ease-in-out;
     text-align: center;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .mySlides.active-slide {
-    display: block;
     opacity: 1;
+    transform: scale(1);
+    z-index: 2;
 }
 
 .mySlides img {
-    max-width: 100%;
-    height: auto;
+    width: 100% !important;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
 .cursor {
@@ -2310,6 +2323,7 @@ footer {
     border-radius: 0 3px 3px 0;
     user-select: none;
     text-decoration: none;
+    z-index: 10;
 }
 
 .next {

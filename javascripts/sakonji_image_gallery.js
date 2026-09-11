@@ -32,6 +32,30 @@ const AnimeCoverContainer = document.querySelector('#Anime-Covers-Contain');
 const AnimeCoverBtn = document.querySelector('#Anime-Covers');
 const AnimeCoverContent = document.querySelector('#Anime-Covers-Content');
 
+// Games Section Tabs
+const RenderContainer = document.querySelector('#Renders-Container');
+const RenderBtn = document.querySelector('#Renders');
+const RenderContent = document.querySelector('#Render-Content');
+
+const VisualContainer = document.querySelector('#Visuals-Container');
+const VisualBtn = document.querySelector('#Visuals');
+const VisualContent = document.querySelector('#Visual-Content');
+
+const HCContainer = document.querySelector('#HC-Container');
+const HCBtn = document.querySelector('#HC');
+const HCContent = document.querySelector('#HC-Content');
+
+const HC2Container = document.querySelector('#HC2-Container');
+const HC2Btn = document.querySelector('#HC2');
+const HC2Content = document.querySelector('#HC2-Content');
+
+const JumputiHeroesContainer = document.querySelector('#JumputiHeroes-Container');
+const JHBtn = document.querySelector('#JumputiHeroes');
+const JHContent = document.querySelector('#JH-Content');
+
+const NBSContainer = document.querySelector('#NBS-Container');
+const NBSBtn = document.querySelector('#NBS');
+const NBSContent = document.querySelector('#NBS-Content');
 
 // Switching tabs logic for anime section
 ProfileBtn.addEventListener('click', (e) => {
@@ -157,4 +181,137 @@ AnimeCoverBtn.addEventListener('click', (e) => {
 
     AnimeCoverContent.style.display = 'block';
     AnimeCoverContainer.style.borderBottom = '2px solid gold';
+});
+
+// Switching tabs logic for games section
+RenderBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    RenderContent.style.display = 'block';
+    RenderContainer.style.borderBottom = '2px solid gold';
+
+    VisualContent.style.display = 'none';
+    VisualContainer.style.borderBottom = '0px';
+
+    HCContent.style.display = 'none';
+    HCContainer.style.borderBottom = '0px';
+
+    HC2Content.style.display = 'none';
+    HC2Container.style.borderBottom = '0px';
+
+    JHContent.style.display = 'none';
+    JumputiHeroesContainer.style.borderBottom = '0px';
+
+    NBSContent.style.display = 'none';
+    NBSContainer.style.borderBottom = '0px';
+});
+
+VisualBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    RenderContent.style.display = 'none';
+    RenderContainer.style.borderBottom = '0px';
+
+    VisualContent.style.display = 'block';
+    VisualContainer.style.borderBottom = '2px solid gold';
+
+    HCContent.style.display = 'none';
+    HCContainer.style.borderBottom = '0px';
+
+    HC2Content.style.display = 'none';
+    HC2Container.style.borderBottom = '0px';
+
+    JHContent.style.display = 'none';
+    JumputiHeroesContainer.style.borderBottom = '0px';
+
+    NBSContent.style.display = 'none';
+    NBSContainer.style.borderBottom = '0px';
+});
+
+HCBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    RenderContent.style.display = 'none';
+    RenderContainer.style.borderBottom = '0px';
+
+    VisualContent.style.display = 'none';
+    VisualContainer.style.borderBottom = '0px';
+
+    HCContent.style.display = 'block';
+    HCContainer.style.borderBottom = '2px solid gold';
+
+    HC2Content.style.display = 'none';
+    HC2Container.style.borderBottom = '0px';
+
+    JHContent.style.display = 'none';
+    JumputiHeroesContainer.style.borderBottom = '0px';
+
+    NBSContent.style.display = 'none';
+    NBSContainer.style.borderBottom = '0px';
+});
+
+HC2Btn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    RenderContent.style.display = 'none';
+    RenderContainer.style.borderBottom = '0px';
+
+    VisualContent.style.display = 'none';
+    VisualContainer.style.borderBottom = '0px';
+
+    HCContent.style.display = 'none';
+    HCContainer.style.borderBottom = '0px';
+
+    HC2Content.style.display = 'block';
+    HC2Container.style.borderBottom = '2px solid gold';
+
+    JHContent.style.display = 'none';
+    JumputiHeroesContainer.style.borderBottom = '0px';
+
+    NBSContent.style.display = 'none';
+    NBSContainer.style.borderBottom = '0px';
+});
+
+JHBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    RenderContent.style.display = 'none';
+    RenderContainer.style.borderBottom = '0px';
+
+    VisualContent.style.display = 'none';
+    VisualContainer.style.borderBottom = '0px';
+
+    HCContent.style.display = 'none';
+    HCContainer.style.borderBottom = '0px';
+
+    HC2Content.style.display = 'none';
+    HC2Container.style.borderBottom = '0px';
+
+    JHContent.style.display = 'block';
+    JumputiHeroesContainer.style.borderBottom = '2px solid gold';
+
+    NBSContent.style.display = 'none';
+    NBSContainer.style.borderBottom = '0px';
+});
+
+NBSBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    RenderContent.style.display = 'none';
+    RenderContainer.style.borderBottom = '0px';
+
+    VisualContent.style.display = 'none';
+    VisualContainer.style.borderBottom = '0px';
+
+    HCContent.style.display = 'none';
+    HCContainer.style.borderBottom = '0px';
+
+    HC2Content.style.display = 'none';
+    HC2Container.style.borderBottom = '0px';
+
+    JHContent.style.display = 'none';
+    JumputiHeroesContainer.style.borderBottom = '0px';
+
+    NBSContent.style.display = 'block';
+    NBSContainer.style.borderBottom = '2px solid gold';
 });

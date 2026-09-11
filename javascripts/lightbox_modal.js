@@ -4,7 +4,7 @@ document.getElementById("myModal").style.display = "none";
 function openModal() {
     document.getElementById("myModal").style.display = "block";
     document.getElementById("myModal").style.opacity = "1";
-    document.getElementById("myModal").style.zIndex = "1";
+    document.getElementById("myModal").style.zIndex = "2";
     document.getElementById("myModal").style.visibility = "visible";
     document.getElementById("myModal").style.transition = "all 1s ease";
 };
