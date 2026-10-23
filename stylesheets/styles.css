@@ -5,37 +5,813 @@
 }
 
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
+.link-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.link-space {
+    padding: 8px 12px;
+    border: 2px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+.link-space:hover {
+    background-color: #e70909d5;
+    color: white;
+}
+
+.link-space a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.link-tabs a {
+    font-weight: 900;
+}
+
+.current-page {
+    background-color: #e70909d5;
+}
+
+.current-page a {
+  pointer-events: none;
+  color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container #dataDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Navbar Styles */
+
+/* Universal Box-Sizing Reset */
+.navbar, .navbar * {
+    box-sizing: border-box;
+}
+
+/* Base Top-Bar Flex Track */
 .navbar {
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    min-height: 60px;
+    height: 60px;
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+    z-index: 9999;
+}
+
+.navbar .logo-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .fiximg {
+    display: block;
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    margin-left: 20px;
+}
+
+/* Universal Top-Level Anchor Standard */
+.navbar .nav-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-item:hover {
+    color: #ffd900;
+}
+
+/* Dropdown Container Triggers */
+.dropdown, .world-dropdown {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Desktop Hover Interactive Panels */
+.dropdown-content,
+.world-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #79253a;
+    border: 1px solid #585858;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content a,
+.world-dropdown-content a,
+.sub-trigger {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+}
+
+/* Nested Cascading Sub-Panels */
+.ds, .ds-world {
+    position: relative;
+    width: 100%;
+}
+
+.ds-dropdown-content,
+.ds-world-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #5a1b2a;
+    border: 1px solid #585858;
+    width: 200%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Engine Area */
+.navbar .search-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#search-input {
+    height: 34px;
+    border-radius: 6px;
+    padding: 0 12px;
+    border: 1px solid #585858;
+    background-color: #333;
+    color: white;
+}
+
+#search-button {
+    height: 34px;
+    padding: 0 14px;
+    background-color: #79253a;
+    color: white;
+    border: 1px solid #585858;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#search-button:hover {
+    background-color: #a1324e;
+}
+
+.search-results-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    max-height: 380px;
+    overflow: auto;
+    background-color: #1a1e24;
+    border: 2px solid #79253a;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Base Results Clean Wrapper Track */
+#search-results ul {
+    list-style: none;
+    margin: none;
+    padding: 8px 0;
+}
+
+/* Individual Results Item Nodes Box Track Layout */
+#search-results li {
+    margin: 0 8px;
+}
+
+#search-results li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Results Link Content Presentation Element Rules */
+#search-results li a {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px; /* Increased padding track spacing blocks for quick tapping accessibility */
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.25s ease,
+                padding-left 0.25s ease;
+}
+
+/* Hover Accent Action Engine Rule Transitions */
+#search-results li a:hover {
+    background-color: rgba(121, 37, 58, 0.35);
+    color: #ffd900;
+    padding-left: 18px;
+}
+
+/* Custom Scrollbar Optimization for Results Arrays Track Overflow Panels */
+.search-results-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-results-dropdown::-webkit-scrollbar-track {
+    background: #111418;
+    border-radius: 0 6px 6px 0;
+}
+
+.search-results-dropdown::-webkit-scrollbar-thumb {
+    background: #79253a;
+    border-radius: 10px;
+}
+
+.search-results-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #a1324e;
+}
+
+/* Desktop Hover Interactive Rule Execution */
+@media (hover: hover) and (pointer: fine) {
+    .dropdown:hover > .dropdown-content,
+    .world-dropdown:hover > .world-dropdown-content,
+    .ds:hover > .ds-dropdown-content,
+    .ds-world:hover > .ds-world-dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover,
+    .world-dropdown-content a:hover,
+    .ds-dropdown-content a:hover,
+    .ds-world-dropdown-content a:hover {
+        background-color: rgba(255, 217, 0, 0.2);
+        color: #ffd900;
+        transition: all 0.2s ease;
+    }
+}
+
+/* Hamburder Action Menu Shell */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+    width: 30px;
+}
+
+.hamburger-bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Accordion Transition Targets */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none; /* Controlled dynamically via .is-active class */
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        background-color: #222;
+        border-top: 1px solid #585858;
+    }
+
+    .nav-menu.is-active {
+        display: flex;
+    }
+
+    .navbar .nav-item,
+    .dropdown,
+    .world-dropdown {
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navbar .nav-item {
+        padding: 12px 10px;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .dropdown-trigger {
+        font-weight: bold;
+        color: #ffd900 !important;
+    }
+
+    /* Stack Flyout Containers Smoothly */
+    .dropdown-content,
+    .world-dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background-color: #5a1b2a;
+        border: none;
+        padding-left: 15px;
+    }
+
+    /* Target state rules for engine toggles */
+    .dropdown.is-open > .dropdown-content,
+    .world-dropdown.is-open > .world-dropdown-content,
+    .ds.is-open > .ds-dropdown-content,
+    .ds-world.is-open > .ds-world-dropdown-content {
+        display: block;
+    }
+
+    .ds-dropdown-content,
+    .ds-world-dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background-color: #43131f;
+        border: none;
+        padding-left: 15px;
+    }
+
+    .sub-trigger {
+        color: #ffb300 !important;
+        font-weight: bold !important;
+    }
+
+    .navbar .search-container {
+        width: 100%;
+        padding: 15px 10px;
+        margin-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    #search-input {
+        flex: 1;
+    }
+
+    .search-results-dropdown {
+        position: static;
+        width: 100%;
+        max-height: 290px;
+        margin-top: 8px;
+        box-shadow: none;
+        border-color: rgba(255, 255, 255, 0.1);
+        background-color: #2b1117;
+    }
+
+    #search-results li {
+        margin: 0;
+    }
+
+    #search-results li a {
+        padding: 14px 16px;
+    }
+}
+
+.anchor {
+    padding-top: 10px;
+    margin-top: -60px;
+}
+
+.tooltip-anchor {
+    margin-left: -6px;
+}
+
+/* Homepage Settings Below*/
+
+.split-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .split-container {
+        grid-template-columns: 1fr;
+        overflow: auto;
+    }
+
+    .homeguide:last-child {
+        margin-bottom: 20px;
+    }
+
+    .IM-thumbnail {
+        width: 400px;
+        height: 206px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .IM-thumbnail {
+        width: 340px;
+        height: 156px;
+    }
+}
+
+.infinitymoviecontainer,
+.homeguide,
+.storycontainer,
+.charactercontainer,
+.releasescontainer {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 10px 0px 10px;
+    border: 3px;
+    border-color: #5e111f;
+    border-style: solid;
+    padding: 3px;
+    box-shadow: 4px 4px 3px darkgray;
     background-color: black;
 }
 
-.navbar .nav-item {
-    float: left;
-    color: white;
+.movieheader,
+.homeguideheader,
+.storyheader,
+.characterheader,
+.releaseheader {
+    padding: 0.2em 0.4em 0.2em 0.4em;
+    margin: 5px 0 7px 0;
+    border: 3px solid #d6b479;
+    background-color: #5e111f;
+    color: #000;
+    font-size: 130%;
+    font-weight: bold;
     text-align: center;
-    padding: 18px 20px;
-    text-decoration: none;
-    font-size: 17px;
-    border-right: 1px solid #bbb;
 }
 
-.navbar img {
+.movieheadertext,
+.homeguideheadertext,
+.characterheader,
+.releaseheader {
+    color: #d6b479;
+}
+
+.movieimagecontainer {
+    justify-self: center;
+    width: auto;
+    border-radius: 0px 0px 0px;
+    border: 5px ridge #560E00;
+    padding: 3px;
+}
+
+.homeguidecenter {
+    justify-self: center;
+}
+
+.homeguidespoilers {
+    font-size: 120%;
+    line-height: 1.3;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 8px 0;
+}
+
+/* Slideshow Settings */
+.slideshow {
+    display: none;
+}
+
+.slideshow img {
+    vertical-align: middle;
+}
+
+/* Next & previous buttons */
+.slideshow-prev, .slideshow-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.842);
+  user-select: none;
+}
+
+.slideshow-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slideshow-captiontext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    background-color: #000000c4;
+}
+
+.slideshow:hover .slideshow-captiontext {
+    display: block;
+    transform: translateY(-100%);
+}
+
+.slideshow-numbertext {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 4px 12px;
+    position: absolute;
+    top: 0;
+    background-color: #000000bb;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+    .slideshow-captiontext {
+        font-size: 11px;
+    }
+}
+
+/* Slideshow Settings */
+
+.homeguidelinks {
+    margin-top: 12px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.homeguidetext {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.homeguidefooter {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to left,#FFFFFF 0%, #d6b479 15%, #d6b479 85%, #FFFFFF 100%);
+    color: #700101;
+}
+
+.storyleft {
     float: left;
-    border-right: 1px solid #bbb;
 }
 
-.fiximg {
-    width: 110px;
-    height: 60px;
+.storyright {
+    float: right;
+}
+
+.storytext {
+    font-size: 16px;
+    text-align: center;
+}
+
+.storylink {
+    text-align: center;
+}
+
+.characterboxborder {
+    background-color: #ce0a56;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 0;
+    width: 102px;
+    position: relative;
+}
+
+.characterboxsize {
+    border-radius: 2px;
+    overflow: hidden;
+    width: 98px;
+    height: 98px;
+}
+
+.characterboxtitle {
+    line-height: 170%;
+    background-color: #0f4f18;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: x-small;
+    font-weight: bold;
+    padding: 0 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 1px;
+}
+
+.characterboxtitle a {
+    color: white;
+    text-decoration: none;
+}
+
+.characterboxtitle a:hover {
+    text-decoration: underline;
+}
+
+.animetab,
+.mangatab {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(90px, 1fr));
+    column-gap: 25px;
+    row-gap: 15px;
+    padding: 0 18px;
+}
+
+.releasecontainer {
+    border: 2px solid #5e111f;
+    margin: .5em 1em;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.leftrelease {
+    float: left;
+    vertical-align: middle;
+    margin: -8px;
+}
+
+.rightrelease {
+    font-size: 120%;
+    float: right;
+    text-align: center;
+    padding: 0 30px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.rightreleasetext {
+    display: inline;
+    font-size: 120%;
+    line-height: 1.8;
+}
+
+.chapter-section-header {
+    font-size: 18px;
+    text-align: center;
+}
+
+.chapter-section-container {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 14px;
+    padding: 4px;
+    border: 3px solid #d6b479;
+    margin-bottom: 7px;
+}
+
+.chapter-section-img {
+    margin-bottom: -9px;
+}
+
+.chapter-section-caption {
+    width: 80%;
+    margin-top: 1em;
+    font-size: 14px;
+    justify-self: center;
+    text-align: center;
+}
+
+.trailer-container {
+    display: flex;
+    justify-self: center;
+}
+
+.adjustText {
+    line-height: 1;
+}
+
+.trailer-text {
+    font-size: 90%;
+}
+
+/* Homepage Settings Above */
+.battles-container {
+    padding: 0.18rem; 
+    border: 1px solid #520c14;
+}
+
+.battles-container-header {
+    width: auto; 
+    padding: 0.18rem 0.5em; 
+    margin: 0 0 10px 0; 
+    background:#5c111e; 
+    color: #ffffff; 
+    font-size: 100%; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.battles-container-content {
+    width: auto; 
+    height: 190px; 
+    overflow: auto; 
+    margin-bottom: 3px; 
+    padding-left: 1.2em;
+    border: 2px solid #5c111e; 
+    background: transparent;
 }
 
 .center {
     text-align: center;
     font-size: 60px;
+    padding-top: 65px;
 }
 
 .character {
@@ -52,27 +828,10 @@ html {
     font-size: 50px;
 }
 
-.main-container {
-    background-color: rgba(22, 22, 92, 0.986);
-    display: flex;
-    align-items: stretch;
-}
-
-.image a img {
+.image img {
     height: 50%;
     width: 50%;
     object-fit: contain;
-}
-
-.left-side-text {
-    width: 35%;
-    position: relative;
-    left: 15%;
-    color: white;
-    background-color: rgb(133, 27, 27);
-    padding-left: 10px;
-    padding-right: 10px;
-    line-height: 30px;
 }
 
 cite {
@@ -85,14 +844,43 @@ cite {
 
 .quote {
     background-color: rgb(204, 78, 78);
+    width: 480px;
 }
 
-.right-side-text {
-    width: 35%;
-    position: absolute;
-    left: 50%;
+.main-ino-container {
+    background-color: rgba(22, 22, 92, 0.986);
+    display: flex;
+    justify-content: center;
+}
+
+.left-side-ino-text {
+    width: 75%;
+    color: white;
+    background-color: rgba(46, 9, 9, 0.986);
+    padding: 0 20px;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .left-side-ino-text {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.right-side-ino-text {
+    float: right;
+    width: 50%;
     text-align: center;
     color: white;
+    border: 2px solid black;
+    border-radius: 0 0 5px 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .right-side-ino-text {
+        width: 100%;
+    }
 }
 
 .tabs {
@@ -100,7 +888,7 @@ cite {
     padding: 0;
 }
 
-.char {
+.ino-title {
     background-color: rgb(173, 13, 13);
     padding-top: 5px;
     padding-bottom: 5px;
@@ -112,9 +900,13 @@ cite {
 }
 
 hr {
+    background-color: gold;
     border: none;
     height: 1px;
-    background-color: gold;
+}
+
+.split {
+    margin: 10px 0;
 }
 
 .tabs {
@@ -123,6 +915,10 @@ hr {
 
 span[id="type"] {
     color: rgba(255, 217, 0, 0.493);
+}
+
+.type {
+    cursor: pointer;
 }
 
 .image-container {
@@ -161,19 +957,1770 @@ span[id="type"] {
     width: 73%;
 }
 
+/* Global Image Settings Below */
+
+.guideHeader {
+    display:flex; 
+    column-gap: 10px; 
+    width: 255px;
+    border-top:2px solid gray; 
+    border-left:2px solid gray; 
+    border-right:2px solid gray; 
+    padding: 10px;
+}
+
+.guideBody {
+    border: 2px solid gray; 
+    width: 255px;
+    text-align:center;
+    display: grid;
+}
+
+.synopsisGuideContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.synopsisHeader {
+    display:flex; 
+    width: 100%;
+    column-gap: 10px; 
+    border-top:2px solid gray; 
+    border-left:2px solid gray; 
+    border-right:2px solid gray; 
+    padding: 10px;
+}
+
+.synopsisBody {
+    width: 100%;
+    border: 2px solid gray; 
+    text-align:center;
+}
+
+.relationshipGuideContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.relationshipHeader {
+    display:flex; 
+    width: 100%;
+    column-gap: 10px; 
+    border-top:2px solid gray; 
+    border-left:2px solid gray; 
+    border-right:2px solid gray; 
+    padding: 10px;
+}
+
+.relationshipBody {
+    width: 100%;
+    border: 2px solid gray; 
+    text-align:center;
+}
+
+.left-side-anime-pic {
+    width: 310px;
+    float: left;
+    margin: 0 15px 10px 15px;
+    padding-top: 8px;
+}
+
+.left-side-anime-pic .figure-img {
+    height: 170px;
+    width: 300px;
+    vertical-align: bottom;
+}
+
+.left-side-anime-pic .caption {
+    font-size: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+.right-side-anime-pic {
+    width: 310px;
+    float: right;
+    margin: 0 5px 10px 15px;
+    padding-top: 8px;
+}
+
+.right-side-anime-pic .figure-img {
+    height: 170px;
+    width: 300px;
+    vertical-align: bottom;
+}
+
+.right-side-anime-pic .caption {
+    font-size: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+.right-side-anime-pic .kagaya-manga {
+    height: 310px;
+}
+
+@media screen and (max-width: 500px) {
+    .left-side-anime-pic,
+    .right-side-anime-pic {
+        float: none;
+        justify-self: center;
+    }
+
+    .left-side-ino-text {
+        font-size: 12px;
+    }
+}
+
+.caption {
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+.contain-img {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.zoom {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.ref-table {
+    width: auto;
+    height: 190px;
+    overflow: auto;
+    margin: 0 0 3px 0;
+    padding: 0 0 0 0.5em;
+    border: 1.5px solid #8F8C87;
+    background-color: #8F8C8720;
+}
+
+.ref-list {
+    margin: 0 0 0 40px;
+    padding: 10px 0 20px 20px;
+}
+
+.nav-table-container {
+    width: 100%;
+    border: 1px solid #5e111f;
+    border-spacing: 4px;
+    margin-bottom: 5px;
+    font-size: 90%;
+    clear: both;
+    text-align: center;
+}
+
+.nav-table-header {
+    color: #FFFFFF;
+    background-color: #5E111f;
+    font-weight: normal;
+}
+
+.nav-table-header aside {
+    float: right;
+}
+
+.nav-table-char {
+    font-weight: bold;
+    margin: 0 6em;
+}
+
+.nav-table-char a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-table-char a:hover {
+    text-decoration: underline;
+}
+
+.nav-table-section {
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-table-section-header1 {
+    background-color: #D2D2D2;
+}
+
+.nav-table-section-header1 p,
+.nav-table-section-header3 p {
+    color: black;
+}
+
+.nav-table-section-left {
+    text-align: center;
+    width: 20%;
+}
+
+.nav-table-section-right {
+    text-align: left;
+}
+
+.nav-table-current {
+    font-weight: bolder;
+}
+
+.nav-table-section-header2 {
+    background-color: #E06464;
+}
+
+.nav-table-section-header3 {
+    background-color: #BFE9CB;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    top: -0.5em;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border: 2px solid gold;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -110px;
+    opacity: 0;
+    transition: visibility 1s linear, opacity 1s ease;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+    font-size: 50px;
+    border: none;
+    outline: none;
+    background-color: #4d0013;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .topBtn {
+        font-size: 35px;
+    }
+}
+
+.quick-answers-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(131, 53, 53, 0.24);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.quick-answers-box h3 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.quick-answers-box .quick-answers-box-size {
+    width: 97.8%;
+    background-color: rgba(46, 11, 11, 0.63);
+    margin-left: 15px;
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+
+.quick-answers-box summary {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.quick-answers-box .quick-answers-box-size .answer-margin {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .quick-answers-box {
+        width: 100%;
+    }
+
+    .quick-answers-box .quick-answers-box-size {
+        width: 97%;
+    }
+
+    .quick-answers-box .quick-answers-box-size .answer-margin {
+        width: 95%;
+    }
+}
+
+.image-gallery-header {
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    border: 1px solid black;
+    background: #5E111F;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-gallery-subheader {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.image-gallery-tabs {
+    padding: 6px 12px;
+}
+
+.current-gallery-tab {
+    border-bottom: 2px solid gold;
+}
+
+/* Global Image Settings Above */
+
+/* Inosuke Page CSS Settings Below */
+
+.right-side-ino-pic {
+    float: right;
+}
+
+.right-side-ino-pic .rage1, .right-side-ino-pic .rage2 {
+    height: 200px;
+    width: 220px;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.right-side-ino-pic .ang_ino {
+    text-align: center;
+    font-size: 12px;
+}
+
+.right-side-ino-pic2 {
+    float: right;
+}
+
+.right-side-ino-pic2 .fight1, .right-side-ino-pic2 .fight2 {
+    height: 200px;
+    width: 220px;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.right-side-ino-pic2 .ino_fight {
+    text-align: center;
+    font-size: 12px;
+    width: 220px;
+}
+
+.right-side-ino-pic3 {
+    float: right;
+}
+
+.right-side-ino-pic3 .scene1, .right-side-ino-pic3 .scene2 {
+    height: 140px;
+    width: 220px;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.right-side-ino-pic3 .ino_scene {
+    text-align: center;
+    font-size: 12px;
+    width: 220px;
+}
+
+.right-side-ino-pic4 {
+    float: right;
+}
+
+.right-side-ino-pic4 .flex1, .right-side-ino-pic4 .flex2 {
+    height: 100px;
+    width: 200px;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.right-side-ino-pic4 .ino_flex {
+    text-align: center;
+    font-size: 12px;
+    width: 200px;
+}
+
+.right-side-ino-pic5 {
+    float: right;
+}
+
+.right-side-ino-pic5 .sense1, .right-side-ino-pic5 .sense2 {
+    height: 120px;
+    width: 220px;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.right-side-ino-pic5 .ino_sense {
+    text-align: center;
+    font-size: 12px;
+    width: 220px;
+}
+
+.left-side-ino-pic {
+    float: left;
+    margin-right: 10px;
+}
+
+.left-side-ino-pic .ino1, .left-side-ino-pic .ino2 {
+    height: 150px;
+    width: 270px;
+    vertical-align: bottom;
+}
+
+.left-side-ino-pic .ino_kind {
+    font-size: 12px;
+    width: 270px;
+    text-align: center;
+}
+
+.left-side-ino-pic2 {
+    float: left;
+    margin-right: 10px;
+}
+
+.left-side-ino-pic2 .ino_fight1, .left-side-ino-pic2 .ino_fight2 {
+    height: 300px;
+    width: 210px;
+    vertical-align: bottom;
+}
+
+.left-side-ino-pic2 .ino_doma {
+    font-size: 12px;
+    width: 210px;
+    text-align: center;
+}
+
+/* Inosuke Page CSS Settings Above */  
+
+/* Nezuko page CSS Settings below */
+
+.nez-quote {
+    background-color: rgb(204, 78, 78);
+    width: 691px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .nez-quote {
+        display: flex;
+        background-color: rgb(204, 78, 78);
+        width: 100%;
+    }
+}
+
+.nezuko-quick-answers-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 151, 159);
+    width: 691px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.nezuko-quick-answers-box h3 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.nezuko-quick-answers-box .nezuko-quick-answers-box-size {
+    width: 665px;
+    background-color: rgb(134, 11, 79, 0.377);
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.nezuko-quick-answers-box summary {
+    margin-left: 15px;
+}
+
+.nezuko-quick-answers-box .nezuko-quick-answers-box-size .nezuko-answer-margin {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 440px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .nezuko-quick-answers-box {
+        width: 100%;
+    }
+
+    .nezuko-quick-answers-box .nezuko-quick-answers-box-size {
+        width: 95%;
+    }
+
+    .nezuko-quick-answers-box .nezuko-quick-answers-box-size .nezuko-answer-margin {
+        width: 95%;
+    }
+}
+
+.left-side-nezuko-pic {
+    float: left;
+    margin-right: 10px;
+}
+
+.left-side-nezuko-pic .nez1, .left-side-nezuko-pic .nez2 {
+    height: 120px;
+    width: 210px;
+    vertical-align: bottom;
+}
+
+.left-side-nezuko-pic .nez_kind {
+    font-size: 12px;
+    width: 210px;
+    text-align: center;
+}
+
+.left-side-nezuko-pic2 {
+    float: left;
+    margin-right: 10px;
+}
+
+.left-side-nezuko-pic2 .nez-regen1, .left-side-nezuko-pic2 .nez-regen2 {
+    height: 120px;
+    width: 210px;
+    vertical-align: bottom;
+}
+
+.left-side-nezuko-pic2 .nez_regen {
+    font-size: 12px;
+    width: 210px;
+    text-align: center;
+}
+
+.right-side-nezuko-pic {
+    float: right;
+}
+
+.right-side-nezuko-pic .nez-proc1, .right-side-nezuko-pic .nez-proc2 {
+    height: 120px;
+    width: 210px;
+    vertical-align: bottom;
+}
+
+.right-side-nezuko-pic .nez_protect {
+    font-size: 12px;
+    width: 210px;
+    text-align: center;
+}
+
+.right-side-nezuko-pic2 {
+    float: right;
+}
+
+.right-side-nezuko-pic2 .nez-fight1, .right-side-nezuko-pic2 .nez-fight2 {
+    height: 120px;
+    width: 210px;
+    vertical-align: bottom;
+}
+
+.right-side-nezuko-pic2 .nezuko_fight {
+    font-size: 12px;
+    width: 210px;
+    text-align: center;
+}
+
+.right-side-nezuko-pic3 {
+    float: right;
+}
+
+.right-side-nezuko-pic3 .nez-strength1, .right-side-nezuko-pic3 .nez-strength2 {
+    height: 120px;
+    width: 210px;
+    vertical-align: bottom;
+}
+
+.right-side-nezuko-pic3 .nezuko_strength {
+    font-size: 12px;
+    width: 210px;
+    text-align: center;
+}
+
+.right-side-nezuko-pic4 {
+    float: right;
+}
+
+.right-side-nezuko-pic4 .nez-flames1, .right-side-nezuko-pic4 .nez-flames2 {
+    height: 120px;
+    width: 210px;
+    vertical-align: bottom;
+}
+
+.right-side-nezuko-pic4 .nezuko_flames {
+    font-size: 12px;
+    width: 210px;
+    text-align: center;
+}
+
+/* Nezuko page CSS Settings Above */
+
+/* Tanjiro page CSS Settings Below */
+
+.tan-quote {
+    background-color: rgb(161, 121, 98);
+    margin-top: -28px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    padding: 20px 40px;
+}
+
+.tan-pic-zoom {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.tan-pic-zoom:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.tan-quick-answers-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(15, 116, 40, 0.685);
+    width: 691px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.tan-quick-answers-box h3 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.tan-quick-answers-box .tan-quick-answers-box-size {
+    width: 665px;
+    background-color: rgba(46, 11, 11, 0.63);
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.tan-quick-answers-box summary {
+    margin-left: 15px;
+}
+
+.tan-quick-answers-box .tan-quick-answers-box-size .tan-answer-margin {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 640px;
+}
+.tan-quick-answers-box2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(15, 116, 40, 0.685);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.tan-quick-answers-box2 h3 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .tan-quick-answers-box {
+        width: 100%;
+    }
+
+    .tan-quick-answers-box .tan-quick-answers-box-size {
+        width: 95%;
+    }
+
+    .tan-quick-answers-box .tan-quick-answers-box-size .tan-answer-margin {
+        width: 95%;
+    }
+}
+
+.tan-quick-answers-box2 .tan-quick-answers-box-size2 {
+    width: 98%;
+    background-color: rgba(46, 11, 11, 0.63);
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.tan-quick-answers-box2 summary {
+    margin-left: 15px;
+}
+
+.tan-quick-answers-box-size2 summary b:hover {
+    cursor: pointer;
+}
+
+.tan-quick-answers-box2 .tan-quick-answers-box-size2 .tan-answer-margin2 {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+@media only screen and (max-width: 1320px) {
+    .tan-quick-answers-box2 {
+        width: 100%;
+    }
+
+    .tan-quick-answers-box2 .tan-quick-answers-box-size2 {
+        width: 95%;
+    }
+
+    .tan-quick-answers-box2 .tan-quick-answers-box-size2 .tan-answer-margin2 {
+        width: 95%;
+    }
+}
+
+.right-side-tanjiro-pic5 {
+    width: 270px;
+    float: right;
+    margin: 0 5px 0 15px;
+}
+
+.right-side-tanjiro-pic5 .tan-daki2 {
+    height: 430px;
+    width: 260px;
+    vertical-align: bottom;
+}
+
+.right-side-tanjiro-pic5 .tan_daki {
+    font-size: 12px;
+    width: 260px;
+    text-align: center;
+}
+
+.right-side-tanjiro-pic6 {
+    width: 270px;
+    float: right;
+    margin: 0 5px 0 15px;
+}
+
+.right-side-tanjiro-pic6 .tan-muzan2 {
+    height: 430px;
+    width: 260px;
+    vertical-align: bottom;
+}
+
+.right-side-tanjiro-pic6 .tan_muzan {
+    font-size: 12px;
+    width: 260px;
+    text-align: center;
+}
+
+.right-side-tanjiro-pic7 {
+    width: 280px;
+    float: right;
+    margin: 0 5px 0 15px;
+}
+
+.right-side-tanjiro-pic7 .tan-analyze2 {
+    height: 220px;
+    width: 270px;
+    vertical-align: bottom;
+}
+
+.right-side-tanjiro-pic7 .tan_analyze {
+    font-size: 12px;
+    width: 270px;
+    text-align: center;
+}
+
+.right-side-tanjiro-pic10 {
+    width: 280px;
+    float: right;
+    margin: 0 5px 0 15px;
+}
+
+.right-side-tanjiro-pic10 .tan-transparent2 {
+    height: 240px;
+    width: 270px;
+    vertical-align: bottom;
+}
+
+.right-side-tanjiro-pic10 .tan_transparent {
+    font-size: 12px;
+    width: 270px;
+    text-align: center;
+}
+
+.right-side-tanjiro-pic21 {
+    width: 330px;
+    float: right;
+    margin: 0 5px 0 15px;
+}
+
+.right-side-tanjiro-pic21 .tan-ult2 {
+    height: 260px;
+    width: 320px;
+    vertical-align: bottom;
+}
+
+.right-side-tanjiro-pic21 .tan_ult {
+    font-size: 12px;
+    width: 320px;
+    text-align: center;
+}
+
+.right-side-tanjiro-pic22 {
+    float: right;
+    margin: 0 5px 0 15px;
+}
+
+.right-side-tanjiro-pic22 .tan-demon2 {
+    height: 400px;
+    width: 300px;
+    vertical-align: bottom;
+}
+
+.right-side-tanjiro-pic22 .tan_demon {
+    font-size: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+.right-side-tanjiro-pic23 {
+    float: right;
+    margin: 0 15px 15px 15px;
+}
+
+.right-side-tanjiro-pic23 .tan-sketch2 {
+    height: 280px;
+    width: 210px;
+    vertical-align: bottom;
+}
+
+.right-side-tanjiro-pic23 .tan_sketch {
+    font-size: 12px;
+    width: 220px;
+    text-align: center;
+}
+
+.tan-manga-pic1 {
+    float: right;
+    margin: 0 15px 15px 15px;
+}
+
+.tan-manga-pic1 .tan-manga-img1 {
+    height: 200px;
+    width: 200px;
+    vertical-align: bottom;
+}
+
+.tan-manga-pic1 .tan-manga-caption1 {
+    font-size: 12px;
+    width: 200px;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+/* Tanjiro page CSS Settings Above */
+
+/* Genya Settings Below */
+
+.gen-quick-answers-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(87, 15, 116, 0.384);
+    width: 691px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.gen-quick-answers-box h3 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.gen-quick-answers-box .gen-quick-answers-box-size {
+    width: 665px;
+    background-color: rgba(49, 15, 58, 0.63);
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.gen-quick-answers-box-size summary:hover {
+    cursor: pointer;
+}
+
+.gen-quick-answers-box summary {
+    margin-left: 15px;
+}
+
+.gen-quick-answers-box .gen-quick-answers-box-size .gen-answer-margin {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 640px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .gen-quick-answers-box {
+        width: 100%;
+    }
+
+    .gen-quick-answers-box .gen-quick-answers-box-size {
+        width: 95%;
+    }
+
+    .gen-quick-answers-box .gen-quick-answers-box-size .gen-answer-margin {
+        width: 95%;
+    }
+}
+
+.genya-manga-pic1 {
+    float: right;
+    margin: 0 15px 15px 15px;
+}
+
+.genya-manga-pic1 .genya-manga-caption1 {
+    width: 260px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.genya-manga-caption1 {
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+.genya-manga-pic1 .genya-manga-img1 {
+    height: 260px;
+    width: 260px;
+    vertical-align: bottom;
+}
+
+/* Genya Settings Above */
+
+/* Kanao page CSS Settings Below */
+
+.kanao-manga-pic1 {
+    float: right;
+    margin: 0 15px 15px 15px;
+}
+
+.kanao-manga-pic1 .kanao-manga-caption1 {
+    width: 260px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.kanao-manga-pic1 .kanao-manga-img1 {
+    height: 430px;
+    width: 260px;
+    vertical-align: bottom;
+}
+
+.kanao-manga-pic2 {
+    float: left;
+    margin: 0 15px 15px 15px;
+}
+
+.kanao-manga-pic2 .kanao-manga-caption2 {
+    width: 260px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.kanao-manga-pic2 .kanao-manga-img2 {
+    height: 430px;
+    width: 260px;
+    vertical-align: bottom;
+}
+
+/* Kanao page CSS Setting Above */
+
+/* Kiriya Settings Below */
+
+.kiriya-manga-pic1 {
+    float: right;
+    margin: 6px 15px 15px 15px;
+    width: 260px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.kiriya-manga-img1 {
+    height: 430px;
+    width: 260px;
+    vertical-align: bottom;
+}
+
+.kiriya-manga-pic1 figcaption {
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.kiriya-manga-pic2 {
+    float: right;
+    margin: 6px 15px 15px 15px;
+    width: 260px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.kiriya-manga-img2 {
+    height: 300px;
+    width: 260px;
+    vertical-align: bottom;
+}
+
+.kiriya-manga-pic2 figcaption {
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.left-kiriya-manga-pic {
+    float: left;
+    margin: 6px 15px 15px 15px;
+    width: 260px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.left-kiriya-manga-img {
+    height: 430px;
+    width: 260px;
+    vertical-align: bottom;
+}
+
+.left-kiriya-manga-pic figcaption {
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.left-side-anime-pic .kiriya-manga1 {
+    height: 290px;
+}
+
+.left-side-anime-pic .kiriya-manga2 {
+    height: 300px;
+}
+
+.right-side-anime-pic .kiriya-manga3 {
+    height: 400px;
+}
+
+/* Kiriya Settings Above */
+
+/* Kuina Settings Below */
+
+.right-side-anime-pic .kuina-pic1 {
+    height: 450px;
+}
+
+/* Kuina Settings Above */
+
+/* Kanata Settings Below */
+
+.right-side-anime-pic .kanata-pic1 {
+    height: 260px;
+}
+
+.right-side-anime-pic .kanata-pic2 {
+    height: 450px;
+}
+
+/* Kanata Settings Above */
+
+/* Giyu Settings Below */
+
+.right-side-anime-pic .giyu-img1,
+.left-side-anime-pic .giyu-img4 {
+    height: 450px;
+}
+
+.right-side-anime-pic .giyu-img3 {
+    height: 350px;
+}
+
+.left-side-anime-pic .giyu-img2,
+.right-side-anime-pic .giyu-img2 {
+    height: 210px;
+}
+
+.right-side-anime-pic .giyu-img5,
+.left-side-anime-pic .giyu-img6 {
+    height: 280px;
+}
+
+/* Giyu Settings Above */
+
+/* Mitsuri Settings Below */
+
+.left-side-anime-pic .mitsuri-img1 {
+    height: 420px;
+}
+
+.left-side-anime-pic .mitsuri-img2 {
+    height: 300px;
+}
+
+.right-side-anime-pic .mitsuri-img3 {
+    height: 400px;
+}
+
+/* Mitsuri Settings Above */
+
+/* Obanai Settings Below */
+
+.left-side-anime-pic .obanai-pic2,
+.right-side-anime-pic .obanai-pic2 {
+    height: 220px;
+}
+
+.left-side-anime-pic .obanai-pic4, 
+.right-side-anime-pic .obanai-pic4 {
+    height: 420px;
+}
+
+.right-side-anime-pic .obanai-pic1,
+.left-side-anime-pic .obanai-pic1 {
+    height: 330px;
+}
+
+.right-side-anime-pic .obanai-pic3 {
+    height: 290px;
+}
+
+.left-side-anime-pic .obanai-pic5 {
+    height: 250px;
+}
+
+/* Obanai Settings Above */
+
+/* Sanemi Settings Below */
+
+.left-side-anime-pic .sanemi-pic1 {
+    height: 300px;
+}
+
+.left-side-anime-pic .sanemi-pic4,
+.right-side-anime-pic .sanemi-pic5 {
+    height: 260px;
+}
+
+.right-side-anime-pic .sanemi-pic2 {
+    height: 300px;
+}
+
+.right-side-anime-pic .sanemi-pic3 {
+    height: 470px;
+}
+
+/* Sanemi Settings Above */
+
+/* Gyomei Settings Below */
+
+.right-side-anime-pic .gyomei_pic1 {
+    height: 420px;
+}
+
+.left-side-anime-pic .gyomei_pic2,
+.right-side-anime-pic .gyomei_pic2 {
+    height: 220px;
+}
+
+.right-side-anime-pic .gyomei_pic3,
+.left-side-anime-pic .gyomei_pic3 {
+    height: 125px;
+}
+
+/* Gyomei Settings Above */
+
+/* Muichiro Settings Below */
+
+.left-side-anime-pic .muichiro-pic1 {
+    height: 300px;
+}
+
+.right-side-anime-pic .muichiro-pic2 {
+    height: 450px;
+}
+
+/* Muichiro Settings Above */
+
+/* Shinobu Settings Below */
+
+.left-side-anime-pic .shinobu-pic1,
+.right-side-anime-pic .shinobu-pic1 {
+    height: 420px;
+}
+
+.right-side-anime-pic .shinobu-pic2,
+.left-side-anime-pic .shinobu-pic2 {
+    height: 150px;
+}
+
+.left-side-anime-pic .shinobu-pic3 {
+    height: 200px;
+}
+
+/* Shinobu Settings Above */
+
+/* Rengoku Settings Below */
+
+.left-side-anime-pic .kyojuro-pic1 {
+    height: 220px;
+}
+
+.right-side-anime-pic .kyojuro-pic2 {
+    height: 380px;
+}
+
+/* Rengoku Settings Above */
+
+/* Kanae Settings Below */
+
+.left-side-anime-pic .kanae-pic1 {
+    height: 210px;
+}
+
+.left-side-anime-pic .kanae-pic3 {
+    height: 150px;
+}
+
+.right-side-anime-pic .kanae-pic2 {
+    height: 300px;
+}
+
+.right-side-anime-pic .kanae-pic4 {
+    height: 440px;
+}
+
+/* Kanae Settings Above */
+
+/* Tengen Settings Below */
+
+.left-side-anime-pic .tengen-pic1,
+.right-side-anime-pic .tengen-pic1,
+.right-side-anime-pic .tengen-pic2 {
+    height: 400px;
+}
+
+.left-side-anime-pic .tengen-pic3 {
+    height: 100px;
+}
+
+/* Tengen Settings Above */
+
+/* Sakonji Settings Below */
+
+.right-side-anime-pic .sakonji-pic1 {
+    height: 300px;
+}
+
+/* Sakonji Settings Above */
+
+/* Jigoro Settings Below */
+
+.right-side-anime-pic .jigoro-pic1 {
+    height: 500px;
+}
+
+/* Jigoro Settings Above */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 50px 50px;
+    text-align: center;
+    align-items: baseline;
+    justify-items: center;
+}
+
+.gallery div a {
+    vertical-align: middle;
+}
+
+.gallery div small {
+    display: block;
+    width: 300px;
+}
+
+
+.fixlist {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.fixlist2 {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.fixlist3 {
+    margin: 0 10px 0 10px;
+    line-height: 45px;
+    list-style: none;
+    transition: 0.3s ease-in-out;
+}
+
+.fixlist3 a {
+    color: white;
+    text-decoration: none;
+    padding: 13px 0 13px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.fixlist3:hover {
+    background-color: rgba(255, 217, 0, 0.37);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.fixlist3 a:hover {
+    color: rgb(255, 217, 0);
+    transition: 0.3s ease-in-out;
+}
+
 .link {
     color: rgba(255, 217, 0, 0.781);
     text-decoration: none;
+    transition: 0.3s ease-in-out;
 }
 
 .link:hover {
     color: rgba(255, 217, 0, 0.493);
     text-decoration: underline;
+    transition: 0.3s ease-in-out;
 }
 
-.container #dataDisplay {
+.arrow {
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 30px;
+    color: white;
+    background-color: black;
+}
+
+/* Lightbox Settings Below */
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.modal {
+    place-content: center;
+    position: fixed;
+    z-index: 4;
+    padding: 20px 0 20px 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+.slides-track {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
+
+.close {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 0 6px;
+    position: absolute;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Slides sit side-by-side, shrunk and dimemed by default */
+.mySlides {
+    display: block;
+    flex: 0 0 60%;
+    opacity: 0.4;
+    transform: scale(0.85);
+    transition: transform 0.5s ease, opacity 0.5s ease-in-out;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.mySlides.active-slide {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.mySlides img {
+    width: 100% !important;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -120px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 10px 15px;
+    position: absolute;
+}
+
+.caption-container {
+    grid-row: 2;
+    text-align: center;
+    background-color: black;
+    padding: 16px 16px;
+    color: white;
+    font-weight: bolder;
+}
+
+.demo {
+    opacity: 1;
+    transition: opacity 0.6s ease;
+    height: 169px;
+}
+
+.active,
+.demo:hover {
+    opacity: 0.4;
+}
+
+.scroll-container {
+    grid-row: 3;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll-container .column img {
+    height: 100px;
+}
+
+@media only screen and (max-width: 900px) {
+    .close {
+        z-index: 2;
+        right: 20px;
+    }
+
+    .modal {
+        top: 100;
+    }
+    /*.scroll-container .column img {
+        height: 15vh;
+    }*/
+}
+
+@media only screen and (max-width: 1320px) {
+    .close {
+        z-index: 2;
+    }
+
+    .modal {
+        top: 100;
+    }
+    /*.scroll-container .column img {
+        height: 15vh;
+    }*/
+}
+
+/* Lightbox Settings Above */
+
+/* Characters Page Settings Below */
+
+.char-spoiler {
+    padding: 0.18em 0.5em;
+    margin: 0 0 10px 0;
+    border: 1px solid black;
+    background: #5e111f;
+    color: #fff;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.char-table {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    border-collapse: collapse;
+}
+
+a[title='Deceased'] {
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 1050px) {
+    .char-table {
+        justify-content: left;
+    }
+}
+
+.char-section-header {
+    background: #5e111f;
+    font-size: 170%;
+    padding: 15px 0;
+}
+
+.char-section-subheader {
+    background: #d9d4cc;
+    font-size: 110%;
+    color: #5e111f; 
+}
+
+.char-img-container,
+.char-img-caption {
+    border: 1px ridge #5e111f;
+}
+
+.char-img-caption {
+    padding: 10px 0;
+}
+
+.char-table-img {
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.char-link {
+    color: white;
+    text-decoration: none;
+}
+
+.char-link:hover {
+    text-decoration: underline;
+}
+
+.char-quick-answers-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(131, 53, 53, 0.24);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.char-quick-answers-box h3 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.char-quick-answers-box .char-quick-answers-box-size {
+    width: 98%;
+    background-color: rgba(32, 29, 29, 0.945);
+    margin-left: 15px;
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+
+.char-quick-answers-box summary {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.char-quick-answers-box .char-quick-answers-box-size .char-answer-margin {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+/* Characters Page Settings Above */
+
+/* Minor Characters Page Settings Below */
+
+.minor-char-table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.minor-char-sec1 {
+    background: #5e111f;
+    border: 4px solid #4d0013;
+    width: 30%;
+}
+
+.minor-char-sec2 {
+    background: #5e111f;
+    border: 4px solid #4d0013;
+    width: 70%;
+}
+
+.minor-char-header {
+    color: #d6b479;
+}
+
+.minor-char-topic-container {
+    border: 3px solid #4d0013;
+}
+
+.minor-char-desc-container {
+    border: 3px solid #4d0013;
+    padding: 10px;
+}
+
+.minor-char-desc-container li {
+    line-height: 20px;
+}
+
+.minor-char-topic {
+    width: auto;
+    border-radius: 0px 0px 0px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.minor-char-pic {
+    width: auto;
+    border-radius: 0px 0px 0px;
+    border: 4px ridge #560e00;
+    padding: 0px;
+}
+
+.minor-char-pic img {
+    display: flex;
+}
+
+.minor-char-text {
+    width: 100%;
+    text-align: center;
+    border-radius: 0px 0px 0px;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .minor-char-img {
+        width: 151px;
+        height: 90px;
+    }
+
+    .minor-char-mangaimg1 {
+        width: 151px;
+        height: 70px;
+    }
+
+    .minor-char-mangaimg2 {
+        width: 151px;
+        height: 151px;
+    }
+
+    .minor-char-mangaimg3 {
+        width: 151px;
+        height: 111px;
+    }
+
+    .minor-char-mangaimg4 {
+        width: 151px;
+        height: 201px;
+    }
+
+    .minor-char-sec1 {
+        width: 20%;
+    }
+
+    .minor-char-sec2 {
+        width: 80%;
+    }
+}
+
+.minor-char-guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.minor-char-guide .guideHeader {
+    width: 265px;
+}
+
+/* Minor Characters Page Settings Above */
