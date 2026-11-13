@@ -116,30 +116,45 @@ const projects = [
     },
 ];
 
+const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
 const searchResults = document.getElementById('search-results');
-const searchButton = document.querySelector('#search-button');
 
-searchInput.addEventListener('keyup', (event) => {
-    const query = event.target.value.toLowerCase();
+// Keep track of current filtered results for form submit navigation
+let currentFiltered = [];
+
+// Search input handling (fixed arrow function return)
+searchInput.addEventListener('input', (event) => {
+    const query = event.target.value.trim().toLowerCase();
     searchResults.innerHTML = '';
 
     if (query.length === 0) {
         searchResults.style.display = 'none';
-    } else {
-        searchResults.style.display = 'block';
+        currentFiltered = [];
+        return;
     };
 
-    const filteredProjects = projects.filter(project => {
-        return project.title.toLowerCase().includes(query) || project.description.toLowerCase().includes(query);
-    });
+    currentFiltered = projects.filter(project =>
+        project.title.toLowerCase().includes(query) || 
+        project.description.toLowerCase().includes(query)
+    );
 
-    displayResults(filteredProjects);
+    displayResults(currentFiltered);
 });
+
+// Handle form submit (clicking Search button or pressing Enter)
+searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (currentFiltered.length > 0) {
+        // Navigate to the first matching result
+        window.location.href = currentFiltered[0].url;
+    }
+})
 
 function displayResults(results) {
     if (results.length === 0) {
-        searchResults.innerHTML = '<p>No results found.</p>';
+        searchResults.innerHTML = '<p class="no-results">No results found.</p>';
+        searchResults.style.display = 'block';
         return;
     }
 
@@ -152,13 +167,15 @@ function displayResults(results) {
         link.textContent = project.title;
         listItem.appendChild(link);
         list.appendChild(listItem);
-        searchButton.addEventListener('click', (e) => {
-            if (e.key = 'Enter') {
-                e.preventDefault();
-
-                window.location.href = project.url;
-            }
-        })
     });
+
     searchResults.appendChild(list);
+    searchResults.style.display = 'block';
 };
+
+// Close dropdowns and search when clicking outside
+document.addEventListener('click', (e) => {
+    if (!searchForm.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.style.display = 'none';
+    }
+});
