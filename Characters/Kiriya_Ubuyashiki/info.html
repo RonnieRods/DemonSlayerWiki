@@ -4,180 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiriya Ubuyashiki | Demon Slayer Wiki</title>
-    <link rel="stylesheet" href="/stylesheets/styles copy.css" />
+    <link rel="stylesheet" href="../../stylesheets/styles-copy.css" />
 </head>
 <body>
-    <div class="navbar">
-        <a href="/../DemonSlayerWiki/index.html"><img src="/../DemonSlayerWiki/images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
-        <a href="/../DemonSlayerWiki/index.html" class="nav-item">Home</a>
-        <div class="dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">Characters</a>
-            <div class="dropdown-content">
-                <div class="ds">
-                    Demon Slayers
-                    <div class="ds-dropdown-content">
-                        <a href="">Tanjiro Kamado</a>
-                        <a href="">Zenitsu Agatsuma</a>
-                        <a href="">Inosuke Hashibira</a>
-                        <a href="">Kanao Tsuyuri</a>
-                        <a href="">Genya Shinazugawa</a>
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="../../index.html" class="logo-link">
+            <img src="../../images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" />
+        </a>
+
+        <!-- Hamburger Toggle for Mobile -->
+         <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+         </button>
+
+        <!-- Collapsible Nav Links Wrapper -->
+        <div id="nav-menu" class="nav-menu">
+            <a href="../../index.html" class="nav-item">Home</a>
+
+            <div class="dropdown">
+                <a href="../../characters.html" class="nav-item dropdown-trigger">Characters</a>
+                <div class="dropdown-content">
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demon Slayers</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Tanjiro Kamado</a>
+                            <a href="">Zenitsu Agatsuma</a>
+                            <a href="">Inosuke Hashibira</a>
+                            <a href="">Kanao Tsuyuri</a>
+                            <a href="">Genya Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Hashira
-                    <div class="ds-dropdown-content">
-                        <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
-                        <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
-                        <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
-                        <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
-                        <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
-                        <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
-                        <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
-                        <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
-                        <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Hashira</a>
+                        <div class="ds-dropdown-content">
+                            <a href="../../Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
+                            <a href="../../Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
+                            <a href="../../Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
+                            <a href="../../Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
+                            <a href="../../Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
+                            <a href="../../Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
+                            <a href="../../Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
+                            <a href="../../Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
+                            <a href="../../Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Demons
-                    <div class="ds-dropdown-content">
-                        <a href="">Muzan Kibutsuji</a>
-                        <a href="">Nezuko Kamado</a>
-                        <a href="">Tamayo</a>
-                        <a href="">Yushiro</a>
-                        <a href="">Susamaru</a>
-                        <a href="">Yahaba</a>
-                        <a href="">Spider Family</a>
-                        <a href="">Swamp Demon</a>
-                        <a href="">Hand Demon</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demons</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Muzan Kibutsuji</a>
+                            <a href="">Nezuko Kamado</a>
+                            <a href="">Tamayo</a>
+                            <a href="">Yushiro</a>
+                            <a href="">Susamaru</a>
+                            <a href="">Yahaba</a>
+                            <a href="">Spider Family</a>
+                            <a href="">Swamp Demon</a>
+                            <a href="">Hand Demon</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Upper Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Kokushibo</a>
-                        <a href="">Doma</a>
-                        <a href="">Akaza</a>
-                        <a href="">Nakime</a>
-                        <a href="">Hantengu</a>
-                        <a href="">Gyokko</a>
-                        <a href="">Kaigaku</a>
-                        <a href="">Daki</a>
-                        <a href="">Gyutaro</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Upper Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Kokushibo</a>
+                            <a href="">Doma</a>
+                            <a href="">Akaza</a>
+                            <a href="">Nakime</a>
+                            <a href="">Hantengu</a>
+                            <a href="">Gyokko</a>
+                            <a href="">Kaigaku</a>
+                            <a href="">Daki</a>
+                            <a href="">Gyutaro</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Lower Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Enmu</a>
-                        <a href="">Rokuro</a>
-                        <a href="">Wakuraba</a>
-                        <a href="">Mukago</a>
-                        <a href="">Rui</a>
-                        <a href="">Kamanue</a>
-                        <a href="">Kyogai</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Lower Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Enmu</a>
+                            <a href="">Rokuro</a>
+                            <a href="">Wakuraba</a>
+                            <a href="">Mukago</a>
+                            <a href="">Rui</a>
+                            <a href="">Kamanue</a>
+                            <a href="">Kyogai</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Groups
-                    <div class="ds-dropdown-content">
-                        <a href="">Demon Slayer Corps</a>
-                        <a href="">Twelve Kizuki</a>
-                        <a href="">Hashira</a>
-                        <a href="">Tsuguko</a>
-                        <a href="">Kakushi</a>
-                        <a href="">Kasugai Crows</a>
-                        <a href="">Ninju</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Groups</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Demon Slayer Corps</a>
+                            <a href="">Twelve Kizuki</a>
+                            <a href="">Hashira</a>
+                            <a href="">Tsuguko</a>
+                            <a href="">Kakushi</a>
+                            <a href="">Kasugai Crows</a>
+                            <a href="">Ninju</a>
+                        </div>
                     </div>
-                </div>
-                <a href="/../DemonSlayerWiki/characters.html">All Characters</a>
-            </div>
-        </div>
-        <div class="world-dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">World</a>
-            <div class="world-dropdown-content">
-                <div class="ds-world">
-                    Story Arcs
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Unwavering Resolve Arc</a>
-                        <a href="">Mugen Train Arc</a>
-                        <a href="">Entertainment District Arc</a>
-                        <a href="">Swordsmith Village Arc</a>
-                        <a href="">Hashira Training Arc</a>
-                        <a href="">Final Battle Arc</a>
-                        <a href="">Infinity Castle Arc</a>
-                        <a href="">Sunrise Countdown Arc</a>
-                        <a href="">All Arcs</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Locations
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Mount Sagiri</a>
-                        <a href="">Mount Fujikasanae</a>
-                        <a href="">Asakusa</a>
-                        <a href="">Tsuzumi Mansion</a>
-                        <a href="">Mount Natagumo</a>
-                        <a href="">Butterfly Mansion</a>
-                        <a href="">Yoshiwara</a>
-                        <a href="">Swordsmith Village</a>
-                        <a href="">Infinity Castle</a>
-                        <a href="">All Locations</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Abilities & Techniques
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Blood Demon Art</a>
-                        <a href="">Total Concentration Breathing</a>
-                        <a href="">Regeneration</a>
-                        <a href="">Demon Slayer Mark</a>
-                        <a href="">Bright Red Nichirin Sword</a>
-                        <a href="">Transparent World</a>
-                        <a href="">Selfless State</a>
-                        <a href="">Repetitive Action</a>
-                        <a href="">Extrasensory Perception</a>
-                        <a href="">Flesh Manipulation</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Breathing Styles
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Water Breathing</a>
-                        <a href="">Flame Breathing</a>
-                        <a href="">Thunder Breathing</a>
-                        <a href="">Wind Breathing</a>
-                        <a href="">Stone Breathing</a>
-                        <a href="">Beast Breathing</a>
-                        <a href="">Flower Breathing</a>
-                        <a href="">Sun Breathing</a>
-                        <a href="">Moon Breathing</a>
-                        <a href="">All Breathing Styles</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Events
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Battles</a>
-                        <a href="">Final Selection</a>
-                        <a href="">Lower Ranks Meeting</a>
-                        <a href="">Upper Ranks Meeting</a>
-                        <a href="">Rehabilitation Training</a>
-                        <a href="">Hashira Training</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Objects
-                    <div class="ds-world-dropdown-content-bottom">
-                        <a href="">Nichirin Sword</a>
-                        <a href="">Wisteria</a>
-                        <a href="">Blue Spider Lily</a>
-                        <a href="">Yoriichi Type Zero</a>
-                        <a href="">Warding Mask</a>
-                    </div>
+                    <a href="../../characters.html">All Characters</a>
                 </div>
             </div>
+            <div class="world-dropdown">
+                <a href="#" class="nav-item dropdown-trigger">World</a>
+                <div class="world-dropdown-content">
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Story Arcs</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Unwavering Resolve Arc</a>
+                            <a href="">Mugen Train Arc</a>
+                            <a href="">Entertainment District Arc</a>
+                            <a href="">Swordsmith Village Arc</a>
+                            <a href="">Hashira Training Arc</a>
+                            <a href="">Final Battle Arc</a>
+                            <a href="">Infinity Castle Arc</a>
+                            <a href="">Sunrise Countdown Arc</a>
+                            <a href="">All Arcs</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Locations</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Mount Sagiri</a>
+                            <a href="">Mount Fujikasanae</a>
+                            <a href="">Asakusa</a>
+                            <a href="">Tsuzumi Mansion</a>
+                            <a href="">Mount Natagumo</a>
+                            <a href="">Butterfly Mansion</a>
+                            <a href="">Yoshiwara</a>
+                            <a href="">Swordsmith Village</a>
+                            <a href="">Infinity Castle</a>
+                            <a href="">All Locations</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Abilities & Techniques</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Blood Demon Art</a>
+                            <a href="">Total Concentration Breathing</a>
+                            <a href="">Regeneration</a>
+                            <a href="">Demon Slayer Mark</a>
+                            <a href="">Bright Red Nichirin Sword</a>
+                            <a href="">Transparent World</a>
+                            <a href="">Selfless State</a>
+                            <a href="">Repetitive Action</a>
+                            <a href="">Extrasensory Perception</a>
+                            <a href="">Flesh Manipulation</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Breathing Styles</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Water Breathing</a>
+                            <a href="">Flame Breathing</a>
+                            <a href="">Thunder Breathing</a>
+                            <a href="">Wind Breathing</a>
+                            <a href="">Stone Breathing</a>
+                            <a href="">Beast Breathing</a>
+                            <a href="">Flower Breathing</a>
+                            <a href="">Sun Breathing</a>
+                            <a href="">Moon Breathing</a>
+                            <a href="">All Breathing Styles</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Events</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Battles</a>
+                            <a href="">Final Selection</a>
+                            <a href="">Lower Ranks Meeting</a>
+                            <a href="">Upper Ranks Meeting</a>
+                            <a href="">Rehabilitation Training</a>
+                            <a href="">Hashira Training</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Objects</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Nichirin Sword</a>
+                            <a href="">Wisteria</a>
+                            <a href="">Blue Spider Lily</a>
+                            <a href="">Yoriichi Type Zero</a>
+                            <a href="">Warding Mask</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item search-container">
+                <form id="search-form" role="search" class="search-form">
+                    <label for="search-input">Search Wiki:</label>
+                    <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Search..." 
+                    aria-label="Search content"
+                    autocomplete="off">
+                    <button type="submit" id="search-button">Go</button>
+                </form>
+                <div id="search-results" class="search-results-dropdown"></div>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -185,27 +212,27 @@
 
             <div class="mySlides">
                 <div class="numbertext">1 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Successor_Kiriya_anime.webp" style="width:45.35%;">
+                <img src="../../images/Successor_Kiriya_anime.webp" style="width:45.35%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">2 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Kiriya_taking_command.webp" style="width:45.6%;">
+                <img src="../../images/Kiriya_taking_command.webp" style="width:45.6%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Kiriya_taking_command.webp" style="width:45.6%;">
+                <img src="../../images/Kiriya_taking_command.webp" style="width:45.6%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">4 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Elderly_Kiriya_being_interviewed_CH205.webp" style="width:40.45%;">
+                <img src="../../images/Elderly_Kiriya_being_interviewed_CH205.webp" style="width:40.45%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">5 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Introduction_of_Final_Selection.webp" style="width:100%;">
+                <img src="../../images/Introduction_of_Final_Selection.webp" style="width:100%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">6 / 6</div>
-                <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_CH181.webp" style="width:38.6%;">
+                <img src="../../images/Kimetsu_no_Yaiba_CH181.webp" style="width:38.6%;">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -219,7 +246,7 @@
                 <div class="column" id="Pic1">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Successor_Kiriya_anime.webp" 
+                    src="../../images/Successor_Kiriya_anime.webp" 
                     onclick="currentSlide(1)" 
                     alt="Kiriya's Anime Appearance"
                     >
@@ -227,7 +254,7 @@
                 <div class="column" id="Pic2">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kiriya_taking_command.webp" 
+                    src="../../images/Kiriya_taking_command.webp" 
                     onclick="currentSlide(2)" 
                     alt="Kiriya's Manga Appearance"
                     >
@@ -235,7 +262,7 @@
                 <div class="column" id="Pic3">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kiriya_taking_command.webp" 
+                    src="../../images/Kiriya_taking_command.webp" 
                     onclick="currentSlide(3)" 
                     alt="Kiriya taking command"
                     >
@@ -243,7 +270,7 @@
                 <div class="column" id="Pic4">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Elderly_Kiriya_being_interviewed_CH205.webp" 
+                    src="../../images/Elderly_Kiriya_being_interviewed_CH205.webp" 
                     onclick="currentSlide(4)" 
                     alt="Elderly Kiriya being interviewed"
                     >
@@ -251,7 +278,7 @@
                 <div class="column" id="Pic5">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Introduction_of_Final_Selection.webp" 
+                    src="../../images/Introduction_of_Final_Selection.webp" 
                     onclick="currentSlide(5)" 
                     alt="Introduction of Final Selection"
                     >
@@ -259,7 +286,7 @@
                 <div class="column" id="Pic6">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_CH181.webp" 
+                    src="../../images/Kimetsu_no_Yaiba_CH181.webp" 
                     onclick="currentSlide(6)" 
                     alt="Kiryia's severe anxiety as the new Oyakata"
                     >
@@ -279,10 +306,10 @@
                     <a href="" class="link">Info</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/synopsis.html" class="link">Synopsis</a>
+                    <a href="../../Characters/Kiriya_Ubuyashiki/synopsis.html" class="link">Synopsis</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/relationships.html" class="link">Relationships</a>
+                    <a href="../../Characters/Kiriya_Ubuyashiki/relationships.html" class="link">Relationships</a>
                 </div>
             </div>
 
@@ -304,7 +331,7 @@
                             <a id="expImg" class="contain-img" href="#Pic1">
                                 <img 
                                 id="curImg"
-                                src="/../DemonSlayerWiki/images/Successor_Kiriya_anime.webp"
+                                src="../../images/Successor_Kiriya_anime.webp"
                                 decoding="async"
                                 loading="lazy"
                                 class="zoom"
@@ -384,29 +411,29 @@
                     <div class="item-spacing">
                         <h3 class="label">Relative(s)</h3>
                         <div class="value" style="height: 200px; overflow: auto;">
-                            <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" 
+                            <a href="../../Characters/Kagaya_Ubuyashiki/info.html" 
                             class="link">Kagaya Ubuyashiki</a> <small>(Father)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html"
+                            <a href="../../Characters/Amane_Ubuyashiki/info.html"
                             class="link">Amane Ubuyashiki</a> <small>(Mother)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a> <small>(Uncle)</small>
+                            <a href="../../Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a> <small>(Uncle)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a> <small>(Uncle)</small>
+                            <a href="../../Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a> <small>(Uncle)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Hinaki_Ubuyashiki/info.html" 
+                            <a href="../../Characters/Hinaki_Ubuyashiki/info.html" 
                             class="link">Hinaki Ubuyashiki</a> <small>(Older Quintuplet Sister)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Nichika_Ubuyashiki/info.html" 
+                            <a href="../../Characters/Nichika_Ubuyashiki/info.html" 
                             class="link">Nichika Ubuyashiki</a> <small>(Older Quintuplet Sister)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html"
+                            <a href="../../Characters/Kuina_Ubuyashiki/info.html"
                             class="link">Kuina Ubuyashiki</a> <small>(Younger Quintuplet Sister)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html"
+                            <a href="../../Characters/Kanata_Ubuyashiki/info.html"
                             class="link">Kanata Ubuyashiki</a> <small>(Younger Quintuplet Sister)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html" 
+                            <a href="../../Characters/Muzan_Kibutsuji/info.html" 
                             href="" class="link">Muzan Kibutsuji</a> <small>(Distant Relative)</small>
                             <br>
                             Unnamed Wife
@@ -468,7 +495,7 @@
                                 <cite>
                                     — 
                                     <b>Kiriya</b> to
-                                    <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html" 
+                                    <a href="../../Characters/Kanata_Ubuyashiki/info.html" 
                                     class="link">Kanata Ubuyashiki</a> in Small Cogs
                                 </cite>
                             </div>
@@ -483,7 +510,7 @@
                 <ruby lang="ja"><rb>輝</rb><rt>き</rt><rb>利</rb><rt>り</rt><rb>哉</rb><rt>や</rt></ruby>
                 <i>Ubuyashiki Kiriya<span style="font-style:normal;">)</span></i>
                 is a major supporting character in <i>Demon Slayer: Kimetsu no Yaiba</i>. He is the only son and
-                middle child of <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>
+                middle child of <a href="../../Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>
                 and the latest head of the Ubuyashiki Household. After his father's passing, he leads the
                 <a href="" class="link">Demon Slayer Corps</a> as the 98th and final <a href="" class="link">Oyakata</a>.
             </p>
@@ -595,7 +622,7 @@
                         <div style="position:relative; height:170px; width:300px;">
                             <a href="#Pic3" class="contain-img">
                                 <img 
-                                src="/../DemonSlayerWiki/images/Kiriya_taking_command.webp" 
+                                src="../../images/Kiriya_taking_command.webp" 
                                 style="height:300px; width:250px; border:1px solid gray;" 
                                 class="zoom" 
                                 onclick="openModal();currentSlide(3)"/>
@@ -609,7 +636,7 @@
                         <div style="position:relative; height:170px; width:300px;">
                             <a href="#Pic4" class="contain-img">
                                 <img 
-                                src="/../DemonSlayerWiki/images/Elderly_Kiriya_being_interviewed_CH205.webp" 
+                                src="../../images/Elderly_Kiriya_being_interviewed_CH205.webp" 
                                 style="height:300px; width:250px; border:1px solid gray;" 
                                 class="zoom" 
                                 onclick="openModal();currentSlide(4)"/>
@@ -628,7 +655,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic5">
                         <img 
-                        src="/../DemonSlayerWiki/images/Introduction_of_Final_Selection.webp" 
+                        src="../../images/Introduction_of_Final_Selection.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(5)">
                     </a>
@@ -639,11 +666,11 @@
                 During his first appearance in the series during the Final Selection test, Kiriya portrays himself
                 to be polite, competent, and somewhat emotionally detached having calmly and politely greeted the
                 trainees in sync with his 
-                <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html" class="link">sister</a>, professionally
+                <a href="../../Characters/Kanata_Ubuyashiki/info.html" class="link">sister</a>, professionally
                 explaining the details regarding the test. He is somewhat unfazed when
-                <a href="/../DemonSlayerWiki/Characters/Genya_Shinazugawa/info.html" class="link">Genya Shinazugawa</a> roughly manhandles his sister
+                <a href="../../Characters/Genya_Shinazugawa/info.html" class="link">Genya Shinazugawa</a> roughly manhandles his sister
                 before being stopped by 
-                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link">Tanjiro Kamado</a>, only
+                <a href="../../Characters/Tanjiro_Kamado/info.html" class="link">Tanjiro Kamado</a>, only
                 sarcastically asking if they were finished.
                 <span class="tooltip-anchor" id="Ref3">
                     <sup class="tooltip">
@@ -659,7 +686,7 @@
                 Later, upon his father, mother and sisters' deaths, Kiriya shows an entirely different side to
                 himself, displaying his capabilities as a leader. He immediately jumps into his new position and
                 organizes himself to monitor and command the Demon Slayers on their attack against
-                <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html" class="link">Muzan Kibutsuji</a> and his
+                <a href="../../Characters/Muzan_Kibutsuji/info.html" class="link">Muzan Kibutsuji</a> and his
                 <a href="" class="link">Twelve Kizuki</a>,
                 <span class="tooltip-anchor" id="Ref4">
                     <sup class="tooltip">
@@ -681,12 +708,12 @@
                     </sup>
                 </span>
                 Kiriya is also shown to have had confidence in the Demon Slayers he commanded, as he refused to
-                send Tanjiro and <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a> to fight
-                <a href="/../DemonSlayerWiki/Characters/Kokushibo/info.html" class="link">Kokushibo</a>, believing that the combined efforts of
-                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>,
-                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>, and
-                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi</a> and
-                <a href="/../DemonSlayerWiki/Characters/Genya_Shinazugawa/info.html" class="link">Genya Shinazugawa</a> would be
+                send Tanjiro and <a href="../../Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a> to fight
+                <a href="../../Characters/Kokushibo/info.html" class="link">Kokushibo</a>, believing that the combined efforts of
+                <a href="../../Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>,
+                <a href="../../Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>, and
+                <a href="../../Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi</a> and
+                <a href="../../Characters/Genya_Shinazugawa/info.html" class="link">Genya Shinazugawa</a> would be
                 enough to defeat him.
                 <span class="tooltip-anchor" id="Ref6">
                     <sup class="tooltip">
@@ -702,7 +729,7 @@
                 <figure class="kiriya-manga-pic1">
                     <a class="contain-img" href="#Pic6">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_CH181.webp" 
+                        src="../../images/Kimetsu_no_Yaiba_CH181.webp" 
                         class="figure-img zoom contain-img cursor kiriya-manga-img1" 
                         onclick="openModal();currentSlide(6)">
                     </a>
@@ -714,7 +741,7 @@
                 a fleshy cacoon, Kiriya breaks under stress and stops giving orders, believing that not only
                 would Muzan win and all of their sacrifices and efforts would be in vain, but that he would
                 be solely responsible for it. He is able to pull himself back together after
-                <a href="/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina</a> slaps and encourages him.
+                <a href="../../Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina</a> slaps and encourages him.
                 <span class="tooltip-anchor" id="Ref7">
                     <sup class="tooltip">
                         <span class="tooltiptext">
@@ -813,7 +840,7 @@
                 </li>
                 <li class="fixlist">
                     After the final battle against 
-                    <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html" class="link">Muzan</a>, Kiriya
+                    <a href="../../Characters/Muzan_Kibutsuji/info.html" class="link">Muzan</a>, Kiriya
                     feared that he would die when he turned 20 and that the Ubuyashiki clan would cease to exist.
                     He believed that this was due to happen since the clan had completed their duty of defeating
                     Muzan.
@@ -866,8 +893,8 @@
             <hr class="split">
             <ul>
                 <li class="fixlist">
-                    (To <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a> and
-                    <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>)
+                    (To <a href="../../Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a> and
+                    <a href="../../Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>)
                     "<i>This is the final Hashira Meeting. Sanemi. Giyu. You are the only surviving Hashira...
                     and many rank-and-file corps members died. However, we've successfully eradicated the demons.
                     Thus, the Demon Slayer Corps disbands today.</i>"
@@ -968,7 +995,7 @@
                         <th class="nav-table-header">
                             <aside>[<a href="#" class="link" id="nav-table-btn">show</a>]</aside>
                             <div class="nav-table-char">
-                                <a href="/../DemonSlayerWiki/characters.html">Characters</a>
+                                <a href="../../characters.html">Characters</a>
                             </div>
                         </th>
                     </tr>
@@ -986,15 +1013,15 @@
                                                 <b>Ubuyashiki Family:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
                                                 <span class="nav-table-current">Kiriya Ubuyashiki</span>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
+                                                <a href="../../Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1002,16 +1029,16 @@
                                                 <b>Hashira:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a> ·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a> ·
+                                                <a href="../../Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>&nbsp;·
+                                                <a href="../../Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
+                                                <a href="../../Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a>&nbsp;·
+                                                <a href="../../Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
+                                                <a href="../../Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·
+                                                <a href="../../Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>&nbsp;·
+                                                <a href="../../Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>&nbsp;·
+                                                <a href="../../Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
+                                                <a href="../../Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a> ·
+                                                <a href="../../Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a> ·
                                                 <a href="sakonji.html" class="link">Sakonji Urokodaki</a>
                                                 <a href="jigoro.html" class="link">Jigoro Kuwajima</a>
                                                 <a href="shinjuro.html" class="link">Shinjuro Rengoku</a>
@@ -1280,9 +1307,10 @@
         </div>
     </div>
     <footer>Wiki inspired by the <a class="link" href="https://kimetsu-no-yaiba.fandom.com/" target="_blank">Kimetsu No Yaiba Wiki</a></footer>
-    <script src="/../DemonSlayerWiki/javascripts/navigation.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/kiriya.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/lightbox_modal.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/character_navigation.js"></script>
+    <script src="../../javascripts/navigation.js"></script>
+    <script src="../../javascripts/searchbar.js"></script>
+    <script src="../../javascripts/kiriya.js"></script>
+    <script src="../../javascripts/lightbox_modal.js"></script>
+    <script src="../../javascripts/character_navigation.js"></script>
 </body>
 </html>

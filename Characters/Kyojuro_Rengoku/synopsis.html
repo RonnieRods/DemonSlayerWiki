@@ -4,193 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyojuro Rengoku/Synopsis | Demon Slayer Wiki</title>
-    <link rel="stylesheet" href="/../DemonSlayerWiki/stylesheets/styles copy.css" />
+    <link rel="stylesheet" href="../../stylesheets/styles-copy.css" />
 </head>
 <body>
-    <div class="navbar">
-        <a href="/../DemonSlayerWiki/index.html"><img src="/../DemonSlayerWiki/images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
-        <a href="/../DemonSlayerWiki/index.html" class="nav-item">Home</a>
-        <div class="dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">Characters</a>
-            <div class="dropdown-content">
-                <div class="ds">
-                    Demon Slayers
-                    <div class="ds-dropdown-content">
-                        <a href="">Tanjiro Kamado</a>
-                        <a href="">Zenitsu Agatsuma</a>
-                        <a href="">Inosuke Hashibira</a>
-                        <a href="">Kanao Tsuyuri</a>
-                        <a href="">Genya Shinazugawa</a>
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="../../index.html" class="logo-link">
+            <img src="../../images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" />
+        </a>
+
+        <!-- Hamburger Toggle for Mobile -->
+         <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+         </button>
+
+        <!-- Collapsible Nav Links Wrapper -->
+        <div id="nav-menu" class="nav-menu">
+            <a href="../../index.html" class="nav-item">Home</a>
+
+            <div class="dropdown">
+                <a href="../../characters.html" class="nav-item dropdown-trigger">Characters</a>
+                <div class="dropdown-content">
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demon Slayers</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Tanjiro Kamado</a>
+                            <a href="">Zenitsu Agatsuma</a>
+                            <a href="">Inosuke Hashibira</a>
+                            <a href="">Kanao Tsuyuri</a>
+                            <a href="">Genya Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Hashira
-                    <div class="ds-dropdown-content">
-                        <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
-                        <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
-                        <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
-                        <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
-                        <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
-                        <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
-                        <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
-                        <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
-                        <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Hashira</a>
+                        <div class="ds-dropdown-content">
+                            <a href="../../Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
+                            <a href="../../Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
+                            <a href="../../Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
+                            <a href="../../Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
+                            <a href="../../Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
+                            <a href="../../Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
+                            <a href="../../Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
+                            <a href="../../Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
+                            <a href="../../Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Demons
-                    <div class="ds-dropdown-content">
-                        <a href="">Muzan Kibutsuji</a>
-                        <a href="">Nezuko Kamado</a>
-                        <a href="">Tamayo</a>
-                        <a href="">Yushiro</a>
-                        <a href="">Susamaru</a>
-                        <a href="">Yahaba</a>
-                        <a href="">Spider Family</a>
-                        <a href="">Swamp Demon</a>
-                        <a href="">Hand Demon</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demons</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Muzan Kibutsuji</a>
+                            <a href="">Nezuko Kamado</a>
+                            <a href="">Tamayo</a>
+                            <a href="">Yushiro</a>
+                            <a href="">Susamaru</a>
+                            <a href="">Yahaba</a>
+                            <a href="">Spider Family</a>
+                            <a href="">Swamp Demon</a>
+                            <a href="">Hand Demon</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Upper Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Kokushibo</a>
-                        <a href="">Doma</a>
-                        <a href="">Akaza</a>
-                        <a href="">Nakime</a>
-                        <a href="">Hantengu</a>
-                        <a href="">Gyokko</a>
-                        <a href="">Kaigaku</a>
-                        <a href="">Daki</a>
-                        <a href="">Gyutaro</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Upper Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Kokushibo</a>
+                            <a href="">Doma</a>
+                            <a href="">Akaza</a>
+                            <a href="">Nakime</a>
+                            <a href="">Hantengu</a>
+                            <a href="">Gyokko</a>
+                            <a href="">Kaigaku</a>
+                            <a href="">Daki</a>
+                            <a href="">Gyutaro</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Lower Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Enmu</a>
-                        <a href="">Rokuro</a>
-                        <a href="">Wakuraba</a>
-                        <a href="">Mukago</a>
-                        <a href="">Rui</a>
-                        <a href="">Kamanue</a>
-                        <a href="">Kyogai</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Lower Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Enmu</a>
+                            <a href="">Rokuro</a>
+                            <a href="">Wakuraba</a>
+                            <a href="">Mukago</a>
+                            <a href="">Rui</a>
+                            <a href="">Kamanue</a>
+                            <a href="">Kyogai</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Groups
-                    <div class="ds-dropdown-content">
-                        <a href="">Demon Slayer Corps</a>
-                        <a href="">Twelve Kizuki</a>
-                        <a href="">Hashira</a>
-                        <a href="">Tsuguko</a>
-                        <a href="">Kakushi</a>
-                        <a href="">Kasugai Crows</a>
-                        <a href="">Ninju</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Groups</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Demon Slayer Corps</a>
+                            <a href="">Twelve Kizuki</a>
+                            <a href="">Hashira</a>
+                            <a href="">Tsuguko</a>
+                            <a href="">Kakushi</a>
+                            <a href="">Kasugai Crows</a>
+                            <a href="">Ninju</a>
+                        </div>
                     </div>
-                </div>
-                <a href="/../DemonSlayerWiki/characters.html">All Characters</a>
-            </div>
-        </div>
-        <div class="world-dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">World</a>
-            <div class="world-dropdown-content">
-                <div class="ds-world">
-                    Story Arcs
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Unwavering Resolve Arc</a>
-                        <a href="">Mugen Train Arc</a>
-                        <a href="">Entertainment District Arc</a>
-                        <a href="">Swordsmith Village Arc</a>
-                        <a href="">Hashira Training Arc</a>
-                        <a href="">Final Battle Arc</a>
-                        <a href="">Infinity Castle Arc</a>
-                        <a href="">Sunrise Countdown Arc</a>
-                        <a href="">All Arcs</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Locations
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Mount Sagiri</a>
-                        <a href="">Mount Fujikasanae</a>
-                        <a href="">Asakusa</a>
-                        <a href="">Tsuzumi Mansion</a>
-                        <a href="">Mount Natagumo</a>
-                        <a href="">Butterfly Mansion</a>
-                        <a href="">Yoshiwara</a>
-                        <a href="">Swordsmith Village</a>
-                        <a href="">Infinity Castle</a>
-                        <a href="">All Locations</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Abilities & Techniques
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Blood Demon Art</a>
-                        <a href="">Total Concentration Breathing</a>
-                        <a href="">Regeneration</a>
-                        <a href="">Demon Slayer Mark</a>
-                        <a href="">Bright Red Nichirin Sword</a>
-                        <a href="">Transparent World</a>
-                        <a href="">Selfless State</a>
-                        <a href="">Repetitive Action</a>
-                        <a href="">Extrasensory Perception</a>
-                        <a href="">Flesh Manipulation</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Breathing Styles
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Water Breathing</a>
-                        <a href="">Flame Breathing</a>
-                        <a href="">Thunder Breathing</a>
-                        <a href="">Wind Breathing</a>
-                        <a href="">Stone Breathing</a>
-                        <a href="">Beast Breathing</a>
-                        <a href="">Flower Breathing</a>
-                        <a href="">Sun Breathing</a>
-                        <a href="">Moon Breathing</a>
-                        <a href="">All Breathing Styles</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Events
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Battles</a>
-                        <a href="">Final Selection</a>
-                        <a href="">Lower Ranks Meeting</a>
-                        <a href="">Upper Ranks Meeting</a>
-                        <a href="">Rehabilitation Training</a>
-                        <a href="">Hashira Training</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Objects
-                    <div class="ds-world-dropdown-content-bottom">
-                        <a href="">Nichirin Sword</a>
-                        <a href="">Wisteria</a>
-                        <a href="">Blue Spider Lily</a>
-                        <a href="">Yoriichi Type Zero</a>
-                        <a href="">Warding Mask</a>
-                    </div>
+                    <a href="../../characters.html">All Characters</a>
                 </div>
             </div>
+            <div class="world-dropdown">
+                <a href="#" class="nav-item dropdown-trigger">World</a>
+                <div class="world-dropdown-content">
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Story Arcs</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Unwavering Resolve Arc</a>
+                            <a href="">Mugen Train Arc</a>
+                            <a href="">Entertainment District Arc</a>
+                            <a href="">Swordsmith Village Arc</a>
+                            <a href="">Hashira Training Arc</a>
+                            <a href="">Final Battle Arc</a>
+                            <a href="">Infinity Castle Arc</a>
+                            <a href="">Sunrise Countdown Arc</a>
+                            <a href="">All Arcs</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Locations</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Mount Sagiri</a>
+                            <a href="">Mount Fujikasanae</a>
+                            <a href="">Asakusa</a>
+                            <a href="">Tsuzumi Mansion</a>
+                            <a href="">Mount Natagumo</a>
+                            <a href="">Butterfly Mansion</a>
+                            <a href="">Yoshiwara</a>
+                            <a href="">Swordsmith Village</a>
+                            <a href="">Infinity Castle</a>
+                            <a href="">All Locations</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Abilities & Techniques</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Blood Demon Art</a>
+                            <a href="">Total Concentration Breathing</a>
+                            <a href="">Regeneration</a>
+                            <a href="">Demon Slayer Mark</a>
+                            <a href="">Bright Red Nichirin Sword</a>
+                            <a href="">Transparent World</a>
+                            <a href="">Selfless State</a>
+                            <a href="">Repetitive Action</a>
+                            <a href="">Extrasensory Perception</a>
+                            <a href="">Flesh Manipulation</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Breathing Styles</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Water Breathing</a>
+                            <a href="">Flame Breathing</a>
+                            <a href="">Thunder Breathing</a>
+                            <a href="">Wind Breathing</a>
+                            <a href="">Stone Breathing</a>
+                            <a href="">Beast Breathing</a>
+                            <a href="">Flower Breathing</a>
+                            <a href="">Sun Breathing</a>
+                            <a href="">Moon Breathing</a>
+                            <a href="">All Breathing Styles</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Events</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Battles</a>
+                            <a href="">Final Selection</a>
+                            <a href="">Lower Ranks Meeting</a>
+                            <a href="">Upper Ranks Meeting</a>
+                            <a href="">Rehabilitation Training</a>
+                            <a href="">Hashira Training</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Objects</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Nichirin Sword</a>
+                            <a href="">Wisteria</a>
+                            <a href="">Blue Spider Lily</a>
+                            <a href="">Yoriichi Type Zero</a>
+                            <a href="">Warding Mask</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item search-container">
+                <form id="search-form" role="search" class="search-form">
+                    <label for="search-input">Search Wiki:</label>
+                    <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Search..." 
+                    aria-label="Search content"
+                    autocomplete="off">
+                    <button type="submit" id="search-button">Go</button>
+                </form>
+                <div id="search-results" class="search-results-dropdown"></div>
+            </div>
         </div>
-        <div class="nav-item">
-            <form id="search-form" role="search">
-                <label for="search-input">Search Wiki:</label>
-                <input 
-                type="text" 
-                id="search-input" 
-                placeholder="Enter keywords..." 
-                aria-label="Search through project content"
-                autocomplete="off">
-                <button id="search-button">Search</button>
-            </form>
-            <div id="search-results"></div>
-        </div>
-    </div>
+    </nav>
 
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -198,71 +212,71 @@
 
             <div class="mySlides">
                 <div class="numbertext">1 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Rengoku_family_Shirogane.webp">
+                <img src="../../images/Rengoku_family_Shirogane.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">2 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro28anime29.webp">
+                <img src="../../images/Kyojuro28anime29.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">3 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro_running_along_a_train_track.gif">
+                <img src="../../images/Kyojuro_running_along_a_train_track.gif">
             </div>
             <div class="mySlides">
                 <div class="numbertext">4 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro_kills_the_Slasher.webp">
+                <img src="../../images/Kyojuro_kills_the_Slasher.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">5 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Tanjiro_and_Zenitsu_running_into_Kyojuro_on_the_Train.webp">
+                <img src="../../images/Tanjiro_and_Zenitsu_running_into_Kyojuro_on_the_Train.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">6 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro_using_First_Form_Unknowing_Fire_on_a_Train_Demon.webp">
+                <img src="../../images/Kyojuro_using_First_Form_Unknowing_Fire_on_a_Train_Demon.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">7 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Tanjiro_and_Kyojuro_asleep_on_the_train.webp">
+                <img src="../../images/Tanjiro_and_Kyojuro_asleep_on_the_train.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">8 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro_choking_one_of_Enmus_followers.webp">
+                <img src="../../images/Kyojuro_choking_one_of_Enmus_followers.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">9 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro_arrives_to_instruct_Tanjiro.webp">
+                <img src="../../images/Kyojuro_arrives_to_instruct_Tanjiro.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">10 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro_splits_Akazas_arm_in_half.webp">
+                <img src="../../images/Kyojuro_splits_Akazas_arm_in_half.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">11 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro_and_Akaza_clash.webp">
+                <img src="../../images/Kyojuro_and_Akaza_clash.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">12 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Akaza_and_Kyojuro_exchanging_blows_at_blinding_speeds.webp">
+                <img src="../../images/Akaza_and_Kyojuro_exchanging_blows_at_blinding_speeds.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">13 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuros_willingness_to_fulfill_his_duty.webp">
+                <img src="../../images/Kyojuros_willingness_to_fulfill_his_duty.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">14 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Ruka_embraces_a_young_Kyojuro.webp">
+                <img src="../../images/Ruka_embraces_a_young_Kyojuro.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">15 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro_continues_attacking_Akaza.webp">
+                <img src="../../images/Kyojuro_continues_attacking_Akaza.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">16 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro_speaking_to_Tanjiro_one_last_time.webp">
+                <img src="../../images/Kyojuro_speaking_to_Tanjiro_one_last_time.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">17 / 17</div>
-                <img src="/../DemonSlayerWiki/images/Kyojuro_passing_away_with_a_smile_on_his_face.webp">
+                <img src="../../images/Kyojuro_passing_away_with_a_smile_on_his_face.webp">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -276,7 +290,7 @@
                 <div class="column" id="Pic1">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Rengoku_family_Shirogane.webp" 
+                    src="../../images/Rengoku_family_Shirogane.webp" 
                     onclick="currentSlide(1)" 
                     alt="Rengoku family Shirogane"
                     >
@@ -284,7 +298,7 @@
                 <div class="column" id="Pic2">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro28anime29.webp" 
+                    src="../../images/Kyojuro28anime29.webp" 
                     onclick="currentSlide(2)" 
                     alt="Kyojuro's introduction as a Hashira"
                     >
@@ -292,7 +306,7 @@
                 <div class="column" id="Pic3">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro_running_along_a_train_track.gif" 
+                    src="../../images/Kyojuro_running_along_a_train_track.gif" 
                     onclick="currentSlide(3)" 
                     alt="Kyojuro running along a train track"
                     >
@@ -300,7 +314,7 @@
                 <div class="column" id="Pic4">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro_kills_the_Slasher.webp" 
+                    src="../../images/Kyojuro_kills_the_Slasher.webp" 
                     onclick="currentSlide(4)" 
                     alt="Kyojuro kills the Slasher"
                     >
@@ -308,7 +322,7 @@
                 <div class="column" id="Pic5">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tanjiro_and_Zenitsu_running_into_Kyojuro_on_the_Train.webp" 
+                    src="../../images/Tanjiro_and_Zenitsu_running_into_Kyojuro_on_the_Train.webp" 
                     onclick="currentSlide(5)" 
                     alt="Tanjiro and Zenitsu running into Kyojuro on the Train"
                     >
@@ -316,7 +330,7 @@
                 <div class="column" id="Pic6">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro_using_First_Form_Unknowing_Fire_on_a_Train_Demon.webp" 
+                    src="../../images/Kyojuro_using_First_Form_Unknowing_Fire_on_a_Train_Demon.webp" 
                     onclick="currentSlide(6)" 
                     alt="Kyojuro using First Form Unknowing Fire on a Train Demon"
                     >
@@ -324,7 +338,7 @@
                 <div class="column" id="Pic7">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tanjiro_and_Kyojuro_asleep_on_the_train.webp" 
+                    src="../../images/Tanjiro_and_Kyojuro_asleep_on_the_train.webp" 
                     onclick="currentSlide(7)" 
                     alt="Tanjiro and Kyojuro asleep on the train"
                     >
@@ -332,7 +346,7 @@
                 <div class="column" id="Pic8">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro_choking_one_of_Enmus_followers.webp" 
+                    src="../../images/Kyojuro_choking_one_of_Enmus_followers.webp" 
                     onclick="currentSlide(8)" 
                     alt="Kyojuro choking one of Enmu's followers"
                     >
@@ -340,7 +354,7 @@
                 <div class="column" id="Pic9">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro_arrives_to_instruct_Tanjiro.webp" 
+                    src="../../images/Kyojuro_arrives_to_instruct_Tanjiro.webp" 
                     onclick="currentSlide(9)" 
                     alt="Kyojuro arrives to instruct Tanjiro"
                     >
@@ -348,7 +362,7 @@
                 <div class="column" id="Pic10">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro_splits_Akazas_arm_in_half.webp" 
+                    src="../../images/Kyojuro_splits_Akazas_arm_in_half.webp" 
                     onclick="currentSlide(10)" 
                     alt="Kyojuro splits Akaza's arm in half"
                     >
@@ -356,7 +370,7 @@
                 <div class="column" id="Pic11">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro_and_Akaza_clash.webp" 
+                    src="../../images/Kyojuro_and_Akaza_clash.webp" 
                     onclick="currentSlide(11)" 
                     alt="Kyojuro and Akaza clash"
                     >
@@ -364,7 +378,7 @@
                 <div class="column" id="Pic12">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Akaza_and_Kyojuro_exchanging_blows_at_blinding_speeds.webp" 
+                    src="../../images/Akaza_and_Kyojuro_exchanging_blows_at_blinding_speeds.webp" 
                     onclick="currentSlide(12)" 
                     alt="Akaza and Kyojuro exchanging blows at blinding speeds"
                     >
@@ -372,7 +386,7 @@
                 <div class="column" id="Pic13">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuros_willingness_to_fulfill_his_duty.webp" 
+                    src="../../images/Kyojuros_willingness_to_fulfill_his_duty.webp" 
                     onclick="currentSlide(13)" 
                     alt="Kyojuro's willingness to fulfill his duty"
                     >
@@ -380,7 +394,7 @@
                 <div class="column" id="Pic14">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Ruka_embraces_a_young_Kyojuro.webp" 
+                    src="../../images/Ruka_embraces_a_young_Kyojuro.webp" 
                     onclick="currentSlide(14)" 
                     alt="Ruka embraces a young Kyojuro"
                     >
@@ -388,7 +402,7 @@
                 <div class="column" id="Pic15">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro_continues_attacking_Akaza.webp" 
+                    src="../../images/Kyojuro_continues_attacking_Akaza.webp" 
                     onclick="currentSlide(15)" 
                     alt="Kyojuro continues attacking Akaza"
                     >
@@ -396,7 +410,7 @@
                 <div class="column" id="Pic16">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro_speaking_to_Tanjiro_one_last_time.webp" 
+                    src="../../images/Kyojuro_speaking_to_Tanjiro_one_last_time.webp" 
                     onclick="currentSlide(16)" 
                     alt="Kyojuro speaking to Tanjiro one last time"
                     >
@@ -404,7 +418,7 @@
                 <div class="column" id="Pic17">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kyojuro_passing_away_with_a_smile_on_his_face.webp" 
+                    src="../../images/Kyojuro_passing_away_with_a_smile_on_his_face.webp" 
                     onclick="currentSlide(17)" 
                     alt="Kyojuro passing away with a smile on his face"
                     >
@@ -421,28 +435,28 @@
 
             <div class="link-tabs">
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" class="link">Info</a>
+                    <a href="../../Characters/Kyojuro_Rengoku/info.html" class="link">Info</a>
                 </div>
                 <div class="link-space current-page">
                     <a href="" class="link">Synopsis</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/relationships.html" class="link">Relationships</a>
+                    <a href="../../Characters/Kyojuro_Rengoku/relationships.html" class="link">Relationships</a>
                 </div>
             </div>
 
             <h1>Kyojuro Rengoku/Synopsis</h1>
-            <p><<a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a></p>
+            <p><<a href="../../Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a></p>
             
             <br>
             <div class="synopsisGuideContainer">
-                <div class="synopsisHeader" id="contentHeader">
+                <div class="guideHeader" id="contentHeader">
                     <h2>Contents</h2>
                     <span>
                         <label>[<a href="#" class="link" id="contentBtn">hide</a>]</label>
                     </span>
                 </div>
-                <ol class="synopsisBody" id="contentList">
+                <ol class="guideBody" id="contentList">
                     <li class="fixlist3">
                         <a href="#History">
                             <span>1.</span>
@@ -560,7 +574,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic1">
                         <img 
-                        src="/../DemonSlayerWiki/images/Rengoku_family_Shirogane.webp" 
+                        src="../../images/Rengoku_family_Shirogane.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(1)">
                     </a>
@@ -571,14 +585,14 @@
                     </figcaption>
                 </figure>
                 Kyojuro was the eldest son of
-                <a href="/../DemonSlayerWiki/Characters/Shinjuro_Rengoku/info.html" class="link">Shinjuro Rengoku</a>.
+                <a href="../../Characters/Shinjuro_Rengoku/info.html" class="link">Shinjuro Rengoku</a>.
                 His father was knwon as the <a href="" class="link">Flame Hashira</a> of the
                 <a href="" class="link">Demon Slayer Corps</a> until his unexpected retirement.
                 Kyojuro also had a
-                <a href="/../DemonSlayerWiki/Characters/Senjuro_Rengoku/info.html" class="link"
+                <a href="../../Characters/Senjuro_Rengoku/info.html" class="link"
                 title="Senjuro Rengoku">younger brother</a> who trained alongside him until
                 their father ceased to teach them. His mother,
-                <a href="/../DemonSlayerWiki/Characters/Ruka_Rengoku/info.html" class="link">Ruka Rengoku</a>,
+                <a href="../../Characters/Ruka_Rengoku/info.html" class="link">Ruka Rengoku</a>,
                 passed away after battling an untreatable disease some time after giving birth
                 to Senjuro. His father on the other hand became negligent and abusive, due to
                 a mixture of grief from his wife's death and disillusionment after discovering
@@ -590,13 +604,13 @@
             <br>
             <p>
                 During his tenure as a Demon Slayer, he trained a
-                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link"
+                <a href="../../Characters/Mitsuri_Kanroji/info.html" class="link"
                 title="Mitsuri Kanroji">young, abnormally strong girl</a>. Although the two 
                 were very fond of each other, she couldn't master Flame Breathing, instead
                 opting to use a style derived from it, known as
                 <a href="" class="link">Love Breathing</a>. He also encountered a demon who
                 was part of the <a href="" class="link">Twelve Kizuki</a>, Lower Rank Two:
-                <a href="/../DemonSlayerWiki/Characters/Hairo/info.html" class="link">Hairo</a>. The demon mistook
+                <a href="../../Characters/Hairo/info.html" class="link">Hairo</a>. The demon mistook
                 him for his father, whom he held a grudge against, but Kyojuro, with the aid
                 of his protégée, defeated the demon. For this achievement, he was promoted to
                 being the Flame Hashira, like his father before him, although he reacted with
@@ -616,7 +630,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic2">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro28anime29.webp" 
+                        src="../../images/Kyojuro28anime29.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(2)">
                     </a>
@@ -625,7 +639,7 @@
                     </figcaption>
                 </figure>
                 Kyojuro is present with his fellow <a href="" class="link">Hashira</a> when
-                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link">Tanjiro Kamado</a>
+                <a href="../../Characters/Tanjiro_Kamado/info.html" class="link">Tanjiro Kamado</a>
                 awakens.
                 <span class="tooltip-anchor" id="Ref1">
                     <sup class="tooltip">
@@ -635,21 +649,21 @@
                         <a href="#RefList1" class="link" id="Ref">[1]</a>
                     </sup>
                 </span>
-                <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a>
+                <a href="../../Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a>
                 notes that Tanjiro is on trial, for which Kyojuro sees no need for as he was
                 protecting a <a href="" class="link">demon</a>, which is a clear violation of
                 conduct; he states that it was a matter they could deal with themselves. He
                 then agrees with
-                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>'s
+                <a href="../../Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>'s
                 idea to kill 
-                <a href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html" class="link">Nezuko Kamado</a>,
+                <a href="../../Characters/Nezuko_Kamado/info.html" class="link">Nezuko Kamado</a>,
                 witnessing shortly afterward Tanjiro's coughing fit, and remains silent when
                 his former student, now Love Hashira,
-                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>
+                <a href="../../Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>
                 asks if they should be dealing with their subordinate's trial without
-                <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>'s
+                <a href="../../Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>'s
                 input. After Tanjiro headbutts
-                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>,
+                <a href="../../Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>,
                 Kyojuro looks at Mitsuri when she laughs with a neutral expression.
                 <span class="tooltip-anchor" id="Ref2">
                     <sup class="tooltip">
@@ -674,7 +688,7 @@
                 informed the Mugen Train is being held at a maintenance facility after being
                 put out of service. After finishing their meal, they set off to a nearby train
                 station. They encounter a young girl,
-                <a href="/../DemonSlayerWiki/Characters/Fuku/info.html" class="link">Fuku</a>, saddened by the lack
+                <a href="../../Characters/Fuku/info.html" class="link">Fuku</a>, saddened by the lack
                 of customers buying her bento boxes as the news of the attacks is scaring
                 everyone into staying inside after dark. Kyojuro unabashedly tells her he is
                 looking for a demon, to which she angrily hurls her bean bun and retorts that
@@ -688,7 +702,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic3">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro_running_along_a_train_track.gif" 
+                        src="../../images/Kyojuro_running_along_a_train_track.gif" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(3)">
                     </a>
@@ -706,10 +720,10 @@
                 As the workers eat, Kyojuro is told the train is being repaired and will be put
                 back into service again, unnerving him. Suddenly, a scream is heard, forcing
                 Kyojuro to confront the situation. A
-                <a href="/../DemonSlayerWiki/Characters/Slasher/info.html" class="link"
+                <a href="../../Characters/Slasher/info.html" class="link"
                 title="Slasher">marked demon</a> appears, responsible for the attacks reported,
                 clutching
-                <a href="/../DemonSlayerWiki/Characters/Tatsu/info.html" class="link"
+                <a href="../../Characters/Tatsu/info.html" class="link"
                 title="Tatsu">a young worker</a> in his claws and causing him to bleed heavily.
                 Kyojuro tells the culprit to surrender him, but the demon tells him human food
                 disgusts him now, stepping on a bento box, to which he adds that he only eats
@@ -736,7 +750,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic4">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro_kills_the_Slasher.webp" 
+                        src="../../images/Kyojuro_kills_the_Slasher.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(4)">
                     </a>
@@ -772,7 +786,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic5">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tanjiro_and_Zenitsu_running_into_Kyojuro_on_the_Train.webp" 
+                        src="../../images/Tanjiro_and_Zenitsu_running_into_Kyojuro_on_the_Train.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(5)">
                     </a>
@@ -782,8 +796,8 @@
                 </figure>
                 During the journey, while devouring his eleventh bento box while shouting
                 "delicious", Tanjiro, who was told to meet him, introduces the Hashira to
-                <a href="/../DemonSlayerWiki/Characters/Inosuke_Hashibira/info.html" class="link">Inosuke Hashibira</a>,
-                <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html" class="link">Zenitsu Agatsuma</a>
+                <a href="../../Characters/Inosuke_Hashibira/info.html" class="link">Inosuke Hashibira</a>,
+                <a href="../../Characters/Zenitsu_Agatsuma/info.html" class="link">Zenitsu Agatsuma</a>
                 and Nezuko, who he recognizes during Tanjiro's trial with the Master. After he
                 finishes his food and Tanjiro explains his question about
                 <a href="" class="link">Hinokami Kagura</a>, Kyojuro energetically answers
@@ -835,7 +849,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic6">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro_using_First_Form_Unknowing_Fire_on_a_Train_Demon.webp" 
+                        src="../../images/Kyojuro_using_First_Form_Unknowing_Fire_on_a_Train_Demon.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(6)">
                     </a>
@@ -844,7 +858,7 @@
                     </figcaption>
                 </figure>
                 The
-                <a href="/../DemonSlayerWiki/Characters/Minor.html#UnnamedIndividuals" class="link"
+                <a href="../../Characters/Minor.html#UnnamedIndividuals" class="link"
                 title="Characters/Minor">Train Conductor</a> then comes over to the four of them
                 to stamp their tickets. Tanjiro smells something unusual, and Kyojuro appears
                 to sense it too as he asks the conductor to step aside, simultaneously preparing
@@ -866,7 +880,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic7">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tanjiro_and_Kyojuro_asleep_on_the_train.webp" 
+                        src="../../images/Tanjiro_and_Kyojuro_asleep_on_the_train.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(7)">
                     </a>
@@ -892,7 +906,7 @@
                 also becomes a Hashira. Kyojuro remembers how his father used to be, a happy
                 man who was passionate about training his children as swordsmen, and how he
                 changed after their 
-                <a href="/../DemonSlayerWiki/Characters/Ruka_Rengoku/info.html" class="link"
+                <a href="../../Characters/Ruka_Rengoku/info.html" class="link"
                 title="Ruka Rengoku">mother</a>'s death.
             </p>
             <br>
@@ -918,7 +932,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic8">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro_choking_one_of_Enmus_followers.webp" 
+                        src="../../images/Kyojuro_choking_one_of_Enmus_followers.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(8)">
                     </a>
@@ -928,7 +942,7 @@
                 </figure>
                 Still within the dream, Kyojuro begins to tutor Senjuro in his sword skills.
                 In reality, a young girl, who's working for
-                <a href="/../DemonSlayerWiki/Characters/Enmu/info.html" class="link">Enmu</a>, ties her wrist to 
+                <a href="../../Characters/Enmu/info.html" class="link">Enmu</a>, ties her wrist to 
                 his unconscious body with a special piece of rope that was made by the Lower
                 Moon, allowing her to enter Kyojuro's dream. Enmu has sent her in to destroy
                 Kyojuro's spiritual core, which, when destroyed, would render him a lifeless
@@ -967,7 +981,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic9">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro_arrives_to_instruct_Tanjiro.webp" 
+                        src="../../images/Kyojuro_arrives_to_instruct_Tanjiro.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(9)">
                     </a>
@@ -1042,7 +1056,7 @@
                     </sup>
                 </span>
                 The dust clears to reveal 
-                <a href="/../DemonSlayerWiki/Characters/Akaza/info.html" class="link"
+                <a href="../../Characters/Akaza/info.html" class="link"
                 title="Akaza">Upper Rank Three</a>, who immediately launches himself
                 towards Tanjiro with the intentino of killing him, but is stopped by Kyojuro's
                 <b>Flame Breathing, Second Form: Rising Scorching Sun</b> attack, causing him 
@@ -1061,7 +1075,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic10">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro_splits_Akazas_arm_in_half.webp" 
+                        src="../../images/Kyojuro_splits_Akazas_arm_in_half.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(10)">
                     </a>
@@ -1116,7 +1130,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic11">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro_and_Akaza_clash.webp" 
+                        src="../../images/Kyojuro_and_Akaza_clash.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(11)">
                     </a>
@@ -1145,7 +1159,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic12">
                         <img 
-                        src="/../DemonSlayerWiki/images/Akaza_and_Kyojuro_exchanging_blows_at_blinding_speeds.webp" 
+                        src="../../images/Akaza_and_Kyojuro_exchanging_blows_at_blinding_speeds.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(12)">
                     </a>
@@ -1192,7 +1206,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic13">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuros_willingness_to_fulfill_his_duty.webp" 
+                        src="../../images/Kyojuros_willingness_to_fulfill_his_duty.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(13)">
                     </a>
@@ -1255,7 +1269,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic14">
                         <img 
-                        src="/../DemonSlayerWiki/images/Ruka_embraces_a_young_Kyojuro.webp" 
+                        src="../../images/Ruka_embraces_a_young_Kyojuro.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(14)">
                     </a>
@@ -1294,7 +1308,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic15">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro_continues_attacking_Akaza.webp" 
+                        src="../../images/Kyojuro_continues_attacking_Akaza.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(15)">
                     </a>
@@ -1338,7 +1352,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic16">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro_speaking_to_Tanjiro_one_last_time.webp" 
+                        src="../../images/Kyojuro_speaking_to_Tanjiro_one_last_time.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(16)">
                     </a>
@@ -1413,7 +1427,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic17">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kyojuro_passing_away_with_a_smile_on_his_face.webp" 
+                        src="../../images/Kyojuro_passing_away_with_a_smile_on_his_face.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(17)">
                     </a>
@@ -1455,17 +1469,17 @@
                 Kyojuro's colleagues were very fond of him and as such were deeply troubled by
                 his death. He would not be forgotten though, as the late swordsman would be
                 remembered by Sound Hashira
-                <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>
+                <a href="../../Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>
                 during his
                 <a href="" class="link"
                 title="Demon Slayers vs Daki and Gyutaro">fight</a> with Upper Six,
-                <a href="/../DemonSlayerWiki/Characters/Gyutaro/info.html" class="link">Gyutaro</a>,
+                <a href="../../Characters/Gyutaro/info.html" class="link">Gyutaro</a>,
                 and Mist Hashira
-                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>
+                <a href="../../Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>
                 after
                 <a href="" class="link"
                 title="Muichiro Tokito vs Gyokko">defeating</a> Upper Five,
-                <a href="/../DemonSlayerWiki/Characters/Gyokko/info.html" class="link">Gyokko</a>. In addition,
+                <a href="../../Characters/Gyokko/info.html" class="link">Gyokko</a>. In addition,
                 his young protégée, Tanjiro Kamado, would be particularly devastated by the loss
                 of his mentor and friend, becoming catatonic for months, and even going as far
                 to begin to wish that he had died instead of Kyojuro. During his fight with Upper
@@ -1484,11 +1498,11 @@
             <p>
                 Tanjiro would adopt his sword guard and use it for his newest sword. Before it
                 was attached however, it ended up saving a
-                <a href="/../DemonSlayerWiki/Characters/Kotetsu/info.html" class="link"
+                <a href="../../Characters/Kotetsu/info.html" class="link"
                 title="Kotetsu">young boy</a>'s life by protecting him from a near-fatal laceration
                 from a fish demon that Gyokko summoned. When Tanjiro once again encountered
                 Akaza, alongside the Water Hashira,
-                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>,
+                <a href="../../Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>,
                 Kyojuro was brought up several times by the Upper Rank demon. Akaza, now
                 witnessing Tanjiro's newfound strength, claimed to have now understood what
                 Kyojuro meant by rebuking the claim that he was weak, and later went on to say
@@ -1501,7 +1515,7 @@
             <p>
                 Later on, when Tanjiro was turned into a demon after the defeat of the Demon
                 King, 
-                <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html" class="link">Muzan Kibutsuji</a>,
+                <a href="../../Characters/Muzan_Kibutsuji/info.html" class="link">Muzan Kibutsuji</a>,
                 he was among the many hands that pushed him back towards being a human alongside
                 many of his colleagues whom had also fallen in battle, when the spirit of Muzan
                 attempted to sabotage the serum administered to cure Tanjiro's condition.
@@ -1682,15 +1696,15 @@
                                                 <b>Ubuyashiki Family:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
+                                                <a href="../../Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1698,16 +1712,16 @@
                                                 <b>Hashira:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·
+                                                <a href="../../Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>&nbsp;·
+                                                <a href="../../Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
+                                                <a href="../../Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a>&nbsp;·
+                                                <a href="../../Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
+                                                <a href="../../Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·
                                                 <span class="nav-table-current">Kyojuro Rengoku</span>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>·
+                                                <a href="../../Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>&nbsp;·
+                                                <a href="../../Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
+                                                <a href="../../Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a>&nbsp;·
+                                                <a href="../../Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>·
                                                 <a href="sakonji.html" class="link">Sakonji Urokodaki</a>·
                                                 <a href="jigoro.html" class="link">Jigoro Kuwajima</a>·
                                                 <a href="shinjuro.html" class="link">Shinjuro Rengoku</a>
@@ -1976,9 +1990,10 @@
         </div>
     </div>
     <footer>Wiki inspired by the <a class="link" href="https://kimetsu-no-yaiba.fandom.com/" target="_blank">Kimetsu No Yaiba Wiki</a></footer>
-    <script src="/../DemonSlayerWiki/javascripts/navigation.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/lightbox_modal.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/character_navigation.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/searchbar.js"></script>
+    <script src="../../javascripts/navigation.js"></script>
+    <script src="../../javascripts/lightbox_modal.js"></script>
+    <script src="../../javascripts/character_navigation.js"></script>
+    <script src="../../javascripts/searchbar.js"></script>
+    <script src="../../javascripts/quickAnswers.js"></script>
 </body>
 </html>

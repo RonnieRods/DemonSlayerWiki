@@ -4,193 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tengen Uzui | Demon Slayer Wiki</title>
-    <link rel="stylesheet" href="/../DemonSlayerWiki/stylesheets/styles copy.css" />
+    <link rel="stylesheet" href="../../stylesheets/styles-copy.css" />
 </head>
 <body>
-    <div class="navbar">
-        <a href="/../DemonSlayerWiki/index.html"><img src="/../DemonSlayerWiki/images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
-        <a href="/../DemonSlayerWiki/index.html" class="nav-item">Home</a>
-        <div class="dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">Characters</a>
-            <div class="dropdown-content">
-                <div class="ds">
-                    Demon Slayers
-                    <div class="ds-dropdown-content">
-                        <a href="">Tanjiro Kamado</a>
-                        <a href="">Zenitsu Agatsuma</a>
-                        <a href="">Inosuke Hashibira</a>
-                        <a href="">Kanao Tsuyuri</a>
-                        <a href="">Genya Shinazugawa</a>
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="../../index.html" class="logo-link">
+            <img src="../../images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" />
+        </a>
+
+        <!-- Hamburger Toggle for Mobile -->
+         <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+         </button>
+
+        <!-- Collapsible Nav Links Wrapper -->
+        <div id="nav-menu" class="nav-menu">
+            <a href="../../index.html" class="nav-item">Home</a>
+
+            <div class="dropdown">
+                <a href="../../characters.html" class="nav-item dropdown-trigger">Characters</a>
+                <div class="dropdown-content">
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demon Slayers</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Tanjiro Kamado</a>
+                            <a href="">Zenitsu Agatsuma</a>
+                            <a href="">Inosuke Hashibira</a>
+                            <a href="">Kanao Tsuyuri</a>
+                            <a href="">Genya Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Hashira
-                    <div class="ds-dropdown-content">
-                        <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
-                        <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
-                        <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
-                        <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
-                        <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
-                        <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
-                        <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
-                        <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
-                        <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Hashira</a>
+                        <div class="ds-dropdown-content">
+                            <a href="../../Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
+                            <a href="../../Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
+                            <a href="../../Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
+                            <a href="../../Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
+                            <a href="../../Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
+                            <a href="../../Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
+                            <a href="../../Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
+                            <a href="../../Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
+                            <a href="../../Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Demons
-                    <div class="ds-dropdown-content">
-                        <a href="">Muzan Kibutsuji</a>
-                        <a href="">Nezuko Kamado</a>
-                        <a href="">Tamayo</a>
-                        <a href="">Yushiro</a>
-                        <a href="">Susamaru</a>
-                        <a href="">Yahaba</a>
-                        <a href="">Spider Family</a>
-                        <a href="">Swamp Demon</a>
-                        <a href="">Hand Demon</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demons</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Muzan Kibutsuji</a>
+                            <a href="">Nezuko Kamado</a>
+                            <a href="">Tamayo</a>
+                            <a href="">Yushiro</a>
+                            <a href="">Susamaru</a>
+                            <a href="">Yahaba</a>
+                            <a href="">Spider Family</a>
+                            <a href="">Swamp Demon</a>
+                            <a href="">Hand Demon</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Upper Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Kokushibo</a>
-                        <a href="">Doma</a>
-                        <a href="">Akaza</a>
-                        <a href="">Nakime</a>
-                        <a href="">Hantengu</a>
-                        <a href="">Gyokko</a>
-                        <a href="">Kaigaku</a>
-                        <a href="">Daki</a>
-                        <a href="">Gyutaro</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Upper Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Kokushibo</a>
+                            <a href="">Doma</a>
+                            <a href="">Akaza</a>
+                            <a href="">Nakime</a>
+                            <a href="">Hantengu</a>
+                            <a href="">Gyokko</a>
+                            <a href="">Kaigaku</a>
+                            <a href="">Daki</a>
+                            <a href="">Gyutaro</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Lower Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Enmu</a>
-                        <a href="">Rokuro</a>
-                        <a href="">Wakuraba</a>
-                        <a href="">Mukago</a>
-                        <a href="">Rui</a>
-                        <a href="">Kamanue</a>
-                        <a href="">Kyogai</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Lower Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Enmu</a>
+                            <a href="">Rokuro</a>
+                            <a href="">Wakuraba</a>
+                            <a href="">Mukago</a>
+                            <a href="">Rui</a>
+                            <a href="">Kamanue</a>
+                            <a href="">Kyogai</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Groups
-                    <div class="ds-dropdown-content">
-                        <a href="">Demon Slayer Corps</a>
-                        <a href="">Twelve Kizuki</a>
-                        <a href="">Hashira</a>
-                        <a href="">Tsuguko</a>
-                        <a href="">Kakushi</a>
-                        <a href="">Kasugai Crows</a>
-                        <a href="">Ninju</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Groups</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Demon Slayer Corps</a>
+                            <a href="">Twelve Kizuki</a>
+                            <a href="">Hashira</a>
+                            <a href="">Tsuguko</a>
+                            <a href="">Kakushi</a>
+                            <a href="">Kasugai Crows</a>
+                            <a href="">Ninju</a>
+                        </div>
                     </div>
-                </div>
-                <a href="/../DemonSlayerWiki/characters.html">All Characters</a>
-            </div>
-        </div>
-        <div class="world-dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">World</a>
-            <div class="world-dropdown-content">
-                <div class="ds-world">
-                    Story Arcs
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Unwavering Resolve Arc</a>
-                        <a href="">Mugen Train Arc</a>
-                        <a href="">Entertainment District Arc</a>
-                        <a href="">Swordsmith Village Arc</a>
-                        <a href="">Hashira Training Arc</a>
-                        <a href="">Final Battle Arc</a>
-                        <a href="">Infinity Castle Arc</a>
-                        <a href="">Sunrise Countdown Arc</a>
-                        <a href="">All Arcs</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Locations
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Mount Sagiri</a>
-                        <a href="">Mount Fujikasanae</a>
-                        <a href="">Asakusa</a>
-                        <a href="">Tsuzumi Mansion</a>
-                        <a href="">Mount Natagumo</a>
-                        <a href="">Butterfly Mansion</a>
-                        <a href="">Yoshiwara</a>
-                        <a href="">Swordsmith Village</a>
-                        <a href="">Infinity Castle</a>
-                        <a href="">All Locations</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Abilities & Techniques
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Blood Demon Art</a>
-                        <a href="">Total Concentration Breathing</a>
-                        <a href="">Regeneration</a>
-                        <a href="">Demon Slayer Mark</a>
-                        <a href="">Bright Red Nichirin Sword</a>
-                        <a href="">Transparent World</a>
-                        <a href="">Selfless State</a>
-                        <a href="">Repetitive Action</a>
-                        <a href="">Extrasensory Perception</a>
-                        <a href="">Flesh Manipulation</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Breathing Styles
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Water Breathing</a>
-                        <a href="">Flame Breathing</a>
-                        <a href="">Thunder Breathing</a>
-                        <a href="">Wind Breathing</a>
-                        <a href="">Stone Breathing</a>
-                        <a href="">Beast Breathing</a>
-                        <a href="">Flower Breathing</a>
-                        <a href="">Sun Breathing</a>
-                        <a href="">Moon Breathing</a>
-                        <a href="">All Breathing Styles</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Events
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Battles</a>
-                        <a href="">Final Selection</a>
-                        <a href="">Lower Ranks Meeting</a>
-                        <a href="">Upper Ranks Meeting</a>
-                        <a href="">Rehabilitation Training</a>
-                        <a href="">Hashira Training</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Objects
-                    <div class="ds-world-dropdown-content-bottom">
-                        <a href="">Nichirin Sword</a>
-                        <a href="">Wisteria</a>
-                        <a href="">Blue Spider Lily</a>
-                        <a href="">Yoriichi Type Zero</a>
-                        <a href="">Warding Mask</a>
-                    </div>
+                    <a href="../../characters.html">All Characters</a>
                 </div>
             </div>
+            <div class="world-dropdown">
+                <a href="#" class="nav-item dropdown-trigger">World</a>
+                <div class="world-dropdown-content">
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Story Arcs</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Unwavering Resolve Arc</a>
+                            <a href="">Mugen Train Arc</a>
+                            <a href="">Entertainment District Arc</a>
+                            <a href="">Swordsmith Village Arc</a>
+                            <a href="">Hashira Training Arc</a>
+                            <a href="">Final Battle Arc</a>
+                            <a href="">Infinity Castle Arc</a>
+                            <a href="">Sunrise Countdown Arc</a>
+                            <a href="">All Arcs</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Locations</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Mount Sagiri</a>
+                            <a href="">Mount Fujikasanae</a>
+                            <a href="">Asakusa</a>
+                            <a href="">Tsuzumi Mansion</a>
+                            <a href="">Mount Natagumo</a>
+                            <a href="">Butterfly Mansion</a>
+                            <a href="">Yoshiwara</a>
+                            <a href="">Swordsmith Village</a>
+                            <a href="">Infinity Castle</a>
+                            <a href="">All Locations</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Abilities & Techniques</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Blood Demon Art</a>
+                            <a href="">Total Concentration Breathing</a>
+                            <a href="">Regeneration</a>
+                            <a href="">Demon Slayer Mark</a>
+                            <a href="">Bright Red Nichirin Sword</a>
+                            <a href="">Transparent World</a>
+                            <a href="">Selfless State</a>
+                            <a href="">Repetitive Action</a>
+                            <a href="">Extrasensory Perception</a>
+                            <a href="">Flesh Manipulation</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Breathing Styles</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Water Breathing</a>
+                            <a href="">Flame Breathing</a>
+                            <a href="">Thunder Breathing</a>
+                            <a href="">Wind Breathing</a>
+                            <a href="">Stone Breathing</a>
+                            <a href="">Beast Breathing</a>
+                            <a href="">Flower Breathing</a>
+                            <a href="">Sun Breathing</a>
+                            <a href="">Moon Breathing</a>
+                            <a href="">All Breathing Styles</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Events</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Battles</a>
+                            <a href="">Final Selection</a>
+                            <a href="">Lower Ranks Meeting</a>
+                            <a href="">Upper Ranks Meeting</a>
+                            <a href="">Rehabilitation Training</a>
+                            <a href="">Hashira Training</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Objects</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Nichirin Sword</a>
+                            <a href="">Wisteria</a>
+                            <a href="">Blue Spider Lily</a>
+                            <a href="">Yoriichi Type Zero</a>
+                            <a href="">Warding Mask</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item search-container">
+                <form id="search-form" role="search" class="search-form">
+                    <label for="search-input">Search Wiki:</label>
+                    <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Search..." 
+                    aria-label="Search content"
+                    autocomplete="off">
+                    <button type="submit" id="search-button">Go</button>
+                </form>
+                <div id="search-results" class="search-results-dropdown"></div>
+            </div>
         </div>
-        <div class="nav-item">
-            <form id="search-form" role="search">
-                <label for="search-input">Search Wiki:</label>
-                <input 
-                type="text" 
-                id="search-input" 
-                placeholder="Enter keywords..." 
-                aria-label="Search through project content"
-                autocomplete="off">
-                <button id="search-button">Search</button>
-            </form>
-            <div id="search-results"></div>
-        </div>
-    </div>
+    </nav>
 
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -198,96 +212,96 @@
 
             <div class="mySlides">
                 <div class="numbertext">1 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_anime.webp" style="width:50%;">
+                <img src="../../images/Tengen_anime.webp" style="width:50%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">2 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_colored_body.webp" style="width:50%;">
+                <img src="../../images/Tengen_colored_body.webp" style="width:50%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">3 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengens_disguise_design.webp" style="width: 39%;">
+                <img src="../../images/Tengens_disguise_design.webp" style="width: 39%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">4 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Shinobi_Tengen_design.webp" style="width:30.55%;">
+                <img src="../../images/Shinobi_Tengen_design.webp" style="width:30.55%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">5 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Retired_Tengen28Anime29.webp" style="width: 74.8%;">
+                <img src="../../images/Retired_Tengen28Anime29.webp" style="width: 74.8%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">6 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_reveals_hes_against_keeping_Nezuko_alive.webp">
+                <img src="../../images/Tengen_reveals_hes_against_keeping_Nezuko_alive.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">7 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_declaring_that_he_is_god.webp">
+                <img src="../../images/Tengen_declaring_that_he_is_god.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">8 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_asks_Gyutaro_if_he_looks_like_he_does_have_talent.webp">
+                <img src="../../images/Tengen_asks_Gyutaro_if_he_looks_like_he_does_have_talent.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">9 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_and_Gyutaro_clashing_at_high_speeds.webp">
+                <img src="../../images/Tengen_and_Gyutaro_clashing_at_high_speeds.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">10 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_slices_up_the_sashes.gif">
+                <img src="../../images/Tengen_slices_up_the_sashes.gif">
             </div>
             <div class="mySlides">
                 <div class="numbertext">11 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_holding_onto_the_tip_of_his_Nichirin_Cleavers.webp">
+                <img src="../../images/Tengen_holding_onto_the_tip_of_his_Nichirin_Cleavers.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">12 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_uses_his_sonar-like_hearing.webp">
+                <img src="../../images/Tengen_uses_his_sonar-like_hearing.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">13 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_uses_his_Musical_Score_technique.gif">
+                <img src="../../images/Tengen_uses_his_Musical_Score_technique.gif">
             </div>
             <div class="mySlides">
                 <div class="numbertext">14 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_vs_Gyutaro.gif">
+                <img src="../../images/Tengen_vs_Gyutaro.gif">
             </div>
             <div class="mySlides">
                 <div class="numbertext">15 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Constant_Resounding_Slashes_vs_Rotating_Circular_Slashes_-_Flying_Blood_Scythes.webp">
+                <img src="../../images/Constant_Resounding_Slashes_vs_Rotating_Circular_Slashes_-_Flying_Blood_Scythes.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">16 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_Animation_Illustration_Book_3.webp"
+                <img src="../../images/Kimetsu_no_Yaiba_Animation_Illustration_Book_3.webp"
                 style="width: 50%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">17 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengens_Tsuba.webp">
+                <img src="../../images/Tengens_Tsuba.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">18 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_uses_his_Roar_technique_to_destroy_the_ground.webp">
+                <img src="../../images/Tengen_uses_his_Roar_technique_to_destroy_the_ground.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">19 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Things_are_going_to_get_real_flashy.gif">
+                <img src="../../images/Things_are_going_to_get_real_flashy.gif">
             </div>
             <div class="mySlides">
                 <div class="numbertext">20 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_Puzzle_27s_Nichirin_Sword.webp">
+                <img src="../../images/Tengen_Puzzle_27s_Nichirin_Sword.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">21 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_uses_his_explosive_beads.webp">
+                <img src="../../images/Tengen_uses_his_explosive_beads.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">22 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengen_threatens_the_Master.webp">
+                <img src="../../images/Tengen_threatens_the_Master.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">23 / 23</div>
-                <img src="/../DemonSlayerWiki/images/Tengens_initial_Design.webp">
+                <img src="../../images/Tengens_initial_Design.webp">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -301,7 +315,7 @@
                 <div class="column" id="Pic1">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_anime.webp" 
+                    src="../../images/Tengen_anime.webp" 
                     onclick="currentSlide(1)" 
                     alt="Tengen's anime appearance"
                     >
@@ -309,7 +323,7 @@
                 <div class="column" id="Pic2">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_colored_body.webp" 
+                    src="../../images/Tengen_colored_body.webp" 
                     onclick="currentSlide(2)" 
                     alt="Tengen's manga appearance"
                     >
@@ -317,7 +331,7 @@
                 <div class="column" id="Pic3">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengens_disguise_design.webp" 
+                    src="../../images/Tengens_disguise_design.webp" 
                     onclick="currentSlide(3)" 
                     alt="Tengen's disguise design"
                     >
@@ -325,7 +339,7 @@
                 <div class="column" id="Pic4">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobi_Tengen_design.webp" 
+                    src="../../images/Shinobi_Tengen_design.webp" 
                     onclick="currentSlide(4)" 
                     alt="Shinobi Tengen design"
                     >
@@ -333,7 +347,7 @@
                 <div class="column" id="Pic5">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Retired_Tengen28Anime29.webp" 
+                    src="../../images/Retired_Tengen28Anime29.webp" 
                     onclick="currentSlide(5)" 
                     alt="Retired Tengen design"
                     >
@@ -341,7 +355,7 @@
                 <div class="column" id="Pic6">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_reveals_hes_against_keeping_Nezuko_alive.webp" 
+                    src="../../images/Tengen_reveals_hes_against_keeping_Nezuko_alive.webp" 
                     onclick="currentSlide(6)" 
                     alt="Tengen reveals he's against keeping Nezuko alive"
                     >
@@ -349,7 +363,7 @@
                 <div class="column" id="Pic7">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_declaring_that_he_is_god.webp" 
+                    src="../../images/Tengen_declaring_that_he_is_god.webp" 
                     onclick="currentSlide(7)" 
                     alt="Tengen declaring that he is a god"
                     >
@@ -357,7 +371,7 @@
                 <div class="column" id="Pic8">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_asks_Gyutaro_if_he_looks_like_he_does_have_talent.webp" 
+                    src="../../images/Tengen_asks_Gyutaro_if_he_looks_like_he_does_have_talent.webp" 
                     onclick="currentSlide(8)" 
                     alt="Tengen asks Gyutaro if he looks like he has talent"
                     >
@@ -365,7 +379,7 @@
                 <div class="column" id="Pic9">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_and_Gyutaro_clashing_at_high_speeds.webp" 
+                    src="../../images/Tengen_and_Gyutaro_clashing_at_high_speeds.webp" 
                     onclick="currentSlide(9)" 
                     alt="Tengen and Gyutaro clashing at high speeds"
                     >
@@ -373,7 +387,7 @@
                 <div class="column" id="Pic10">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_slices_up_the_sashes.gif" 
+                    src="../../images/Tengen_slices_up_the_sashes.gif" 
                     onclick="currentSlide(10)" 
                     alt="Kyojuro standing up despite Hairo's attacks"
                     >
@@ -389,7 +403,7 @@
                 <div class="column" id="Pic12">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_uses_his_sonar-like_hearing.webp" 
+                    src="../../images/Tengen_uses_his_sonar-like_hearing.webp" 
                     onclick="currentSlide(12)" 
                     alt="Tengen uses his sonar-like hearing"
                     >
@@ -397,7 +411,7 @@
                 <div class="column" id="Pic13">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_uses_his_Musical_Score_technique.gif" 
+                    src="../../images/Tengen_uses_his_Musical_Score_technique.gif" 
                     onclick="currentSlide(13)" 
                     alt="Tengen uses his Musical Score technique"
                     >
@@ -405,7 +419,7 @@
                 <div class="column" id="Pic14">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_vs_Gyutaro.gif" 
+                    src="../../images/Tengen_vs_Gyutaro.gif" 
                     onclick="currentSlide(14)" 
                     alt="Tengen vs Gyutaro"
                     >
@@ -413,7 +427,7 @@
                 <div class="column" id="Pic15">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Constant_Resounding_Slashes_vs_Rotating_Circular_Slashes_-_Flying_Blood_Scythes.webp" 
+                    src="../../images/Constant_Resounding_Slashes_vs_Rotating_Circular_Slashes_-_Flying_Blood_Scythes.webp" 
                     onclick="currentSlide(15)" 
                     alt="Constant Resounding Slashes vs Rotating Circular Slashes - Flying Blood Scythes"
                     >
@@ -421,7 +435,7 @@
                 <div class="column" id="Pic16">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_Animation_Illustration_Book_3.webp" 
+                    src="../../images/Kimetsu_no_Yaiba_Animation_Illustration_Book_3.webp" 
                     onclick="currentSlide(16)" 
                     alt="Kimetsu no Yaiba Animation Illustration Book 3"
                     >
@@ -429,7 +443,7 @@
                 <div class="column" id="Pic17">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengens_Tsuba.webp" 
+                    src="../../images/Tengens_Tsuba.webp" 
                     onclick="currentSlide(17)" 
                     alt="Tengen's Tsuba"
                     >
@@ -437,7 +451,7 @@
                 <div class="column" id="Pic18">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_uses_his_Roar_technique_to_destroy_the_ground.webp" 
+                    src="../../images/Tengen_uses_his_Roar_technique_to_destroy_the_ground.webp" 
                     onclick="currentSlide(18)" 
                     alt="Tengen uses his Roar technique to destroy the ground"
                     >
@@ -445,7 +459,7 @@
                 <div class="column" id="Pic19">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Things_are_going_to_get_real_flashy.gif" 
+                    src="../../images/Things_are_going_to_get_real_flashy.gif" 
                     onclick="currentSlide(19)" 
                     alt="'Things are going to get real flashy!'"
                     >
@@ -453,7 +467,7 @@
                 <div class="column" id="Pic20">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_Puzzle_27s_Nichirin_Sword.webp" 
+                    src="../../images/Tengen_Puzzle_27s_Nichirin_Sword.webp" 
                     onclick="currentSlide(20)" 
                     alt="Puzzle & Dragons Tengen's Nichirin Swords"
                     >
@@ -461,7 +475,7 @@
                 <div class="column" id="Pic21">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_uses_his_explosive_beads.webp" 
+                    src="../../images/Tengen_uses_his_explosive_beads.webp" 
                     onclick="currentSlide(21)" 
                     alt="Tengen uses his explosive beads"
                     >
@@ -469,7 +483,7 @@
                 <div class="column" id="Pic22">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengen_threatens_the_Master.webp" 
+                    src="../../images/Tengen_threatens_the_Master.webp" 
                     onclick="currentSlide(22)" 
                     alt="Tengen threatens the Master"
                     >
@@ -477,7 +491,7 @@
                 <div class="column" id="Pic23">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Tengens_initial_Design.webp" 
+                    src="../../images/Tengens_initial_Design.webp" 
                     onclick="currentSlide(23)" 
                     alt="Tengen's initial design"
                     >
@@ -497,10 +511,10 @@
                     <a href="" class="link">Info</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/synopsis.html" class="link">Synopsis</a>
+                    <a href="../../Characters/Tengen_Uzui/synopsis.html" class="link">Synopsis</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/relationships.html" class="link">Relationships</a>
+                    <a href="../../Characters/Tengen_Uzui/relationships.html" class="link">Relationships</a>
                 </div>
             </div>
 
@@ -522,7 +536,7 @@
                             <a id="expImg" class="contain-img" href="#Pic1">
                                 <img 
                                 id="curImg"
-                                src="/../DemonSlayerWiki/images/Tengen_anime.webp"
+                                src="../../images/Tengen_anime.webp"
                                 decoding="async"
                                 loading="lazy"
                                 class="zoom"
@@ -645,22 +659,22 @@
                     <div class="item-spacing">
                         <h3 class="label">Partner(s)</h3>
                         <div class="value">
-                            <a href="/../DemonSlayerWiki/Characters/Hinatsuru/info.html" class="link">
+                            <a href="../../Characters/Hinatsuru/info.html" class="link">
                                 Hinatsuru</a>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Makio/info.html" class="link">
+                            <a href="../../Characters/Makio/info.html" class="link">
                                 Makio</a>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Suma/info.html" class="link">
+                            <a href="../../Characters/Suma/info.html" class="link">
                                 Suma</a>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Ninju/info.html" class="link">
+                            <a href="../../Characters/Ninju/info.html" class="link">
                                 Ninju</a>
                             <br>
                             Nijimaru
                             <small>(<a href="" class="link">Kasugai Crow</a>)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Shinjuro_Rengoku/info.html " class="link">
+                            <a href="../../Characters/Shinjuro_Rengoku/info.html " class="link">
                                 Shinjuro Rengoku</a>
                             <small>(Temporarily)</small>
                         </div>
@@ -680,7 +694,7 @@
                                 </sup>
                             </span>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Minor.html#Relatives" class="link">
+                            <a href="../../Characters/Minor.html#Relatives" class="link">
                                 Unnamed Younger Brother</a>
                             <span class="tooltip-anchor" id="Ref3.1">
                                 <sup class="tooltip">
@@ -723,25 +737,25 @@
                                 </sup>
                             </span>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Makio/info.html" class="link"
+                            <a href="../../Characters/Makio/info.html" class="link"
                             >Makio</a> <small>(Wife, Relative)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Suma/info.html" class="link"
+                            <a href="../../Characters/Suma/info.html" class="link"
                             >Suma</a> <small>(Wife)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Hinatsuru/info.html" class="link"
+                            <a href="../../Characters/Hinatsuru/info.html" class="link"
                             >Hinatsuru</a> <small>(Wife)</small>
                             <br>
                             Unnamed Child
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Tenma_Uzui/info.html" class="link"
+                            <a href="../../Characters/Tenma_Uzui/info.html" class="link"
                             >Tenma Uzui</a> <small>(Descendant)</small>
                         </div>
                     </div>
                 </section>
                 <section class="group-data">
                     <hr><small><i>See all relatives 
-                    <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/relationships.html" class="link">here</a></i></small>
+                    <a href="../../Characters/Tengen_Uzui/relationships.html" class="link">here</a></i></small>
                 </section>
                 <section class="group-data">
                     <hr><h2 class="header">Debuts</h2><hr>
@@ -800,9 +814,9 @@
                                 <cite>
                                     — 
                                     <b>Tengen Uzui</b>'s to
-                                    <a href="/../DemonSlayerWiki/Characters/Gyutaro/info.html" class="link"
+                                    <a href="../../Characters/Gyutaro/info.html" class="link"
                                     >Gyutaro</a> and
-                                    <a href="/../DemonSlayerWiki/Characters/Daki/info.html" class="link"
+                                    <a href="../../Characters/Daki/info.html" class="link"
                                     >Daki</a> in
                                     <a href="" class="link"
                                     title="Episode 41">Gathering</a>
@@ -964,7 +978,7 @@
                 sustained during his
                 <a href="" class="link" 
                 title="Demon Slayers vs Daki and Gyutaro">fight</a> with
-                <a href="/../DemonSlayerWiki/Characters/Gyutaro/info.html" class="link">Gyutaro</a>, Tengen changes
+                <a href="../../Characters/Gyutaro/info.html" class="link">Gyutaro</a>, Tengen changes
                 his appearance to coordinate the loss of his left eye and hand. He now wears a
                 long, burgundy colored yukata with a white yuban collar along a light purple
                 obi tied around the waist, and an indigo blue
@@ -987,7 +1001,7 @@
                 <div>
                     <a href="#Pic3" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengens_disguise_design.webp" 
+                        src="../../images/Tengens_disguise_design.webp" 
                         class="zoom contain-img" 
                         style="height:300px; width:160px; border:1px solid gray;" 
                         title="Tengen's disguise design"
@@ -1000,7 +1014,7 @@
                 <div>
                     <a href="#Pic4" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobi_Tengen_design.webp" 
+                        src="../../images/Shinobi_Tengen_design.webp" 
                         class="zoom contain-img"
                         style="height:300px; width:130px; border:1px solid gray;" 
                         title="Shinobi Tengen design" 
@@ -1014,7 +1028,7 @@
                 <div>
                     <a href="#Pic5" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Retired_Tengen28Anime29.webp" 
+                        src="../../images/Retired_Tengen28Anime29.webp" 
                         class="zoom contain-img"
                         style="height:300px; width:280px; border:1px solid gray;" 
                         title="Retired Tengen's appearance (Anime)" 
@@ -1037,7 +1051,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic6">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_reveals_hes_against_keeping_Nezuko_alive.webp" 
+                        src="../../images/Tengen_reveals_hes_against_keeping_Nezuko_alive.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(6)">
                     </a>
@@ -1051,9 +1065,9 @@
                 possessing a need for everything to be flashy and outstanding, even proclaiming
                 that he is the god of flashiness and festivals. This is shown when he gets
                 excited imagining how "flamboyant" it would be if
-                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link">Tanjiro Kamado</a>'s
+                <a href="../../Characters/Tanjiro_Kamado/info.html" class="link">Tanjiro Kamado</a>'s
                 blood vessels exploded, and tries to forcefully haul
-                <a href="/../DemonSlayerWiki/Characters/Aoi_Kanzaki/info.html" class="link">Aoi Kanzaki</a> off
+                <a href="../../Characters/Aoi_Kanzaki/info.html" class="link">Aoi Kanzaki</a> off
                 to the Entertainment District with him so he can unwillingly help him with a
                 dangerous mission, even spanking her.
                 <span class="tooltip-anchor" id="Ref7">
@@ -1093,7 +1107,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic7">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_declaring_that_he_is_god.webp" 
+                        src="../../images/Tengen_declaring_that_he_is_god.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(7)">
                     </a>
@@ -1105,8 +1119,8 @@
                 </figure>
                 He is usually seen talking boastfully, proclaiming that he is "god" in front of 
                 Tanjiro,
-                <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html" class="link">Zenitsu</a> and
-                <a href="/../DemonSlayerWiki/Characters/Inosuke_Hashibira/info.html" class="link">Inosuke</a>,
+                <a href="../../Characters/Zenitsu_Agatsuma/info.html" class="link">Zenitsu</a> and
+                <a href="../../Characters/Inosuke_Hashibira/info.html" class="link">Inosuke</a>,
                 even calling them trash and declaring that if he tells them to become dogs,
                 they must become dogs, and if he tells them to become monkeys, they must become
                 monkeys. Tengen even demands for the trio to always humor and stoop down to him,
@@ -1120,7 +1134,7 @@
                     </sup>
                 </span>
                 This was also shown in the initial encounter with Upper Rank Six, 
-                <a href="/../DemonSlayerWiki/Characters/Gyutaro/info.html" class="link">Gyutaro</a>, proclaiming
+                <a href="../../Characters/Gyutaro/info.html" class="link">Gyutaro</a>, proclaiming
                 that he was in tip-top shape despite being severely poisoned.
                 <span class="tooltip-anchor" id="Ref11">
                     <sup class="tooltip">
@@ -1136,9 +1150,9 @@
                 However, Tengen does possess an extremely caring side that is masked under his
                 flamboyant façade, one he only shows to those that are extremely close to him,
                 most notably his three wives,
-                <a href="/../DemonSlayerWiki/Characters/Makio/info.html" class="link">Makio</a>,
-                <a href="/../DemonSlayerWiki/Characters/Suma/info.html" class="link">Suma</a> and
-                <a href="/../DemonSlayerWiki/Characters/Hinatsuru/info.html" class="link">Hinatsuru</a>, who 
+                <a href="../../Characters/Makio/info.html" class="link">Makio</a>,
+                <a href="../../Characters/Suma/info.html" class="link">Suma</a> and
+                <a href="../../Characters/Hinatsuru/info.html" class="link">Hinatsuru</a>, who 
                 Tengen is shown to truly love and care for, praising and encouraging Makio and 
                 Suma after their undercover mission
                 <span class="tooltip-anchor" id="Ref12">
@@ -1172,7 +1186,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic8">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_asks_Gyutaro_if_he_looks_like_he_does_have_talent.webp" 
+                        src="../../images/Tengen_asks_Gyutaro_if_he_looks_like_he_does_have_talent.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(8)">
                     </a>
@@ -1185,12 +1199,12 @@
                 Although he can be very boastful and expressive, Tengen also shows a side of
                 modesty and humility. He openly denied Gyutaro's statement that he was blessed
                 with any talent, comparing himself to the other Hashira and especially
-                <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>.
+                <a href="../../Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>.
                 This implicates a sort of inferiority complex, further proven by the fact that
                 he told himself that he could never become someone as great as Kyojuro. Tengen is
                 also shown to harbor regret over the fact that he has let so many lives slip
                 through his fingers over the years.
-                <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>
+                <a href="../../Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>
                 praised Tengen for the hard path he chose and for facing forward and fought
                 to protect human lives despite carrying all of his conflicts and contradictions
                 he hides behind his loud and confident façade, which caused Tengen to deeply
@@ -1265,9 +1279,9 @@
                 </span>
                 Despite this, Tengen remained retired and dutifully served as a bodyguard to
                 Nezuko and
-                <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>
+                <a href="../../Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>
                 alongside
-                <a href="/../DemonSlayerWiki/Characters/Shinjuro_Rengoku/info.html" class="link">Shinjuro Rengoku</a>,
+                <a href="../../Characters/Shinjuro_Rengoku/info.html" class="link">Shinjuro Rengoku</a>,
                 where he would go on to give his compliments to the son of his late mentor and friend
                 Kagaya.
             </p>
@@ -1283,7 +1297,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic9">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_and_Gyutaro_clashing_at_high_speeds.webp" 
+                        src="../../images/Tengen_and_Gyutaro_clashing_at_high_speeds.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(9)">
                     </a>
@@ -1318,8 +1332,8 @@
                     </sup>
                 </span>
                 He could match the combat proficiency of both 
-                <a href="/../DemonSlayerWiki/Characters/Daki/info.html" class="link">Daki</a> and
-                <a href="/../DemonSlayerWiki/Characters/Gyutaro/info.html" class="link">Gyutaro</a>, both Upper
+                <a href="../../Characters/Daki/info.html" class="link">Daki</a> and
+                <a href="../../Characters/Gyutaro/info.html" class="link">Gyutaro</a>, both Upper
                 Rank demons that have fought and killed numerous Hashira in the past,
                 <span class="tooltip-anchor" id="Ref18">
                     <sup class="tooltip">
@@ -1476,7 +1490,7 @@
                         <b>Poison Resistance:</b> As a former shinobi, Tengen has been shown
                         to possess high resistance to poison to the point where he could
                         continue fighting while under the effects of a poison from
-                        <a href="/../DemonSlayerWiki/Characters/Gyutaro/info.html" class="link">Gyutaro</a> that
+                        <a href="../../Characters/Gyutaro/info.html" class="link">Gyutaro</a> that
                         would have killed someone instantly under normal circumstances.
                         <span class="tooltip-anchor" id="Ref25.2">
                             <sup class="tooltip">
@@ -1557,7 +1571,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic10">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_slices_up_the_sashes.gif" 
+                        src="../../images/Tengen_slices_up_the_sashes.gif" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(10)">
                     </a>
@@ -1589,9 +1603,9 @@
                     </sup>
                 </span>
                 His speed also far surpasses that of
-                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link">Tanjiro</a>,
-                <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html" class="link">Zenitsu</a> and
-                <a href="/../DemonSlayerWiki/Characters/Inosuke_Hashibira/info.html" class="link">Inosuke</a>,
+                <a href="../../Characters/Tanjiro_Kamado/info.html" class="link">Tanjiro</a>,
+                <a href="../../Characters/Zenitsu_Agatsuma/info.html" class="link">Zenitsu</a> and
+                <a href="../../Characters/Inosuke_Hashibira/info.html" class="link">Inosuke</a>,
                 who were unable to keep up with, let alone perceive, the Hashira's blisteringly
                 quick movements. Most notably, Tengen was fast enough to behead Daki, an Upper
                 Rank demon, before she could even register what had happened.
@@ -1676,7 +1690,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic11">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_holding_onto_the_tip_of_his_Nichirin_Cleavers.webp" 
+                        src="../../images/Tengen_holding_onto_the_tip_of_his_Nichirin_Cleavers.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(11)">
                     </a>
@@ -1689,11 +1703,11 @@
                 <b>Immense Strength:</b> Tengen possesses tremendous physical strength even
                 amongst the Hashira, the strongest Demon Slayers of the Corps. He was ranked
                 second in an arm-wrestling contest among all the Hashira, with only the hulking
-                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>
+                <a href="../../Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>
                 surpassing him. Tengen displayed his strength numerous times, as he was shown
                 effortlessly carrying 
-                <a href="/../DemonSlayerWiki/Characters/Aoi_Kanzaki/info.html" class="link">Aoi</a> and
-                <a href="/../DemonSlayerWiki/Characters/Naho_Takada/info.html" class="link">Naho</a>,
+                <a href="../../Characters/Aoi_Kanzaki/info.html" class="link">Aoi</a> and
+                <a href="../../Characters/Naho_Takada/info.html" class="link">Naho</a>,
                 <span class="tooltip-anchor" id="Ref34">
                     <sup class="tooltip">
                         <span class="tooltiptext">
@@ -1765,12 +1779,12 @@
             <p>
                 <a href="" class="link"><b>Enhanced Hearing</b></a>: Tengen has a heightened 
                 sense of hearing similar to
-                <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html" class="link">Zenitsu Agatsuma</a>.
+                <a href="../../Characters/Zenitsu_Agatsuma/info.html" class="link">Zenitsu Agatsuma</a>.
                 This ability allows him to easily hear noises deep underground, and he uses it to
                 immediately discern that there are channels of underground tunnels and caves
                 directly beneath him when he was looking for
-                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link">Tanjiro Kamado</a> and
-                <a href="/../DemonSlayerWiki/Characters/Daki/info.html" class="link">Daki</a>.
+                <a href="../../Characters/Tanjiro_Kamado/info.html" class="link">Tanjiro Kamado</a> and
+                <a href="../../Characters/Daki/info.html" class="link">Daki</a>.
                 He also uses his superhuman hearing to monitor all the activity in
                 <a href="" class="link">Yoshiwara</a> in an attempt to find the location of
                 the demons dwelling in the area.
@@ -1799,7 +1813,7 @@
                         <figure class="left-side-anime-pic">
                             <a class="contain-img" href="#Pic12">
                                 <img 
-                                src="/../DemonSlayerWiki/images/Tengen_uses_his_sonar-like_hearing.webp" 
+                                src="../../images/Tengen_uses_his_sonar-like_hearing.webp" 
                                 class="figure-img zoom contain-img cursor" 
                                 onclick="openModal();currentSlide(12)">
                             </a>
@@ -1830,7 +1844,7 @@
                         <figure class="right-side-anime-pic">
                             <a class="contain-img" href="#Pic13">
                                 <img 
-                                src="/../DemonSlayerWiki/images/Tengen_uses_his_Musical_Score_technique.gif" 
+                                src="../../images/Tengen_uses_his_Musical_Score_technique.gif" 
                                 class="figure-img zoom contain-img cursor" 
                                 onclick="openModal();currentSlide(13)">
                             </a>
@@ -1885,7 +1899,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic14">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_vs_Gyutaro.gif" 
+                        src="../../images/Tengen_vs_Gyutaro.gif" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(14)">
                     </a>
@@ -1975,7 +1989,7 @@
                     <figure class="right-side-anime-pic">
                         <a class="contain-img" href="#Pic15">
                             <img 
-                            src="/../DemonSlayerWiki/images/Constant_Resounding_Slashes_vs_Rotating_Circular_Slashes_-_Flying_Blood_Scythes.webp" 
+                            src="../../images/Constant_Resounding_Slashes_vs_Rotating_Circular_Slashes_-_Flying_Blood_Scythes.webp" 
                             class="figure-img zoom contain-img cursor" 
                             onclick="openModal();currentSlide(15)">
                         </a>
@@ -2254,11 +2268,11 @@
                 black
                 <a href="https://en.wikipedia.org/wiki/kunai" class="link" 
                 target="_blank">kunai</a>, which he used to threaten
-                <a href="/../DemonSlayerWiki/Characters/Omitsu/info.html" class="link">Omitsu</a>'s 
+                <a href="../../Characters/Omitsu/info.html" class="link">Omitsu</a>'s 
                 husband to reveal information about
-                <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html" class="link">Zenitsu</a>'s
+                <a href="../../Characters/Zenitsu_Agatsuma/info.html" class="link">Zenitsu</a>'s
                 and
-                <a href="/../DemonSlayerWiki/Characters/Hinatsuru/info.html" class="link">Hinatsuru</a>'s
+                <a href="../../Characters/Hinatsuru/info.html" class="link">Hinatsuru</a>'s
                 disappearance and to destroy the Obi sash that captured Hinatsuru.
                 <span class="tooltip-anchor" id="Ref49">
                     <sup class="tooltip">
@@ -2279,7 +2293,7 @@
                 <div>
                     <a href="#Pic16" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_Animation_Illustration_Book_3.webp" 
+                        src="../../images/Kimetsu_no_Yaiba_Animation_Illustration_Book_3.webp" 
                         class="zoom contain-img" 
                         style="height:220px; width:160px; border:1px solid gray;" 
                         title="Kimetsu no Yaiba Animation Illustration Book 3"
@@ -2290,7 +2304,7 @@
                 <div>
                     <a href="#Pic17" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengens_Tsuba.webp" 
+                        src="../../images/Tengens_Tsuba.webp" 
                         class="zoom contain-img"
                         style="height:170px; width:300px; border:1px solid gray;" 
                         title="Tengen's Tsuba" 
@@ -2302,7 +2316,7 @@
                 <div>
                     <a href="#Pic18" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_uses_his_Roar_technique_to_destroy_the_ground.webp" 
+                        src="../../images/Tengen_uses_his_Roar_technique_to_destroy_the_ground.webp" 
                         class="zoom contain-img" 
                         style="height:170px; width:300px; border:1px solid gray;" 
                         title="Tengen uses his Roar technique to destroy the ground"
@@ -2314,7 +2328,7 @@
                 <div>
                     <a href="#Pic19" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Things_are_going_to_get_real_flashy.gif" 
+                        src="../../images/Things_are_going_to_get_real_flashy.gif" 
                         class="zoom contain-img"
                         style="height:170px; width:300px; border:1px solid gray;" 
                         title="Things are going to get real flashy!" 
@@ -2326,7 +2340,7 @@
                 <div>
                     <a href="#Pic20" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_Puzzle_27s_Nichirin_Sword.webp" 
+                        src="../../images/Tengen_Puzzle_27s_Nichirin_Sword.webp" 
                         class="zoom contain-img"
                         style="height:220px; width:300px; border:1px solid gray;" 
                         title="Puzzle & Dragons Tengen's Nichirin Swords" 
@@ -2338,7 +2352,7 @@
                 <div>
                     <a href="#Pic21" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_uses_his_explosive_beads.webp" 
+                        src="../../images/Tengen_uses_his_explosive_beads.webp" 
                         class="zoom contain-img"
                         style="height:220px; width:300px; border:1px solid gray;" 
                         title="Tengen uses his explosive beads" 
@@ -2350,7 +2364,7 @@
                 <div>
                     <a href="#Pic22" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Tengen_threatens_the_Master.webp" 
+                        src="../../images/Tengen_threatens_the_Master.webp" 
                         class="zoom contain-img"
                         style="height:170px; width:300px; border:1px solid gray;" 
                         title="Tengen threatens the Master" 
@@ -2429,7 +2443,7 @@
                     <figure class="right-side-anime-pic">
                         <a class="contain-img" href="#Pic23">
                             <img 
-                            src="/../DemonSlayerWiki/images/Tengens_initial_Design.webp" 
+                            src="../../images/Tengens_initial_Design.webp" 
                             class="figure-img zoom contain-img cursor tengen-pic1" 
                             onclick="openModal();currentSlide(23)">
                         </a>
@@ -2470,12 +2484,12 @@
                 <li class="fixlist">
                     Tengen is one of the only known Demon Slayer and Hashira to retire due to
                     being permanently disabled instead of death or age, the other being
-                    <a href="/../DemonSlayerWiki/Characters/Jigoro_Kuwajima/info.html" class="link"
+                    <a href="../../Characters/Jigoro_Kuwajima/info.html" class="link"
                     >Jigoro Kuwajima</a>.
                 </li>
                 <li class="fixlist">
                     He and
-                    <a href="/../DemonSlayerWiki/Characters/Inosuke_Hashibira/info.html" class="link"
+                    <a href="../../Characters/Inosuke_Hashibira/info.html" class="link"
                     >Inosuke Hashibira</a> are the only known Demon Slayers who use two
                     <a href="" class="link">Nichirin Swords</a>
                     instead of one.
@@ -2534,11 +2548,11 @@
                         <li class="fixlist">
                             For some time, it became Tengen's habit to say that he was going
                             to hell. This stopped after seeing his wives' reaction: with
-                            <a href="/../DemonSlayerWiki/Characters/Makio/info.html" class="link">Makio</a>
+                            <a href="../../Characters/Makio/info.html" class="link">Makio</a>
                             getting angry with him,
-                            <a href="/../DemonSlayerWiki/Characters/Hinatsuru/info.html" class="link">Hinatsuru</a>
+                            <a href="../../Characters/Hinatsuru/info.html" class="link">Hinatsuru</a>
                             crying for him, and
-                            <a href="/../DemonSlayerWiki/Characters/Suma/info.html" class="link">Suma</a>
+                            <a href="../../Characters/Suma/info.html" class="link">Suma</a>
                             biting him.
                             <span class="tooltip-anchor" id="Ref3.5">
                                 <sup class="tooltip">
@@ -2580,47 +2594,47 @@
                         <li class="fixlist">
                             "<i>She's serious. And a tad flashy. With good hips for
                             giving birth.</i>" -
-                            <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html" 
+                            <a href="../../Characters/Shinobu_Kocho/info.html" 
                             class="link">Shinobu Kocho</a>
                         </li>
                         <li class="fixlist">
                             "<i>He's always spacing out. He's young. And definitely not
                             flashy.</i>" -
-                            <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" 
+                            <a href="../../Characters/Muichiro_Tokito/info.html" 
                             class="link">Muichiro Tokito</a>
                         </li>
                         <li class="fixlist">
                             "<i>He's got flashy eyes! Are different-colored eyes possible?! I'm
                             jealous! But he's too fastidious and serious.</i>" - 
-                            <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html" 
+                            <a href="../../Characters/Obanai_Iguro/info.html" 
                             class="link">Obanai Iguro</a>
                         </li>
                         <li class="fixlist">
                             "<i>He's the first guy I ever met who's bigger than me. And he's
                             freakishly strong.</i>" - 
-                            <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" 
+                            <a href="../../Characters/Gyomei_Himejima/info.html" 
                             class="link">Gyomei Himejima</a>
                         </li>
                         <li class="fixlist">
                             "<i>He's somber. He always looks like he's at a funeral and it
                             bugs me.</i>" - 
-                            <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" 
+                            <a href="../../Characters/Giyu_Tomioka/info.html" 
                             class="link">Giyu Tomioka</a>
                         </li>
                         <li class="fixlist">
                             "<i>He's a great guy - and flashy! He stands out more than me!</i>" -
-                            <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" 
+                            <a href="../../Characters/Kyojuro_Rengoku/info.html" 
                             class="link">Kyojuro Rengoku</a>
                         </li>
                         <li class="fixlist">
                             "<i>She's weird. ANd her flashiness aggravates me. Good hips for
                             giving birth though.</i>" - 
-                            <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" 
+                            <a href="../../Characters/Mitsuri_Kanroji/info.html" 
                             class="link">Mitsuri Kanroji</a>
                         </li>
                         <li class="fixlist">
                             "<i>He's dangerous. With a bratty side.</i>" - 
-                            <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" 
+                            <a href="../../Characters/Sanemi_Shinazugawa/info.html" 
                             class="link">Sanemi Shinazugawa</a>
                         </li>
                     </ul>
@@ -2660,7 +2674,7 @@
                     Tengen's English voice actor,
                     <a href="https://en.wikipedia.org/wiki/Ray_Chase_(voice_actor)" class="link"
                     target="_blank">Ray Chase</a> also voices 
-                    <a href="/../DemonSlayerWiki/Characters/Rokuro/info.html" class="link">Rokuro</a>.
+                    <a href="../../Characters/Rokuro/info.html" class="link">Rokuro</a>.
                 </li>
                 <li class="fixlist">
                     Tengen's favorite food is 
@@ -2701,11 +2715,11 @@
             <ul>
                 <li class="fixlist">
                     (To a
-                    <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" 
+                    <a href="../../Characters/Tanjiro_Kamado/info.html" 
                     class="link">Tanjiro Kamado</a>,
-                    <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html" 
+                    <a href="../../Characters/Zenitsu_Agatsuma/info.html" 
                     class="link">Zenitsu Agatsuma</a>, and
-                    <a href="/../DemonSlayerWiki/Characters/Inosuke_Hashibira/info.html" 
+                    <a href="../../Characters/Inosuke_Hashibira/info.html" 
                     class="link">Inosuke Hashibira</a>)
                     "<i>I am a god! You three are trash! That's the first thing you need to pound
                     into your heads! Drive it in! You're to turn into dogs if I tell you to!
@@ -2724,11 +2738,11 @@
                 </li>
                 <li class="fixlist">
                     (To 
-                    <a href="/../DemonSlayerWiki/Characters/Makio/info.html" class="link"
+                    <a href="../../Characters/Makio/info.html" class="link"
                     >Makio</a>
-                    <a href="/../DemonSlayerWiki/Characters/Suma/info.html" class="link"
+                    <a href="../../Characters/Suma/info.html" class="link"
                     >Suma</a>
-                    <a href="/../DemonSlayerWiki/Characters/Hinatsuru/info.html" class="link"
+                    <a href="../../Characters/Hinatsuru/info.html" class="link"
                     >Hinatsuru</a>)
                     "<i>I want you three to only think about your lives. Above all else, your
                     top priority is to come back to me. Life over accomplishing your mission!
@@ -2751,7 +2765,7 @@
                 </li>
                 <li class="fixlist">
                     (To
-                    <a href="/../DemonSlayerWiki/Characters/Gyutaro/info.html" class="link"
+                    <a href="../../Characters/Gyutaro/info.html" class="link"
                     >Gyutaro</a>)
                     "<i>Of course! I'm a flashy, brillant, sexy guy! I've even got three wives.</i>"
                     <span class="tooltip-anchor" id="Ref20.3">
@@ -2766,15 +2780,15 @@
                 </li>
                 <li class="fixlist">
                     (To
-                    <a href="/../DemonSlayerWiki/Characters/Gyutaro/info.html" class="link"
+                    <a href="../../Characters/Gyutaro/info.html" class="link"
                     >Gyutaro</a> and
-                    <a href="/../DemonSlayerWiki/Characters/Daki/info.html" class="link"
+                    <a href="../../Characters/Daki/info.html" class="link"
                     >Daki</a>)
                     "<i>Do I look like someone with any talent? [...] See, this country is vast.
                     It's teeming with people who'd blow your mind.
-                    <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link"
+                    <a href="../../Characters/Gyomei_Himejima/info.html" class="link"
                     title="Gyomei Himejima">Some</a> are complete enigmas.
-                    <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link"
+                    <a href="../../Characters/Muichiro_Tokito/info.html" class="link"
                     title="Muichiro Tokito">Some</a> can take up a sword and become a Hashira in
                     two months. Me, chosen? Don't give me that crap! Just how many lives do you 
                     think I've let slip through my fingers until now?</i>"
@@ -2792,7 +2806,7 @@
                 </li>
                 <li class="fixlist">
                     (To 
-                    <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link"
+                    <a href="../../Characters/Kagaya_Ubuyashiki/info.html" class="link"
                     >Kagaya Ubuyashiki</a>)
                     "<i>I'm the onw who should be grateful. Master, for your sake, I'd never
                     think twice about laying down my life. I can surely accomplish everything.
@@ -3354,7 +3368,7 @@
                         <th class="nav-table-header">
                             <aside>[<a href="#" class="link" id="nav-table-btn">show</a>]</aside>
                             <div class="nav-table-char">
-                                <a href="/../DemonSlayerWiki/characters.html">Characters</a>
+                                <a href="../../characters.html">Characters</a>
                             </div>
                         </th>
                     </tr>
@@ -3372,15 +3386,15 @@
                                                 <b>Ubuyashiki Family:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
+                                                <a href="../../Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -3388,16 +3402,16 @@
                                                 <b>Hashira:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·                                                
-                                                <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>&nbsp;·
+                                                <a href="../../Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>&nbsp;·
+                                                <a href="../../Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
+                                                <a href="../../Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a>&nbsp;·
+                                                <a href="../../Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
+                                                <a href="../../Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·                                                
+                                                <a href="../../Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>&nbsp;·
                                                 <span class="nav-table-current">Tengen Uzui</span>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>·
+                                                <a href="../../Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
+                                                <a href="../../Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a>&nbsp;·
+                                                <a href="../../Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>·
                                                 <a href="sakonji.html" class="link">Sakonji Urokodaki</a>·
                                                 <a href="jigoro.html" class="link">Jigoro Kuwajima</a>·
                                                 <a href="shinjuro.html" class="link">Shinjuro Rengoku</a>
@@ -3666,10 +3680,10 @@
         </div>
     </div>
     <footer>Wiki inspired by the <a class="link" href="https://kimetsu-no-yaiba.fandom.com/" target="_blank">Kimetsu No Yaiba Wiki</a></footer>
-    <script src="/../DemonSlayerWiki/javascripts/navigation.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/searchbar.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/tengen.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/lightbox_modal.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/character_navigation.js"></script>
+    <script src="../../javascripts/navigation.js"></script>
+    <script src="../../javascripts/searchbar.js"></script>
+    <script src="../../javascripts/tengen.js"></script>
+    <script src="../../javascripts/lightbox_modal.js"></script>
+    <script src="../../javascripts/character_navigation.js"></script>
 </body>
 </html>

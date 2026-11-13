@@ -4,193 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shinobu Kocho | Demon Slayer Wiki</title>
-    <link rel="stylesheet" href="/../DemonSlayerWiki/stylesheets/styles copy.css" />
+    <link rel="stylesheet" href="../../stylesheets/styles-copy.css" />
 </head>
 <body>
-    <div class="navbar">
-        <a href="/../DemonSlayerWiki/index.html"><img src="/../DemonSlayerWiki/images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
-        <a href="/../DemonSlayerWiki/index.html" class="nav-item">Home</a>
-        <div class="dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">Characters</a>
-            <div class="dropdown-content">
-                <div class="ds">
-                    Demon Slayers
-                    <div class="ds-dropdown-content">
-                        <a href="">Tanjiro Kamado</a>
-                        <a href="">Zenitsu Agatsuma</a>
-                        <a href="">Inosuke Hashibira</a>
-                        <a href="">Kanao Tsuyuri</a>
-                        <a href="">Genya Shinazugawa</a>
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="../../index.html" class="logo-link">
+            <img src="../../images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" />
+        </a>
+
+        <!-- Hamburger Toggle for Mobile -->
+         <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+         </button>
+
+        <!-- Collapsible Nav Links Wrapper -->
+        <div id="nav-menu" class="nav-menu">
+            <a href="../../index.html" class="nav-item">Home</a>
+
+            <div class="dropdown">
+                <a href="../../characters.html" class="nav-item dropdown-trigger">Characters</a>
+                <div class="dropdown-content">
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demon Slayers</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Tanjiro Kamado</a>
+                            <a href="">Zenitsu Agatsuma</a>
+                            <a href="">Inosuke Hashibira</a>
+                            <a href="">Kanao Tsuyuri</a>
+                            <a href="">Genya Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Hashira
-                    <div class="ds-dropdown-content">
-                        <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
-                        <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
-                        <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
-                        <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
-                        <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
-                        <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
-                        <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
-                        <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
-                        <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Hashira</a>
+                        <div class="ds-dropdown-content">
+                            <a href="../../Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
+                            <a href="../../Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
+                            <a href="../../Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
+                            <a href="../../Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
+                            <a href="../../Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
+                            <a href="../../Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
+                            <a href="../../Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
+                            <a href="../../Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
+                            <a href="../../Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Demons
-                    <div class="ds-dropdown-content">
-                        <a href="">Muzan Kibutsuji</a>
-                        <a href="">Nezuko Kamado</a>
-                        <a href="">Tamayo</a>
-                        <a href="">Yushiro</a>
-                        <a href="">Susamaru</a>
-                        <a href="">Yahaba</a>
-                        <a href="">Spider Family</a>
-                        <a href="">Swamp Demon</a>
-                        <a href="">Hand Demon</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demons</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Muzan Kibutsuji</a>
+                            <a href="">Nezuko Kamado</a>
+                            <a href="">Tamayo</a>
+                            <a href="">Yushiro</a>
+                            <a href="">Susamaru</a>
+                            <a href="">Yahaba</a>
+                            <a href="">Spider Family</a>
+                            <a href="">Swamp Demon</a>
+                            <a href="">Hand Demon</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Upper Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Kokushibo</a>
-                        <a href="">Doma</a>
-                        <a href="">Akaza</a>
-                        <a href="">Nakime</a>
-                        <a href="">Hantengu</a>
-                        <a href="">Gyokko</a>
-                        <a href="">Kaigaku</a>
-                        <a href="">Daki</a>
-                        <a href="">Gyutaro</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Upper Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Kokushibo</a>
+                            <a href="">Doma</a>
+                            <a href="">Akaza</a>
+                            <a href="">Nakime</a>
+                            <a href="">Hantengu</a>
+                            <a href="">Gyokko</a>
+                            <a href="">Kaigaku</a>
+                            <a href="">Daki</a>
+                            <a href="">Gyutaro</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Lower Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Enmu</a>
-                        <a href="">Rokuro</a>
-                        <a href="">Wakuraba</a>
-                        <a href="">Mukago</a>
-                        <a href="">Rui</a>
-                        <a href="">Kamanue</a>
-                        <a href="">Kyogai</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Lower Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Enmu</a>
+                            <a href="">Rokuro</a>
+                            <a href="">Wakuraba</a>
+                            <a href="">Mukago</a>
+                            <a href="">Rui</a>
+                            <a href="">Kamanue</a>
+                            <a href="">Kyogai</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Groups
-                    <div class="ds-dropdown-content">
-                        <a href="">Demon Slayer Corps</a>
-                        <a href="">Twelve Kizuki</a>
-                        <a href="">Hashira</a>
-                        <a href="">Tsuguko</a>
-                        <a href="">Kakushi</a>
-                        <a href="">Kasugai Crows</a>
-                        <a href="">Ninju</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Groups</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Demon Slayer Corps</a>
+                            <a href="">Twelve Kizuki</a>
+                            <a href="">Hashira</a>
+                            <a href="">Tsuguko</a>
+                            <a href="">Kakushi</a>
+                            <a href="">Kasugai Crows</a>
+                            <a href="">Ninju</a>
+                        </div>
                     </div>
-                </div>
-                <a href="/../DemonSlayerWiki/characters.html">All Characters</a>
-            </div>
-        </div>
-        <div class="world-dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">World</a>
-            <div class="world-dropdown-content">
-                <div class="ds-world">
-                    Story Arcs
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Unwavering Resolve Arc</a>
-                        <a href="">Mugen Train Arc</a>
-                        <a href="">Entertainment District Arc</a>
-                        <a href="">Swordsmith Village Arc</a>
-                        <a href="">Hashira Training Arc</a>
-                        <a href="">Final Battle Arc</a>
-                        <a href="">Infinity Castle Arc</a>
-                        <a href="">Sunrise Countdown Arc</a>
-                        <a href="">All Arcs</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Locations
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Mount Sagiri</a>
-                        <a href="">Mount Fujikasanae</a>
-                        <a href="">Asakusa</a>
-                        <a href="">Tsuzumi Mansion</a>
-                        <a href="">Mount Natagumo</a>
-                        <a href="">Butterfly Mansion</a>
-                        <a href="">Yoshiwara</a>
-                        <a href="">Swordsmith Village</a>
-                        <a href="">Infinity Castle</a>
-                        <a href="">All Locations</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Abilities & Techniques
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Blood Demon Art</a>
-                        <a href="">Total Concentration Breathing</a>
-                        <a href="">Regeneration</a>
-                        <a href="">Demon Slayer Mark</a>
-                        <a href="">Bright Red Nichirin Sword</a>
-                        <a href="">Transparent World</a>
-                        <a href="">Selfless State</a>
-                        <a href="">Repetitive Action</a>
-                        <a href="">Extrasensory Perception</a>
-                        <a href="">Flesh Manipulation</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Breathing Styles
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Water Breathing</a>
-                        <a href="">Flame Breathing</a>
-                        <a href="">Thunder Breathing</a>
-                        <a href="">Wind Breathing</a>
-                        <a href="">Stone Breathing</a>
-                        <a href="">Beast Breathing</a>
-                        <a href="">Flower Breathing</a>
-                        <a href="">Sun Breathing</a>
-                        <a href="">Moon Breathing</a>
-                        <a href="">All Breathing Styles</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Events
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Battles</a>
-                        <a href="">Final Selection</a>
-                        <a href="">Lower Ranks Meeting</a>
-                        <a href="">Upper Ranks Meeting</a>
-                        <a href="">Rehabilitation Training</a>
-                        <a href="">Hashira Training</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Objects
-                    <div class="ds-world-dropdown-content-bottom">
-                        <a href="">Nichirin Sword</a>
-                        <a href="">Wisteria</a>
-                        <a href="">Blue Spider Lily</a>
-                        <a href="">Yoriichi Type Zero</a>
-                        <a href="">Warding Mask</a>
-                    </div>
+                    <a href="../../characters.html">All Characters</a>
                 </div>
             </div>
+            <div class="world-dropdown">
+                <a href="#" class="nav-item dropdown-trigger">World</a>
+                <div class="world-dropdown-content">
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Story Arcs</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Unwavering Resolve Arc</a>
+                            <a href="">Mugen Train Arc</a>
+                            <a href="">Entertainment District Arc</a>
+                            <a href="">Swordsmith Village Arc</a>
+                            <a href="">Hashira Training Arc</a>
+                            <a href="">Final Battle Arc</a>
+                            <a href="">Infinity Castle Arc</a>
+                            <a href="">Sunrise Countdown Arc</a>
+                            <a href="">All Arcs</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Locations</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Mount Sagiri</a>
+                            <a href="">Mount Fujikasanae</a>
+                            <a href="">Asakusa</a>
+                            <a href="">Tsuzumi Mansion</a>
+                            <a href="">Mount Natagumo</a>
+                            <a href="">Butterfly Mansion</a>
+                            <a href="">Yoshiwara</a>
+                            <a href="">Swordsmith Village</a>
+                            <a href="">Infinity Castle</a>
+                            <a href="">All Locations</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Abilities & Techniques</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Blood Demon Art</a>
+                            <a href="">Total Concentration Breathing</a>
+                            <a href="">Regeneration</a>
+                            <a href="">Demon Slayer Mark</a>
+                            <a href="">Bright Red Nichirin Sword</a>
+                            <a href="">Transparent World</a>
+                            <a href="">Selfless State</a>
+                            <a href="">Repetitive Action</a>
+                            <a href="">Extrasensory Perception</a>
+                            <a href="">Flesh Manipulation</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Breathing Styles</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Water Breathing</a>
+                            <a href="">Flame Breathing</a>
+                            <a href="">Thunder Breathing</a>
+                            <a href="">Wind Breathing</a>
+                            <a href="">Stone Breathing</a>
+                            <a href="">Beast Breathing</a>
+                            <a href="">Flower Breathing</a>
+                            <a href="">Sun Breathing</a>
+                            <a href="">Moon Breathing</a>
+                            <a href="">All Breathing Styles</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Events</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Battles</a>
+                            <a href="">Final Selection</a>
+                            <a href="">Lower Ranks Meeting</a>
+                            <a href="">Upper Ranks Meeting</a>
+                            <a href="">Rehabilitation Training</a>
+                            <a href="">Hashira Training</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Objects</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Nichirin Sword</a>
+                            <a href="">Wisteria</a>
+                            <a href="">Blue Spider Lily</a>
+                            <a href="">Yoriichi Type Zero</a>
+                            <a href="">Warding Mask</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item search-container">
+                <form id="search-form" role="search" class="search-form">
+                    <label for="search-input">Search Wiki:</label>
+                    <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Search..." 
+                    aria-label="Search content"
+                    autocomplete="off">
+                    <button type="submit" id="search-button">Go</button>
+                </form>
+                <div id="search-results" class="search-results-dropdown"></div>
+            </div>
         </div>
-        <div class="nav-item">
-            <form id="search-form" role="search">
-                <label for="search-input">Search Wiki:</label>
-                <input 
-                type="text" 
-                id="search-input" 
-                placeholder="Enter keywords..." 
-                aria-label="Search through project content"
-                autocomplete="off">
-                <button id="search-button">Search</button>
-            </form>
-            <div id="search-results"></div>
-        </div>
-    </div>
+    </nav>
 
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -198,83 +212,83 @@
 
             <div class="mySlides">
                 <div class="numbertext">1 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobu_anime.webp" style="width:50%;">
+                <img src="../../images/Shinobu_anime.webp" style="width:50%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">2 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobu_colored_body.webp" style="width:44.1%;">
+                <img src="../../images/Shinobu_colored_body.webp" style="width:44.1%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">3 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobus_childhood_pinky_promise.webp">
+                <img src="../../images/Shinobus_childhood_pinky_promise.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">4 / 20</div>
-                <img src="/../DemonSlayerWiki/images/14_year_old_Shinobu_design.webp">
+                <img src="../../images/14_year_old_Shinobu_design.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">5 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobus_relaxed_demeanor.webp">
+                <img src="../../images/Shinobus_relaxed_demeanor.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">6 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobu_furious_at_Doma.webp">
+                <img src="../../images/Shinobu_furious_at_Doma.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">7 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobu_aggravated_over_Kanaos_inability_to_make_her_own_decisions.webp">
+                <img src="../../images/Shinobu_aggravated_over_Kanaos_inability_to_make_her_own_decisions.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">8 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Memory_of_Shinobus_smile.webp">
+                <img src="../../images/Memory_of_Shinobus_smile.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">9 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobu_pins_Doma_to_the_ceiling_through_his_neck.webp">
+                <img src="../../images/Shinobu_pins_Doma_to_the_ceiling_through_his_neck.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">10 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobu_vows_to_strike_Domas_neck.webp">
+                <img src="../../images/Shinobu_vows_to_strike_Domas_neck.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">11 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Domas_eyeball_poisoned.webp">
+                <img src="../../images/Domas_eyeball_poisoned.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">12 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Domas_poison.webp"  style="width:50%;">
+                <img src="../../images/Domas_poison.webp"  style="width:50%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">13 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobu_running_away_from_Giyu.webp">
+                <img src="../../images/Shinobu_running_away_from_Giyu.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">14 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Dance_of_the_Centipede_-_Hundred-Legged_Zigzag_29.webp">
+                <img src="../../images/Dance_of_the_Centipede_-_Hundred-Legged_Zigzag_29.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">15 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobu_vs_Doma.webp" style="width:77%;">
+                <img src="../../images/Shinobu_vs_Doma.webp" style="width:77%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">16 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobu_using_Butterfly_Dance_Caprice_on_the_Daughter_Spider_Demon.webp">
+                <img src="../../images/Shinobu_using_Butterfly_Dance_Caprice_on_the_Daughter_Spider_Demon.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">17 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobu_introducing_herself.webp"  style="width:77%;">
+                <img src="../../images/Shinobu_introducing_herself.webp"  style="width:77%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">18 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Volume_16_Extra_Page_08.webp"  style="width:47.25%;">
+                <img src="../../images/Volume_16_Extra_Page_08.webp"  style="width:47.25%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">19 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Shinobus_tsuba.webp">
+                <img src="../../images/Shinobus_tsuba.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">20 / 20</div>
-                <img src="/../DemonSlayerWiki/images/Puzzle_Shinobu_Nichirin_Sword.webp">
+                <img src="../../images/Puzzle_Shinobu_Nichirin_Sword.webp">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -288,7 +302,7 @@
                 <div class="column" id="Pic1">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_anime.webp" 
+                    src="../../images/Shinobu_anime.webp" 
                     onclick="currentSlide(1)" 
                     alt="Shinobu's anime appearance"
                     >
@@ -296,7 +310,7 @@
                 <div class="column" id="Pic2">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_colored_body.webp" 
+                    src="../../images/Shinobu_colored_body.webp" 
                     onclick="currentSlide(2)" 
                     alt="Shinobu's manga appearance"
                     >
@@ -304,7 +318,7 @@
                 <div class="column" id="Pic3">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobus_childhood_pinky_promise.webp" 
+                    src="../../images/Shinobus_childhood_pinky_promise.webp" 
                     onclick="currentSlide(3)" 
                     alt="Shinobu's childhood pinky promise"
                     >
@@ -312,7 +326,7 @@
                 <div class="column" id="Pic4">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/14_year_old_Shinobu_design.webp" 
+                    src="../../images/14_year_old_Shinobu_design.webp" 
                     onclick="currentSlide(4)" 
                     alt="14 year old Shinobu design"
                     >
@@ -320,7 +334,7 @@
                 <div class="column" id="Pic5">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobus_relaxed_demeanor.webp" 
+                    src="../../images/Shinobus_relaxed_demeanor.webp" 
                     onclick="currentSlide(5)" 
                     alt="Shinobu's relaxed demeanor"
                     >
@@ -328,7 +342,7 @@
                 <div class="column" id="Pic6">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_furious_at_Doma.webp" 
+                    src="../../images/Shinobu_furious_at_Doma.webp" 
                     onclick="currentSlide(6)" 
                     alt="Shinobu furious at Doma"
                     >
@@ -336,7 +350,7 @@
                 <div class="column" id="Pic7">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_aggravated_over_Kanaos_inability_to_make_her_own_decisions.webp" 
+                    src="../../images/Shinobu_aggravated_over_Kanaos_inability_to_make_her_own_decisions.webp" 
                     onclick="currentSlide(7)" 
                     alt="Shinobu aggravated over Kanao's inability to make her own decisions"
                     >
@@ -344,7 +358,7 @@
                 <div class="column" id="Pic8">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Memory_of_Shinobus_smile.webp" 
+                    src="../../images/Memory_of_Shinobus_smile.webp" 
                     onclick="currentSlide(8)" 
                     alt="Memory of Shinobu's smile"
                     >
@@ -352,7 +366,7 @@
                 <div class="column" id="Pic9">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_pins_Doma_to_the_ceiling_through_his_neck.webp" 
+                    src="../../images/Shinobu_pins_Doma_to_the_ceiling_through_his_neck.webp" 
                     onclick="currentSlide(9)" 
                     alt="Shinobu pins Doma to the ceiling through his neck"
                     >
@@ -360,7 +374,7 @@
                 <div class="column" id="Pic10">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_vows_to_strike_Domas_neck.webp" 
+                    src="../../images/Shinobu_vows_to_strike_Domas_neck.webp" 
                     onclick="currentSlide(10)" 
                     alt="Shinobu vows to strike Doma's neck"
                     >
@@ -368,7 +382,7 @@
                 <div class="column" id="Pic11">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Domas_eyeball_poisoned.webp" 
+                    src="../../images/Domas_eyeball_poisoned.webp" 
                     onclick="currentSlide(11)" 
                     alt="Doma's eyeball poisoned"
                     >
@@ -376,7 +390,7 @@
                 <div class="column" id="Pic12">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Domas_poison.webp" 
+                    src="../../images/Domas_poison.webp" 
                     onclick="currentSlide(12)" 
                     alt="Doma's poison"
                     >
@@ -384,7 +398,7 @@
                 <div class="column" id="Pic13">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_running_away_from_Giyu.webp" 
+                    src="../../images/Shinobu_running_away_from_Giyu.webp" 
                     onclick="currentSlide(13)" 
                     alt="Shinobu running away from Giyu"
                     >
@@ -392,7 +406,7 @@
                 <div class="column" id="Pic14">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Dance_of_the_Centipede_-_Hundred-Legged_Zigzag_29.webp" 
+                    src="../../images/Dance_of_the_Centipede_-_Hundred-Legged_Zigzag_29.webp" 
                     onclick="currentSlide(14)" 
                     alt="Dance of the Centipede - Hundred-Legged Zigzag"
                     >
@@ -400,7 +414,7 @@
                 <div class="column" id="Pic15">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_vs_Doma.webp" 
+                    src="../../images/Shinobu_vs_Doma.webp" 
                     onclick="currentSlide(15)" 
                     alt="Shinobu vs. Doma"
                     >
@@ -408,7 +422,7 @@
                 <div class="column" id="Pic16">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_using_Butterfly_Dance_Caprice_on_the_Daughter_Spider_Demon.webp" 
+                    src="../../images/Shinobu_using_Butterfly_Dance_Caprice_on_the_Daughter_Spider_Demon.webp" 
                     onclick="currentSlide(16)" 
                     alt="Shinobu using Butterfly Dance: Caprice on the Daughter Spider Demon"
                     >
@@ -416,7 +430,7 @@
                 <div class="column" id="Pic17">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_introducing_herself.webp" 
+                    src="../../images/Shinobu_introducing_herself.webp" 
                     onclick="currentSlide(17)" 
                     alt="Shinobu introducing herself"
                     >
@@ -424,7 +438,7 @@
                 <div class="column" id="Pic18">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Volume_16_Extra_Page_08.webp" 
+                    src="../../images/Volume_16_Extra_Page_08.webp" 
                     onclick="currentSlide(18)" 
                     alt="Volume 16 Extra Page 8"
                     >
@@ -432,7 +446,7 @@
                 <div class="column" id="Pic19">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Shinobu_using_Butterfly_Dance_Caprice_on_the_Daughter_Spider_Demon.webp" 
+                    src="../../images/Shinobu_using_Butterfly_Dance_Caprice_on_the_Daughter_Spider_Demon.webp" 
                     onclick="currentSlide(19)" 
                     alt="Shinobu using Butterfly Dance: Caprice on the Daughter Spider Demon"
                     >
@@ -440,7 +454,7 @@
                 <div class="column" id="Pic20">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Puzzle_Shinobu_Nichirin_Sword.webp" 
+                    src="../../images/Puzzle_Shinobu_Nichirin_Sword.webp" 
                     onclick="currentSlide(20)" 
                     alt="Shinobu's Nichirin Sword sprite in Puzzles & Dragons"
                     >
@@ -460,10 +474,10 @@
                     <a href="" class="link">Info</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/synopsis.html" class="link">Synopsis</a>
+                    <a href="../../Characters/Shinobu_Kocho/synopsis.html" class="link">Synopsis</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/relationships.html" class="link">Relationships</a>
+                    <a href="../../Characters/Shinobu_Kocho/relationships.html" class="link">Relationships</a>
                 </div>
             </div>
 
@@ -485,7 +499,7 @@
                             <a id="expImg" class="contain-img" href="#Pic1">
                                 <img 
                                 id="curImg"
-                                src="/../DemonSlayerWiki/images/Shinobu_anime.webp"
+                                src="../../images/Shinobu_anime.webp"
                                 decoding="async"
                                 loading="lazy"
                                 class="zoom"
@@ -602,12 +616,12 @@
                         <div class="value">
                             Unnamed Parents
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link">
+                            <a href="../../Characters/Kanae_Kocho/info.html" class="link">
                                 Kanae Kocho
                             </a>
                             <small>(Older Sister)</small>
                             <br>
-                            <a href="/../DemonSlayerWiki/Characters/Kanao_Tsuyuri/info.html" class="link">
+                            <a href="../../Characters/Kanao_Tsuyuri/info.html" class="link">
                                 Kanao Tsuyuri
                             </a>
                             <small>(Adoptive Younger Sister)</small>
@@ -616,7 +630,7 @@
                 </section>
                 <section class="group-data">
                     <hr><small><i>See all relatives 
-                    <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/relationships.html" class="link">here</a></i></small>
+                    <a href="../../Characters/Shinobu_Kocho/relationships.html" class="link">here</a></i></small>
                 </section>
                 <section class="group-data">
                     <hr><h2 class="header">Debuts</h2><hr>
@@ -715,9 +729,9 @@
                 </span>
                 She was also the younger sister of the former
                 <a href="" class="link" title="Flower Breathing">Flower</a> Hashira
-                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>, and
+                <a href="../../Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>, and
                 the adoptive older sister of 
-                <a href="/../DemonSlayerWiki/Characters/Kanao_Tsuyuri/info.html" class="link">Kanao Tsuyuri</a>.
+                <a href="../../Characters/Kanao_Tsuyuri/info.html" class="link">Kanao Tsuyuri</a>.
             </p>
             <br>
             <div class="guideHeader" id="contentHeader">
@@ -881,7 +895,7 @@
             <p>
                 Over her uniform, she wore a distinctive white haori that once belonged to her
                 late sister,
-                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link"
+                <a href="../../Characters/Kanae_Kocho/info.html" class="link"
                 title="Kanae Kocho">Kanae</a>. The haori features a butterfly wing pattern
                 inspired by the <a href="" class="link">Monarch Butterfly</a>, with a color
                 gradient that fades from whtie into pale turquoise and pink on the lower sleeves
@@ -907,7 +921,7 @@
                 <div>
                     <a href="#Pic3" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobus_childhood_pinky_promise.webp" 
+                        src="../../images/Shinobus_childhood_pinky_promise.webp" 
                         class="zoom contain-img" 
                         style="height:170px; width:300px; border:1px solid gray;" 
                         title="Shinobu's childhood pinky promise"
@@ -919,7 +933,7 @@
                 <div>
                     <a href="#Pic4" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/14_year_old_Shinobu_design.webp" 
+                        src="../../images/14_year_old_Shinobu_design.webp" 
                         class="zoom contain-img"
                         style="height:300px; width:170px; border:1px solid gray;" 
                         title="14 year old Shinobu design" 
@@ -942,7 +956,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic5">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobus_relaxed_demeanor.webp" 
+                        src="../../images/Shinobus_relaxed_demeanor.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(5)">
                     </a>
@@ -955,7 +969,7 @@
                 her outward behavior was shown very quickly to be a façade. This was displayed
                 in the way she enjoyed teasing others, to the point of being rather sardonic
                 about it - she was shown most notably to pick on
-                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>.
+                <a href="../../Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>.
                 <span class="tooltip-anchor" id="Ref5">
                     <sup class="tooltip">
                         <span class="tooltiptext">
@@ -967,12 +981,12 @@
                 Despite her relaxed exterior and her initial claim of wanting to get along
                 with <a href="" class="link">demons</a>, she could be rather cruel towards 
                 them, which was seen when she killed
-                <a href="/../DemonSlayerWiki/Characters/Spider_Demon_Daughter/info.html" class="link"
+                <a href="../../Characters/Spider_Demon_Daughter/info.html" class="link"
                 title="Spider Demon (Daugher)">Daughter</a> after giving her false hope of
                 helping her, and immediately attempting to kill
-                <a href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html" class="link">Nezuko Kamado</a>
+                <a href="../../Characters/Nezuko_Kamado/info.html" class="link">Nezuko Kamado</a>
                 without giving her brother
-                <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" class="link"
+                <a href="../../Characters/Tanjiro_Kamado/info.html" class="link"
                 title="Tanjiro Kamado">Tanjiro</a> a chance to prove that she was harmless to
                 humans.
                 <span class="tooltip-anchor" id="Ref6">
@@ -994,7 +1008,7 @@
                     </sup>
                 </span>
                 Shinobu was shown to be unabashed, as she paid no heed to
-                <a href="/../DemonSlayerWiki/Characters/Murata/info.html" class="link">Murata</a>'s lack of clothes
+                <a href="../../Characters/Murata/info.html" class="link">Murata</a>'s lack of clothes
                 despite his own embarrassment.
                 <span class="tooltip-anchor" id="Ref8.1">
                     <sup class="tooltip">
@@ -1031,7 +1045,7 @@
                     </sup>
                 </span>
                 and burned revealing uniforms tailored by
-                <a href="/../DemonSlayerWiki/Characters/Masao_Maeda/info.html" class="link">Masao Maeda</a>,
+                <a href="../../Characters/Masao_Maeda/info.html" class="link">Masao Maeda</a>,
                 who intended them to be worn by her and other girls.
                 <span class="tooltip-anchor" id="Ref12">
                     <sup class="tooltip">
@@ -1049,7 +1063,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic6">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobu_furious_at_Doma.webp" 
+                        src="../../images/Shinobu_furious_at_Doma.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(6)">
                     </a>
@@ -1060,7 +1074,7 @@
                 It is later revealed that Shinobu's outwardly calm, tranquil disposition was
                 worn as a mask, as she held an intense hatred for demons due to the loss of her
                 beloved older sister,
-                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link"
+                <a href="../../Characters/Kanae_Kocho/info.html" class="link"
                 title="Kanae Kocho">Kanae</a> at a young age, along with the deaths of her
                 parents, almost all of her
                 <a href="" class="link">Tsuguko</a>, and the families of her apprentices at the
@@ -1092,7 +1106,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic7">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobu_aggravated_over_Kanaos_inability_to_make_her_own_decisions.webp" 
+                        src="../../images/Shinobu_aggravated_over_Kanaos_inability_to_make_her_own_decisions.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(7)">
                     </a>
@@ -1102,7 +1116,7 @@
                 </figure>
                 Shinobu's younger self had a more brash, blunt and uncomplicated demeanor as
                 seen when she rescued
-                <a href="/../DemonSlayerWiki/Characters/Kanao_Tsuyuri/info.html" class="link">Kanao Tsuyuri</a>,
+                <a href="../../Characters/Kanao_Tsuyuri/info.html" class="link">Kanao Tsuyuri</a>,
                 whom she had a negative attitude towards raising at first. After the death of
                 Kanae, however, Shinobu began to outwardly behave more like her older sister 
                 and eventually developed her gentle, positive attitude and mannerisms to match
@@ -1126,7 +1140,7 @@
                 </span>
                 Though never shown onscreen, she has a notable temper, namely in the way that
                 makes even the loud and brash
-                <a href="/../DemonSlayerWiki/Characters/Inosuke_Hashibira/info.html" class="link">Inosuke Hashibira</a>
+                <a href="../../Characters/Inosuke_Hashibira/info.html" class="link">Inosuke Hashibira</a>
                 take notice.
                 <span class="tooltip-anchor" id="Ref10.2">
                     <sup class="tooltip">
@@ -1174,7 +1188,7 @@
                 defend himself in stark contrast to most of her colleagues who opted to execute
                 them on the spot. Shinobu also aided Tanjiro by giving him water laced with
                 anesthetic when he was in pain, and told
-                <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html" class="link"
+                <a href="../../Characters/Obanai_Iguro/info.html" class="link"
                 title="Obanai Iguro">Obanai</a> that he was being too rough when he pinned
                 Tanjiro to the ground with his elbow.
                 <span class="tooltip-anchor" id="Ref20">
@@ -1199,7 +1213,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic8">
                         <img 
-                        src="/../DemonSlayerWiki/images/Memory_of_Shinobus_smile.webp" 
+                        src="../../images/Memory_of_Shinobus_smile.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(8)">
                     </a>
@@ -1235,7 +1249,7 @@
                 Shinobu was also pleased when Kanao grew to be more expressive and talkative
                 over time. She also showed great care for Inosuke, making him see her as a
                 maternal figure and be subconsciously reminded of his own
-                <a href="/../DemonSlayerWiki/Characters/Kotoha_Hashibira/info.html" class="link"
+                <a href="../../Characters/Kotoha_Hashibira/info.html" class="link"
                 title="Kotoha Hashibira">mother</a>.
                 <span class="tooltip-anchor" id="Ref24">
                     <sup class="tooltip">
@@ -1246,9 +1260,9 @@
                     </sup>
                 </span>
                 Moreover, after intercepting
-                <a href="/../DemonSlayerWiki/Characters/Yae/info.html" class="link">Yae</a>'s suicide after she
+                <a href="../../Characters/Yae/info.html" class="link">Yae</a>'s suicide after she
                 witnessed her
-                <a href="/../DemonSlayerWiki/Characters/Matazo/info.html" class="link"
+                <a href="../../Characters/Matazo/info.html" class="link"
                 title="Matazo">demonized father</a> be dispatched by Giyu, who later makes a
                 tasteless comment after trying to solace her, Shinobu, concerned for the
                 girl's wellbeing, stays behind for a moment to comfort Yae with sincerity,
@@ -1266,7 +1280,7 @@
             <br>
             <p>
                 During her battle against
-                <a href="/../DemonSlayerWiki/Characters/Doma/info.html" class="link">Doma</a>, Shinobu also revealed
+                <a href="../../Characters/Doma/info.html" class="link">Doma</a>, Shinobu also revealed
                 that she suffers from an inferiority complex due to her inferior physical
                 abilities compared to her fellow Hashira, having been jealous of them for
                 possessing taller or more muscular bodies than her, and cursing her own body for 
@@ -1302,14 +1316,14 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic9">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobu_pins_Doma_to_the_ceiling_through_his_neck.webp" 
+                        src="../../images/Shinobu_pins_Doma_to_the_ceiling_through_his_neck.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(9)">
                     </a>
                     <figcaption class="caption">
                         <p>
                             Shinobu evading an attack by Upper Rank Two,
-                            <a href="/../DemonSlayerWiki/Characters/Doma/info.html" class="link">Doma</a> before
+                            <a href="../../Characters/Doma/info.html" class="link">Doma</a> before
                             retaliating.
                         </p>
                     </figcaption>
@@ -1420,7 +1434,7 @@
                 </span>
                 Her extreme speed was revealed during her battle with the second most powerful
                 Upper Rank,
-                <a href="/../DemonSlayerWiki/Characters/Doma/info.html" class="link">Doma</a>, where she was able
+                <a href="../../Characters/Doma/info.html" class="link">Doma</a>, where she was able
                 to go toe-to-toe with the demon briefly, even managing to outmatch him
                 slightly and receive his praise.
                 <span class="tooltip-anchor" id="Ref18.3">
@@ -1552,7 +1566,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic10">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobu_vows_to_strike_Domas_neck.webp" 
+                        src="../../images/Shinobu_vows_to_strike_Domas_neck.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(10)">
                     </a>
@@ -1596,9 +1610,9 @@
                 due to Doma's Blood Demon Art, and despite so grievously injured, and losing
                 so much blood to the point she couldn't stand and not being able to breathe,
                 upon remembering her promise to
-                <a href="/../DemonSlayerWiki/Characters/Kanao_Tsuyuri/info.html" class="link"
+                <a href="../../Characters/Kanao_Tsuyuri/info.html" class="link"
                 title="Kanao Tsuyuri">Kanao</a> and hearing
-                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link"
+                <a href="../../Characters/Kanae_Kocho/info.html" class="link"
                 title="Kanao Kocho">Kanae</a>'s words, Shinobu remained steadfast, stood up, 
                 and continued fighting, a feat tht surprised even Doma.
                 <span class="tooltip-anchor" id="Ref18.8">
@@ -1672,7 +1686,7 @@
                 observation and vast knowledge, to the point of being considered a genius. After
                 her sister's death, she was able to use what paltry information Kanae gave her
                 to devise a strategy that eventually led to the defeat of
-                <a href="/../DemonSlayerWiki/Characters/Doma/info.html" class="link">Doma</a>. During their fight,
+                <a href="../../Characters/Doma/info.html" class="link">Doma</a>. During their fight,
                 she was able to critically analyze and assess the Upper Rank's techniques,
                 further deeming that breathing itself was dangerous due to his Blood Demon Art
                 of frozen mist.
@@ -1748,7 +1762,7 @@
                     </sup>
                 </span>
                 She also developed a form of sign language with
-                <a href="/../DemonSlayerWiki/Characters/Kanao_Tsuyuri/info.html" class="link"
+                <a href="../../Characters/Kanao_Tsuyuri/info.html" class="link"
                 title="Kanao Tsuyuri">Kanao</a> to communicate crucial information in a short
                 span of time, which helped Kanao in fighting and defeating the demon.
                 <span class="tooltip-anchor" id="Ref18.13">
@@ -1775,7 +1789,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic11">
                         <img 
-                        src="/../DemonSlayerWiki/images/Domas_eyeball_poisoned.webp" 
+                        src="../../images/Domas_eyeball_poisoned.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(11)">
                     </a>
@@ -1846,7 +1860,7 @@
                 She also possessed the medical skills needed to counteract the poisons and
                 venoms created by demons, as seen when she manages to undo the poison that was
                 slowly transforming
-                <a href="/../DemonSlayerWiki/Characters/Zenitsu_Agatsuma/info.html" class="link"
+                <a href="../../Characters/Zenitsu_Agatsuma/info.html" class="link"
                 title="Zenitsu Agatsuma">Zenitsu</a> into a spider and restore him back to his
                 previous human form.
                 <span class="tooltip-anchor" id="Ref48">
@@ -1861,12 +1875,12 @@
                     <li class="fixlist">
                         <b><a href="" class="link">Anti-Kibutsuji Drug</a></b>: Upon teaming up
                         with
-                        <a href="/../DemonSlayerWiki/Characters/Tamayo/info.html" class="link">Tamayo</a> and
-                        <a href="/../DemonSlayerWiki/Characters/Yushiro/info.html" class="link">Yushiro</a>,
+                        <a href="../../Characters/Tamayo/info.html" class="link">Tamayo</a> and
+                        <a href="../../Characters/Yushiro/info.html" class="link">Yushiro</a>,
                         Shinobu was able to aid Tamayo in creating a successful,
                         <a href="" class="link" title="Anti-Kibutsuji Drug">four-stage drug</a>
                         that would be used to significantly weaken
-                        <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html" class="link">Muzan Kibutsuji</a>,
+                        <a href="../../Characters/Muzan_Kibutsuji/info.html" class="link">Muzan Kibutsuji</a>,
                         even despite his immense physical resistance and abilities. 
                         <span class="tooltip-anchor" id="Ref49">
                             <sup class="tooltip">
@@ -1888,7 +1902,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic12">
                         <img 
-                        src="/../DemonSlayerWiki/images/Domas_poison.webp" 
+                        src="../../images/Domas_poison.webp" 
                         class="figure-img zoom contain-img cursor shinobu-pic1" 
                         onclick="openModal();currentSlide(12)">
                     </a>
@@ -1927,7 +1941,7 @@
                 was strong enough to melt Doma down to his very bones and prevented him from
                 healing. Though the Upper Rank's body tried to build resistance to it, the
                 sheer amount of it overwhelmed his regeneration completely. With the aid
-                of <a href="/../DemonSlayerWiki/Characters/Tamayo/info.html" class="link">Tamayo</a>, Shinobu
+                of <a href="../../Characters/Tamayo/info.html" class="link">Tamayo</a>, Shinobu
                 saturated her entire body with poison without negatively impending her own
                 health.
                 <span class="tooltip-anchor" id="Ref51">
@@ -1947,7 +1961,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic13">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobu_running_away_from_Giyu.webp" 
+                        src="../../images/Shinobu_running_away_from_Giyu.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(13)">
                     </a>
@@ -1961,7 +1975,7 @@
                 <a href="" class="link">Insect Breathing</a> swordsmanship style, Shinobu was
                 incredibly agile and swift, shown when she maneuvered through a lush forest
                 effortlessly and evaded
-                <a href="/../DemonSlayerWiki/Characters/Spider_Demon_Daughter/info.html" class="link"
+                <a href="../../Characters/Spider_Demon_Daughter/info.html" class="link"
                 title="Spider Demon (Daughter)">Daughter</a>'s silk
                 <a href="" class="link">Blood Demon Art</a> with ease.
                 <span class="tooltip-anchor" id="Ref8.3">
@@ -1981,7 +1995,7 @@
                     </sup>
                 </span>
                 Her agility enabled her to intercept
-                <a href="/../DemonSlayerWiki/Characters/Yae/info.html" class="link">Yae</a> by pinning her to the
+                <a href="../../Characters/Yae/info.html" class="link">Yae</a> by pinning her to the
                 ground when she attempted to commit suicide with a rifle, even when she was
                 a distance away initially.
                 <span class="tooltip-anchor" id="Ref25.2">
@@ -2088,7 +2102,7 @@
                     </sup>
                 </span>
                 She was also able to kick
-                <a href="/../DemonSlayerWiki/Characters/Spider_Demon_Daughter/info.html" class="link"
+                <a href="../../Characters/Spider_Demon_Daughter/info.html" class="link"
                 title="Spider Demon (Daughter)">Daughter</a> to the ground and pin her down 
                 completely without any resistance.
                 <span class="tooltip-anchor" id="Ref8.4">
@@ -2184,7 +2198,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic14">
                         <img 
-                        src="/../DemonSlayerWiki/images/Dance_of_the_Centipede_-_Hundred-Legged_Zigzag_29.webp" 
+                        src="../../images/Dance_of_the_Centipede_-_Hundred-Legged_Zigzag_29.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(14)">
                     </a>
@@ -2236,7 +2250,7 @@
                     </sup>
                 </span>
                 She was also able to evade
-                <a href="/../DemonSlayerWiki/Characters/Spider_Demon_Daughter/info.html" class="link" 
+                <a href="../../Characters/Spider_Demon_Daughter/info.html" class="link" 
                 title="Spider Demon (Daughter)">Daughter</a>'s silk Blood Demon Art without
                 any trouble, and deliver numerous blows to the demon before she could even
                 react.
@@ -2404,14 +2418,14 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic15">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobu_vs_Doma.webp" 
+                        src="../../images/Shinobu_vs_Doma.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(15)">
                     </a>
                     <figcaption class="caption">
                         <p>
                             Shinobu blocks, and trades strikes with Upper Rank Two,
-                            <a href="/../DemonSlayerWiki/Characters/Doma/info.html" class="link">Doma</a>.
+                            <a href="../../Characters/Doma/info.html" class="link">Doma</a>.
                         </p>
                     </figcaption>
                 </figure>
@@ -2477,7 +2491,7 @@
                 However, the structure of her sword made it ineffective for blocking attacks,
                 so she made up for it with her swift thrusts and stabs. Her swordsmanship
                 prowess allowed her to battle against Upper Rank Two,
-                <a href="/../DemonSlayerWiki/Characters/Doma/info.html" class="link">Doma</a>, who had lived and
+                <a href="../../Characters/Doma/info.html" class="link">Doma</a>, who had lived and
                 fought for over a century, further showcasing the skills she had developed for 
                 herself.
                 <span class="tooltip-anchor" id="Ref18.25">
@@ -2534,7 +2548,7 @@
                     <figure class="right-side-anime-pic">
                         <a class="contain-img" href="#Pic16">
                             <img 
-                            src="/../DemonSlayerWiki/images/Shinobu_using_Butterfly_Dance_Caprice_on_the_Daughter_Spider_Demon.webp" 
+                            src="../../images/Shinobu_using_Butterfly_Dance_Caprice_on_the_Daughter_Spider_Demon.webp" 
                             class="figure-img zoom contain-img cursor" 
                             onclick="openModal();currentSlide(16)">
                         </a>
@@ -2639,7 +2653,7 @@
                     their opponent in order to create an opening for them to directly stab
                     their opponent's neck and inject poison to kill them, with the stab's
                     force and power being further enhanced by the momentum of their speed.
-                    <a href="/../DemonSlayerWiki/Characters/Doma/info.html" class="link">Doma</a> noted that the
+                    <a href="../../Characters/Doma/info.html" class="link">Doma</a> noted that the
                     sheer speed and footwork of this technique is strong enough to destroy
                     an entire wooden bridge.
                 </li>
@@ -2828,7 +2842,7 @@
             <p>
                 <b>Stinger <a href="" class="link">Nichirin Katana</a>:</b> Shinobu wielded a
                 heavily modified Nichirin Katana forged by
-                <a href="/../DemonSlayerWiki/Characters/Tecchin_Tecchikawahara/info.html" class="link">Tecchin Tecchikawahara</a>.
+                <a href="../../Characters/Tecchin_Tecchikawahara/info.html" class="link">Tecchin Tecchikawahara</a>.
                 <span class="tooltip-anchor" id="Ref65">
                     <sup class="tooltip">
                         <span class="tooltiptext">
@@ -2902,7 +2916,7 @@
                 <div>
                     <a href="#Pic17" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobu_introducing_herself.webp" 
+                        src="../../images/Shinobu_introducing_herself.webp" 
                         class="zoom contain-img" 
                         style="height:220px; width:220px; border:1px solid gray;" 
                         title="Shinobu introducing herself"
@@ -2912,7 +2926,7 @@
                 <div>
                     <a href="#Pic18" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Volume_16_Extra_Page_08.webp" 
+                        src="../../images/Volume_16_Extra_Page_08.webp" 
                         class="zoom contain-img"
                         style="height:220px; width:160px; border:1px solid gray;" 
                         title="Volume 16 Extra Page 8" 
@@ -2924,7 +2938,7 @@
                 <div>
                     <a href="#Pic19" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Shinobus_tsuba.webp" 
+                        src="../../images/Shinobus_tsuba.webp" 
                         class="zoom contain-img" 
                         style="height:170px; width:300px; border:1px solid gray;" 
                         title="Shinobu's tsuba"
@@ -2936,7 +2950,7 @@
                 <div>
                     <a href="#Pic20" class="contain-img">
                         <img 
-                        src="/../DemonSlayerWiki/images/Puzzle_Shinobu_Nichirin_Sword.webp" 
+                        src="../../images/Puzzle_Shinobu_Nichirin_Sword.webp" 
                         class="zoom contain-img"
                         style="height:220px; width:300px; border:1px solid gray;" 
                         title="Puzzle & Dragons Shinobu's Nichirin Sword" 
@@ -3020,7 +3034,7 @@
                 <li class="fixlist">
                     Shinobu's blade was designed and created by the chief of the
                     <a href="" class="link">Swordsmith Village</a>,
-                    <a href="/../DemonSlayerWiki/Characters/Tecchin_Tecchikawahara/info.html" class="link"
+                    <a href="../../Characters/Tecchin_Tecchikawahara/info.html" class="link"
                     >Tecchin Tecchikawahara</a>, likely due to its unique shape requiring the
                     chief's expertise to forge.
                     <span class="tooltip-anchor" id="Ref28.4">
@@ -3043,10 +3057,10 @@
                 <li class="fixlist">
                     Shinobu's Demon Slayer uniform's jacket is originally designed to leave the
                     center of the chest area open, similar to
-                    <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link"
+                    <a href="../../Characters/Mitsuri_Kanroji/info.html" class="link"
                     >Mitsuri Kanroji</a>'s, but, as Shinobu disliked this aspect of its design,
                     she burned the original uniform right in front of the
-                    <a href="/../DemonSlayerWiki/Characters/Masao_Maeda/info.html" class="link"
+                    <a href="../../Characters/Masao_Maeda/info.html" class="link"
                     title="Masao Maeda">perverted Kakushi</a> who had just given it to her
                     and requested a fully buttoned version of the uniform instead.
                     <span class="tooltip-anchor" id="Ref67">
@@ -3063,7 +3077,7 @@
                     Although Shinobu wouldn't admit it, she was a natural airhead. The names
                     she came up with for Kanao were so bizarre that upon seeing them, Kanae
                     broke down into such an "EH?!" expression thta even the efficient
-                    <a href="/../DemonSlayerWiki/Characters/Aoi_Kanzaki/info.html" class="link">Aoi Kanzaki</a>
+                    <a href="../../Characters/Aoi_Kanzaki/info.html" class="link">Aoi Kanzaki</a>
                     wasn't able to smoothen things out.
                     <span class="tooltip-anchor" id="Ref58.2">
                         <sup class="tooltip">
@@ -3181,43 +3195,43 @@
                         <li class="fixlist">
                             "<i>He's a good guy but our conversations don't always make
                             sense</i>" -
-                            <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" 
+                            <a href="../../Characters/Kyojuro_Rengoku/info.html" 
                             class="link">Kyojuro Rengoku</a>
                         </li>
                         <li class="fixlist">
                             "<i>I treated his wounds and examined his memory loss. He has
                             difficulty choosing words, but he's a good kid at heart.</i>" -
-                            <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" 
+                            <a href="../../Characters/Muichiro_Tokito/info.html" 
                             class="link">Muichiro Tokito</a>
                         </li>
                         <li class="fixlist">
                             "<i>Sometimes we discuss physical movement (in swordsmanship)</i>" - 
-                            <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html" 
+                            <a href="../../Characters/Obanai_Iguro/info.html" 
                             class="link">Obanai Iguro</a>
                         </li>
                         <li class="fixlist">
                             "<i>I deeply respect him.</i>" - 
-                            <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" 
+                            <a href="../../Characters/Gyomei_Himejima/info.html" 
                             class="link">Gyomei Himejima</a>
                         </li>
                         <li class="fixlist">
                             "<i>He should talk more.</i>" - 
-                            <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" 
+                            <a href="../../Characters/Giyu_Tomioka/info.html" 
                             class="link">Giyu Tomioka</a>
                         </li>
                         <li class="fixlist">
                             "<i>We clashed when he tried to take Aoi and the others on a mission.</i>" -
-                            <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html" 
+                            <a href="../../Characters/Tengen_Uzui/info.html" 
                             class="link">Tengen Uzui</a>
                         </li>
                         <li class="fixlist">
                             "<i>I love her. She is cheerful and cute.</i>" - 
-                            <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" 
+                            <a href="../../Characters/Mitsuri_Kanroji/info.html" 
                             class="link">Mitsuri Kanroji</a>
                         </li>
                         <li class="fixlist">
                             "<i>When we meet, he always asks how I've been.</i>" - 
-                            <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" 
+                            <a href="../../Characters/Sanemi_Shinazugawa/info.html" 
                             class="link">Sanemi Shinazugawa</a>
                         </li>
                     </ul>
@@ -3285,11 +3299,11 @@
             <ul>
                 <li class="fixlist">
                     (To
-                    <a href="/../DemonSlayerWiki/Characters/Tanjiro_Kamado/info.html" 
+                    <a href="../../Characters/Tanjiro_Kamado/info.html" 
                     class="link">Tanjiro Kamado</a>)
                     "<i>How can you feel sorry for something that's killed humans? I've never
                     heard of anything so absurd. But if that was how
-                    <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link"
+                    <a href="../../Characters/Kanae_Kocho/info.html" class="link"
                     title="Kanae Kocho">my sister</a> truly felt, then I must carry it on.
                     If there's a way not to kill these pitiful demons, I have to keep trying
                     to come up with it. Without ever extinguishing the smile my sister said she
@@ -3326,10 +3340,10 @@
                 <li class="fixlist">
                     (To herself, responding to a question Tanjiro asked in the past)
                     "<i>Yes, I'm angry, Tanjiro. I've always been angry. My parents were killed.
-                    My <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link"
+                    My <a href="../../Characters/Kanae_Kocho/info.html" class="link"
                     title="Kanae Kocho">older sister</a> was killed. And all my
                     <a href="" class="link">Tsuguko</a> except
-                    <a href="/../DemonSlayerWiki/Characters/Kanao_Tsuyuri/info.html" class="link">Kanao</a> were
+                    <a href="../../Characters/Kanao_Tsuyuri/info.html" class="link">Kanao</a> were
                     killed. If demons hadn't murdered those girls' families, they'd be living
                     happily with them right now. It really makes me furious!</i>"
                     <span class="tooltip-anchor" id="Ref74">
@@ -4286,7 +4300,7 @@
                         <th class="nav-table-header">
                             <aside>[<a href="#" class="link" id="nav-table-btn">show</a>]</aside>
                             <div class="nav-table-char">
-                                <a href="/../DemonSlayerWiki/characters.html">Characters</a>
+                                <a href="../../characters.html">Characters</a>
                             </div>
                         </th>
                     </tr>
@@ -4304,15 +4318,15 @@
                                                 <b>Ubuyashiki Family:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
+                                                <a href="../../Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -4320,16 +4334,16 @@
                                                 <b>Hashira:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
+                                                <a href="../../Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>&nbsp;·
+                                                <a href="../../Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
+                                                <a href="../../Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a>&nbsp;·
+                                                <a href="../../Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
+                                                <a href="../../Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·
+                                                <a href="../../Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>&nbsp;·
+                                                <a href="../../Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>&nbsp;·
+                                                <a href="../../Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
                                                 <span class="nav-table-current">Shinobu Kocho</span>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>·
+                                                <a href="../../Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>·
                                                 <a href="" class="link">Sakonji Urokodaki</a>·
                                                 <a href="jigoro.html" class="link">Jigoro Kuwajima</a>·
                                                 <a href="shinjuro.html" class="link">Shinjuro Rengoku</a>
@@ -4598,10 +4612,10 @@
         </div>
     </div>
     <footer>Wiki inspired by the <a class="link" href="https://kimetsu-no-yaiba.fandom.com/" target="_blank">Kimetsu No Yaiba Wiki</a></footer>
-    <script src="/../DemonSlayerWiki/javascripts/navigation.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/searchbar.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/shinobu.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/lightbox_modal.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/character_navigation.js"></script>
+    <script src="../../javascripts/navigation.js"></script>
+    <script src="../../javascripts/searchbar.js"></script>
+    <script src="../../javascripts/shinobu.js"></script>
+    <script src="../../javascripts/lightbox_modal.js"></script>
+    <script src="../../javascripts/character_navigation.js"></script>
 </body>
 </html>

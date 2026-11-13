@@ -4,180 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amane Ubuyashiki | Demon Slayer Wiki</title>
-    <link rel="stylesheet" href="/../DemonSlayerWiki/stylesheets/styles copy.css" />
+    <link rel="stylesheet" href="../../stylesheets/styles-copy.css" />
 </head>
 <body>
-    <div class="navbar">
-        <a href="/../DemonSlayerWiki/index.html"><img src="/../DemonSlayerWiki/images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
-        <a href="/../DemonSlayerWiki/index.html" class="nav-item">Home</a>
-        <div class="dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">Characters</a>
-            <div class="dropdown-content">
-                <div class="ds">
-                    Demon Slayers
-                    <div class="ds-dropdown-content">
-                        <a href="">Tanjiro Kamado</a>
-                        <a href="">Zenitsu Agatsuma</a>
-                        <a href="">Inosuke Hashibira</a>
-                        <a href="">Kanao Tsuyuri</a>
-                        <a href="">Genya Shinazugawa</a>
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="../../index.html" class="logo-link">
+            <img src="../../images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" />
+        </a>
+
+        <!-- Hamburger Toggle for Mobile -->
+         <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+         </button>
+
+        <!-- Collapsible Nav Links Wrapper -->
+        <div id="nav-menu" class="nav-menu">
+            <a href="../../index.html" class="nav-item">Home</a>
+
+            <div class="dropdown">
+                <a href="../../characters.html" class="nav-item dropdown-trigger">Characters</a>
+                <div class="dropdown-content">
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demon Slayers</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Tanjiro Kamado</a>
+                            <a href="">Zenitsu Agatsuma</a>
+                            <a href="">Inosuke Hashibira</a>
+                            <a href="">Kanao Tsuyuri</a>
+                            <a href="">Genya Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Hashira
-                    <div class="ds-dropdown-content">
-                        <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
-                        <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
-                        <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
-                        <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
-                        <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
-                        <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
-                        <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
-                        <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
-                        <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Hashira</a>
+                        <div class="ds-dropdown-content">
+                            <a href="../../Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
+                            <a href="../../Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
+                            <a href="../../Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
+                            <a href="../../Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
+                            <a href="../../Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
+                            <a href="../../Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
+                            <a href="../../Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
+                            <a href="../../Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
+                            <a href="../../Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Demons
-                    <div class="ds-dropdown-content">
-                        <a href="">Muzan Kibutsuji</a>
-                        <a href="">Nezuko Kamado</a>
-                        <a href="">Tamayo</a>
-                        <a href="">Yushiro</a>
-                        <a href="">Susamaru</a>
-                        <a href="">Yahaba</a>
-                        <a href="">Spider Family</a>
-                        <a href="">Swamp Demon</a>
-                        <a href="">Hand Demon</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demons</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Muzan Kibutsuji</a>
+                            <a href="">Nezuko Kamado</a>
+                            <a href="">Tamayo</a>
+                            <a href="">Yushiro</a>
+                            <a href="">Susamaru</a>
+                            <a href="">Yahaba</a>
+                            <a href="">Spider Family</a>
+                            <a href="">Swamp Demon</a>
+                            <a href="">Hand Demon</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Upper Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Kokushibo</a>
-                        <a href="">Doma</a>
-                        <a href="">Akaza</a>
-                        <a href="">Nakime</a>
-                        <a href="">Hantengu</a>
-                        <a href="">Gyokko</a>
-                        <a href="">Kaigaku</a>
-                        <a href="">Daki</a>
-                        <a href="">Gyutaro</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Upper Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Kokushibo</a>
+                            <a href="">Doma</a>
+                            <a href="">Akaza</a>
+                            <a href="">Nakime</a>
+                            <a href="">Hantengu</a>
+                            <a href="">Gyokko</a>
+                            <a href="">Kaigaku</a>
+                            <a href="">Daki</a>
+                            <a href="">Gyutaro</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Lower Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Enmu</a>
-                        <a href="">Rokuro</a>
-                        <a href="">Wakuraba</a>
-                        <a href="">Mukago</a>
-                        <a href="">Rui</a>
-                        <a href="">Kamanue</a>
-                        <a href="">Kyogai</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Lower Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Enmu</a>
+                            <a href="">Rokuro</a>
+                            <a href="">Wakuraba</a>
+                            <a href="">Mukago</a>
+                            <a href="">Rui</a>
+                            <a href="">Kamanue</a>
+                            <a href="">Kyogai</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Groups
-                    <div class="ds-dropdown-content">
-                        <a href="">Demon Slayer Corps</a>
-                        <a href="">Twelve Kizuki</a>
-                        <a href="">Hashira</a>
-                        <a href="">Tsuguko</a>
-                        <a href="">Kakushi</a>
-                        <a href="">Kasugai Crows</a>
-                        <a href="">Ninju</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Groups</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Demon Slayer Corps</a>
+                            <a href="">Twelve Kizuki</a>
+                            <a href="">Hashira</a>
+                            <a href="">Tsuguko</a>
+                            <a href="">Kakushi</a>
+                            <a href="">Kasugai Crows</a>
+                            <a href="">Ninju</a>
+                        </div>
                     </div>
-                </div>
-                <a href="/../DemonSlayerWiki/characters.html">All Characters</a>
-            </div>
-        </div>
-        <div class="world-dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">World</a>
-            <div class="world-dropdown-content">
-                <div class="ds-world">
-                    Story Arcs
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Unwavering Resolve Arc</a>
-                        <a href="">Mugen Train Arc</a>
-                        <a href="">Entertainment District Arc</a>
-                        <a href="">Swordsmith Village Arc</a>
-                        <a href="">Hashira Training Arc</a>
-                        <a href="">Final Battle Arc</a>
-                        <a href="">Infinity Castle Arc</a>
-                        <a href="">Sunrise Countdown Arc</a>
-                        <a href="">All Arcs</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Locations
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Mount Sagiri</a>
-                        <a href="">Mount Fujikasanae</a>
-                        <a href="">Asakusa</a>
-                        <a href="">Tsuzumi Mansion</a>
-                        <a href="">Mount Natagumo</a>
-                        <a href="">Butterfly Mansion</a>
-                        <a href="">Yoshiwara</a>
-                        <a href="">Swordsmith Village</a>
-                        <a href="">Infinity Castle</a>
-                        <a href="">All Locations</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Abilities & Techniques
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Blood Demon Art</a>
-                        <a href="">Total Concentration Breathing</a>
-                        <a href="">Regeneration</a>
-                        <a href="">Demon Slayer Mark</a>
-                        <a href="">Bright Red Nichirin Sword</a>
-                        <a href="">Transparent World</a>
-                        <a href="">Selfless State</a>
-                        <a href="">Repetitive Action</a>
-                        <a href="">Extrasensory Perception</a>
-                        <a href="">Flesh Manipulation</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Breathing Styles
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Water Breathing</a>
-                        <a href="">Flame Breathing</a>
-                        <a href="">Thunder Breathing</a>
-                        <a href="">Wind Breathing</a>
-                        <a href="">Stone Breathing</a>
-                        <a href="">Beast Breathing</a>
-                        <a href="">Flower Breathing</a>
-                        <a href="">Sun Breathing</a>
-                        <a href="">Moon Breathing</a>
-                        <a href="">All Breathing Styles</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Events
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Battles</a>
-                        <a href="">Final Selection</a>
-                        <a href="">Lower Ranks Meeting</a>
-                        <a href="">Upper Ranks Meeting</a>
-                        <a href="">Rehabilitation Training</a>
-                        <a href="">Hashira Training</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Objects
-                    <div class="ds-world-dropdown-content-bottom">
-                        <a href="">Nichirin Sword</a>
-                        <a href="">Wisteria</a>
-                        <a href="">Blue Spider Lily</a>
-                        <a href="">Yoriichi Type Zero</a>
-                        <a href="">Warding Mask</a>
-                    </div>
+                    <a href="../../characters.html">All Characters</a>
                 </div>
             </div>
+            <div class="world-dropdown">
+                <a href="#" class="nav-item dropdown-trigger">World</a>
+                <div class="world-dropdown-content">
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Story Arcs</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Unwavering Resolve Arc</a>
+                            <a href="">Mugen Train Arc</a>
+                            <a href="">Entertainment District Arc</a>
+                            <a href="">Swordsmith Village Arc</a>
+                            <a href="">Hashira Training Arc</a>
+                            <a href="">Final Battle Arc</a>
+                            <a href="">Infinity Castle Arc</a>
+                            <a href="">Sunrise Countdown Arc</a>
+                            <a href="">All Arcs</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Locations</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Mount Sagiri</a>
+                            <a href="">Mount Fujikasanae</a>
+                            <a href="">Asakusa</a>
+                            <a href="">Tsuzumi Mansion</a>
+                            <a href="">Mount Natagumo</a>
+                            <a href="">Butterfly Mansion</a>
+                            <a href="">Yoshiwara</a>
+                            <a href="">Swordsmith Village</a>
+                            <a href="">Infinity Castle</a>
+                            <a href="">All Locations</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Abilities & Techniques</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Blood Demon Art</a>
+                            <a href="">Total Concentration Breathing</a>
+                            <a href="">Regeneration</a>
+                            <a href="">Demon Slayer Mark</a>
+                            <a href="">Bright Red Nichirin Sword</a>
+                            <a href="">Transparent World</a>
+                            <a href="">Selfless State</a>
+                            <a href="">Repetitive Action</a>
+                            <a href="">Extrasensory Perception</a>
+                            <a href="">Flesh Manipulation</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Breathing Styles</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Water Breathing</a>
+                            <a href="">Flame Breathing</a>
+                            <a href="">Thunder Breathing</a>
+                            <a href="">Wind Breathing</a>
+                            <a href="">Stone Breathing</a>
+                            <a href="">Beast Breathing</a>
+                            <a href="">Flower Breathing</a>
+                            <a href="">Sun Breathing</a>
+                            <a href="">Moon Breathing</a>
+                            <a href="">All Breathing Styles</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Events</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Battles</a>
+                            <a href="">Final Selection</a>
+                            <a href="">Lower Ranks Meeting</a>
+                            <a href="">Upper Ranks Meeting</a>
+                            <a href="">Rehabilitation Training</a>
+                            <a href="">Hashira Training</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Objects</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Nichirin Sword</a>
+                            <a href="">Wisteria</a>
+                            <a href="">Blue Spider Lily</a>
+                            <a href="">Yoriichi Type Zero</a>
+                            <a href="">Warding Mask</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item search-container">
+                <form id="search-form" role="search" class="search-form">
+                    <label for="search-input">Search Wiki:</label>
+                    <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Search..." 
+                    aria-label="Search content"
+                    autocomplete="off">
+                    <button type="submit" id="search-button">Go</button>
+                </form>
+                <div id="search-results" class="search-results-dropdown"></div>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -185,195 +212,195 @@
 
             <div class="mySlides">
                 <div class="numbertext">1 / 48</div>
-                <img src="/../DemonSlayerWiki/images/AmaneP.webp">
+                <img src="../../images/AmaneP.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">2 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_colored_body.webp">
+                <img src="../../images/Amane_colored_body.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">3 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_and_Kagaya_hearing_of_Kyojuros_death.webp">
+                <img src="../../images/Amane_and_Kagaya_hearing_of_Kyojuros_death.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">4 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kagaya_tells_Amane_that_Upper_Moon_Sixs_death_is_an_omen.webp">
+                <img src="../../images/Kagaya_tells_Amane_that_Upper_Moon_Sixs_death_is_an_omen.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">5 / 48</div>
-                <img src="/../DemonSlayerWiki/images/First_Breath_Users.webp">
+                <img src="../../images/First_Breath_Users.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">6 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Ubuyashiki_family_stunned_at_Mitsuris_response_CH128.webp">
+                <img src="../../images/Ubuyashiki_family_stunned_at_Mitsuris_response_CH128.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">7 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_speaking_with_Muichiro_CH129.webp">
+                <img src="../../images/Amane_speaking_with_Muichiro_CH129.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">8 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Muzan_says_he_is_disgusted_by_Kagayas_appearance.webp">
+                <img src="../../images/Muzan_says_he_is_disgusted_by_Kagayas_appearance.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">9 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Muzan_grows_angry_at_Kagayas_taunts.webp">
+                <img src="../../images/Muzan_grows_angry_at_Kagayas_taunts.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">10 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Muzan_realizing_that_Kagaya_blew_himself_and_his_family_up.webp">
+                <img src="../../images/Muzan_realizing_that_Kagaya_blew_himself_and_his_family_up.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">11 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kiriya_is_given_his_new_haori_by_Amane_CH144.webp">
+                <img src="../../images/Kiriya_is_given_his_new_haori_by_Amane_CH144.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">12 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kanata_cries_over_her_familys_deaths_CH147.webp">
+                <img src="../../images/Kanata_cries_over_her_familys_deaths_CH147.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">13 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_Kimetsu_Gakuen_Profile.webp">
+                <img src="../../images/Amane_Kimetsu_Gakuen_Profile.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">14 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_V16.webp">
+                <img src="../../images/Kimetsu_no_Yaiba_V16.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">15 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_CH136.webp">
+                <img src="../../images/Kimetsu_no_Yaiba_CH136.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">16 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_CH139.webp">
+                <img src="../../images/Kimetsu_no_Yaiba_CH139.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">17 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kimetsu_Gakuen_CH29.webp">
+                <img src="../../images/Kimetsu_Gakuen_CH29.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">18 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_Ubuyashiki_29.webp">
+                <img src="../../images/Amane_Ubuyashiki_29.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">19 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_Anime_Profile.webp">
+                <img src="../../images/Amane_Anime_Profile.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">20 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp">
+                <img src="../../images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">21 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kagaya_and_Amanes_final_moments.webp">
+                <img src="../../images/Kagaya_and_Amanes_final_moments.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">22 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kagaya_telling_Amane_about_the_coming_future.webp">
+                <img src="../../images/Kagaya_telling_Amane_about_the_coming_future.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">23 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Muichiros_visit.webp">
+                <img src="../../images/Muichiros_visit.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">24 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_explains_the_Tokito_familys_ancestry.webp">
+                <img src="../../images/Amane_explains_the_Tokito_familys_ancestry.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">25 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Yuichiro_splashing_water_on_Amane_to_drive_her_away.webp">
+                <img src="../../images/Yuichiro_splashing_water_on_Amane_to_drive_her_away.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">26 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_surprised_to_see_Muichiro_alive.webp">
+                <img src="../../images/Amane_surprised_to_see_Muichiro_alive.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">27 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_prays_for_Muichiros_survival.webp">
+                <img src="../../images/Amane_prays_for_Muichiros_survival.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">28 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Muichiro_trains_while_wounded.webp">
+                <img src="../../images/Muichiro_trains_while_wounded.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">29 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_stops_Nichika_from_interfering.webp">
+                <img src="../../images/Amane_stops_Nichika_from_interfering.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">30 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_leads_the_emergency_meeting.webp">
+                <img src="../../images/Amane_leads_the_emergency_meeting.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">31 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_explains_the_marks_origins.webp">
+                <img src="../../images/Amane_explains_the_marks_origins.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">32 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_asks_Mitsuri_and_Muichiro_to_explain_their_marks.webp">
+                <img src="../../images/Amane_asks_Mitsuri_and_Muichiro_to_explain_their_marks.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">33 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kiriya_and_Kanata_confused_by_Mitsuri.webp">
+                <img src="../../images/Kiriya_and_Kanata_confused_by_Mitsuri.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">34 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_explains_a_caveat_about_the_mark.webp">
+                <img src="../../images/Amane_explains_a_caveat_about_the_mark.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">35 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_telling_Kagaya_of_the_developments.webp">
+                <img src="../../images/Amane_telling_Kagaya_of_the_developments.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">36 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_tears_up_at_Kagayas_thanks.webp">
+                <img src="../../images/Amane_tears_up_at_Kagayas_thanks.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">37 / 48</div>
-                <img src="/../DemonSlayerWiki/images/A_bandaged_Kagaya_with_Amane.webp">
+                <img src="../../images/A_bandaged_Kagaya_with_Amane.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">38 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_looking_after_Kagaya.webp">
+                <img src="../../images/Amane_looking_after_Kagaya.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">39 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_grasps_Kagayas_hand.webp">
+                <img src="../../images/Amane_grasps_Kagayas_hand.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">40 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Amane_beside_Kagaya_at_night.webp">
+                <img src="../../images/Amane_beside_Kagaya_at_night.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">41 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Muzan_confronts_Kagaya_and_Amane.webp">
+                <img src="../../images/Muzan_confronts_Kagaya_and_Amane.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">42 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kagaya_triggers_his_trap.webp">
+                <img src="../../images/Kagaya_triggers_his_trap.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">43 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Kagaya_and_Amanes_final_moments.webp">
+                <img src="../../images/Kagaya_and_Amanes_final_moments.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">44 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Episode_62_Eyecatcher_B.webp">
+                <img src="../../images/Episode_62_Eyecatcher_B.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">45 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Episode_63_Eyecatcher_A.webp">
+                <img src="../../images/Episode_63_Eyecatcher_A.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">46 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Episode_63_Eyecatcher_B.webp">
+                <img src="../../images/Episode_63_Eyecatcher_B.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">47 / 48</div>
-                <img src="/../DemonSlayerWiki/images/Humanitys_refusal_to_forgive_Muzan.webp">
+                <img src="../../images/Humanitys_refusal_to_forgive_Muzan.webp">
             </div>
             <div class="mySlides">
                 <div class="numbertext">48 / 48</div>
-                <img src="/../DemonSlayerWiki/images/The_Ubuyashiki_Mansion_detonates_with_Kagaya_and_Muzan_inside.webp">
+                <img src="../../images/The_Ubuyashiki_Mansion_detonates_with_Kagaya_and_Muzan_inside.webp">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -387,7 +414,7 @@
                 <div class="column" id="Pic1">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/AmaneP.webp" 
+                    src="../../images/AmaneP.webp" 
                     onclick="currentSlide(1)" 
                     alt="Amane's Anime Appearance"
                     >
@@ -395,7 +422,7 @@
                 <div class="column" id="Pic2">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_colored_body.webp" 
+                    src="../../images/Amane_colored_body.webp" 
                     onclick="currentSlide(2)" 
                     alt="Amane's Manga Appearance"
                     >
@@ -403,7 +430,7 @@
                 <div class="column" id="Pic3">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_and_Kagaya_hearing_of_Kyojuros_death.webp" 
+                    src="../../images/Amane_and_Kagaya_hearing_of_Kyojuros_death.webp" 
                     onclick="currentSlide(3)" 
                     alt="Amane and Kagaya hearing of Kyojuro's death"
                     >
@@ -411,7 +438,7 @@
                 <div class="column" id="Pic4">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kagaya_tells_Amane_that_Upper_Moon_Sixs_death_is_an_omen.webp" 
+                    src="../../images/Kagaya_tells_Amane_that_Upper_Moon_Sixs_death_is_an_omen.webp" 
                     onclick="currentSlide(4)" 
                     alt="Kagaya tells Amane that Upper Moon Six's death is an omen"
                     >
@@ -419,7 +446,7 @@
                 <div class="column" id="Pic5">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/First_Breath_Users.webp" 
+                    src="../../images/First_Breath_Users.webp" 
                     onclick="currentSlide(5)" 
                     alt="Kagaya and Amane's final moments"
                     >
@@ -427,7 +454,7 @@
                 <div class="column" id="Pic6">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Ubuyashiki_family_stunned_at_Mitsuris_response_CH128.webp" 
+                    src="../../images/Ubuyashiki_family_stunned_at_Mitsuris_response_CH128.webp" 
                     onclick="currentSlide(6)" 
                     alt="Ubuyashiki family stunned at Mitsuri's response CH128"
                     >
@@ -435,7 +462,7 @@
                 <div class="column" id="Pic7">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_speaking_with_Muichiro_CH129.webp" 
+                    src="../../images/Amane_speaking_with_Muichiro_CH129.webp" 
                     onclick="currentSlide(7)" 
                     alt="Amane speaking with Muichiro CH129"
                     >
@@ -443,7 +470,7 @@
                 <div class="column" id="Pic8">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Muzan_says_he_is_disgusted_by_Kagayas_appearance.webp" 
+                    src="../../images/Muzan_says_he_is_disgusted_by_Kagayas_appearance.webp" 
                     onclick="currentSlide(8)" 
                     alt="Muzan says he is disgusted by Kagaya's appearance"
                     >
@@ -451,7 +478,7 @@
                 <div class="column" id="Pic9">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Muzan_grows_angry_at_Kagayas_taunts.webp" 
+                    src="../../images/Muzan_grows_angry_at_Kagayas_taunts.webp" 
                     onclick="currentSlide(9)" 
                     alt="Muzan grows angry at Kagaya's taunts"
                     >
@@ -459,7 +486,7 @@
                 <div class="column" id="Pic10">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Muzan_realizing_that_Kagaya_blew_himself_and_his_family_up.webp" 
+                    src="../../images/Muzan_realizing_that_Kagaya_blew_himself_and_his_family_up.webp" 
                     onclick="currentSlide(10)" 
                     alt="Muzan realizing that Kagaya blew himself and his family up"
                     >
@@ -467,7 +494,7 @@
                 <div class="column" id="Pic11">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kiriya_is_given_his_new_haori_by_Amane_CH144.webp" 
+                    src="../../images/Kiriya_is_given_his_new_haori_by_Amane_CH144.webp" 
                     onclick="currentSlide(11)" 
                     alt="Kiriya is given his new haori by Amane CH144"
                     >
@@ -475,7 +502,7 @@
                 <div class="column" id="Pic12">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kanata_cries_over_her_familys_deaths_CH147.webp" 
+                    src="../../images/Kanata_cries_over_her_familys_deaths_CH147.webp" 
                     onclick="currentSlide(12)" 
                     alt="Kanata cries over her family's deaths CH147"
                     >
@@ -483,7 +510,7 @@
                 <div class="column" id="Pic13">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_Kimetsu_Gakuen_Profile.webp" 
+                    src="../../images/Amane_Kimetsu_Gakuen_Profile.webp" 
                     onclick="currentSlide(13)" 
                     alt="Amane Kimetsu Gakuen Profile"
                     >
@@ -491,7 +518,7 @@
                 <div class="column" id="Pic14">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_V16.webp" 
+                    src="../../images/Kimetsu_no_Yaiba_V16.webp" 
                     onclick="currentSlide(14)" 
                     alt="Kimetsu no Yaiba Volume 16"
                     >
@@ -499,7 +526,7 @@
                 <div class="column" id="Pic15">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_CH136.webp" 
+                    src="../../images/Kimetsu_no_Yaiba_CH136.webp" 
                     onclick="currentSlide(15)" 
                     alt="Kimetsu no Yaiba Chapter 136"
                     >
@@ -507,7 +534,7 @@
                 <div class="column" id="Pic16">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_CH139.webp" 
+                    src="../../images/Kimetsu_no_Yaiba_CH139.webp" 
                     onclick="currentSlide(16)" 
                     alt="Kimetsu no Yaiba Chapter 139"
                     >
@@ -515,7 +542,7 @@
                 <div class="column" id="Pic17">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kimetsu_Gakuen_CH29.webp" 
+                    src="../../images/Kimetsu_Gakuen_CH29.webp" 
                     onclick="currentSlide(17)" 
                     alt="Kimetsu Gakuen! Chapter 29"
                     >
@@ -523,7 +550,7 @@
                 <div class="column" id="Pic18">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_Ubuyashiki_29.webp" 
+                    src="../../images/Amane_Ubuyashiki_29.webp" 
                     onclick="currentSlide(18)" 
                     alt="Amane's design in the anime"
                     >
@@ -531,7 +558,7 @@
                 <div class="column" id="Pic19">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_Anime_Profile.webp" 
+                    src="../../images/Amane_Anime_Profile.webp" 
                     onclick="currentSlide(19)" 
                     alt="Amane Anime Profile"
                     >
@@ -539,7 +566,7 @@
                 <div class="column" id="Pic20">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp" 
+                    src="../../images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp" 
                     onclick="currentSlide(20)" 
                     alt="Kagaya and Amane visiting fallen Demon Slayers"
                     >
@@ -547,7 +574,7 @@
                 <div class="column" id="Pic21">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kagaya_and_Amanes_final_moments.webp" 
+                    src="../../images/Kagaya_and_Amanes_final_moments.webp" 
                     onclick="currentSlide(21)" 
                     alt="Kagaya and Amane's final moments"
                     >
@@ -555,7 +582,7 @@
                 <div class="column" id="Pic22">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kagaya_telling_Amane_about_the_coming_future.webp" 
+                    src="../../images/Kagaya_telling_Amane_about_the_coming_future.webp" 
                     onclick="currentSlide(22)" 
                     alt="Kagaya telling Amane about the coming future"
                     >
@@ -563,7 +590,7 @@
                 <div class="column" id="Pic23">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Muichiros_visit.webp" 
+                    src="../../images/Muichiros_visit.webp" 
                     onclick="currentSlide(23)" 
                     alt="Muichiro's memory of Kagaya's visit"
                     >
@@ -571,7 +598,7 @@
                 <div class="column" id="Pic24">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_explains_the_Tokito_familys_ancestry.webp" 
+                    src="../../images/Amane_explains_the_Tokito_familys_ancestry.webp" 
                     onclick="currentSlide(24)" 
                     alt="Amane explains the Tokito family's ancestry"
                     >
@@ -579,7 +606,7 @@
                 <div class="column" id="Pic25">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Yuichiro_splashing_water_on_Amane_to_drive_her_away.webp" 
+                    src="../../images/Yuichiro_splashing_water_on_Amane_to_drive_her_away.webp" 
                     onclick="currentSlide(25)" 
                     alt="Yuichiro splashing water on Amane to drive her away"
                     >
@@ -587,7 +614,7 @@
                 <div class="column" id="Pic26">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_surprised_to_see_Muichiro_alive.webp" 
+                    src="../../images/Amane_surprised_to_see_Muichiro_alive.webp" 
                     onclick="currentSlide(26)" 
                     alt="Amane surprised to see Muichiro alive"
                     >
@@ -595,7 +622,7 @@
                 <div class="column" id="Pic27">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_prays_for_Muichiros_survival.webp" 
+                    src="../../images/Amane_prays_for_Muichiros_survival.webp" 
                     onclick="currentSlide(27)" 
                     alt="Amane prays for Muichiro's survival"
                     >
@@ -603,7 +630,7 @@
                 <div class="column" id="Pic28">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Muichiro_trains_while_wounded.webp" 
+                    src="../../images/Muichiro_trains_while_wounded.webp" 
                     onclick="currentSlide(28)" 
                     alt="Muichiro trains while wounded"
                     >
@@ -611,7 +638,7 @@
                 <div class="column" id="Pic29">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_stops_Nichika_from_interfering.webp" 
+                    src="../../images/Amane_stops_Nichika_from_interfering.webp" 
                     onclick="currentSlide(29)" 
                     alt="Amane stops Nichika from interfering"
                     >
@@ -619,7 +646,7 @@
                 <div class="column" id="Pic30">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_leads_the_emergency_meeting.webp" 
+                    src="../../images/Amane_leads_the_emergency_meeting.webp" 
                     onclick="currentSlide(30)" 
                     alt="Amane leads the emergency meeting"
                     >
@@ -627,7 +654,7 @@
                 <div class="column" id="Pic31">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_explains_the_marks_origins.webp" 
+                    src="../../images/Amane_explains_the_marks_origins.webp" 
                     onclick="currentSlide(31)" 
                     alt="Amane explains the Demon Slayer Mark's origins"
                     >
@@ -635,7 +662,7 @@
                 <div class="column" id="Pic32">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_asks_Mitsuri_and_Muichiro_to_explain_their_marks.webp" 
+                    src="../../images/Amane_asks_Mitsuri_and_Muichiro_to_explain_their_marks.webp" 
                     onclick="currentSlide(32)" 
                     alt="Amane asks Mitsuri and Muichiro to explain their marks"
                     >
@@ -643,7 +670,7 @@
                 <div class="column" id="Pic33">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kiriya_and_Kanata_confused_by_Mitsuri.webp" 
+                    src="../../images/Kiriya_and_Kanata_confused_by_Mitsuri.webp" 
                     onclick="currentSlide(33)" 
                     alt="Kiriya and Kanata confused by Mitsuri's explanation"
                     >
@@ -651,7 +678,7 @@
                 <div class="column" id="Pic34">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_explains_a_caveat_about_the_mark.webp" 
+                    src="../../images/Amane_explains_a_caveat_about_the_mark.webp" 
                     onclick="currentSlide(34)" 
                     alt="Amane explains a caveat about the mark"
                     >
@@ -659,7 +686,7 @@
                 <div class="column" id="Pic35">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_telling_Kagaya_of_the_developments.webp" 
+                    src="../../images/Amane_telling_Kagaya_of_the_developments.webp" 
                     onclick="currentSlide(35)" 
                     alt="Amane telling Kagaya of the developments"
                     >
@@ -667,7 +694,7 @@
                 <div class="column" id="Pic36">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_tears_up_at_Kagayas_thanks.webp" 
+                    src="../../images/Amane_tears_up_at_Kagayas_thanks.webp" 
                     onclick="currentSlide(36)" 
                     alt="Amane tears up at Kagaya's warmful thanks"
                     >
@@ -675,7 +702,7 @@
                 <div class="column" id="Pic37">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/A_bandaged_Kagaya_with_Amane.webp" 
+                    src="../../images/A_bandaged_Kagaya_with_Amane.webp" 
                     onclick="currentSlide(37)" 
                     alt="A bandaged Kagaya with Amane"
                     >
@@ -683,7 +710,7 @@
                 <div class="column" id="Pic38">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_looking_after_Kagaya.webp" 
+                    src="../../images/Amane_looking_after_Kagaya.webp" 
                     onclick="currentSlide(38)" 
                     alt="Amane looking after Kagaya"
                     >
@@ -691,7 +718,7 @@
                 <div class="column" id="Pic39">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_grasps_Kagayas_hand.webp" 
+                    src="../../images/Amane_grasps_Kagayas_hand.webp" 
                     onclick="currentSlide(39)" 
                     alt="Amane grasps Kagaya's hand"
                     >
@@ -699,7 +726,7 @@
                 <div class="column" id="Pic40">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Amane_beside_Kagaya_at_night.webp" 
+                    src="../../images/Amane_beside_Kagaya_at_night.webp" 
                     onclick="currentSlide(40)" 
                     alt="Amane beside Kagaya at night"
                     >
@@ -707,7 +734,7 @@
                 <div class="column" id="Pic41">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Muzan_confronts_Kagaya_and_Amane.webp" 
+                    src="../../images/Muzan_confronts_Kagaya_and_Amane.webp" 
                     onclick="currentSlide(41)" 
                     alt="Muzan confronts Kagaya and Amane"
                     >
@@ -715,7 +742,7 @@
                 <div class="column" id="Pic42">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kagaya_triggers_his_trap.webp" 
+                    src="../../images/Kagaya_triggers_his_trap.webp" 
                     onclick="currentSlide(42)" 
                     alt="Kagaya triggers his trap"
                     >
@@ -723,7 +750,7 @@
                 <div class="column" id="Pic43">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Kagaya_and_Amanes_final_moments.webp" 
+                    src="../../images/Kagaya_and_Amanes_final_moments.webp" 
                     onclick="currentSlide(43)" 
                     alt="Kagaya and Amane's final moments"
                     >
@@ -731,7 +758,7 @@
                 <div class="column" id="Pic44">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Episode_62_Eyecatcher_B.webp" 
+                    src="../../images/Episode_62_Eyecatcher_B.webp" 
                     onclick="currentSlide(44)" 
                     alt="Episode 62 Eyecatcher B"
                     >
@@ -739,7 +766,7 @@
                 <div class="column" id="Pic45">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Episode_63_Eyecatcher_A.webp" 
+                    src="../../images/Episode_63_Eyecatcher_A.webp" 
                     onclick="currentSlide(45)" 
                     alt="Episode 63 Eyecatcher A"
                     >
@@ -747,7 +774,7 @@
                 <div class="column" id="Pic46">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Episode_63_Eyecatcher_B.webp" 
+                    src="../../images/Episode_63_Eyecatcher_B.webp" 
                     onclick="currentSlide(46)" 
                     alt="Episode 63 Eyecatcher B"
                     >
@@ -755,7 +782,7 @@
                 <div class="column" id="Pic47">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Humanitys_refusal_to_forgive_Muzan.webp" 
+                    src="../../images/Humanitys_refusal_to_forgive_Muzan.webp" 
                     onclick="currentSlide(47)" 
                     alt="Humanity's refusal to forgive Muzan"
                     >
@@ -763,7 +790,7 @@
                 <div class="column" id="Pic48">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/The_Ubuyashiki_Mansion_detonates_with_Kagaya_and_Muzan_inside.webp" 
+                    src="../../images/The_Ubuyashiki_Mansion_detonates_with_Kagaya_and_Muzan_inside.webp" 
                     onclick="currentSlide(48)" 
                     alt="The Ubuyashiki Mansion detonates with Kagaya and Muzan inside"
                     >
@@ -780,13 +807,13 @@
 
             <div class="link-tabs">
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Info</a>
+                    <a href="../../Characters/Amane_Ubuyashiki/info.html" class="link">Info</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/synopsis.html" class="link">Synopsis</a>
+                    <a href="../../Characters/Amane_Ubuyashiki/synopsis.html" class="link">Synopsis</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/relationships.html" class="link">Relationships</a>
+                    <a href="../../Characters/Amane_Ubuyashiki/relationships.html" class="link">Relationships</a>
                 </div>
                 <div class="link-space current-page">
                     <a href="" class="link">Image Gallery</a>
@@ -830,7 +857,7 @@
                     <div>
                         <a href="#Pic1" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/AmaneP.webp" 
+                            src="../../images/AmaneP.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:250px; border:1px solid gray;" 
                             title="Amane profile"
@@ -842,7 +869,7 @@
                     <div>
                         <a href="#Pic2" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_colored_body.webp" 
+                            src="../../images/Amane_colored_body.webp" 
                             class="zoom contain-img"
                             style="height:250px; width:220px; border:1px solid gray;" 
                             title="Amane colored body" 
@@ -864,7 +891,7 @@
                     <div>
                         <a href="#Pic3" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_and_Kagaya_hearing_of_Kyojuros_death.webp" 
+                            src="../../images/Amane_and_Kagaya_hearing_of_Kyojuros_death.webp" 
                             class="zoom contain-img" 
                             style="height:240px; width:220px; border:1px solid gray;" 
                             title="Amane and Kagaya hearing of Kyojuro's death"
@@ -882,7 +909,7 @@
                     <div>
                         <a href="#Pic4" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kagaya_tells_Amane_that_Upper_Moon_Sixs_death_is_an_omen.webp" 
+                            src="../../images/Kagaya_tells_Amane_that_Upper_Moon_Sixs_death_is_an_omen.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:220px; border:1px solid gray;" 
                             title="Kagaya tells Amane that Upper Moon Six's death is an omen"
@@ -902,7 +929,7 @@
                     <div>
                         <a href="#Pic5" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/First_Breath_Users.webp" 
+                            src="../../images/First_Breath_Users.webp" 
                             class="zoom contain-img" 
                             style="height:190px; width:220px; border:1px solid gray;" 
                             title="First Breath Users"
@@ -916,7 +943,7 @@
                     <div>
                         <a href="#Pic6" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Ubuyashiki_family_stunned_at_Mitsuris_response_CH128.webp" 
+                            src="../../images/Ubuyashiki_family_stunned_at_Mitsuris_response_CH128.webp" 
                             class="zoom contain-img" 
                             style="height:150px; width:220px; border:1px solid gray;" 
                             title="Ubuyashiki family stunned at Mitsuri's response"
@@ -930,7 +957,7 @@
                     <div>
                         <a href="#Pic7" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_speaking_with_Muichiro_CH129.webp" 
+                            src="../../images/Amane_speaking_with_Muichiro_CH129.webp" 
                             class="zoom contain-img" 
                             style="height:110px; width:220px; border:1px solid gray;" 
                             title="Amane speaking with Muichiro CH129"
@@ -944,7 +971,7 @@
                     <div>
                         <a href="#Pic8" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Muzan_says_he_is_disgusted_by_Kagayas_appearance.webp" 
+                            src="../../images/Muzan_says_he_is_disgusted_by_Kagayas_appearance.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:220px; border:1px solid gray;" 
                             title="Muzan says he is disgusted by Kagaya's appearance"
@@ -958,7 +985,7 @@
                     <div>
                         <a href="#Pic9" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Muzan_grows_angry_at_Kagayas_taunts.webp" 
+                            src="../../images/Muzan_grows_angry_at_Kagayas_taunts.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:150px; border:1px solid gray;" 
                             title="Muzan grows angry at Kagaya's taunts"
@@ -972,7 +999,7 @@
                     <div>
                         <a href="#Pic10" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Muzan_realizing_that_Kagaya_blew_himself_and_his_family_up.webp" 
+                            src="../../images/Muzan_realizing_that_Kagaya_blew_himself_and_his_family_up.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:220px; border:1px solid gray;" 
                             title="Muzan realizing that Kagaya blew himself and his family up"
@@ -996,7 +1023,7 @@
                     <div>
                         <a href="#Pic11" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kiriya_is_given_his_new_haori_by_Amane_CH144.webp" 
+                            src="../../images/Kiriya_is_given_his_new_haori_by_Amane_CH144.webp" 
                             class="zoom contain-img" 
                             style="height:110px; width:220px; border:1px solid gray;" 
                             title="Kiriya is given his new haori by Amane CH144"
@@ -1010,7 +1037,7 @@
                     <div>
                         <a href="#Pic12" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kanata_cries_over_her_familys_deaths_CH147.webp" 
+                            src="../../images/Kanata_cries_over_her_familys_deaths_CH147.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:170px; border:1px solid gray;" 
                             title="Kanata cries over her family's deaths CH147"
@@ -1032,7 +1059,7 @@
                     <div>
                         <a href="#Pic13" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_Kimetsu_Gakuen_Profile.webp" 
+                            src="../../images/Amane_Kimetsu_Gakuen_Profile.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:190px; border:1px solid gray;" 
                             title="Amane Kimetsu Gakuen Profile"
@@ -1052,7 +1079,7 @@
                     <div>
                         <a href="#Pic14" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_V16.webp" 
+                            src="../../images/Kimetsu_no_Yaiba_V16.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:160px; border:1px solid gray;" 
                             title="Kimetsu no Yaiba V16"
@@ -1070,7 +1097,7 @@
                     <div>
                         <a href="#Pic15" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_CH136.webp" 
+                            src="../../images/Kimetsu_no_Yaiba_CH136.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:170px; border:1px solid gray;" 
                             title="Kimetsu no Yaiba CH136"
@@ -1084,7 +1111,7 @@
                     <div>
                         <a href="#Pic16" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kimetsu_no_Yaiba_CH139.webp" 
+                            src="../../images/Kimetsu_no_Yaiba_CH139.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:170px; border:1px solid gray;" 
                             title="Kimetsu no Yaiba CH139"
@@ -1102,7 +1129,7 @@
                     <div>
                         <a href="#Pic17" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kimetsu_Gakuen_CH29.webp" 
+                            src="../../images/Kimetsu_Gakuen_CH29.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:180px; border:1px solid gray;" 
                             title="Kimetsu Gakuen! CH29"
@@ -1150,7 +1177,7 @@
                     <div>
                         <a href="#Pic18" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_Ubuyashiki_29.webp" 
+                            src="../../images/Amane_Ubuyashiki_29.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane Ubuyashiki (Anime)"
@@ -1164,7 +1191,7 @@
                     <div>
                         <a href="#Pic19" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_Anime_Profile.webp" 
+                            src="../../images/Amane_Anime_Profile.webp" 
                             class="zoom contain-img" 
                             style="height:250px; width:250px; border:1px solid gray;" 
                             title="Amane Anime Profile"
@@ -1186,7 +1213,7 @@
                     <div>
                         <a href="#Pic20" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp" 
+                            src="../../images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane Ubuyashiki (Anime)"
@@ -1206,7 +1233,7 @@
                     <div>
                         <a href="#Pic21" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp" 
+                            src="../../images/Kagaya_and_Amane_visiting_fallen_Demon_Slayer.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Kagaya speaks about changing fate"
@@ -1220,7 +1247,7 @@
                     <div>
                         <a href="#Pic22" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kagaya_telling_Amane_about_the_coming_future.webp" 
+                            src="../../images/Kagaya_telling_Amane_about_the_coming_future.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane Ubuyashiki (Anime)"
@@ -1240,7 +1267,7 @@
                     <div>
                         <a href="#Pic23" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Muichiros_visit.webp" 
+                            src="../../images/Muichiros_visit.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Muichiro's memory of Kagaya's visit"
@@ -1254,7 +1281,7 @@
                     <div>
                         <a href="#Pic18" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_Ubuyashiki_29.webp" 
+                            src="../../images/Amane_Ubuyashiki_29.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane Ubuyashiki (Anime)"
@@ -1268,7 +1295,7 @@
                     <div>
                         <a href="#Pic24" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_explains_the_Tokito_familys_ancestry.webp" 
+                            src="../../images/Amane_explains_the_Tokito_familys_ancestry.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane explains the Tokito family's ancestry"
@@ -1282,7 +1309,7 @@
                     <div>
                         <a href="#Pic25" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Yuichiro_splashing_water_on_Amane_to_drive_her_away.webp" 
+                            src="../../images/Yuichiro_splashing_water_on_Amane_to_drive_her_away.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Yuichiro splashing water on Amane to drive her away"
@@ -1296,7 +1323,7 @@
                     <div>
                         <a href="#Pic26" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_surprised_to_see_Muichiro_alive.webp" 
+                            src="../../images/Amane_surprised_to_see_Muichiro_alive.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane surprised to see Muichiro alive"
@@ -1310,7 +1337,7 @@
                     <div>
                         <a href="#Pic27" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_prays_for_Muichiros_survival.webp" 
+                            src="../../images/Amane_prays_for_Muichiros_survival.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane prays for Muichiro's survival"
@@ -1324,7 +1351,7 @@
                     <div>
                         <a href="#Pic28" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Muichiro_trains_while_wounded.webp" 
+                            src="../../images/Muichiro_trains_while_wounded.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Muichiro trans while wounded"
@@ -1338,7 +1365,7 @@
                     <div>
                         <a href="#Pic29" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_stops_Nichika_from_interfering.webp" 
+                            src="../../images/Amane_stops_Nichika_from_interfering.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane stops Nichika from interfering"
@@ -1358,7 +1385,7 @@
                     <div>
                         <a href="#Pic30" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_leads_the_emergency_meeting.webp" 
+                            src="../../images/Amane_leads_the_emergency_meeting.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane leads the meeting in place of Kagaya"
@@ -1372,7 +1399,7 @@
                     <div>
                         <a href="#Pic31" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_explains_the_marks_origins.webp" 
+                            src="../../images/Amane_explains_the_marks_origins.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane explains the mark's origins"
@@ -1386,7 +1413,7 @@
                     <div>
                         <a href="#Pic32" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_asks_Mitsuri_and_Muichiro_to_explain_their_marks.webp" 
+                            src="../../images/Amane_asks_Mitsuri_and_Muichiro_to_explain_their_marks.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane asks Mitsuri and Muichiro to explain their marks"
@@ -1400,7 +1427,7 @@
                     <div>
                         <a href="#Pic33" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kiriya_and_Kanata_confused_by_Mitsuri.webp" 
+                            src="../../images/Kiriya_and_Kanata_confused_by_Mitsuri.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Kiriya, Amane and Kanata confused by Mitsuri's explanation"
@@ -1414,7 +1441,7 @@
                     <div>
                         <a href="#Pic34" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_explains_a_caveat_about_the_mark.webp" 
+                            src="../../images/Amane_explains_a_caveat_about_the_mark.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane explains a caveat about the mark"
@@ -1428,7 +1455,7 @@
                     <div>
                         <a href="#Pic35" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_telling_Kagaya_of_the_developments.webp" 
+                            src="../../images/Amane_telling_Kagaya_of_the_developments.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane telling Kagaya of the developments"
@@ -1442,7 +1469,7 @@
                     <div>
                         <a href="#Pic36" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_tears_up_at_Kagayas_thanks.webp" 
+                            src="../../images/Amane_tears_up_at_Kagayas_thanks.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane tears up at Kagaya's thanks"
@@ -1456,7 +1483,7 @@
                     <div>
                         <a href="#Pic37" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/A_bandaged_Kagaya_with_Amane.webp" 
+                            src="../../images/A_bandaged_Kagaya_with_Amane.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="A bandaged Kagaya with Amane"
@@ -1470,7 +1497,7 @@
                     <div>
                         <a href="#Pic38" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_looking_after_Kagaya.webp" 
+                            src="../../images/Amane_looking_after_Kagaya.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane looking after Kagaya"
@@ -1484,7 +1511,7 @@
                     <div>
                         <a href="#Pic39" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_grasps_Kagayas_hand.webp" 
+                            src="../../images/Amane_grasps_Kagayas_hand.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane grasps Kagaya's hand"
@@ -1498,7 +1525,7 @@
                     <div>
                         <a href="#Pic40" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Amane_beside_Kagaya_at_night.webp" 
+                            src="../../images/Amane_beside_Kagaya_at_night.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Amane beside Kagaya at night"
@@ -1512,7 +1539,7 @@
                     <div>
                         <a href="#Pic41" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Muzan_confronts_Kagaya_and_Amane.webp" 
+                            src="../../images/Muzan_confronts_Kagaya_and_Amane.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Muzan confronts Kagaya and Amane"
@@ -1526,7 +1553,7 @@
                     <div>
                         <a href="#Pic42" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kagaya_triggers_his_trap.webp" 
+                            src="../../images/Kagaya_triggers_his_trap.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Kagaya triggers his trap"
@@ -1540,7 +1567,7 @@
                     <div>
                         <a href="#Pic43" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Kagaya_and_Amanes_final_moments.webp" 
+                            src="../../images/Kagaya_and_Amanes_final_moments.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Kagaya and Amane's final moments"
@@ -1560,7 +1587,7 @@
                     <div>
                         <a href="#Pic44" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Episode_62_Eyecatcher_B.webp" 
+                            src="../../images/Episode_62_Eyecatcher_B.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Episode 62 Eyecatcher B"
@@ -1574,7 +1601,7 @@
                     <div>
                         <a href="#Pic45" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Episode_63_Eyecatcher_A.webp" 
+                            src="../../images/Episode_63_Eyecatcher_A.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Episode 63 Eyecatcher A"
@@ -1588,7 +1615,7 @@
                     <div>
                         <a href="#Pic46" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Episode_63_Eyecatcher_B.webp" 
+                            src="../../images/Episode_63_Eyecatcher_B.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Episode 63 Eyecatcher B"
@@ -1610,7 +1637,7 @@
                     <div>
                         <a href="#Pic47" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/Humanitys_refusal_to_forgive_Muzan.webp" 
+                            src="../../images/Humanitys_refusal_to_forgive_Muzan.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Episode 62 Eyecatcher B"
@@ -1625,7 +1652,7 @@
                     <div>
                         <a href="#Pic48" class="contain-img">
                             <img 
-                            src="/../DemonSlayerWiki/images/The_Ubuyashiki_Mansion_detonates_with_Kagaya_and_Muzan_inside.webp" 
+                            src="../../images/The_Ubuyashiki_Mansion_detonates_with_Kagaya_and_Muzan_inside.webp" 
                             class="zoom contain-img" 
                             style="height:170px; width:300px; border:1px solid gray;" 
                             title="Episode 63 Eyecatcher A"
@@ -1644,8 +1671,9 @@
         </div>
     </div>
     <footer>Wiki inspired by the <a class="link" href="https://kimetsu-no-yaiba.fandom.com/" target="_blank">Kimetsu No Yaiba Wiki</a></footer>
-    <script src="/../DemonSlayerWiki/javascripts/navigation.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/lightbox_modal.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/image_gallery.js"></script>
+    <script src="../../javascripts/navigation.js"></script>
+    <script src="../../javascripts/searchbar.js"></script>
+    <script src="../../javascripts/lightbox_modal.js"></script>
+    <script src="../../javascripts/image_gallery.js"></script>
 </body>
 </html>

@@ -4,180 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obanai Iguro/Synopsis | Demon Slayer Wiki</title>
-    <link rel="stylesheet" href="/../DemonSlayerWiki/stylesheets/styles copy.css" />
+    <link rel="stylesheet" href="../../stylesheets/styles-copy.css" />
 </head>
 <body>
-    <div class="navbar">
-        <a href="/../DemonSlayerWiki/index.html"><img src="/../DemonSlayerWiki/images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" /></a>
-        <a href="/../DemonSlayerWiki/index.html" class="nav-item">Home</a>
-        <div class="dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">Characters</a>
-            <div class="dropdown-content">
-                <div class="ds">
-                    Demon Slayers
-                    <div class="ds-dropdown-content">
-                        <a href="">Tanjiro Kamado</a>
-                        <a href="">Zenitsu Agatsuma</a>
-                        <a href="">Inosuke Hashibira</a>
-                        <a href="">Kanao Tsuyuri</a>
-                        <a href="">Genya Shinazugawa</a>
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="../../index.html" class="logo-link">
+            <img src="../../images/Demon-Slayer-Logo.png" alt="Demon Slayer Logo" class="fiximg" />
+        </a>
+
+        <!-- Hamburger Toggle for Mobile -->
+         <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+         </button>
+
+        <!-- Collapsible Nav Links Wrapper -->
+        <div id="nav-menu" class="nav-menu">
+            <a href="../../index.html" class="nav-item">Home</a>
+
+            <div class="dropdown">
+                <a href="../../characters.html" class="nav-item dropdown-trigger">Characters</a>
+                <div class="dropdown-content">
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demon Slayers</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Tanjiro Kamado</a>
+                            <a href="">Zenitsu Agatsuma</a>
+                            <a href="">Inosuke Hashibira</a>
+                            <a href="">Kanao Tsuyuri</a>
+                            <a href="">Genya Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Hashira
-                    <div class="ds-dropdown-content">
-                        <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
-                        <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
-                        <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
-                        <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
-                        <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
-                        <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
-                        <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
-                        <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
-                        <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Hashira</a>
+                        <div class="ds-dropdown-content">
+                            <a href="../../Characters/Giyu_Tomioka/info.html">Giyu Tomioka</a>
+                            <a href="../../Characters/Shinobu_Kocho/info.html">Shinobu Kocho</a>
+                            <a href="../../Characters/Kyojuro_Rengoku/info.html">Kyojuro Rengoku</a>
+                            <a href="../../Characters/Tengen_Uzui/info.html">Tengen Uzui</a>
+                            <a href="../../Characters/Muichiro_Tokito/info.html">Muichiro Tokito</a>
+                            <a href="../../Characters/Mitsuri_Kanroji/info.html">Mitsuri Kanroji</a>
+                            <a href="../../Characters/Obanai_Iguro/info.html">Obanai Iguro</a>
+                            <a href="../../Characters/Gyomei_Himejima/info.html">Gyomei Himejima</a>
+                            <a href="../../Characters/Sanemi_Shinazugawa/info.html">Sanemi Shinazugawa</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Demons
-                    <div class="ds-dropdown-content">
-                        <a href="">Muzan Kibutsuji</a>
-                        <a href="">Nezuko Kamado</a>
-                        <a href="">Tamayo</a>
-                        <a href="">Yushiro</a>
-                        <a href="">Susamaru</a>
-                        <a href="">Yahaba</a>
-                        <a href="">Spider Family</a>
-                        <a href="">Swamp Demon</a>
-                        <a href="">Hand Demon</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Demons</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Muzan Kibutsuji</a>
+                            <a href="">Nezuko Kamado</a>
+                            <a href="">Tamayo</a>
+                            <a href="">Yushiro</a>
+                            <a href="">Susamaru</a>
+                            <a href="">Yahaba</a>
+                            <a href="">Spider Family</a>
+                            <a href="">Swamp Demon</a>
+                            <a href="">Hand Demon</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Upper Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Kokushibo</a>
-                        <a href="">Doma</a>
-                        <a href="">Akaza</a>
-                        <a href="">Nakime</a>
-                        <a href="">Hantengu</a>
-                        <a href="">Gyokko</a>
-                        <a href="">Kaigaku</a>
-                        <a href="">Daki</a>
-                        <a href="">Gyutaro</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Upper Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Kokushibo</a>
+                            <a href="">Doma</a>
+                            <a href="">Akaza</a>
+                            <a href="">Nakime</a>
+                            <a href="">Hantengu</a>
+                            <a href="">Gyokko</a>
+                            <a href="">Kaigaku</a>
+                            <a href="">Daki</a>
+                            <a href="">Gyutaro</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Lower Ranks
-                    <div class="ds-dropdown-content">
-                        <a href="">Enmu</a>
-                        <a href="">Rokuro</a>
-                        <a href="">Wakuraba</a>
-                        <a href="">Mukago</a>
-                        <a href="">Rui</a>
-                        <a href="">Kamanue</a>
-                        <a href="">Kyogai</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Lower Ranks</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Enmu</a>
+                            <a href="">Rokuro</a>
+                            <a href="">Wakuraba</a>
+                            <a href="">Mukago</a>
+                            <a href="">Rui</a>
+                            <a href="">Kamanue</a>
+                            <a href="">Kyogai</a>
+                        </div>
                     </div>
-                </div>
-                <div class="ds">
-                    Groups
-                    <div class="ds-dropdown-content">
-                        <a href="">Demon Slayer Corps</a>
-                        <a href="">Twelve Kizuki</a>
-                        <a href="">Hashira</a>
-                        <a href="">Tsuguko</a>
-                        <a href="">Kakushi</a>
-                        <a href="">Kasugai Crows</a>
-                        <a href="">Ninju</a>
+                    <div class="ds">
+                        <a href="#" class="sub-trigger">Groups</a>
+                        <div class="ds-dropdown-content">
+                            <a href="">Demon Slayer Corps</a>
+                            <a href="">Twelve Kizuki</a>
+                            <a href="">Hashira</a>
+                            <a href="">Tsuguko</a>
+                            <a href="">Kakushi</a>
+                            <a href="">Kasugai Crows</a>
+                            <a href="">Ninju</a>
+                        </div>
                     </div>
-                </div>
-                <a href="/../DemonSlayerWiki/characters.html">All Characters</a>
-            </div>
-        </div>
-        <div class="world-dropdown">
-            <a href="/../DemonSlayerWiki/characters.html" class="nav-item">World</a>
-            <div class="world-dropdown-content">
-                <div class="ds-world">
-                    Story Arcs
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Unwavering Resolve Arc</a>
-                        <a href="">Mugen Train Arc</a>
-                        <a href="">Entertainment District Arc</a>
-                        <a href="">Swordsmith Village Arc</a>
-                        <a href="">Hashira Training Arc</a>
-                        <a href="">Final Battle Arc</a>
-                        <a href="">Infinity Castle Arc</a>
-                        <a href="">Sunrise Countdown Arc</a>
-                        <a href="">All Arcs</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Locations
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Mount Sagiri</a>
-                        <a href="">Mount Fujikasanae</a>
-                        <a href="">Asakusa</a>
-                        <a href="">Tsuzumi Mansion</a>
-                        <a href="">Mount Natagumo</a>
-                        <a href="">Butterfly Mansion</a>
-                        <a href="">Yoshiwara</a>
-                        <a href="">Swordsmith Village</a>
-                        <a href="">Infinity Castle</a>
-                        <a href="">All Locations</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Abilities & Techniques
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Blood Demon Art</a>
-                        <a href="">Total Concentration Breathing</a>
-                        <a href="">Regeneration</a>
-                        <a href="">Demon Slayer Mark</a>
-                        <a href="">Bright Red Nichirin Sword</a>
-                        <a href="">Transparent World</a>
-                        <a href="">Selfless State</a>
-                        <a href="">Repetitive Action</a>
-                        <a href="">Extrasensory Perception</a>
-                        <a href="">Flesh Manipulation</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Breathing Styles
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Water Breathing</a>
-                        <a href="">Flame Breathing</a>
-                        <a href="">Thunder Breathing</a>
-                        <a href="">Wind Breathing</a>
-                        <a href="">Stone Breathing</a>
-                        <a href="">Beast Breathing</a>
-                        <a href="">Flower Breathing</a>
-                        <a href="">Sun Breathing</a>
-                        <a href="">Moon Breathing</a>
-                        <a href="">All Breathing Styles</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Events
-                    <div class="ds-world-dropdown-content">
-                        <a href="">Battles</a>
-                        <a href="">Final Selection</a>
-                        <a href="">Lower Ranks Meeting</a>
-                        <a href="">Upper Ranks Meeting</a>
-                        <a href="">Rehabilitation Training</a>
-                        <a href="">Hashira Training</a>
-                    </div>
-                </div>
-                <div class="ds-world">
-                    Objects
-                    <div class="ds-world-dropdown-content-bottom">
-                        <a href="">Nichirin Sword</a>
-                        <a href="">Wisteria</a>
-                        <a href="">Blue Spider Lily</a>
-                        <a href="">Yoriichi Type Zero</a>
-                        <a href="">Warding Mask</a>
-                    </div>
+                    <a href="../../characters.html">All Characters</a>
                 </div>
             </div>
+            <div class="world-dropdown">
+                <a href="#" class="nav-item dropdown-trigger">World</a>
+                <div class="world-dropdown-content">
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Story Arcs</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Unwavering Resolve Arc</a>
+                            <a href="">Mugen Train Arc</a>
+                            <a href="">Entertainment District Arc</a>
+                            <a href="">Swordsmith Village Arc</a>
+                            <a href="">Hashira Training Arc</a>
+                            <a href="">Final Battle Arc</a>
+                            <a href="">Infinity Castle Arc</a>
+                            <a href="">Sunrise Countdown Arc</a>
+                            <a href="">All Arcs</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Locations</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Mount Sagiri</a>
+                            <a href="">Mount Fujikasanae</a>
+                            <a href="">Asakusa</a>
+                            <a href="">Tsuzumi Mansion</a>
+                            <a href="">Mount Natagumo</a>
+                            <a href="">Butterfly Mansion</a>
+                            <a href="">Yoshiwara</a>
+                            <a href="">Swordsmith Village</a>
+                            <a href="">Infinity Castle</a>
+                            <a href="">All Locations</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Abilities & Techniques</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Blood Demon Art</a>
+                            <a href="">Total Concentration Breathing</a>
+                            <a href="">Regeneration</a>
+                            <a href="">Demon Slayer Mark</a>
+                            <a href="">Bright Red Nichirin Sword</a>
+                            <a href="">Transparent World</a>
+                            <a href="">Selfless State</a>
+                            <a href="">Repetitive Action</a>
+                            <a href="">Extrasensory Perception</a>
+                            <a href="">Flesh Manipulation</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Breathing Styles</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Water Breathing</a>
+                            <a href="">Flame Breathing</a>
+                            <a href="">Thunder Breathing</a>
+                            <a href="">Wind Breathing</a>
+                            <a href="">Stone Breathing</a>
+                            <a href="">Beast Breathing</a>
+                            <a href="">Flower Breathing</a>
+                            <a href="">Sun Breathing</a>
+                            <a href="">Moon Breathing</a>
+                            <a href="">All Breathing Styles</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Events</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Battles</a>
+                            <a href="">Final Selection</a>
+                            <a href="">Lower Ranks Meeting</a>
+                            <a href="">Upper Ranks Meeting</a>
+                            <a href="">Rehabilitation Training</a>
+                            <a href="">Hashira Training</a>
+                        </div>
+                    </div>
+                    <div class="ds-world">
+                        <a href="#" class="sub-trigger">Objects</a>
+                        <div class="ds-world-dropdown-content">
+                            <a href="">Nichirin Sword</a>
+                            <a href="">Wisteria</a>
+                            <a href="">Blue Spider Lily</a>
+                            <a href="">Yoriichi Type Zero</a>
+                            <a href="">Warding Mask</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item search-container">
+                <form id="search-form" role="search" class="search-form">
+                    <label for="search-input">Search Wiki:</label>
+                    <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Search..." 
+                    aria-label="Search content"
+                    autocomplete="off">
+                    <button type="submit" id="search-button">Go</button>
+                </form>
+                <div id="search-results" class="search-results-dropdown"></div>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -185,79 +212,79 @@
 
             <div class="mySlides">
                 <div class="numbertext">1 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanais_family_disturbingly_taking_care_for_him.webp" style="width:48.5%;">
+                <img src="../../images/Obanais_family_disturbingly_taking_care_for_him.webp" style="width:48.5%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">2 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_witnessing_the_Serpent_Demon_in_the_flesh.webp" style="width:70.1%;">
+                <img src="../../images/Obanai_witnessing_the_Serpent_Demon_in_the_flesh.webp" style="width:70.1%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">3 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_is_saved_by_the_Flame_Hashira.webp" style="width:52.8%;">
+                <img src="../../images/Obanai_is_saved_by_the_Flame_Hashira.webp" style="width:52.8%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">4 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanais_sense_of_self-hatred.webp" style="width:99.5%;">
+                <img src="../../images/Obanais_sense_of_self-hatred.webp" style="width:99.5%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">5 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_recalls_how_he_and_Mitsuri_first_met.webp" style="width:56.4%;">
+                <img src="../../images/Obanai_recalls_how_he_and_Mitsuri_first_met.webp" style="width:56.4%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">6 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai28anime29.webp" style="width:97.7%;">
+                <img src="../../images/Obanai28anime29.webp" style="width:97.7%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">7 / 19</div>
-                <img src="/../DemonSlayerWiki/images/The_Hashira_bowing_to_Kagaya.webp" style="width:97.7%;">
+                <img src="../../images/The_Hashira_bowing_to_Kagaya.webp" style="width:97.7%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">8 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_stopping_Tanjiro.webp" style="width:97.7%;">
+                <img src="../../images/Obanai_stopping_Tanjiro.webp" style="width:97.7%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">9 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_meeting_Tengen_at_the_Entertainment_District.webp" style="width:97.3%;">
+                <img src="../../images/Obanai_meeting_Tengen_at_the_Entertainment_District.webp" style="width:97.3%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">10 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Sanemi_confused_by_Mitsuri.webp" style="width:97.7%;">
+                <img src="../../images/Sanemi_confused_by_Mitsuri.webp" style="width:97.7%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">11 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_explaining_the_trainees_crimes.webp" style="width:97.7%;">
+                <img src="../../images/Obanai_explaining_the_trainees_crimes.webp" style="width:97.7%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">12 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_and_Mitsuri_falling_inside_the_Infinity_Castle.webp" style="width:97.8%;">
+                <img src="../../images/Obanai_and_Mitsuri_falling_inside_the_Infinity_Castle.webp" style="width:97.8%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">13 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Mitsuri_and_Obanai_encounter_Nakime_CH164.webp" style="width:51.3%;">
+                <img src="../../images/Mitsuri_and_Obanai_encounter_Nakime_CH164.webp" style="width:51.3%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">14 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_saves_Mitsuri_from_Muzans_attack_CH183.webp" style="width:35.45%;">
+                <img src="../../images/Obanai_saves_Mitsuri_from_Muzans_attack_CH183.webp" style="width:35.45%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">15 / 19</div>
-                <img src="/../DemonSlayerWiki/images/The_Demon_Slayers_save_the_Hashira_from_Muzans_attacks.webp" style="width:75.5%;">
+                <img src="../../images/The_Demon_Slayers_save_the_Hashira_from_Muzans_attacks.webp" style="width:75.5%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">16 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanais_face_revealed_CH188.webp" style="width:80.85%;">
+                <img src="../../images/Obanais_face_revealed_CH188.webp" style="width:80.85%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">17 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_awakening_his_Demon_Slayer_Mark.webp" style="width:46.95%;">
+                <img src="../../images/Obanai_awakening_his_Demon_Slayer_Mark.webp" style="width:46.95%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">18 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_attacking_Muzan_with_his_bright_red_blade.webp" style="width:47.5%;">
+                <img src="../../images/Obanai_attacking_Muzan_with_his_bright_red_blade.webp" style="width:47.5%;">
             </div>
             <div class="mySlides">
                 <div class="numbertext">19 / 19</div>
-                <img src="/../DemonSlayerWiki/images/Obanai_blinded_by_Muzan.webp" style="width:57.1%;">
+                <img src="../../images/Obanai_blinded_by_Muzan.webp" style="width:57.1%;">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -271,7 +298,7 @@
                 <div class="column" id="Pic1">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanais_family_disturbingly_taking_care_for_him.webp" 
+                    src="../../images/Obanais_family_disturbingly_taking_care_for_him.webp" 
                     onclick="currentSlide(1)" 
                     alt="Obanai's family disturbingly taking care for him"
                     >
@@ -279,7 +306,7 @@
                 <div class="column" id="Pic2">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_witnessing_the_Serpent_Demon_in_the_flesh.webp" 
+                    src="../../images/Obanai_witnessing_the_Serpent_Demon_in_the_flesh.webp" 
                     onclick="currentSlide(2)" 
                     alt="Obanai witnessing the Serpent Demon in the flesh"
                     >
@@ -287,7 +314,7 @@
                 <div class="column" id="Pic3">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_is_saved_by_the_Flame_Hashira.webp" 
+                    src="../../images/Obanai_is_saved_by_the_Flame_Hashira.webp" 
                     onclick="currentSlide(3)" 
                     alt="Obanai is saved by the Flame Hashira"
                     >
@@ -295,7 +322,7 @@
                 <div class="column" id="Pic4">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanais_sense_of_self-hatred.webp" 
+                    src="../../images/Obanais_sense_of_self-hatred.webp" 
                     onclick="currentSlide(4)" 
                     alt="Obanai's sense of self hatred"
                     >
@@ -303,7 +330,7 @@
                 <div class="column" id="Pic5">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_recalls_how_he_and_Mitsuri_first_met.webp" 
+                    src="../../images/Obanai_recalls_how_he_and_Mitsuri_first_met.webp" 
                     onclick="currentSlide(5)" 
                     alt="Obanai recalls how he and Mitsuri first met"
                     >
@@ -311,7 +338,7 @@
                 <div class="column" id="Pic6">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai28anime29.webp" 
+                    src="../../images/Obanai28anime29.webp" 
                     onclick="currentSlide(6)" 
                     alt="Obanai demanding that Giyu must be punished"
                     >
@@ -319,7 +346,7 @@
                 <div class="column" id="Pic7">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/The_Hashira_bowing_to_Kagaya.webp" 
+                    src="../../images/The_Hashira_bowing_to_Kagaya.webp" 
                     onclick="currentSlide(7)" 
                     alt="The Hashira bowing to Kagaya"
                     >
@@ -327,7 +354,7 @@
                 <div class="column" id="Pic8">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_stopping_Tanjiro.webp" 
+                    src="../../images/Obanai_stopping_Tanjiro.webp" 
                     onclick="currentSlide(8)" 
                     alt="Obanai stopping Tanjiro"
                     >
@@ -335,7 +362,7 @@
                 <div class="column" id="Pic9">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_meeting_Tengen_at_the_Entertainment_District.webp" 
+                    src="../../images/Obanai_meeting_Tengen_at_the_Entertainment_District.webp" 
                     onclick="currentSlide(9)" 
                     alt="Obanai meeting Tengen at the Entertainment District"
                     >
@@ -343,7 +370,7 @@
                 <div class="column" id="Pic10">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Sanemi_confused_by_Mitsuri.webp" 
+                    src="../../images/Sanemi_confused_by_Mitsuri.webp" 
                     onclick="currentSlide(10)" 
                     alt="Obanai confused by Mitsuri's response"
                     >
@@ -351,7 +378,7 @@
                 <div class="column" id="Pic11">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_explaining_the_trainees_crimes.webp" 
+                    src="../../images/Obanai_explaining_the_trainees_crimes.webp" 
                     onclick="currentSlide(11)" 
                     alt="Obanai explaining the trainees' crimes"
                     >
@@ -359,7 +386,7 @@
                 <div class="column" id="Pic12">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_and_Mitsuri_falling_inside_the_Infinity_Castle.webp" 
+                    src="../../images/Obanai_and_Mitsuri_falling_inside_the_Infinity_Castle.webp" 
                     onclick="currentSlide(12)" 
                     alt="Obanai and Mitsuri falling inside the Infinity Castle"
                     >
@@ -367,7 +394,7 @@
                 <div class="column" id="Pic13">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Mitsuri_and_Obanai_encounter_Nakime_CH164.webp" 
+                    src="../../images/Mitsuri_and_Obanai_encounter_Nakime_CH164.webp" 
                     onclick="currentSlide(13)" 
                     alt="Mitsuri and Obanai encounter Nakime CH164"
                     >
@@ -375,7 +402,7 @@
                 <div class="column" id="Pic14">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_saves_Mitsuri_from_Muzans_attack_CH183.webp" 
+                    src="../../images/Obanai_saves_Mitsuri_from_Muzans_attack_CH183.webp" 
                     onclick="currentSlide(14)" 
                     alt="Obanai saves Mitsuri from Muzan's attack CH183"
                     >
@@ -383,7 +410,7 @@
                 <div class="column" id="Pic15">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/The_Demon_Slayers_save_the_Hashira_from_Muzans_attacks.webp" 
+                    src="../../images/The_Demon_Slayers_save_the_Hashira_from_Muzans_attacks.webp" 
                     onclick="currentSlide(15)" 
                     alt="The Demon Slayers save the Hashira from Muzan's attacks"
                     >
@@ -391,7 +418,7 @@
                 <div class="column" id="Pic16">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanais_face_revealed_CH188.webp" 
+                    src="../../images/Obanais_face_revealed_CH188.webp" 
                     onclick="currentSlide(16)" 
                     alt="Obanai's face revealed CH188"
                     >
@@ -399,7 +426,7 @@
                 <div class="column" id="Pic17">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_awakening_his_Demon_Slayer_Mark.webp" 
+                    src="../../images/Obanai_awakening_his_Demon_Slayer_Mark.webp" 
                     onclick="currentSlide(17)" 
                     alt="Obanai awakening his Demon Slayer Mark"
                     >
@@ -407,7 +434,7 @@
                 <div class="column" id="Pic18">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_attacking_Muzan_with_his_bright_red_blade.webp" 
+                    src="../../images/Obanai_attacking_Muzan_with_his_bright_red_blade.webp" 
                     onclick="currentSlide(18)" 
                     alt="Obanai attacking Muzan with his bright red blade"
                     >
@@ -415,7 +442,7 @@
                 <div class="column" id="Pic19">
                     <img 
                     class="demo cursor" 
-                    src="/../DemonSlayerWiki/images/Obanai_blinded_by_Muzan.webp" 
+                    src="../../images/Obanai_blinded_by_Muzan.webp" 
                     onclick="currentSlide(19)" 
                     alt="Obanai blinded by Muzan"
                     >
@@ -432,28 +459,28 @@
 
             <div class="link-tabs">
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html" class="link">Info</a>
+                    <a href="../../Characters/Obanai_Iguro/info.html" class="link">Info</a>
                 </div>
                 <div class="link-space current-page">
                     <a href="" class="link">Synopsis</a>
                 </div>
                 <div class="link-space">
-                    <a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/relationships.html" class="link">Relationships</a>
+                    <a href="../../Characters/Obanai_Iguro/relationships.html" class="link">Relationships</a>
                 </div>
             </div>
 
             <h1>Obanai Iguro/Synopsis</h1>
-            <p><<a href="/../DemonSlayerWiki/Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a></p>
+            <p><<a href="../../Characters/Obanai_Iguro/info.html" class="link">Obanai Iguro</a></p>
             
             <br>
             <div class="synopsisGuideContainer">
-                <div class="synopsisHeader" id="contentHeader">
+                <div class="guideHeader" id="contentHeader">
                     <h2>Contents</h2>
                     <span>
                         <label>[<a href="#" class="link" id="contentBtn">hide</a>]</label>
                     </span>
                 </div>
-                <ol class="synopsisBody" id="contentList">
+                <ol class="guideBody" id="contentList">
                     <li class="fixlist3">
                         <a href="#History">
                             <span>1.</span>
@@ -621,7 +648,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic1">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanais_family_disturbingly_taking_care_for_him.webp" 
+                        src="../../images/Obanais_family_disturbingly_taking_care_for_him.webp" 
                         class="figure-img zoom contain-img cursor obanai-pic1" 
                         onclick="openModal();currentSlide(1)">
                     </a>
@@ -635,7 +662,7 @@
                 Obanai became the first male born into the clan in over 370 years and was confined
                 because of this. His clan was full of thieves who lived off the riches that had
                 been stolen from those killed by a
-                <a href="/../DemonSlayerWiki/Characters/Serpent_Demon/info.html" 
+                <a href="../../Characters/Serpent_Demon/info.html" 
                 class="link" title="Serpent Demon">demon</a>
                 that they worshipped which took the form of a woman with a snake-like lower body
                 and face, having a great taste for newborn babies and is what the family had
@@ -685,7 +712,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic2">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_witnessing_the_Serpent_Demon_in_the_flesh.webp" 
+                        src="../../images/Obanai_witnessing_the_Serpent_Demon_in_the_flesh.webp" 
                         class="figure-img zoom contain-img cursor obanai-pic2" 
                         onclick="openModal();currentSlide(2)">
                     </a>
@@ -703,7 +730,7 @@
                 worry and fear, anxious at the possibility of what would happen if the Serpent
                 Demon or his family would discover his attempt at freedom. The only being then
                 that he could trust was a small
-                <a href="/../DemonSlayerWiki/Characters/Kaburamaru/info.html" class="link" title="Kaburamaru">snake</a>
+                <a href="../../Characters/Kaburamaru/info.html" class="link" title="Kaburamaru">snake</a>
                 that had somehow strayed into his cage and became his only friend,
                 Kaburamaru.
                 <span class="tooltip-anchor" id="Ref3">
@@ -720,7 +747,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic3">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_is_saved_by_the_Flame_Hashira.webp" 
+                        src="../../images/Obanai_is_saved_by_the_Flame_Hashira.webp" 
                         class="figure-img zoom contain-img cursor obanai-pic1" 
                         onclick="openModal();currentSlide(3)">
                     </a>
@@ -734,7 +761,7 @@
                 Eventually, Obanai finally manages to completely remove a wooden chunk of the
                 bars and escaped into the night. As he ran, the Serpent Demon began to pursue him,
                 almost catching up to him and killing him before the
-                <a href="/../DemonSlayerWiki/Characters/Shinjuro_Rengoku/info.html" 
+                <a href="../../Characters/Shinjuro_Rengoku/info.html" 
                 class="link" title="Shinjuro Rengoku">Flame Hashira</a>, Shinjuro Rengoku, by
                 chance came to his rescue. Because of Obanai's escape, the Serpent Demon had
                 killed nearly all fifty of his relatives; the only surviving member of his
@@ -757,7 +784,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic4">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanais_sense_of_self-hatred.webp" 
+                        src="../../images/Obanais_sense_of_self-hatred.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(4)">
                     </a>
@@ -781,7 +808,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic5">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_recalls_how_he_and_Mitsuri_first_met.webp" 
+                        src="../../images/Obanai_recalls_how_he_and_Mitsuri_first_met.webp" 
                         class="figure-img zoom contain-img cursor obanai-pic3" 
                         onclick="openModal();currentSlide(5)">
                     </a>
@@ -793,7 +820,7 @@
                 </figure>
                 After some time, Obanai had encountered someone within the Demon Slayer Corps who was
                 distressed over getting lost;
-                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>.
+                <a href="../../Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>.
                 Helping the young woman to find her way around, they became acquainted and quickly
                 became close. Obanai especially enjoyed being with Mitsuri as he felt like he was a
                 normal boy due to her brimming optimism.
@@ -812,7 +839,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic6">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai28anime29.webp" 
+                        src="../../images/Obanai28anime29.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(6)">
                     </a>
@@ -821,9 +848,9 @@
                     </figcaption>
                 </figure>
                 As the other Hashira discuss what to do with
-                <a href="/../DemonSlayerWiki/Characters/Nezuko_Kamado/info.html" class="link">Nezuko Kamado</a>,
+                <a href="../../Characters/Nezuko_Kamado/info.html" class="link">Nezuko Kamado</a>,
                 Obanai, lounging in a nearby tree, inquires how they would deal with
-                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>'s 
+                <a href="../../Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>'s 
                 breach of the Demon Slayer conduct.
                 <span class="tooltip-anchor" id="Ref5">
                     <sup class="tooltip">
@@ -847,7 +874,7 @@
                 </span>
                 Soon afterwards, he notes with interest that even though Giyu had interjected to
                 stop Tanjiro and
-                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>'s
+                <a href="../../Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>'s
                 brief scuffle, the former had still managed to land a blow on the latter.
                 <span class="tooltip-anchor" id="Ref7">
                     <sup class="tooltip">
@@ -863,7 +890,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic7">
                         <img 
-                        src="/../DemonSlayerWiki/images/The_Hashira_bowing_to_Kagaya.webp" 
+                        src="../../images/The_Hashira_bowing_to_Kagaya.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(7)">
                     </a>
@@ -884,7 +911,7 @@
                 He then reiterated his distrust for Tanjiro and Nezuko when his leader asked for
                 all of them to accept the two, stating that they all hate demons. He subsequently
                 listened as Kagaya's attendant read
-                <a href="/../DemonSlayerWiki/Characters/Sakonji_Urokodaki/info.html" class="link">Sakonji Urokodaki</a>'s
+                <a href="../../Characters/Sakonji_Urokodaki/info.html" class="link">Sakonji Urokodaki</a>'s
                 letter concerning Tanjiro and Nezuko, and how Sakonji, Tanjiro, and Giyu would all
                 slit their stomachs should Nezuko ever attack a human.
                 <span class="tooltip-anchor" id="Ref9">
@@ -896,7 +923,7 @@
                     </sup>
                 </span>
                 When Kagaya revealed that Tanjiro had come into contact with
-                <a href="/../DemonSlayerWiki/Characters/Muzan_Kibutsuji/info.html" class="link">Muzan Kibutsuji</a>,
+                <a href="../../Characters/Muzan_Kibutsuji/info.html" class="link">Muzan Kibutsuji</a>,
                 a mess of questions and arguments broke out, but Obanai and the other Hashira
                 are silenced by a simple gesture from their leader.
                 <span class="tooltip-anchor" id="Ref10">
@@ -913,7 +940,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic8">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_stopping_Tanjiro.webp" 
+                        src="../../images/Obanai_stopping_Tanjiro.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(8)">
                     </a>
@@ -977,7 +1004,7 @@
             </h3>
             <p>
                 Obanai stands on a rooftop alone after learning of
-                <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>'s
+                <a href="../../Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>'s
                 death, staring into the distance as he expresses his disbelief.
                 <span class="tooltip-anchor" id="Ref15">
                     <sup class="tooltip">
@@ -998,7 +1025,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic9">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_meeting_Tengen_at_the_Entertainment_District.webp" 
+                        src="../../images/Obanai_meeting_Tengen_at_the_Entertainment_District.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(9)">
                     </a>
@@ -1008,7 +1035,7 @@
                 </figure>
                 Following the battle in Yoshiwara against the Upper Six demons Daki and Gyutaro,
                 Obanai arrived to survey the aftermath. He found
-                <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a> surrounded
+                <a href="../../Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a> surrounded
                 by his three wives and partially congratulated him on his mission, though he makes
                 emphasis that the demons were still the least of the Upper Rank. Though Tengen
                 ignores his empty praise, Suma chides Obanai for his late arrival, causing
@@ -1041,7 +1068,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic10">
                         <img 
-                        src="/../DemonSlayerWiki/images/Sanemi_confused_by_Mitsuri.webp" 
+                        src="../../images/Sanemi_confused_by_Mitsuri.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(10)">
                     </a>
@@ -1053,7 +1080,7 @@
                 After Sanemi complains about not encountering any Upper Rank himself, Obanai
                 comments that bumping into one is rare and then asks Mitsuri and Muichiro how
                 they're doing.
-                <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>
+                <a href="../../Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>
                 arrives and apologizes for the absense of her husband. Obanai and the other Hashira
                 bow to pay their respects. Amane informs the Hashira about the Demon Slayer Marks
                 and asks Mitsuri and Muichiro to tell about how and what the conditions are to
@@ -1093,7 +1120,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic11">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_explaining_the_trainees_crimes.webp" 
+                        src="../../images/Obanai_explaining_the_trainees_crimes.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(11)">
                     </a>
@@ -1138,7 +1165,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic12">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_and_Mitsuri_falling_inside_the_Infinity_Castle.webp" 
+                        src="../../images/Obanai_and_Mitsuri_falling_inside_the_Infinity_Castle.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(12)">
                     </a>
@@ -1149,11 +1176,11 @@
                 Obanai rushes to the Ubuyashiki estate after hearing the call that Muzan was
                 there. However, Kagaya blows up the estate before he or the other Demon Slayers
                 can arrive, killing himself,
-                <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>,
-                <a href="/../DemonSlayerWiki/Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a> and
-                <a href="/../DemonSlayerWiki/Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>
+                <a href="../../Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>,
+                <a href="../../Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a> and
+                <a href="../../Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>
                 while heavily wounding Muzan.
-                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>
+                <a href="../../Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>
                 is the only Demon Slayer to know of this plan beforehand, as Kagaya knew the
                 other Hashira would oppose his decision. After seeing Muzan, Obanai readies
                 himself to unleash his first form on him, but Muzan transports him and the rest 
@@ -1198,7 +1225,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic13">
                         <img 
-                        src="/../DemonSlayerWiki/images/Mitsuri_and_Obanai_encounter_Nakime_CH164.webp" 
+                        src="../../images/Mitsuri_and_Obanai_encounter_Nakime_CH164.webp" 
                         class="figure-img zoom contain-img cursor obanai-pic1" 
                         onclick="openModal();currentSlide(13)">
                     </a>
@@ -1207,7 +1234,7 @@
                     </figcaption>
                 </figure>
                 Later, he and Mitsuri encounter
-                <a href="/../DemonSlayerWiki/Characters/Nakime/info.html" class="link">Nakime</a>. Mitsuri jumps off a
+                <a href="../../Characters/Nakime/info.html" class="link">Nakime</a>. Mitsuri jumps off a
                 wall and lunges at the Demon, but Nakime uses her Blood Demon Art to erect a wall
                 and send Mitsuri falling. Obanai jumps in and grabs her, getting her safely to
                 another of the Infinity Castle's pillars. As Nakime starts manipulating the
@@ -1252,7 +1279,7 @@
             </h3>
             <p>
                 With the help of
-                <a href="/../DemonSlayerWiki/Characters/Yushiro/info.html" class="link">Yushiro</a> and his
+                <a href="../../Characters/Yushiro/info.html" class="link">Yushiro</a> and his
                 <b><a href="" class="link">Blood Demon Art</a>: Blindfold</b>, Obanai and Mitsuri
                 are able are able to get away from Nakime and they arrive to assist Giyu and
                 Tanjiro who were fighting against Muzan. Obanai appears by Tanjiro's side, who was
@@ -1273,7 +1300,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic14">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_saves_Mitsuri_from_Muzans_attack_CH183.webp" 
+                        src="../../images/Obanai_saves_Mitsuri_from_Muzans_attack_CH183.webp" 
                         class="figure-img zoom contain-img cursor obanai-pic4" 
                         onclick="openModal();currentSlide(14)">
                     </a>
@@ -1306,7 +1333,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic15">
                         <img 
-                        src="/../DemonSlayerWiki/images/The_Demon_Slayers_save_the_Hashira_from_Muzans_attacks.webp" 
+                        src="../../images/The_Demon_Slayers_save_the_Hashira_from_Muzans_attacks.webp" 
                         class="figure-img zoom contain-img cursor obanai-pic2" 
                         onclick="openModal();currentSlide(15)">
                     </a>
@@ -1365,7 +1392,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic16">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanais_face_revealed_CH188.webp" 
+                        src="../../images/Obanais_face_revealed_CH188.webp" 
                         class="figure-img zoom contain-img cursor" 
                         onclick="openModal();currentSlide(16)">
                     </a>
@@ -1403,7 +1430,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic17">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_awakening_his_Demon_Slayer_Mark.webp" 
+                        src="../../images/Obanai_awakening_his_Demon_Slayer_Mark.webp" 
                         class="figure-img zoom contain-img cursor obanai-pic1" 
                         onclick="openModal();currentSlide(17)">
                     </a>
@@ -1424,7 +1451,7 @@
                 surprised by how long the Hashira have managed to last. As Muzan's poison is
                 starting to affect the Hashira more and more, Obanai realizes that the poison
                 is affecting him more than others due to his small body. In that moment,
-                <a href="/../DemonSlayerWiki/Characters/Chachamaru/info.html" class="link">Chachamaru</a> appears
+                <a href="../../Characters/Chachamaru/info.html" class="link">Chachamaru</a> appears
                 carrying antidotes to Muzan's poison. Obanai and the Hashira receive the antidotes,
                 but Chachamaru is killed in the process. As Muzan grows furious, Obanai considers
                 that he needs to find a mroe effective way to attack. He believes that he has
@@ -1447,7 +1474,7 @@
                 <figure class="left-side-anime-pic">
                     <a class="contain-img" href="#Pic18">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_attacking_Muzan_with_his_bright_red_blade.webp" 
+                        src="../../images/Obanai_attacking_Muzan_with_his_bright_red_blade.webp" 
                         class="figure-img zoom contain-img cursor obanai-pic1" 
                         onclick="openModal();currentSlide(18)">
                     </a>
@@ -1505,7 +1532,7 @@
                 <figure class="right-side-anime-pic">
                     <a class="contain-img" href="#Pic19">
                         <img 
-                        src="/../DemonSlayerWiki/images/Obanai_blinded_by_Muzan.webp" 
+                        src="../../images/Obanai_blinded_by_Muzan.webp" 
                         class="figure-img zoom contain-img cursor obanai-pic3" 
                         onclick="openModal();currentSlide(19)">
                     </a>
@@ -1692,7 +1719,7 @@
                         <th class="nav-table-header">
                             <aside>[<a href="#" class="link" id="nav-table-btn">show</a>]</aside>
                             <div class="nav-table-char">
-                                <a href="/../DemonSlayerWiki/characters.html">Characters</a>
+                                <a href="../../characters.html">Characters</a>
                             </div>
                         </th>
                     </tr>
@@ -1710,15 +1737,15 @@
                                                 <b>Ubuyashiki Family:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
+                                                <a href="../../Characters/Kagaya_Ubuyashiki/info.html" class="link">Kagaya Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Amane_Ubuyashiki/info.html" class="link">Amane Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Hinaki_Ubuyashiki/info.html" class="link">Hinaki Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Nichika_Ubuyashiki/info.html" class="link">Nichika Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kiriya_Ubuyashiki/info.html" class="link">Kiriya Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kuina_Ubuyashiki/info.html" class="link">Kuina Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Kanata_Ubuyashiki/info.html" class="link">Kanata Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Senri_Ubuyashiki/info.html" class="link">Senri Ubuyashiki</a>&nbsp;·
+                                                <a href="../../Characters/Akito_Ubuyashiki/info.html" class="link">Akito Ubuyashiki</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1726,16 +1753,16 @@
                                                 <b>Hashira:</b>
                                             </td>
                                             <td class="nav-table-section-right">
-                                                <a href="/../DemonSlayerWiki/Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
+                                                <a href="../../Characters/Giyu_Tomioka/info.html" class="link">Giyu Tomioka</a>&nbsp;·
+                                                <a href="../../Characters/Mitsuri_Kanroji/info.html" class="link">Mitsuri Kanroji</a>&nbsp;·
                                                 <span class="nav-table-current">Obanai Iguro</span>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
-                                                <a href="/../DemonSlayerWiki/Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a>·
-                                                <a href="/../DemonSlayerWiki/Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>·
+                                                <a href="../../Characters/Sanemi_Shinazugawa/info.html" class="link">Sanemi Shinazugawa</a>&nbsp;·
+                                                <a href="../../Characters/Gyomei_Himejima/info.html" class="link">Gyomei Himejima</a>&nbsp;·
+                                                <a href="../../Characters/Kyojuro_Rengoku/info.html" class="link">Kyojuro Rengoku</a>&nbsp;·
+                                                <a href="../../Characters/Tengen_Uzui/info.html" class="link">Tengen Uzui</a>&nbsp;·
+                                                <a href="../../Characters/Muichiro_Tokito/info.html" class="link">Muichiro Tokito</a>&nbsp;·
+                                                <a href="../../Characters/Shinobu_Kocho/info.html" class="link">Shinobu Kocho</a>·
+                                                <a href="../../Characters/Kanae_Kocho/info.html" class="link">Kanae Kocho</a>·
                                                 <a href="sakonji.html" class="link">Sakonji Urokodaki</a>·
                                                 <a href="jigoro.html" class="link">Jigoro Kuwajima</a>·
                                                 <a href="shinjuro.html" class="link">Shinjuro Rengoku</a>
@@ -2004,8 +2031,10 @@
         </div>
     </div>
     <footer>Wiki inspired by the <a class="link" href="https://kimetsu-no-yaiba.fandom.com/" target="_blank">Kimetsu No Yaiba Wiki</a></footer>
-    <script src="/../DemonSlayerWiki/javascripts/navigation.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/lightbox_modal.js"></script>
-    <script src="/../DemonSlayerWiki/javascripts/character_navigation.js"></script>
+    <script src="../../javascripts/navigation.js"></script>
+    <script src="../../javascripts/searchbar.js"></script>
+    <script src="../../javascripts/lightbox_modal.js"></script>
+    <script src="../../javascripts/quickAnswers.js"></script>
+    <script src="../../javascripts/character_navigation.js"></script>
 </body>
 </html>
