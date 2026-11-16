@@ -1,205 +1,116 @@
-// Character list variables
-const animeBtn = document.querySelector('#anime-char-tab');
-const mangaBtn = document.querySelector('#manga-char-tab');
-const animeContent = document.querySelector('#anime-characters');
-const mangaContent = document.querySelector('#manga-content');
-const op1 = document.querySelector('#op1');
-const op2 = document.querySelector('#op2');
+document.addEventListener('DOMContentLoaded', () => {
+    //*
+    // Connects a group of tab pills to their corresponding content panels.
+    // Automatically highlights the first tab on load and toggles '.active'. 
+    // */
+    function setupTabGroup(tabs, defaultIndex = 0, onSwitch = null) {
+        const validTabs = tabs.filter(t => document.querySelector(t.tab) && document.querySelector(t.panel));
+        if (validTabs.length === 0) return;
 
-// Media content variables
-const animeReleaseBox = document.querySelector('#release1');
-const mangaReleaseBox = document.querySelector('#release2');
-const gamesReleaseBox = document.querySelector('#release3');
-const animeReleaseBtn = document.querySelector('#anime-release-tab');
-const mangaReleaseBtn = document.querySelector('#manga-release-tab');
-const gamesReleaseBtn = document.querySelector('#games-release-tab');
-const animeReleaseContent = document.querySelector('#anime-release');
-const mangaReleaseContent = document.querySelector('#manga-release');
-const gamesReleaseContent = document.querySelector('#games-release');
+        function activate(index) {
+            validTabs.forEach((item, i) => {
+                const tabEl = document.querySelector(item.tab);
+                const panelEl = document.querySelector(item.panel);
+                const isSelected = i === index;
 
-// Manga and Anime buttons for the beginning of Latest Release Section
-const mangaContainer = document.querySelector('#latest-release1');
-const mangaTabBtn = document.querySelector('#latest-manga-release');
-const animeContainer = document.querySelector('#latest-release2');
-const animeTabBtn = document.querySelector('#latest-anime-release');
-const animeTabContent = document.querySelector('#anime_section');
+                // Toggle '.active' on the <li> pill whether the selector is the <li> or an inner <a>
+                const pillEl = tabEl.closest('li') || tabEl;
+                pillEl.classList.toggle('active', isSelected);
+                pillEl.setAttribute('aria-selected', String(isSelected));
 
-// Episode Tab & Section
-const episodeContainer = document.querySelector('#latest_episode');
-const episodeBtn = document.querySelector('#episode_button');
-const episodeContent = document.querySelector('#episode_content');
+                // Clear any legacy inline border styles from HTML
+                pillEl.style.borderBottom = '';
 
-// Home Release Tab & Section
-const homeReleaseContainer = document.querySelector('#latest_home_release');
-const homeReleaseBtn = document.querySelector('#home_release_button');
-const homeReleaseContent = document.querySelector('#home_release_section');
+                // Show or hide the target panel
+                panelEl.style.display = isSelected ? (item.display || 'block') : 'none';
+            });
 
-// Manga Tab
-const chapterReleaseContainer = document.querySelector('#chapter-release');
-const chapterReleaseBtn = document.querySelector('#chapter-release-tab');
-const chapterSection = document.querySelector('#chapter_section');
+            if (onSwitch) onSwitch(index);
+        }
 
-const volumeReleaseContainer = document.querySelector('#volume-release');
-const volumeReleaseBtn = document.querySelector('#volume-release-tab');
-const volumeTabs = document.querySelector('#volume_tabs');
-const chapterTabs = document.querySelector('#chapter_tabs');
+        validTabs.forEach((item, index) => {
+            const tabEl = document.querySelector(item.tab);
+            tabEl.addEventListener('click', (e) => {
+                e.preventDefault();
+                activate(index);
+            });
+        });
 
-const japaneseReleaseContainer = document.querySelector('#japanese-release');
-const japaneseReleaseBtn = document.querySelector('#japanese-release-tab');
-const japaneseVolumeSection = document.querySelector('#japanese_volume_section');
-const englishReleaseContainer = document.querySelector('#english-release');
-const englishReleaseBtn = document.querySelector('#english-release-tab');
-const englishVolumeSection = document.querySelector('#english_volume_section');
+        // Set initial active state on page load
+        activate(defaultIndex);
+    }
 
-// Subbed Tab & Section
-const subContainer = document.querySelector('#subbed');
-const subbedBtn = document.querySelector('#subbed_button');
-const subbedContent = document.querySelector('#subbed_section');
+    // 1. Characters Widget (Anime / Manga)
+    setupTabGroup([
+        { tab: '#op1', panel: '#anime-characters', display: 'grid' },
+        { tab: '#op2', panel: '#manga-content', display: 'grid' }
+    ]);
 
-// Dubbed Tab & Section
-const dubContainer = document.querySelector('#dubbed');
-const dubbedBtn = document.querySelector('#dubbed_button');
-const dubbedContent = document.querySelector('#dubbed_section');
+    // 2. Upcoming Releases Widget (Anime / Manga / Games)
+    setupTabGroup([
+        { tab: '#release1', panel: '#anime-release' },
+        { tab: '#release2', panel: '#manga-release' },
+        { tab: '#release3', panel: '#games-release' }
+    ]);
 
-// Switching between anime and manga profiles
-animeBtn.addEventListener('click', () => {
-    op1.style.borderBottom = '2px solid gold';
-    op2.style.borderBottom = '0px solid gold';
-    animeContent.style.display = 'grid';
-    mangaContent.style.display = 'none';
-});
+    // 3. Latest Release Sub-Tabs
+    const switchChapterVolume = setupTabGroup([
+        { tab: '#chapter-release', panel: '#chapter_section' },
+        { tab: '#volume-release', panel: '#volume_tabs' }
+    ], 0, (index) => {
+        // Hide volume sub-sections when switching back to Chapter; reset to Japanese when clicking Volume
+        if (index === 0) {
+            document.querySelector('#japanese_volume_section').style.display = 'none';
+            document.querySelector('#english_volume_section').style.display = 'none';
+        }
+        else {
+            switchVolumeLang(0);
+        }
+    });
 
+    // 4. Volume Language Sub-Tabs (Japanese / English)
+    const switchVolumeLang = setupTabGroup([
+        { tab: '#japanese-release', panel: '#japanese_volume_section' },
+        { tab: '#english-release', panel: '#english_volume_section' }
+    ]);
 
-mangaBtn.onclick = function(e) {
-    op1.style.borderBottom = '0px solid gold';
-    op2.style.borderBottom = '2px solid gold';
-    animeContent.style.display = 'none';
-    mangaContent.style.display = 'grid';
-};
+    // 5. Anime Episode Sub-Tabs (Subbed / Dubbed)
+    const switchSubDub = setupTabGroup([
+        { tab: '#subbed', panel: '#subbed_section' },
+        { tab: '#dubbed', panel: '#dubbed_section' }
+    ]);
 
-mangaTabBtn.addEventListener('click', () => {
-    mangaContainer.style.borderBottom = '2px solid gold';
-    animeContainer.style.borderBottom = '0px';
-    chapterTabs.style.display = 'block';
-    chapterSection.style.display = 'block';
-    animeTabContent.style.display = 'none';
-    chapterReleaseContainer.style.borderBottom = '2px solid gold';
-    volumeReleaseContainer.style.borderBottom = '0px';
-    volumeTabs.style.display = 'none';
-    japaneseVolumeSection.style.display = 'none';
-    englishVolumeSection.style.display = 'none';
-});
+    // 6. Anime Release Type Sub-Tabs (Episode / Home Release)
+    const switchEpisodeHome = setupTabGroup([
+        { tab: '#latest_episode', panel: '#episode_content' },
+        { tab: '#latest_home_release', panel: '#home_release_section' }
+    ]);
 
-animeTabBtn.addEventListener('click', () => {
-    animeContainer.style.borderBottom = '2px solid gold';
-    mangaContainer.style.borderBottom = '-0px';
-    animeTabContent.style.display = 'block';
-    chapterTabs.style.display = 'none';
-    chapterSection.style.display = 'none';
-    episodeContainer.style.borderBottom = '2px solid gold';
-    homeReleaseContainer.style.borderBottom = '0px';
-    subContainer.style.borderBottom = '2px solid gold';
-    dubContainer.style.borderBottom = '0px';
-    episodeContent.style.display = 'block';
-    homeReleaseContent.style.display = 'none';
-    subContainer.style.borderBottom = '2px solid gold';
-    dubContainer.style.borderBottom = '2px';
-    subbedContent.style.display = 'block';
-    dubbedContent.style.display = 'none';
-    volumeTabs.style.display = 'none';
-    japaneseVolumeSection.style.display = 'none';
-    englishVolumeSection.style.display = 'none';
-})
-
-// Switching between different media content
-animeReleaseBtn.addEventListener('click', () => {
-    animeReleaseBox.style.borderBottom = '2px solid gold';
-    mangaReleaseBox.style.borderBottom = '0px';
-    gamesReleaseBox.style.borderBottom = '0px';
-    
-    animeReleaseContent.style.display = 'block';
-    mangaReleaseContent.style.display = 'none';
-    gamesReleaseContent.style.display = 'none';
-});
-
-mangaReleaseBtn.addEventListener('click', () => {
-    animeReleaseBox.style.borderBottom = '0px';
-    mangaReleaseBox.style.borderBottom = '2px solid gold';
-    gamesReleaseBox.style.borderBottom = '0px';
-    
-    animeReleaseContent.style.display = 'none';
-    mangaReleaseContent.style.display = 'block';
-    gamesReleaseContent.style.display = 'none';
-});
-
-gamesReleaseBox.addEventListener('click', () => {
-    animeReleaseBox.style.borderBottom = '0px';
-    mangaReleaseBox.style.borderBottom = '0px';
-    gamesReleaseBox.style.borderBottom = '2px solid gold';
-    
-    animeReleaseContent.style.display = 'none';
-    mangaReleaseContent.style.display = 'none';
-    gamesReleaseContent.style.display = 'block';
-});
-
-chapterReleaseBtn.addEventListener('click', () => {
-    chapterReleaseContainer.style.borderBottom = '2px solid gold';
-    volumeReleaseContainer.style.borderBottom = '0px';
-    chapterSection.style.display = 'block';
-    volumeTabs.style.display = 'none';
-    japaneseVolumeSection.style.display = 'none';
-    englishVolumeSection.style.display = 'none';
-});
-
-volumeReleaseBtn.addEventListener('click', () => {
-    volumeReleaseContainer.style.borderBottom = '2px solid gold';
-    chapterReleaseContainer.style.borderBottom = '0px';
-    chapterSection.style.display = 'none';
-    volumeTabs.style.display = 'block';
-    japaneseReleaseContainer.style.borderBottom = '2px solid gold';
-    englishReleaseContainer.style.borderBottom = '0px';
-    japaneseVolumeSection.style.display = 'block';
-    englishVolumeSection.style.display = 'none';
-});
-
-japaneseReleaseBtn.addEventListener('click', () => {
-    japaneseReleaseContainer.style.borderBottom = '2px solid gold';
-    englishReleaseContainer.style.borderBottom = '0px';
-    japaneseVolumeSection.style.display = 'block';
-    englishVolumeSection.style.display = 'none';
-});
-
-englishReleaseBtn.addEventListener('click', () => {
-    englishReleaseContainer.style.borderBottom = '2px solid gold';
-    japaneseReleaseContainer.style.borderBottom = '0px';
-    japaneseVolumeSection.style.display = 'none';
-    englishVolumeSection.style.display = 'block';
-});
-
-subbedBtn.addEventListener('click', () => {
-    subContainer.style.borderBottom = '2px solid gold';
-    dubContainer.style.borderBottom = '0px';
-    subbedContent.style.display = 'block';
-    dubbedContent.style.display = 'none';
-});
-
-dubbedBtn.addEventListener('click', () => {
-    dubContainer.style.borderBottom = '2px solid gold';
-    subContainer.style.borderBottom = '0px';
-    dubbedContent.style.display = 'block';
-    subbedContent.style.display = 'none';
-});
-
-episodeBtn.addEventListener('click', () => {
-    episodeContainer.style.borderBottom = '2px solid gold';
-    homeReleaseContainer.style.borderBottom = '0px';
-    episodeContent.style.display = 'block';
-    homeReleaseContent.style.display = 'none'
-});
-
-homeReleaseBtn.addEventListener('click', () => {
-    homeReleaseContainer.style.borderBottom = '2px solid gold';
-    episodeContainer.style.borderBottom = '0px';
-    homeReleaseContent.style.display = 'block';
-    episodeContent.style.display = 'none';
+    // 7. Latest Release Top-Level Tabs (Manga / Anime)
+    setupTabGroup([
+        { tab: '#latest-release1', panel: '#chapter_tabs' },
+        { tab: '#latest-release2', panel: '#anime_section' }
+    ], 0, (index) => {
+        if (index === 0) {
+            // Reset Manga view to Chapter
+            document.querySelector('#chapter_section').style.display = 'block';
+            document.querySelector('#volume_tabs').style.display = 'none';
+            document.querySelector('#japanese_volume_section').style.display = 'none';
+            document.querySelector('#english_volume_section').style.display = 'none';
+            const chapterPill = document.querySelector('#chapter-release');
+            const volumePill = document.querySelector('#volume-release');
+            if (chapterPill) chapterPill.classList.add('active');
+            if (volumePill) volumePill.classList.remove('active');
+        } else {
+            // Reset Anime view to Episode -> Subbed
+            document.querySelector('#chapter_section').style.display = 'none';
+            document.querySelector('#volume_tabs').style.display = 'none';
+            document.querySelector('#japanese_volume_section').style.display = 'none';
+            document.querySelector('#english_volume_section').style.display = 'none';
+            document.querySelector('#episode_content').style.display = 'block';
+            document.querySelector('#home_release_section').style.display = 'none';
+            document.querySelector('#subbed_section').style.display = 'block';
+            document.querySelector('#dubbed_section').style.display = 'none';
+        }
+    });
 });

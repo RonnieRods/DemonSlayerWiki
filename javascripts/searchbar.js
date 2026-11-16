@@ -114,16 +114,6 @@ const projects = [
         description: "Sakonji",
         url: "/../DemonSlayerWiki/Characters/Sakonji_Urokodaki/info.html"
     },
-    {
-        title: "Jigoro Kuwajima",
-        description: "Jigoro",
-        url: "/../DemonSlayerWiki/Characters/Jigoro_Kuwajima/info.html"
-    },
-    {
-        title: "Shinjuro Rengoku",
-        description: "Shinjuro",
-        url: "/../DemonSlayerWiki/Characters/Shinjuro_Rengoku/info.html"
-    },
 ];
 
 const searchForm = document.getElementById('search-form');
